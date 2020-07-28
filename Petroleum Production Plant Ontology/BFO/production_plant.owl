@@ -28,8 +28,6 @@
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant">
         <owl:versionIRI rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant/1.0.0"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/COB_0000039"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/COB_0000040"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <owl:imports rdf:resource="https://www.industrialontologies.org/core"/>
         <owl:imports rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology/1.0"/>
@@ -95,6 +93,22 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000039 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000039">
+        <rdfs:label xml:lang="en">has specified input</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000040 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000040">
+        <rdfs:label xml:lang="en">has specified output</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -343,7 +357,7 @@
         <rdfs:subClassOf rdf:resource="https://www.industrialontologies.org/core/iof_00000045"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Petroleum_Production_Plant"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -359,17 +373,35 @@
     <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#CompletedWell -->
 
     <owl:Class rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#CompletedWell">
-        <rdfs:subClassOf rdf:resource="https://www.industrialontologies.org/core/iof_00000045"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Well"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Petroleum_Production_Plant"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
-                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Petroleum_Production_Plant"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#BottomholePressure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#WellDepth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#WellFlowRate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Well"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:source xml:lang="en">https://petrowiki.spe.org/Glossary:Completed_well</oboInOwl:source>
@@ -383,7 +415,7 @@
     <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#CrudeOil -->
 
     <owl:Class rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#CrudeOil">
-        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Fluid"/>
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_earth_fluid"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -401,8 +433,8 @@
 
     <owl:Class rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#FPSO">
         <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Offshore_Platform"/>
-        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Ship"/>
         <owl:disjointWith rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Semisubmersible"/>
+        <owl:disjointWith rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Tanker"/>
         <oboInOwl:source xml:lang="en">https://www.glossary.oilfield.slb.com/Terms/f/fpso.aspx</oboInOwl:source>
         <CommonCoreOntologies:acronym xml:lang="en">FPSO</CommonCoreOntologies:acronym>
         <CommonCoreOntologies:definition xml:lang="en">def. an offshore platform that serve as gathering, processing and storage facilities for fluids produced from subsea wells.</CommonCoreOntologies:definition>
@@ -418,6 +450,12 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Offshore_Petroleum_Production_Plant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#burns"/>
                 <owl:allValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#NaturalGas"/>
             </owl:Restriction>
@@ -430,39 +468,9 @@
     
 
 
-    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Fluid -->
-
-    <owl:Class rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Fluid">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
-        <CommonCoreOntologies:definition>def. a substance that continually deforms (flows) under an applied shear stress, or external force. </CommonCoreOntologies:definition>
-        <rdfs:label>Fluid</rdfs:label>
-        <rdfs:seeAlso>https://en.wikipedia.org/wiki/Fluid</rdfs:seeAlso>
-    </owl:Class>
-    
-
-
     <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#InjectionWell -->
 
     <owl:Class rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#InjectionWell">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#CompletedWell"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#injects"/>
-                        <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Fluid"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
-                        <owl:allValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#toInject"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#ProductivityIndex"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <CommonCoreOntologies:definition xml:lang="en">def. a completed well where fluids are injected rather than produced, the primary objective typically being to maintain reservoir pressure.</CommonCoreOntologies:definition>
         <rdfs:label xml:lang="en">InjectionWell</rdfs:label>
         <rdfs:seeAlso>https://petrowiki.spe.org/Glossary:Injection_well</rdfs:seeAlso>
@@ -476,7 +484,7 @@
         <rdfs:subClassOf rdf:resource="https://www.industrialontologies.org/core/iof_00000045"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Offshore_Petroleum_Production_Plant"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -491,7 +499,7 @@
     <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#NaturalGas -->
 
     <owl:Class rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#NaturalGas">
-        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Fluid"/>
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_earth_fluid"/>
         <owl:disjointWith rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#StockTankOil"/>
         <owl:disjointWith rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Water"/>
         <CommonCoreOntologies:definition>def. a hydrocarbon gas mixture consisting primarily of methane, but commonly includes varying amounts of other higher alkanes and sometimes a usually lesser percentage of carbon dioxide, nitrogen, and/or hydrogen sulfide.</CommonCoreOntologies:definition>
@@ -507,8 +515,14 @@
         <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Petroleum_Production_Plant"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Offshore_Platform"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="https://www.industrialontologies.org/core/iof_00000045"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Onshore_Petroleum_Production_Plant"/>
@@ -524,7 +538,7 @@
         <rdfs:subClassOf rdf:resource="https://www.industrialontologies.org/core/iof_00000009"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Offshore_Petroleum_Production_Plant"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -603,22 +617,20 @@
     <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Petroleum -->
 
     <owl:Class rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Petroleum">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Fluid"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#CrudeOil"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#NaturalGas"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_earth_fluid"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#CrudeOil"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#NaturalGas"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Water"/>
         <CommonCoreOntologies:definition>def. a naturally occurring flammable Fluid consisting of a complex mixture of hydrocarbons of various molecular weights and other liquid organic compounds, that are found in geologic formations beneath the planetary surfaces.</CommonCoreOntologies:definition>
         <rdfs:label>Petroleum</rdfs:label>
@@ -645,7 +657,7 @@
         <rdfs:subClassOf rdf:resource="https://www.industrialontologies.org/core/iof_00000022"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Pipeline"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -663,14 +675,8 @@
         <rdfs:subClassOf rdf:resource="https://www.industrialontologies.org/core/iof_00000021"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Petroleum_Production_Plant"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#transports"/>
-                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Fluid"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:source xml:lang="en">https://petrowiki.org/Glossary:Flowline</oboInOwl:source>
@@ -695,7 +701,13 @@
     <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#ProducedWater -->
 
     <owl:Class rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#ProducedWater">
-        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Water"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Water"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <CommonCoreOntologies:definition>def. Water that is produced as a byproduct during the extraction of oil and natural gas.</CommonCoreOntologies:definition>
         <rdfs:label>ProducedWater</rdfs:label>
         <rdfs:seeAlso>https://en.wikipedia.org/wiki/Produced_water</rdfs:seeAlso>
@@ -738,7 +750,7 @@
         <rdfs:subClassOf rdf:resource="https://www.industrialontologies.org/core/iof_00000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Petroleum_Production_Plant"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -762,6 +774,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#WaterSaturation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
                 <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Permeability"/>
             </owl:Restriction>
@@ -770,6 +788,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001019"/>
                 <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Petroleum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Pressure"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition xml:lang="en">def. a Rock holding hydrocarbon.</CommonCoreOntologies:definition>
@@ -822,14 +846,8 @@
         <rdfs:subClassOf rdf:resource="https://www.industrialontologies.org/core/iof_00000045"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Petroleum_Production_Plant"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#separates"/>
-                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Fluid"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:source xml:lang="en">https://petrowiki.spe.org/Glossary:Separator</oboInOwl:source>
@@ -855,6 +873,12 @@
 
     <owl:Class rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#StockTankOil">
         <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#CrudeOil"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001018"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Stock_tank"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <CommonCoreOntologies:definition>def. CrudeOil after flashing to nominal atmospheric (or other stated) storage pressure and temperature (as opposed to reservoir conditions).</CommonCoreOntologies:definition>
         <rdfs:label>StockTankOil</rdfs:label>
         <rdfs:seeAlso>https://en.wikipedia.org/wiki/Stock_Tank_Oil#:~:text=Stock%20Tank%20Oil%20refers%20to,as%20opposed%20to%20reservoir%20conditions).</rdfs:seeAlso>
@@ -868,13 +892,7 @@
         <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Tank"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
-                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Petroleum_Production_Plant"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#stores"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001019"/>
                 <owl:allValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#StockTankOil"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -893,7 +911,7 @@
         <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#ChristmasTree"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Offshore_Petroleum_Production_Plant"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -908,6 +926,12 @@
 
     <owl:Class rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Tank">
         <rdfs:subClassOf rdf:resource="https://www.industrialontologies.org/core/iof_00000045"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Petroleum_Production_Plant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:source xml:lang="en">https://www.glossary.oilfield.slb.com/Terms/t/tank.aspx</oboInOwl:source>
         <CommonCoreOntologies:definition xml:lang="en">def. equipment that is used to store or measure a liquid, made of metal or plastic.</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">A metal or plastic vessel used to store or measure a liquid.</rdfs:comment>
@@ -968,21 +992,19 @@
     <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Treater -->
 
     <owl:Class rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Treater">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://www.industrialontologies.org/core/iof_00000045"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
-                        <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Petroleum_Production_Plant"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#treats"/>
-                        <owl:allValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Petroleum"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.industrialontologies.org/core/iof_00000045"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Petroleum_Production_Plant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#treats"/>
+                <owl:allValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Petroleum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:source xml:lang="en">https://www.glossary.oilfield.slb.com/Terms/t/treater.aspx</oboInOwl:source>
         <CommonCoreOntologies:definition xml:lang="en">def. equipment that is used to treat oil-water emulsions so the oil can be accepted by the pipeline or transport.</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">A vessel used to treat oil-water emulsions so the oil can be accepted by the pipeline or transport.</rdfs:comment>
@@ -1018,7 +1040,7 @@
     <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Water -->
 
     <owl:Class rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Water">
-        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Fluid"/>
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_earth_fluid"/>
     </owl:Class>
     
 
@@ -1026,29 +1048,37 @@
     <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#WaterInjection -->
 
     <owl:Class rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#WaterInjection">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://www.industrialontologies.org/core/iof_00000002"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                        <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Permeability"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#InjectionWell"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Reservoir"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Water"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.industrialontologies.org/core/iof_00000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Permeability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000039"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#InjectionWell"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000039"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Reservoir"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000039"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Water"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000040"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Reservoir"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <CommonCoreOntologies:definition xml:lang="en">def. injection of Water into the Reservoir, usually to increase pressure and thereby stimulate production.</CommonCoreOntologies:definition>
         <rdfs:label xml:lang="en">WaterInjection</rdfs:label>
         <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Water_injection_(oil_production)</rdfs:seeAlso>
@@ -1083,12 +1113,6 @@
 
     <owl:Class rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#WaterTank">
         <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Tank"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
-                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Petroleum_Production_Plant"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#stores"/>
@@ -1164,9 +1188,6 @@
     <owl:Class rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#toInject">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
         <owl:disjointWith rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#toProduce"/>
-        <CommonCoreOntologies:definition xml:lang="en">def. to introduce (something) into a passage, cavity, or solid material under pressure.</CommonCoreOntologies:definition>
-        <rdfs:label xml:lang="en">toInject</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">https://www.lexico.com/en/definition/inject</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -1175,10 +1196,23 @@
 
     <owl:Class rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#toProduce">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-        <CommonCoreOntologies:definition xml:lang="en">def. to make or manufacture from components or raw materials.</CommonCoreOntologies:definition>
-        <rdfs:label xml:lang="en">toProduce</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">https://www.lexico.com/en/definition/produce</rdfs:seeAlso>
     </owl:Class>
+    
+
+
+    <!-- https://www.industrialontologies.org/core/iof_00000021 -->
+
+    <rdf:Description rdf:about="https://www.industrialontologies.org/core/iof_00000021">
+        <rdfs:comment xml:lang="en">Suggested definition (NOS): def. IOF:Assembly that is complete</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- https://www.industrialontologies.org/core/iof_00000045 -->
+
+    <rdf:Description rdf:about="https://www.industrialontologies.org/core/iof_00000045">
+        <rdfs:comment xml:lang="en">Equipment most commonly refers to a set of tools or other objects commonly used to achieve a particular objective. Different jobs require different kinds of equipment. (https://en.wikipedia.org/wiki/Equipment)</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -1193,10 +1227,184 @@
     
 
 
+    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#CentrifugalPumpLibra -->
+
+    <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#CentrifugalPumpLibra">
+        <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#CentrifugalPump"/>
+        <obo:BFO_0000050 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#ProductionPlantLibra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#CrudeLibra -->
+
+    <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#CrudeLibra">
+        <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#CrudeOil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#FPSOSantos -->
+
+    <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#FPSOSantos">
+        <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#FPSO"/>
+        <obo:BFO_0000050 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#ProductionPlantLibra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#GasLibra -->
+
+    <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#GasLibra">
+        <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#NaturalGas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Hole1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Hole1">
+        <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Well"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Hole2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Hole2">
+        <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Well"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Hole3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Hole3">
+        <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Well"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#PermeabilityLibra -->
+
+    <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#PermeabilityLibra">
+        <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Permeability"/>
+        <obo:RO_0000052 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Reservatório1Libra"/>
+        <VolumeRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</VolumeRatio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#PetroleumLibra -->
+
+    <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#PetroleumLibra">
+        <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Petroleum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Pipe1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Pipe1">
+        <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Pipe"/>
+        <obo:BFO_0000050 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Pipeline1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Pipe2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Pipe2">
+        <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Pipe"/>
+        <obo:BFO_0000050 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Pipeline1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Pipeline1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Pipeline1">
+        <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Pipeline"/>
+        <obo:BFO_0000050 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#ProductionPlantLibra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#ProductionPlantLibra -->
+
+    <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#ProductionPlantLibra">
+        <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Offshore_Petroleum_Production_Plant"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Reservatório1Libra -->
 
     <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Reservatório1Libra">
         <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Reservoir"/>
+        <obo:RO_0000081 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#RockLibra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#RockLibra -->
+
+    <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#RockLibra">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_rock"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#SeparatorLibra -->
+
+    <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#SeparatorLibra">
+        <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Three-phase_Separator"/>
+        <separates rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#PetroleumLibra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#StockOilLibra -->
+
+    <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#StockOilLibra">
+        <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#StockTankOil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#TankLibra -->
+
+    <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#TankLibra">
+        <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Stock_tank"/>
+        <obo:BFO_0000050 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#ProductionPlantLibra"/>
+        <obo:RO_0001019 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#StockOilLibra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Tree1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Tree1">
+        <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#SubseaTree"/>
+        <obo:BFO_0000050 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#ProductionPlantLibra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Tree2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Tree2">
+        <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#SubseaTree"/>
+        <obo:BFO_0000050 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#ProductionPlantLibra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Tree3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Tree3">
+        <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#SubseaTree"/>
+        <obo:BFO_0000050 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#ProductionPlantLibra"/>
     </owl:NamedIndividual>
     
 
@@ -1213,6 +1421,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#WaterInjectionLibra1">
         <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#WaterInjection"/>
+        <obo:BFO_0000055 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#PermeabilityLibra"/>
+        <obo:COB_0000039 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Reservatório1Libra"/>
+        <obo:COB_0000039 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Water"/>
+        <obo:COB_0000039 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Well3"/>
+        <obo:COB_0000040 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Reservatório1Libra"/>
     </owl:NamedIndividual>
     
 
@@ -1221,6 +1434,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Well1">
         <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Production_Well"/>
+        <obo:BFO_0000050 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#ProductionPlantLibra"/>
+        <obo:RO_0000085 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#toProduce"/>
+        <obo:RO_0001025 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Hole1"/>
+        <produces rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#PetroleumLibra"/>
+        <ProductivityIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6</ProductivityIndex>
     </owl:NamedIndividual>
     
 
@@ -1229,6 +1447,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Well2">
         <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Production_Well"/>
+        <obo:BFO_0000050 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#ProductionPlantLibra"/>
+        <obo:RO_0000085 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#toProduce"/>
+        <obo:RO_0001025 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Hole2"/>
+        <produces rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#PetroleumLibra"/>
+        <ProductivityIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8</ProductivityIndex>
     </owl:NamedIndividual>
     
 
@@ -1237,6 +1460,27 @@
 
     <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Well3">
         <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#InjectionWell"/>
+        <obo:BFO_0000050 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#ProductionPlantLibra"/>
+        <obo:RO_0000085 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#toInject"/>
+        <obo:RO_0001025 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Hole3"/>
+        <injects rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Water"/>
+        <InjectivityIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7</InjectivityIndex>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#toInject -->
+
+    <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#toInject">
+        <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#toInject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#toProduce -->
+
+    <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#toProduce">
+        <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#toProduce"/>
     </owl:NamedIndividual>
     
 
@@ -1253,6 +1497,19 @@
         <CommonCoreOntologies:definition>def. a Fluid primarily composed of dihydrogen oxide in its liquid form.</CommonCoreOntologies:definition>
         <rdfs:label>Water</rdfs:label>
         <rdfs:seeAlso>http://purl.obolibrary.org/obo/ENVO_00002006</rdfs:seeAlso>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#toInject">
+        <rdfs:label xml:lang="en">toInject</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.lexico.com/en/definition/inject</rdfs:seeAlso>
+        <CommonCoreOntologies:definition xml:lang="en">def. to introduce (something) into a passage, cavity, or solid material under pressure.</CommonCoreOntologies:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#toProduce">
+        <rdfs:seeAlso xml:lang="en">https://www.lexico.com/en/definition/produce</rdfs:seeAlso>
+        <rdfs:label xml:lang="en">toProduce</rdfs:label>
+        <CommonCoreOntologies:definition xml:lang="en">def. to make or manufacture from components or raw materials.</CommonCoreOntologies:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://www.industrialontologies.org/core/iof_00000016">
+        <rdfs:comment xml:lang="en">Suggested definition (NOS): def. object aggregate that fits together the component parts of a machine or other object</rdfs:comment>
     </rdf:Description>
     
 
