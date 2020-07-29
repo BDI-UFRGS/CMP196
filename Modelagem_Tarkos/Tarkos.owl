@@ -88,7 +88,7 @@ A relação gosta é uma relação unilateral.</rdfs:comment>
         <obo:IAO_0000115 xml:lang="pt">Nascimento é o momento em que um ser vivo inicia a sua vida.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="pt">https://pt.wikipedia.org/wiki/Nascimento</obo:IAO_0000119>
         <rdfs:comment xml:lang="pt">Relação não descritiva externa: Com base em propriedades que são completamente externas a seus relatos, no sentido de que eles não estão nele, não fazem parte deles e não participam deles.</rdfs:comment>
-        <rdfs:label xml:lang="pt">nasceu</rdfs:label>
+        <rdfs:label xml:lang="pt">nasce em</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -731,6 +731,18 @@ E) 7,3</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://www.ufrgsjaqueline.com/ontologies/tarkos#Tripulacao"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ufrgsjaqueline.com/ontologies/tarkos#likes"/>
+                <owl:someValuesFrom rdf:resource="http://www.ufrgsjaqueline.com/ontologies/tarkos#Computador"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ufrgsjaqueline.com/ontologies/tarkos#nasceu"/>
+                <owl:someValuesFrom rdf:resource="http://www.ufrgsjaqueline.com/ontologies/tarkos#Pais"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="pt">A mesa acomoda quatro pessoas.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="pt">Uma pessoa (ou pessoas plurais ) é um ser que possui certas capacidades ou atributos, como razão, moralidade, consciência ou autoconsciência, e faz parte de uma forma culturalmente estabelecida de relações sociais, como parentesco, propriedade de propriedade ou responsabilidade legal.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">A person (plural people or persons) is a being that has certain capacities or attributes such as reason, morality, consciousness or self-consciousness, and being a part of a culturally established form of social relations such as kinship, ownership of property, or legal responsibility.</obo:IAO_0000119>
@@ -871,18 +883,6 @@ De acordo com o problema descrito no enunciado, qual a sua opnião sobre o desma
     
 
 
-    <!-- http://www.ufrgsjaqueline.com/ontologies/tarkos#Brasil -->
-
-    <owl:NamedIndividual rdf:about="http://www.ufrgsjaqueline.com/ontologies/tarkos#Brasil">
-        <rdf:type rdf:resource="http://www.ufrgsjaqueline.com/ontologies/tarkos#Pais"/>
-        <obo:IAO_0000115 xml:lang="pt">Brasil (oficialmente República Federativa do Brasil), é o maior país da América do Sul e da região da América Latina, sendo o quinto maior do mundo em área territorial (equivalente a 47,3% do território sul-americano) e sexto em população (com mais de 210 milhões de habitantes).</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Brazil (officially the Federative Republic of Brazil), is the largest country in South America and the region of Latin America, being the fifth largest in the world in territorial area (equivalent to 47.3% of South American territory) and sixth in population (with more than 210 million inhabitants).</obo:IAO_0000115>
-        <obo:IAO_0000119 xml:lang="pt">https://pt.wikipedia.org/wiki/Brasil</obo:IAO_0000119>
-        <rdfs:label xml:lang="pt">Brasil</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.ufrgsjaqueline.com/ontologies/tarkos#Espanhol -->
 
     <owl:NamedIndividual rdf:about="http://www.ufrgsjaqueline.com/ontologies/tarkos#Espanhol">
@@ -951,8 +951,6 @@ De acordo com o problema descrito no enunciado, qual a sua opnião sobre o desma
     <!-- http://www.ufrgsjaqueline.com/ontologies/tarkos#João -->
 
     <owl:NamedIndividual rdf:about="http://www.ufrgsjaqueline.com/ontologies/tarkos#João">
-        <rdf:type rdf:resource="http://www.ufrgsjaqueline.com/ontologies/tarkos#Pessoa"/>
-        <likes rdf:resource="http://www.ufrgsjaqueline.com/ontologies/tarkos#Maria"/>
         <obo:IAO_0000115 xml:lang="en">A person (or plural persons) is a being who has certain capacities or attributes, such as reason, morality, conscience or self-awareness, and is part of a culturally established form of social relations, such as kinship, property ownership or legal responsibility.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="pt">Uma pessoa (ou pessoas plurais ) é um ser que possui certas capacidades ou atributos, como razão, moralidade, consciência ou autoconsciência, e faz parte de uma forma culturalmente estabelecida de relações sociais, como parentesco, propriedade de propriedade ou responsabilidade legal.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Person</obo:IAO_0000119>
@@ -964,8 +962,6 @@ De acordo com o problema descrito no enunciado, qual a sua opnião sobre o desma
     <!-- http://www.ufrgsjaqueline.com/ontologies/tarkos#Maria -->
 
     <owl:NamedIndividual rdf:about="http://www.ufrgsjaqueline.com/ontologies/tarkos#Maria">
-        <rdf:type rdf:resource="http://www.ufrgsjaqueline.com/ontologies/tarkos#Pessoa"/>
-        <nasceu rdf:resource="http://www.ufrgsjaqueline.com/ontologies/tarkos#Brasil"/>
         <obo:IAO_0000115 xml:lang="pt">A person (or plural persons) is a being who has certain capacities or attributes, such as reason, morality, conscience or self-awareness, and is part of a culturally established form of social relations, such as kinship, property ownership or legal responsibility.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="pt">Uma pessoa (ou pessoas plurais ) é um ser que possui certas capacidades ou atributos, como razão, moralidade, consciência ou autoconsciência, e faz parte de uma forma culturalmente estabelecida de relações sociais, como parentesco, propriedade de propriedade ou responsabilidade legal.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Person</obo:IAO_0000119>
