@@ -85,6 +85,12 @@
     
 
 
+    <!-- http://www.w3.org/2002/07/owl#minQualifiedCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#minQualifiedCardinality"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -471,6 +477,7 @@
     <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#InjectionWell -->
 
     <owl:Class rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#InjectionWell">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#CompletedWell"/>
         <CommonCoreOntologies:definition xml:lang="en">def. a completed well where fluids are injected rather than produced, the primary objective typically being to maintain reservoir pressure.</CommonCoreOntologies:definition>
         <rdfs:label xml:lang="en">InjectionWell</rdfs:label>
         <rdfs:seeAlso>https://petrowiki.spe.org/Glossary:Injection_well</rdfs:seeAlso>
@@ -622,13 +629,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#CrudeOil"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#NaturalGas"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Water"/>
@@ -1289,8 +1289,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#PermeabilityLibra">
         <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Permeability"/>
-        <obo:RO_0000052 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Reservatório1Libra"/>
         <VolumeRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</VolumeRatio>
+        <obo:RO_0000052 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Reservatório1Libra"/>
     </owl:NamedIndividual>
     
 
@@ -1421,11 +1421,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#WaterInjectionLibra1">
         <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#WaterInjection"/>
-        <obo:BFO_0000055 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#PermeabilityLibra"/>
         <obo:COB_0000039 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Reservatório1Libra"/>
         <obo:COB_0000039 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Water"/>
         <obo:COB_0000039 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Well3"/>
         <obo:COB_0000040 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Reservatório1Libra"/>
+        <obo:BFO_0000055 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#PermeabilityLibra"/>
     </owl:NamedIndividual>
     
 
@@ -1434,11 +1434,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Well1">
         <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Production_Well"/>
+        <produces rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#PetroleumLibra"/>
+        <ProductivityIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6</ProductivityIndex>
         <obo:BFO_0000050 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#ProductionPlantLibra"/>
         <obo:RO_0000085 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#toProduce"/>
         <obo:RO_0001025 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Hole1"/>
-        <produces rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#PetroleumLibra"/>
-        <ProductivityIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6</ProductivityIndex>
     </owl:NamedIndividual>
     
 
@@ -1447,11 +1447,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Well2">
         <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Production_Well"/>
+        <produces rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#PetroleumLibra"/>
+        <ProductivityIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8</ProductivityIndex>
         <obo:BFO_0000050 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#ProductionPlantLibra"/>
         <obo:RO_0000085 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#toProduce"/>
         <obo:RO_0001025 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Hole2"/>
-        <produces rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#PetroleumLibra"/>
-        <ProductivityIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8</ProductivityIndex>
     </owl:NamedIndividual>
     
 
@@ -1460,11 +1460,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Well3">
         <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#InjectionWell"/>
+        <injects rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Water"/>
+        <InjectivityIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7</InjectivityIndex>
         <obo:BFO_0000050 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#ProductionPlantLibra"/>
         <obo:RO_0000085 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#toInject"/>
         <obo:RO_0001025 rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Hole3"/>
-        <injects rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#Water"/>
-        <InjectivityIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7</InjectivityIndex>
     </owl:NamedIndividual>
     
 
@@ -1482,6 +1482,9 @@
     <owl:NamedIndividual rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#toProduce">
         <rdf:type rdf:resource="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#toProduce"/>
     </owl:NamedIndividual>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    </rdf:Description>
     
 
 
