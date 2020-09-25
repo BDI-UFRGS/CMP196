@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology/1.0" uri="https://www.inf.ufrgs.br/~nosantos/GeoCoreOntology.owl"/>
-    <uri id="Imports Wizard Entry" name="https://www.industrialontologies.org/core" uri="https://www.inf.ufrgs.br/~nosantos/IOF.ttl"/>
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1596164223010" name="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant" uri="production_plant.owl"/>
-    </group>
-</catalog>
