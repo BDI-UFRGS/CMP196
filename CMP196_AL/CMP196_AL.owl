@@ -1,0 +1,962 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>A toy Ontology for an Ontology Engineering Course</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AOI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChronostratUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chronostratigraphy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Continuant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContinuantFiatBoundary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DependentConinuant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Deposition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Depth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disposition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drilling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Erosion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Falulting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FiatObjectPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GenericallyDependentContinuant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeographicalArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#History"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImmaterialEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndependentConinuant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LithostratUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lithostratigraphy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaterialEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NGRatio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NetThickness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObjectAggregate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Occurrent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Penetrates"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Permeability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Porosity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcessBoundary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcessProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RealizableEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RelationalQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reservoir"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SedimentaryProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpatialRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpatiotemporalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpecificallyDependentContinuant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StratUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemporalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Well"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wellbore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WellboreInterval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#0DContinuantFiatBoundary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#0DSpatialRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#0DTemporalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#1DContinuantFiatBoundary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#1DSpatialRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#1DTemporalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2DContinuantFiatBoundary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2DSpatialRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3DSpatialRegion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBaseAge"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBaseDepth"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHierarchy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMeasurement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNGRatio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPermeability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPorosity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasThickness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTopAge"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTopDepth"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWellbore"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWellboreInterval"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#penetrate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#age"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#C1"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AOI"/>
+        <Class IRI="#GeographicalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChronostratUnit"/>
+        <Class IRI="#StratUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chronostratigraphy"/>
+        <Class IRI="#GenericallyDependentContinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Continuant"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContinuantFiatBoundary"/>
+        <Class IRI="#ImmaterialEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DependentConinuant"/>
+        <Class IRI="#Continuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Deposition"/>
+        <Class IRI="#SedimentaryProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Depth"/>
+        <Class IRI="#Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disposition"/>
+        <Class IRI="#RealizableEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drilling"/>
+        <Class IRI="#History"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Erosion"/>
+        <Class IRI="#SedimentaryProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Falulting"/>
+        <Class IRI="#SedimentaryProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FiatObjectPart"/>
+        <Class IRI="#MaterialEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Function"/>
+        <Class IRI="#Disposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GenericallyDependentContinuant"/>
+        <Class IRI="#DependentConinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeographicalArea"/>
+        <Class IRI="#2DSpatialRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#History"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImmaterialEntity"/>
+        <Class IRI="#IndependentConinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndependentConinuant"/>
+        <Class IRI="#Continuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LithostratUnit"/>
+        <Class IRI="#StratUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lithostratigraphy"/>
+        <Class IRI="#GenericallyDependentContinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaterialEntity"/>
+        <Class IRI="#IndependentConinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NGRatio"/>
+        <Class IRI="#Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NetThickness"/>
+        <Class IRI="#Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Object"/>
+        <Class IRI="#MaterialEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObjectAggregate"/>
+        <Class IRI="#MaterialEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Occurrent"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Penetrates"/>
+        <Class IRI="#History"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Permeability"/>
+        <Class IRI="#Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Porosity"/>
+        <Class IRI="#Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process"/>
+        <Class IRI="#Occurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessBoundary"/>
+        <Class IRI="#Occurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessProfile"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quality"/>
+        <Class IRI="#SpecificallyDependentContinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RealizableEntity"/>
+        <Class IRI="#SpecificallyDependentContinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RelationalQuality"/>
+        <Class IRI="#Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reservoir"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reservoir"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBaseDepth"/>
+            <Class IRI="#Depth"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reservoir"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopDepth"/>
+            <Class IRI="#Depth"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Role"/>
+        <Class IRI="#RealizableEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SedimentaryProcess"/>
+        <Class IRI="#History"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Site"/>
+        <Class IRI="#ImmaterialEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpatialRegion"/>
+        <Class IRI="#ImmaterialEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpatiotemporalRegion"/>
+        <Class IRI="#Occurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpecificallyDependentContinuant"/>
+        <Class IRI="#DependentConinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StratUnit"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StratUnit"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#age"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StratUnit"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemporalRegion"/>
+        <Class IRI="#Occurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Well"/>
+        <Class IRI="#Site"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Well"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasWellbore"/>
+            <Class IRI="#Wellbore"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wellbore"/>
+        <Class IRI="#Site"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wellbore"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#penetrate"/>
+            <Class IRI="#WellboreInterval"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WellboreInterval"/>
+        <Class IRI="#GenericallyDependentContinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WellboreInterval"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBaseDepth"/>
+            <Class IRI="#Depth"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WellboreInterval"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopDepth"/>
+            <Class IRI="#Depth"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WellboreInterval"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#penetrate"/>
+            <Class IRI="#StratUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#0DContinuantFiatBoundary"/>
+        <Class IRI="#ContinuantFiatBoundary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#0DSpatialRegion"/>
+        <Class IRI="#SpatialRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#0DTemporalRegion"/>
+        <Class IRI="#TemporalRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#1DContinuantFiatBoundary"/>
+        <Class IRI="#ContinuantFiatBoundary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#1DSpatialRegion"/>
+        <Class IRI="#SpatialRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#1DTemporalRegion"/>
+        <Class IRI="#TemporalRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2DContinuantFiatBoundary"/>
+        <Class IRI="#ContinuantFiatBoundary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2DSpatialRegion"/>
+        <Class IRI="#SpatialRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3DSpatialRegion"/>
+        <Class IRI="#SpatialRegion"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Chronostratigraphy"/>
+        <Class IRI="#Lithostratigraphy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Chronostratigraphy"/>
+        <Class IRI="#WellboreInterval"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Continuant"/>
+        <Class IRI="#Occurrent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ContinuantFiatBoundary"/>
+        <Class IRI="#SpatialRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DependentConinuant"/>
+        <Class IRI="#IndependentConinuant"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Deposition"/>
+        <Class IRI="#Erosion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Depth"/>
+        <Class IRI="#NGRatio"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Depth"/>
+        <Class IRI="#Permeability"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Depth"/>
+        <Class IRI="#Porosity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Disposition"/>
+        <Class IRI="#Role"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GenericallyDependentContinuant"/>
+        <Class IRI="#SpecificallyDependentContinuant"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#History"/>
+        <Class IRI="#ProcessProfile"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ImmaterialEntity"/>
+        <Class IRI="#MaterialEntity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Lithostratigraphy"/>
+        <Class IRI="#WellboreInterval"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NGRatio"/>
+        <Class IRI="#NetThickness"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NGRatio"/>
+        <Class IRI="#Permeability"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NGRatio"/>
+        <Class IRI="#Porosity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NetThickness"/>
+        <Class IRI="#Permeability"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NetThickness"/>
+        <Class IRI="#Porosity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Permeability"/>
+        <Class IRI="#Porosity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Process"/>
+        <Class IRI="#ProcessBoundary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Process"/>
+        <Class IRI="#SpatiotemporalRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Process"/>
+        <Class IRI="#TemporalRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ProcessBoundary"/>
+        <Class IRI="#SpatiotemporalRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ProcessBoundary"/>
+        <Class IRI="#TemporalRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Quality"/>
+        <Class IRI="#RealizableEntity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Site"/>
+        <Class IRI="#SpatialRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SpatiotemporalRegion"/>
+        <Class IRI="#TemporalRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#StratUnit"/>
+        <Class IRI="#Wellbore"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Well"/>
+        <Class IRI="#Wellbore"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#0DContinuantFiatBoundary"/>
+        <Class IRI="#1DContinuantFiatBoundary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#0DContinuantFiatBoundary"/>
+        <Class IRI="#2DContinuantFiatBoundary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#0DSpatialRegion"/>
+        <Class IRI="#1DSpatialRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#0DSpatialRegion"/>
+        <Class IRI="#2DSpatialRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#0DSpatialRegion"/>
+        <Class IRI="#3DSpatialRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#0DTemporalRegion"/>
+        <Class IRI="#1DTemporalRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#1DContinuantFiatBoundary"/>
+        <Class IRI="#2DContinuantFiatBoundary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#1DSpatialRegion"/>
+        <Class IRI="#2DSpatialRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#1DSpatialRegion"/>
+        <Class IRI="#3DSpatialRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#2DSpatialRegion"/>
+        <Class IRI="#3DSpatialRegion"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#ChronostratUnit"/>
+        <NamedIndividual IRI="#C1"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBaseDepth"/>
+        <ObjectProperty IRI="#hasMeasurement"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasNGRatio"/>
+        <ObjectProperty IRI="#hasMeasurement"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasName"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPermeability"/>
+        <ObjectProperty IRI="#hasMeasurement"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPorosity"/>
+        <ObjectProperty IRI="#hasMeasurement"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasThickness"/>
+        <ObjectProperty IRI="#hasMeasurement"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTopDepth"/>
+        <ObjectProperty IRI="#hasMeasurement"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#penetrate"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasNGRatio"/>
+        <Class IRI="#StratUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPermeability"/>
+        <Class IRI="#StratUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPorosity"/>
+        <Class IRI="#StratUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasThickness"/>
+        <Class IRI="#StratUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWellbore"/>
+        <Class IRI="#Well"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWellboreInterval"/>
+        <Class IRI="#Wellbore"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBaseDepth"/>
+        <Class IRI="#Depth"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasNGRatio"/>
+        <Class IRI="#NGRatio"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPermeability"/>
+        <Class IRI="#Permeability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPorosity"/>
+        <Class IRI="#Porosity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasThickness"/>
+        <Class IRI="#NetThickness"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTopDepth"/>
+        <Class IRI="#Depth"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWellbore"/>
+        <Class IRI="#Wellbore"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWellboreInterval"/>
+        <Class IRI="#WellboreInterval"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#hasBaseAge"/>
+        <ObjectProperty IRI="#hasTopAge"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#hasBaseDepth"/>
+        <ObjectProperty IRI="#hasTopDepth"/>
+    </DisjointObjectProperties>
+    <DataPropertyRange>
+        <DataProperty IRI="#age"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AOI</IRI>
+        <Literal>Area Of Interest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChronostratUnit</IRI>
+        <Literal>bodies of rocks, layered or unlayered, that are defined between specified stratigraphic horizons which represent specified intervals of geologic time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#ChronostratUnit</IRI>
+        <Literal>https://en.wikipedia.org/wiki/Chronostratigraphy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChronostratUnit</IRI>
+        <Literal>Chronostratigraphic Unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Chronostratigraphy</IRI>
+        <Literal>Chronostratigraphy (&apos;time-rock stratigraphy&apos;) is the branch of stratigraphy concerned with the application of time to rock successions, the ultimatel goal of which is the establishment of a globally applicable standard time-scal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Chronostratigraphy</IRI>
+        <Literal>https://en.wikipedia.org/wiki/Chronostratigraphy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Depth</IRI>
+        <Literal>dpeth measured in m or ft</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LithostratUnit</IRI>
+        <Literal>bodies of rocks, bedded or unbedded, that are defined and characterized on the basis of their lithologic properties and their stratigraphic relations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#LithostratUnit</IRI>
+        <Literal>https://stratigraphy.org/guide/litho</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LithostratUnit</IRI>
+        <Literal>Lithostratigraphic Unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Lithostratigraphy</IRI>
+        <Literal>Lithostratigraphy is the ‘classification of bodies of rock based on the observable lithological properties of the strata and their relative stratigraphic positions’1. Stratigraphy includes information about processes, geographical distributions, and the palaeo-environment of past glaciers and glaciation. It involves an attempt to determine the chronological sequence of geological events over a wide area.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Lithostratigraphy</IRI>
+        <Literal>https://stratigraphy.org/guide/litho</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NGRatio</IRI>
+        <Literal>fraction of reservoir volume occupied by hydrocarbon- bearing rocks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#NGRatio</IRI>
+        <Literal>http://www.epgeology.com/general-discussion-f29/ntg-defining-net-cut-offs-t5777.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NetThickness</IRI>
+        <Literal>total thinckness of the strat unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#NetThickness</IRI>
+        <Literal>https://pangea.stanford.edu/departments/ere/dropbox/scrf/documents/Theses/SCRF-Theses/2000-2009/2007_PhD_Maharaja.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Permeability</IRI>
+        <Literal>a measure of the ability of a material (such as rocks) to transmit fluids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Permeability</IRI>
+        <Literal>https://www.deq.louisiana.gov/assets/docs/Water/DWPP_forkidsandeducators/PorosityandPermeability.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Porosity</IRI>
+        <Literal>a measure of the void spaces in a material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Porosity</IRI>
+        <Literal>https://www.deq.louisiana.gov/assets/docs/Water/DWPP_forkidsandeducators/PorosityandPermeability.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Reservoir</IRI>
+        <Literal>a porous and permeable lithological unit or set of units that holds the hydrocarbon reserves.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Reservoir</IRI>
+        <Literal>https://www.corelab.com/ps/reservoir-geology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StratUnit</IRI>
+        <Literal>a volume of rock of identifiable origin and relative age range that is defined by the distinctive and dominant, easily mapped and recognizable petrographic, lithologic or paleontologic features (facies) that characterize it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#StratUnit</IRI>
+        <Literal>Stratigraphic Unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Well</IRI>
+        <Literal>a borehole which is drilled in order to discover or delimit a petroleum deposit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Well</IRI>
+        <Literal>https://www.npd.no/en/about-us/information-services/abc-of-oil/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Well</IRI>
+        <Literal>Well</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wellbore</IRI>
+        <Literal>A wellbore is a type of borehole, which is a narrow shaft that is drilled into the ground—either horizontally or vertically—to extract water, petroleum, or gases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Wellbore</IRI>
+        <Literal>https://www.investopedia.com/terms/w/wellbore.asp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Wellbore</IRI>
+        <Literal>Wellbore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WellboreInterval</IRI>
+        <Literal>A depth interval along a wellbore</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
