@@ -1,0 +1,1143 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/mvtod/ontologies/2021/10/untitled-ontology-5"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/mvtod/ontologies/2021/10/untitled-ontology-5">
+    <Prefix name="" IRI="http://www.semanticweb.org/mvtod/ontologies/2021/10/untitled-ontology-5"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.org/nemo/gufo#/1.0.0</Import>
+    <Declaration>
+        <Class IRI="#Accuracy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Active_Learning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Algorithm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Classification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clustering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dataset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dimensionality_Reduction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Labeled_Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Learning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Machine_Learning_Algortihm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Passive_Learning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Precision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Regression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reinforcement_Learning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Supervised_Learning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trained_Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Training"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unlabeled_Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unsupervised_Learning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OSA:_Code"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OSA:_Program_Specification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OSA:_Software_Function"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#created_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#functionComponentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFunction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#implements"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#learn_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#memberOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#uses"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAccuracyValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPrecisionValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRecallValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Classification_of_COVID19"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Code_in_Python"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DatasetCovid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Labeled_Covid_19_Data"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SVM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SVM_TModel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Testing_SVM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Training_SVM"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Accuracy"/>
+        <Class IRI="http://purl.org/nemo/gufo#Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accuracy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.org/nemo/gufo#inheresIn"/>
+            <Class IRI="#Trained_Model"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Active_Learning"/>
+        <Class IRI="#Reinforcement_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Active_Learning"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#Labeled_Data"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Active_Learning"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#Unlabeled_Data"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Algorithm"/>
+        <Class IRI="#OSA:_Program_Specification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Classification"/>
+        <Class IRI="#OSA:_Software_Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Classification"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.org/nemo/gufo#inheresIn"/>
+            <Class IRI="#Supervised_Learning"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clustering"/>
+        <Class IRI="#OSA:_Software_Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clustering"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.org/nemo/gufo#inheresIn"/>
+            <Class IRI="#Unsupervised_Learning"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data"/>
+        <Class IRI="http://purl.org/nemo/gufo#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#memberOf"/>
+            <Class IRI="#Dataset"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dataset"/>
+        <Class IRI="http://purl.org/nemo/gufo#FixedCollection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dataset"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#functionComponentOf"/>
+            <Class IRI="#Algorithm"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dataset"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasData"/>
+            <Class IRI="#Labeled_Data"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dataset"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasData"/>
+            <Class IRI="#Unlabeled_Data"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dimensionality_Reduction"/>
+        <Class IRI="#OSA:_Software_Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dimensionality_Reduction"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.org/nemo/gufo#inheresIn"/>
+            <Class IRI="#Unsupervised_Learning"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Labeled_Data"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Learning"/>
+        <Class IRI="http://purl.org/nemo/gufo#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Machine_Learning_Algortihm"/>
+        <Class IRI="#Algorithm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Machine_Learning_Algortihm"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#learn_by"/>
+            <Class IRI="#Dataset"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Model"/>
+        <Class IRI="http://purl.org/nemo/gufo#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Passive_Learning"/>
+        <Class IRI="#Reinforcement_Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Passive_Learning"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#Labeled_Data"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Passive_Learning"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#Unlabeled_Data"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Precision"/>
+        <Class IRI="http://purl.org/nemo/gufo#Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Precision"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.org/nemo/gufo#inheresIn"/>
+            <Class IRI="#Trained_Model"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recall"/>
+        <Class IRI="http://purl.org/nemo/gufo#Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recall"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.org/nemo/gufo#inheresIn"/>
+            <Class IRI="#Trained_Model"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Regression"/>
+        <Class IRI="#OSA:_Software_Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Regression"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.org/nemo/gufo#inheresIn"/>
+            <Class IRI="#Supervised_Learning"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reinforcement_Learning"/>
+        <Class IRI="#Machine_Learning_Algortihm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reinforcement_Learning"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#Labeled_Data"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reinforcement_Learning"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#Unlabeled_Data"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supervised_Learning"/>
+        <Class IRI="#Machine_Learning_Algortihm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supervised_Learning"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunction"/>
+            <Class IRI="#Classification"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supervised_Learning"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunction"/>
+            <Class IRI="#Regression"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supervised_Learning"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#Labeled_Data"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Testing"/>
+        <Class IRI="#Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trained_Model"/>
+        <Class IRI="#Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trained_Model"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#created_by"/>
+            <Class IRI="#Algorithm"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trained_Model"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.org/nemo/gufo#participatedIn"/>
+            <Class IRI="#Testing"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trained_Model"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.org/nemo/gufo#wasCreatedIn"/>
+            <Class IRI="#Training"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Training"/>
+        <Class IRI="#Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unlabeled_Data"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unsupervised_Learning"/>
+        <Class IRI="#Machine_Learning_Algortihm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unsupervised_Learning"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunction"/>
+            <Class IRI="#Clustering"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unsupervised_Learning"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunction"/>
+            <Class IRI="#Dimensionality_Reduction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unsupervised_Learning"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#Unlabeled_Data"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OSA:_Code"/>
+        <Class IRI="http://purl.org/nemo/gufo#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OSA:_Code"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#implements"/>
+            <Class IRI="#Algorithm"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OSA:_Program_Specification"/>
+        <Class IRI="http://purl.org/nemo/gufo#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OSA:_Software_Function"/>
+        <Class IRI="http://purl.org/nemo/gufo#Object"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Labeled_Data"/>
+        <Class IRI="#Unlabeled_Data"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Supervised_Learning"/>
+        <Class IRI="#Unsupervised_Learning"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Classification"/>
+        <NamedIndividual IRI="#Classification_of_COVID19"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OSA:_Code"/>
+        <NamedIndividual IRI="#Code_in_Python"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dataset"/>
+        <NamedIndividual IRI="#DatasetCovid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data"/>
+        <NamedIndividual IRI="#Labeled_Covid_19_Data"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Labeled_Data"/>
+        <NamedIndividual IRI="#Labeled_Covid_19_Data"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Machine_Learning_Algortihm"/>
+        <NamedIndividual IRI="#SVM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Supervised_Learning"/>
+        <NamedIndividual IRI="#SVM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Trained_Model"/>
+        <NamedIndividual IRI="#SVM_TModel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Testing"/>
+        <NamedIndividual IRI="#Testing_SVM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Training"/>
+        <NamedIndividual IRI="#Training_SVM"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#implements"/>
+        <NamedIndividual IRI="#Code_in_Python"/>
+        <NamedIndividual IRI="#SVM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#functionComponentOf"/>
+        <NamedIndividual IRI="#DatasetCovid"/>
+        <NamedIndividual IRI="#SVM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasData"/>
+        <NamedIndividual IRI="#DatasetCovid"/>
+        <NamedIndividual IRI="#Labeled_Covid_19_Data"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memberOf"/>
+        <NamedIndividual IRI="#Labeled_Covid_19_Data"/>
+        <NamedIndividual IRI="#DatasetCovid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#SVM"/>
+        <NamedIndividual IRI="#Classification_of_COVID19"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#learn_by"/>
+        <NamedIndividual IRI="#SVM"/>
+        <NamedIndividual IRI="#DatasetCovid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#uses"/>
+        <NamedIndividual IRI="#SVM"/>
+        <NamedIndividual IRI="#Labeled_Covid_19_Data"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#participatedIn"/>
+        <NamedIndividual IRI="#SVM_TModel"/>
+        <NamedIndividual IRI="#Testing_SVM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#wasCreatedIn"/>
+        <NamedIndividual IRI="#SVM_TModel"/>
+        <NamedIndividual IRI="#Training_SVM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#created_by"/>
+        <NamedIndividual IRI="#SVM_TModel"/>
+        <NamedIndividual IRI="#SVM"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAccuracyValue"/>
+        <NamedIndividual IRI="#SVM_TModel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrecisionValue"/>
+        <NamedIndividual IRI="#SVM_TModel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRecallValue"/>
+        <NamedIndividual IRI="#SVM_TModel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.6</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#created_by"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#functionComponentOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasData"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFunction"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#implements"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#learn_by"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#memberOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#uses"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#created_by"/>
+        <Class IRI="#Trained_Model"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#functionComponentOf"/>
+        <Class IRI="#Dataset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasData"/>
+        <Class IRI="#Dataset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFunction"/>
+        <Class IRI="#Machine_Learning_Algortihm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#learn_by"/>
+        <Class IRI="#Machine_Learning_Algortihm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#memberOf"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#Algorithm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#created_by"/>
+        <Class IRI="#Algorithm"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#functionComponentOf"/>
+        <Class IRI="#Algorithm"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasData"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFunction"/>
+        <Class IRI="#OSA:_Software_Function"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#implements"/>
+        <Class IRI="#Algorithm"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#learn_by"/>
+        <Class IRI="#Dataset"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#memberOf"/>
+        <Class IRI="#Dataset"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAccuracyValue"/>
+        <DataProperty IRI="http://purl.org/nemo/gufo#hasQualityValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPrecisionValue"/>
+        <DataProperty IRI="http://purl.org/nemo/gufo#hasQualityValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasRecallValue"/>
+        <DataProperty IRI="http://purl.org/nemo/gufo#hasQualityValue"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAccuracyValue"/>
+        <Class IRI="#Trained_Model"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPrecisionValue"/>
+        <Class IRI="#Trained_Model"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRecallValue"/>
+        <Class IRI="#Trained_Model"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAccuracyValue"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPrecisionValue"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRecallValue"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Active_Learning</IRI>
+        <Literal>Ref: Settles, Burr. &quot;Active learning literature survey.&quot; (2009).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Active_Learning</IRI>
+        <Literal>Active learning is a special case of machine learning in which a learning algorithm can interactively query a user (or some other information source) to label new data points with the desired outputs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Active_Learning</IRI>
+        <Literal>Active_Learning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Algorithm</IRI>
+        <Literal>Exemple: Algorithm of binary serach</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Algorithm</IRI>
+        <Literal>Ref: Hill, Robin K. &quot;What an algorithm is.&quot; Philosophy &amp; Technology 29.1 (2016): 35-59.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Algorithm</IRI>
+        <Literal>Is a finite sequence of well-defined instructions, typically used to solve a class of specific problems or to perform a computation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Algorithm</IRI>
+        <Literal>Algorithm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Classification</IRI>
+        <Literal>Ref: Duarte, Denio, and Niclas Ståhl. &quot;Machine learning: a concise overview.&quot; Data Science in Practice (2019): 27-58.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Classification</IRI>
+        <Literal>Classification is similar to a regression; the only difference is the labels that are discrete values</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Classification</IRI>
+        <Literal>Classification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Clustering</IRI>
+        <Literal>Ref: Duarte, Denio, and Niclas Ståhl. &quot;Machine learning: a concise overview.&quot; Data Science in Practice (2019): 27-58.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Clustering</IRI>
+        <Literal>Clustering is about discovering semantically related groups in an unlabeled dataset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Clustering</IRI>
+        <Literal>Clustering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Data</IRI>
+        <Literal>Example: A tuple in a dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Data</IRI>
+        <Literal>Ref: Stern, Roger, Ian Dale, and Sandro Leidi. &quot;Glossary of statistical terms.&quot; Google Scholar (2000).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Data</IRI>
+        <Literal>Data are individual facts, statistics, or items of information, often numeric.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Data</IRI>
+        <Literal>Data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dataset</IRI>
+        <Literal>Example: Dataset about COVID-19</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dataset</IRI>
+        <Literal>Ref: Snijders, Chris, Uwe Matzat, and Ulf-Dietrich Reips. &quot;&quot; Big Data&quot;: big gaps of knowledge in the field of internet science.&quot; International journal of internet science 7.1 (2012): 1-5.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Dataset</IRI>
+        <Literal>Is a collection of data.  Data sets can also consist of a collection of documents or files.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dataset</IRI>
+        <Literal>Dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dimensionality_Reduction</IRI>
+        <Literal>Ref: Duarte, Denio, and Niclas Ståhl. &quot;Machine learning: a concise overview.&quot; Data Science in Practice (2019): 27-58.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Dimensionality_Reduction</IRI>
+        <Literal>Dimensionality reduction plays an essential role in machine learning. Its goal is to decrease the number of features of a dataset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dimensionality_Reduction</IRI>
+        <Literal>Dimensionality_Reduction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Labeled_Data</IRI>
+        <Literal>Labels associated with every data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Labeled_Data</IRI>
+        <Literal>Labeled_Data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Learning</IRI>
+        <Literal>Ref: Duarte, Denio, and Niclas Ståhl. &quot;Machine learning: a concise overview.&quot; Data Science in Practice (2019): 27-58.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Learning</IRI>
+        <Literal>Learning is concerned with finding a right model, given a set of inputs and outputs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Learning</IRI>
+        <Literal>Learning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Machine_Learning_Algortihm</IRI>
+        <Literal>Duarte, Denio, and Niclas Ståhl. &quot;Machine learning: a concise overview.&quot; Data Science in Practice (2019): 27-58.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Machine_Learning_Algortihm</IRI>
+        <Literal>Example: SVM, Decision Tree...</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Machine_Learning_Algortihm</IRI>
+        <Literal>Machine learning is a sub-field of computer science that aims to make computers learn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Machine_Learning_Algortihm</IRI>
+        <Literal>Machine_Learning_Algorithm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Model</IRI>
+        <Literal>Model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Passive_Learning</IRI>
+        <Literal>Ref: Ostrovski, Georg, Pablo Samuel Castro, and Will Dabney. &quot;The Difficulty of Passive Learning in Deep Reinforcement Learning.&quot; Advances in Neural Information Processing Systems 34 (2021).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Passive_Learning</IRI>
+        <Literal>Learning to act from observational data without active environmental interaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Passive_Learning</IRI>
+        <Literal>Passive_Learning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Regression</IRI>
+        <Literal>Ref: Duarte, Denio, and Niclas Ståhl. &quot;Machine learning: a concise overview.&quot; Data Science in Practice (2019): 27-58.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Regression</IRI>
+        <Literal>Regression is a type of supervised machine learning algorithm whose target variables are continuous values.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Regression</IRI>
+        <Literal>Regression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Reinforcement_Learning</IRI>
+        <Literal>Ref: Kaelbling, Leslie Pack, Michael L. Littman, and Andrew W. Moore. &quot;Reinforcement learning: A survey.&quot; Journal of artificial intelligence research 4 (1996): 237-285.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Reinforcement_Learning</IRI>
+        <Literal>Reinforcement learning (RL) is an area of machine learning concerned with how intelligent agents ought to take actions in an environment in order to maximize the notion of cumulative reward. Reinforcement learning is one of three basic machine learning paradigms, alongside supervised learning and unsupervised learning.
+Reinforcement learning differs from supervised learning in not needing labelled input/output pairs be presented, and in not needing sub-optimal actions to be explicitly corrected. Instead the focus is on finding a balance between exploration (of uncharted territory) and exploitation (of current knowledge).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Reinforcement_Learning</IRI>
+        <Literal>Reinforcement_Learning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Supervised_Learning</IRI>
+        <Literal>Ref: Duarte, Denio, and Niclas Ståhl. &quot;Machine learning: a concise overview.&quot; Data Science in Practice (2019): 27-58.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Supervised_Learning</IRI>
+        <Literal>Supervised learning can be applied when the dataset contains a set of labels (possibly unitary) for every example.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Supervised_Learning</IRI>
+        <Literal>Supervised_Learning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Testing</IRI>
+        <Literal>Ref: Anzai, Yuichiro. Pattern recognition and machine learning. Elsevier, 2012.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Testing</IRI>
+        <Literal>Time to evaluates the performance of the training model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Testing</IRI>
+        <Literal>Testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Trained_Model</IRI>
+        <Literal>Ref: Duarte, Denio, and Niclas Ståhl. &quot;Machine learning: a concise overview.&quot; Data Science in Practice (2019): 27-58.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Trained_Model</IRI>
+        <Literal>The model can be used to predict new outputs from new examples</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Trained_Model</IRI>
+        <Literal>Trained_Model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Training</IRI>
+        <Literal>Ref: Anzai, Yuichiro. Pattern recognition and machine learning. Elsevier, 2012.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Training</IRI>
+        <Literal>Its the time to learner with the exemples and build a general model about this space that enables it to produce sufficiently accurate predictions in new cases.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Training</IRI>
+        <Literal>Training</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Unlabeled_Data</IRI>
+        <Literal>Ref: Duarte, Denio, and Niclas Ståhl. &quot;Machine learning: a concise overview.&quot; Data Science in Practice (2019): 27-58.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Unlabeled_Data</IRI>
+        <Literal>Data without label</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Unlabeled_Data</IRI>
+        <Literal>Unlabeled_Data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Unsupervised_Learning</IRI>
+        <Literal>Ref: Duarte, Denio, and Niclas Ståhl. &quot;Machine learning: a concise overview.&quot; Data Science in Practice (2019): 27-58.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Unsupervised_Learning</IRI>
+        <Literal>When the dataset has no labels, that is, there is no previous classification of the examples, we apply an unsupervised learning algorithm. The goal is to infer classes or groups from the dataset without the help of the labels.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Unsupervised_Learning</IRI>
+        <Literal>Unsupervised_Learning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#created_by</IRI>
+        <Literal>Example: SVM trained model created by SVM algorithm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#created_by</IRI>
+        <Literal>A trained model is created by an algorithm.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#functionComponentOf</IRI>
+        <Literal>Example: Dataset COVID-19 component of SVM algorithm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#functionComponentOf</IRI>
+        <Literal>Dataset is a functional Component of ML Algorithm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasData</IRI>
+        <Literal>Example: Covid-19 dataset with labeled data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasData</IRI>
+        <Literal>A Dataset has labeled or unlabeled data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasFunction</IRI>
+        <Literal>Example: Algorithm whose function is to classify data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasFunction</IRI>
+        <Literal>Function of the algorithm, of classifying, creating clusters…</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#implements</IRI>
+        <Literal>Example: Python code implementing SVM.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#implements</IRI>
+        <Literal>A code implements an algorithm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#learn_by</IRI>
+        <Literal>Example: Algorithm applied to Covid-19 dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#learn_by</IRI>
+        <Literal>An ML algorithm learns from data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#memberOf</IRI>
+        <Literal>Example: A tuple from a dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#memberOf</IRI>
+        <Literal>Data member of a dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#uses</IRI>
+        <Literal>Example: Supervised Learning Algorithm Only Uses Labeled Data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#uses</IRI>
+        <Literal>An algorithm type uses only a certain type of data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OSA:_Code</IRI>
+        <Literal>Example: Code in Python</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OSA:_Code</IRI>
+        <Literal>Ref: Duarte, Bruno Borlini, et al. &quot;Ontological foundations for software requirements with a focus on requirements at runtime.&quot; Applied Ontology 13.2 (2018): 73-105.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#OSA:_Code</IRI>
+        <Literal>A sequence of machine instructions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OSA:_Code</IRI>
+        <Literal>OSA:_Code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OSA:_Program_Specification</IRI>
+        <Literal>Exemple: Algorithm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OSA:_Program_Specification</IRI>
+        <Literal>Ref: Duarte, Bruno Borlini, et al. &quot;Ontological foundations for software requirements with a focus on requirements at runtime.&quot; Applied Ontology 13.2 (2018): 73-105.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#OSA:_Program_Specification</IRI>
+        <Literal>A portion of Code can implement a Program Specification, which, in turn, may intend to satisfy a System Specification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OSA:_Program_Specification</IRI>
+        <Literal>OSA:_Program_Specification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OSA:_Software_Function</IRI>
+        <Literal>Example: Classification of flowers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OSA:_Software_Function</IRI>
+        <Literal>Ref: Duarte, Bruno Borlini, et al. &quot;Ontological foundations for software requirements with a focus on requirements at runtime.&quot; Applied Ontology 13.2 (2018): 73-105.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#OSA:_Software_Function</IRI>
+        <Literal>Directly related to what a system needs to do, i.e., to the functionalities it needs to provide for its users</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OSA:_Software_Function</IRI>
+        <Literal>OSA:_Software_Function</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
