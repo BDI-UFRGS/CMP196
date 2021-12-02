@@ -1,0 +1,616 @@
+@prefix : <http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126> .
+
+<http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126> rdf:type owl:Ontology ;
+                                                                               rdfs:label "A toy Ontology for an Ontology Engineering Course" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#abc:ExampleOfUse
+:abc:ExampleOfUse rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#abc:Synonyms
+:abc:Synonyms rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#hasBaseAge
+:hasBaseAge rdf:type owl:ObjectProperty ;
+            owl:propertyDisjointWith :hasTopAge ;
+            :abc:ExampleOfUse "Well has a base age of Jurassic (the oldest formation penerated in the well is of jurassic age)"^^xsd:string ;
+            :abc:Synonyms "Bottom Age"^^xsd:string ;
+            rdfs:comment "Age of the base of an interval"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#hasBaseDepth
+:hasBaseDepth rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasMeasurement ;
+              rdfs:range :Depth ;
+              owl:propertyDisjointWith :hasTopDepth ;
+              rdfs:comment "Depth in m or ft at base (e.g. for the geological formation)"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#hasHierarchy
+:hasHierarchy rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#hasMeasurement
+:hasMeasurement rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#hasNGRatio
+:hasNGRatio rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasMeasurement ;
+            rdfs:domain :StratUnit ;
+            rdfs:range :NGRatio ;
+            rdfs:comment "Similar to the what is defined in entity NGRatio"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#hasName
+:hasName rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#hasPermeability
+:hasPermeability rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :hasMeasurement ;
+                 rdfs:domain :StratUnit ;
+                 rdfs:range :Permeability ;
+                 rdfs:comment "Similar to the what is defined in entity permeability"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#hasPorosity
+:hasPorosity rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasMeasurement ;
+             rdfs:domain :StratUnit ;
+             rdfs:range :Porosity ;
+             rdfs:comment "Similar to the what is defined in entity porosity"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#hasThickness
+:hasThickness rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasMeasurement ;
+              rdfs:domain :StratUnit ;
+              rdfs:range :NetThickness .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#hasTopAge
+:hasTopAge rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#hasTopDepth
+:hasTopDepth rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasMeasurement ;
+             rdfs:range :Depth ;
+             rdfs:comment "Depth in m or ft at top (e.g. for the geological formation)"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#hasWellbore
+:hasWellbore rdf:type owl:ObjectProperty ;
+             rdfs:domain :Well ;
+             rdfs:range :Wellbore ;
+             :abc:Synonyms "borehole"^^xsd:string ;
+             rdfs:comment "a bore hole in a well"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#hasWellboreInterval
+:hasWellboreInterval rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Wellbore ;
+                     rdfs:range :WellboreInterval ;
+                     rdfs:comment "Similar to the what is defined in entity WellboreInterval"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#locatedIn
+:locatedIn rdf:type owl:ObjectProperty ;
+           :abc:Synonyms "geographic information or geospatial data"^^xsd:string ;
+           rdfs:comment "information related to objects or elements present in a geographic space or horizon"^^xsd:string ;
+           rdfs:isDefinedBy "https://www.tableau.com/learn/articles/location-data-types"^^xsd:string ;
+           rdfs:label "located In"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#penetrate
+:penetrate rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           :abc:ExampleOfUse "Well has penerated sto formation"^^xsd:string ;
+           :abc:Synonyms "No Synonyms"^^xsd:string ;
+           rdfs:comment "the action or process of penetrating something."^^xsd:string ;
+           rdfs:isDefinedBy "Google"^^xsd:string .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#age
+:age rdf:type owl:DatatypeProperty ;
+     rdfs:range xsd:string ;
+     rdfs:comment "Age on gelogoical scale"^^xsd:string ;
+     rdfs:label "Age"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:range xsd:string ;
+      rdfs:comment "Conventional name"^^xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#AOI
+:AOI rdf:type owl:Class ;
+     rdfs:subClassOf :Site ;
+     :abc:ExampleOfUse "Block 001A on NCS"^^xsd:string ;
+     :abc:Synonyms "My Area"^^xsd:string ;
+     rdfs:comment "The geographical area where information that will satisfy a specific information requirement can be collected"^^xsd:string ;
+     rdfs:isDefinedBy "https://www.thefreedictionary.com/named+area+of+interest"^^xsd:string ;
+     rdfs:label "Area Of Interest"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#ChronostratUnit
+:ChronostratUnit rdf:type owl:Class ;
+                 rdfs:subClassOf :StratUnit ;
+                 :abc:ExampleOfUse "Jurassic Unit in Barents sea"^^xsd:string ;
+                 :abc:Synonyms "No synonyms"^^xsd:string ;
+                 rdfs:comment "bodies of rocks, layered or unlayered, that are defined between specified stratigraphic horizons which represent specified intervals of geologic time"^^xsd:string ;
+                 rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Chronostratigraphy"^^xsd:string ;
+                 rdfs:label "Chronostratigraphic Unit"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Chronostratigraphy
+:Chronostratigraphy rdf:type owl:Class ;
+                    rdfs:subClassOf :GenericallyDependentContinuant ;
+                    :abc:ExampleOfUse "Jurassic"^^xsd:string ;
+                    :abc:Synonyms "No Synonyms"^^xsd:string ;
+                    rdfs:comment "Chronostratigraphy ('time-rock stratigraphy') is the branch of stratigraphy concerned with the application of time to rock successions, the ultimatel goal of which is the establishment of a globally applicable standard time-scal"^^xsd:string ;
+                    rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Chronostratigraphy"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Continuant
+:Continuant rdf:type owl:Class ;
+            rdfs:subClassOf :entity ;
+            owl:disjointWith :Occurrent .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#ContinuantFiatBoundary
+:ContinuantFiatBoundary rdf:type owl:Class ;
+                        rdfs:subClassOf :ImmaterialEntity ;
+                        owl:disjointWith :SpatialRegion .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#DependentContinuant
+:DependentContinuant rdf:type owl:Class ;
+                     rdfs:subClassOf :Continuant ;
+                     owl:disjointWith :IndependentContinuant .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Deposition
+:Deposition rdf:type owl:Class ;
+            rdfs:subClassOf :SedimentaryProcess ;
+            owl:disjointWith :Erosion ;
+            rdfs:comment "Deposition is the geological process in which sediments, soil and rocks are added to a landform or landmass. Wind, ice, water, and gravity transport previously weathered surface material, which, at the loss of enough kinetic energy in the fluid, is deposited, building up layers of sediment"^^xsd:string ;
+            rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Deposition_(geology)"^^xsd:string ;
+            rdfs:label "Deposition"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Depth
+:Depth rdf:type owl:Class ;
+       rdfs:subClassOf :Quality ;
+       owl:disjointWith :NGRatio ,
+                        :Permeability ,
+                        :Porosity ;
+       :abc:ExampleOfUse "Dpeth of  a geological formation at well 001"^^xsd:string ;
+       rdfs:comment "the distance from the top or surface to the bottom of something"^^xsd:string ;
+       rdfs:isDefinedBy "Google"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Disposition
+:Disposition rdf:type owl:Class ;
+             rdfs:subClassOf :RealizableEntity ;
+             owl:disjointWith :Role .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Drilling
+:Drilling rdf:type owl:Class ;
+          rdfs:subClassOf :History .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Erosion
+:Erosion rdf:type owl:Class ;
+         rdfs:subClassOf :SedimentaryProcess ;
+         :abc:Synonyms "geological erosion"^^xsd:string ;
+         rdfs:comment "Geological erosion or \"natural\" erosion is the action of the water, wind, ice and gravity in wearing away rock to form soil and shape the ground surface"^^xsd:string ;
+         rdfs:isDefinedBy "https://www.researchgate.net/post/What_is_the_exact_difference_between_geological_erosion_and_accelerated_erosion_and_which_kind_of_erosion_is_dangerous_for_soils"^^xsd:string ;
+         rdfs:label "Erosion"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Falulting
+:Falulting rdf:type owl:Class ;
+           rdfs:subClassOf :SedimentaryProcess ;
+           rdfs:comment "In geology, a fault is a planar fracture or discontinuity in a volume of rock across which created by a geological process"^^xsd:string ;
+           rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Fault_(geology)"^^xsd:string ;
+           rdfs:label "Faulting"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#FiatObjectPart
+:FiatObjectPart rdf:type owl:Class ;
+                rdfs:subClassOf :MaterialEntity .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Function
+:Function rdf:type owl:Class ;
+          rdfs:subClassOf :Disposition .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#GenericallyDependentContinuant
+:GenericallyDependentContinuant rdf:type owl:Class ;
+                                rdfs:subClassOf :DependentContinuant ;
+                                owl:disjointWith :SpecificallyDependentContinuant .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#GeographicalArea
+:GeographicalArea rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#2DSpatialRegion> .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#History
+:History rdf:type owl:Class ;
+         rdfs:subClassOf :Process ;
+         owl:disjointWith :ProcessProfile .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#ImmaterialEntity
+:ImmaterialEntity rdf:type owl:Class ;
+                  rdfs:subClassOf :IndependentContinuant ;
+                  owl:disjointWith :MaterialEntity .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#IndependentContinuant
+:IndependentContinuant rdf:type owl:Class ;
+                       rdfs:subClassOf :Continuant .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#LithostratUnit
+:LithostratUnit rdf:type owl:Class ;
+                rdfs:subClassOf :StratUnit ;
+                :abc:ExampleOfUse "Clastic Reservoir"^^xsd:string ;
+                :abc:Synonyms "No Synonyms"^^xsd:string ;
+                rdfs:comment "bodies of rocks, bedded or unbedded, that are defined and characterized on the basis of their lithologic properties and their stratigraphic relations"^^xsd:string ;
+                rdfs:isDefinedBy "https://stratigraphy.org/guide/litho"^^xsd:string ;
+                rdfs:label "Lithostratigraphic Unit"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Lithostratigraphy
+:Lithostratigraphy rdf:type owl:Class ;
+                   rdfs:subClassOf :GenericallyDependentContinuant ;
+                   rdfs:comment "Lithostratigraphy is the ‘classification of bodies of rock based on the observable lithological properties of the strata and their relative stratigraphic positions’1. Stratigraphy includes information about processes, geographical distributions, and the palaeo-environment of past glaciers and glaciation. It involves an attempt to determine the chronological sequence of geological events over a wide area."^^xsd:string ;
+                   rdfs:isDefinedBy "https://stratigraphy.org/guide/litho"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#MaterialEntity
+:MaterialEntity rdf:type owl:Class ;
+                rdfs:subClassOf :IndependentContinuant .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#NGRatio
+:NGRatio rdf:type owl:Class ;
+         rdfs:subClassOf :Quality ;
+         owl:disjointWith :NetThickness ,
+                          :Permeability ,
+                          :Porosity ;
+         :abc:ExampleOfUse "Net pay of Sto formation at a well location"^^xsd:string ;
+         :abc:Synonyms "Net pay"^^xsd:string ;
+         rdfs:comment "fraction of reservoir volume occupied by hydrocarbon- bearing rocks"^^xsd:string ;
+         rdfs:isDefinedBy "http://www.epgeology.com/general-discussion-f29/ntg-defining-net-cut-offs-t5777.html"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#NetThickness
+:NetThickness rdf:type owl:Class ;
+              rdfs:subClassOf :Quality ;
+              owl:disjointWith :Permeability ,
+                               :Porosity ;
+              :abc:ExampleOfUse "Thickness of sto formation in North sea"^^xsd:string ;
+              :abc:Synonyms "Thickness"^^xsd:string ;
+              rdfs:comment "total thinckness of the strat unit"^^xsd:string ;
+              rdfs:isDefinedBy "https://pangea.stanford.edu/departments/ere/dropbox/scrf/documents/Theses/SCRF-Theses/2000-2009/2007_PhD_Maharaja.pdf"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Object
+:Object rdf:type owl:Class ;
+        rdfs:subClassOf :MaterialEntity .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#ObjectAggregate
+:ObjectAggregate rdf:type owl:Class ;
+                 rdfs:subClassOf :MaterialEntity .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Occurrent
+:Occurrent rdf:type owl:Class ;
+           rdfs:subClassOf :entity .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Penetrates
+:Penetrates rdf:type owl:Class ;
+            rdfs:subClassOf :History .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Permeability
+:Permeability rdf:type owl:Class ;
+              rdfs:subClassOf :Quality ;
+              owl:disjointWith :Porosity ;
+              :abc:ExampleOfUse "High permeability reservoir"^^xsd:string ;
+              :abc:Synonyms "No Synonyms"^^xsd:string ;
+              rdfs:comment "a measure of the ability of a material (such as rocks) to transmit fluids"^^xsd:string ;
+              rdfs:isDefinedBy "https://www.deq.louisiana.gov/assets/docs/Water/DWPP_forkidsandeducators/PorosityandPermeability.pdf"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Porosity
+:Porosity rdf:type owl:Class ;
+          rdfs:subClassOf :Quality ;
+          :abc:ExampleOfUse "High Porosity Reservoir"^^xsd:string ;
+          :abc:Synonyms "No Synonyms"^^xsd:string ;
+          rdfs:comment "a measure of the void spaces in a material"^^xsd:string ;
+          rdfs:isDefinedBy "https://www.deq.louisiana.gov/assets/docs/Water/DWPP_forkidsandeducators/PorosityandPermeability.pdf"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Process
+:Process rdf:type owl:Class ;
+         rdfs:subClassOf :Occurrent ;
+         owl:disjointWith :ProcessBoundary ,
+                          :SpatialTemporalRegion ,
+                          :TemporalRegion .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#ProcessBoundary
+:ProcessBoundary rdf:type owl:Class ;
+                 rdfs:subClassOf :Occurrent ;
+                 owl:disjointWith :SpatialTemporalRegion ,
+                                  :TemporalRegion .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#ProcessProfile
+:ProcessProfile rdf:type owl:Class ;
+                rdfs:subClassOf :Process .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Quality
+:Quality rdf:type owl:Class ;
+         rdfs:subClassOf :SpecificallyDependentContinuant ;
+         owl:disjointWith :RealizableEntity .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#RealizableEntity
+:RealizableEntity rdf:type owl:Class ;
+                  rdfs:subClassOf :SpecificallyDependentContinuant .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#RelationalQuality
+:RelationalQuality rdf:type owl:Class ;
+                   rdfs:subClassOf :Quality .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Reservoir
+:Reservoir rdf:type owl:Class ;
+           rdfs:subClassOf :Role ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasBaseDepth ;
+                             owl:someValuesFrom :Depth
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasTopDepth ;
+                             owl:someValuesFrom :Depth
+                           ] ;
+           :abc:ExampleOfUse "Hugin Formation is a reservoir in North sea"^^xsd:string ;
+           :abc:Synonyms "Producing zone"^^xsd:string ;
+           rdfs:comment "a porous and permeable lithological unit or set of units that holds the hydrocarbon reserves."^^xsd:string ;
+           rdfs:isDefinedBy "https://www.corelab.com/ps/reservoir-geology"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Role
+:Role rdf:type owl:Class ;
+      rdfs:subClassOf :RealizableEntity .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#SedimentaryProcess
+:SedimentaryProcess rdf:type owl:Class ;
+                    rdfs:subClassOf :History .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Site
+:Site rdf:type owl:Class ;
+      rdfs:subClassOf :ImmaterialEntity ;
+      owl:disjointWith :SpatialRegion .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#SpatialRegion
+:SpatialRegion rdf:type owl:Class ;
+               rdfs:subClassOf :ImmaterialEntity .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#SpatialTemporalRegion
+:SpatialTemporalRegion rdf:type owl:Class ;
+                       rdfs:subClassOf :Occurrent ;
+                       owl:disjointWith :TemporalRegion .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#SpecificallyDependentContinuant
+:SpecificallyDependentContinuant rdf:type owl:Class ;
+                                 rdfs:subClassOf :DependentContinuant .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#StratUnit
+:StratUnit rdf:type owl:Class ;
+           rdfs:subClassOf :Object ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :age ;
+                             owl:someValuesFrom xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :name ;
+                             owl:someValuesFrom xsd:string
+                           ] ;
+           owl:disjointWith :Wellbore ;
+           :abc:ExampleOfUse "Sto Formation"^^xsd:string ;
+           :abc:Synonyms "Geolgoical Formation"^^xsd:string ;
+           rdfs:comment "a volume of rock of identifiable origin and relative age range that is defined by the distinctive and dominant, easily mapped and recognizable petrographic, lithologic or paleontologic features (facies) that characterize it."^^xsd:string ;
+           rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Stratigraphic_unit"^^xsd:string ;
+           rdfs:label "Stratigraphic Unit"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#TemporalRegion
+:TemporalRegion rdf:type owl:Class ;
+                rdfs:subClassOf :Occurrent .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Well
+:Well rdf:type owl:Class ;
+      rdfs:subClassOf :Site ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasWellbore ;
+                        owl:someValuesFrom :Wellbore
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :locatedIn ;
+                        owl:someValuesFrom :AOI
+                      ] ;
+      owl:disjointWith :Wellbore ;
+      :abc:ExampleOfUse "Well 001A"^^xsd:string ;
+      :abc:Synonyms "Well"^^xsd:string ;
+      rdfs:comment "a borehole which is drilled in order to discover or delimit a petroleum deposit"^^xsd:string ;
+      rdfs:isDefinedBy "https://www.npd.no/en/about-us/information-services/abc-of-oil/"^^xsd:string ;
+      rdfs:label "Well"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Wellbore
+:Wellbore rdf:type owl:Class ;
+          rdfs:subClassOf :Site ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :penetrate ;
+                            owl:someValuesFrom :WellboreInterval
+                          ] ;
+          :abc:ExampleOfUse "Wellbore 001A"^^xsd:string ;
+          :abc:Synonyms "Borehole"^^xsd:string ;
+          rdfs:comment "A wellbore is a type of borehole, which is a narrow shaft that is drilled into the ground—either horizontally or vertically—to extract water, petroleum, or gases"^^xsd:string ;
+          rdfs:isDefinedBy "https://www.investopedia.com/terms/w/wellbore.asp"^^xsd:string ;
+          rdfs:label "Wellbore"^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#WellboreInterval
+:WellboreInterval rdf:type owl:Class ;
+                  rdfs:subClassOf :GenericallyDependentContinuant ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasBaseDepth ;
+                                    owl:someValuesFrom :Depth
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasTopDepth ;
+                                    owl:someValuesFrom :Depth
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :penetrate ;
+                                    owl:someValuesFrom :StratUnit
+                                  ] ;
+                  :abc:ExampleOfUse "Cored Interval 1 at Well 001A"^^xsd:string ;
+                  :abc:Synonyms """Stratigrpahic interval at well location
+cored zone at well location
+perforated Inverval"""^^xsd:string ;
+                  rdfs:comment "A depth interval along a wellbore w.r.t a specific aspect e.g. stratigraphic etc."^^xsd:string .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#entity
+:entity rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#0DContinuantFiatBoundary
+<http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#0DContinuantFiatBoundary> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf :ContinuantFiatBoundary ;
+                                                                                                       owl:disjointWith <http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#1DContinuantFiatBoundary> ,
+                                                                                                                        <http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#2DContinuantFiatBoundary> .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#0DSpatialRegion
+<http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#0DSpatialRegion> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf :SpatialRegion ;
+                                                                                              owl:disjointWith <http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#1DSpatialRegion> ,
+                                                                                                               <http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#2DSpatialRegion> ,
+                                                                                                               <http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#3DSpatialRegion> .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#0DTemporalRegion
+<http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#0DTemporalRegion> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf :TemporalRegion ;
+                                                                                               owl:disjointWith <http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#1DTemporalRegion> .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#1DContinuantFiatBoundary
+<http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#1DContinuantFiatBoundary> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf :ContinuantFiatBoundary ;
+                                                                                                       owl:disjointWith <http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#2DContinuantFiatBoundary> .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#1DSpatialRegion
+<http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#1DSpatialRegion> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf :SpatialRegion ;
+                                                                                              owl:disjointWith <http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#2DSpatialRegion> ,
+                                                                                                               <http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#3DSpatialRegion> .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#1DTemporalRegion
+<http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#1DTemporalRegion> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf :TemporalRegion .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#2DContinuantFiatBoundary
+<http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#2DContinuantFiatBoundary> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf :ContinuantFiatBoundary .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#2DSpatialRegion
+<http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#2DSpatialRegion> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf :SpatialRegion ;
+                                                                                              owl:disjointWith <http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#3DSpatialRegion> .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#3DSpatialRegion
+<http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#3DSpatialRegion> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf :SpatialRegion .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Area123
+:Area123 rdf:type owl:NamedIndividual ,
+                  :AOI .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#C1
+:C1 rdf:type owl:NamedIndividual ,
+             :ChronostratUnit .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Well001
+:Well001 rdf:type owl:NamedIndividual ,
+                  :Well .
+
+
+###  http://www.semanticweb.org/adnanl1/ontologies/2021/10/untitled-ontology-126#Wellbore001A
+:Wellbore001A rdf:type owl:NamedIndividual ,
+                       :Wellbore .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
