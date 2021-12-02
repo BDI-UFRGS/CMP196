@@ -1,4 +1,8 @@
-# Predictive Maintenance and Health Monitoring System
+Esta ontologia utiliza as ontologias BFO e IAO.
+Este repositório contém os arquivos .owl, árvore do modelo criado no Protégé e relatório do trabalho.
+
+Baseia-se na seguinte descrição de domínio (feita em inglês para compatibilidade com as ontologias importadas):
+## Predictive Maintenance and Health Monitoring System
 
 Let be a system responsible for predictive maintenance and health monitoring of a facility, such as an oil and gas extraction platform. This system may be considered as a part of the whole facility maintenance system and is composed by the equipment selected to be monitored, sensors that monitor the physical quantities and information necessary to predict the equipment’s condition (pressure, flow, electric current, voltage, vibration, temperature, noise, rust, abrasion level, integrity of the parts, iron filing level in the bearing grease), a supervisory system that gathers these information and displays alerts whenever any of those measurements are out of the specified range, the technical maintenance team that install and uninstall the equipment, execute maintenance actions, collect samples (if needed) to detect any anomalous condition in the equipment, and a maintenance engineering team to decide wether and when is necessary any maintenance intervention.
 
