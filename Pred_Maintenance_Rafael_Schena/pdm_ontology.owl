@@ -1,0 +1,2550 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontology_eng/pdm"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ontology_eng/pdm">
+    <Prefix name="" IRI="http://www.semanticweb.org/ontology_eng/pdm"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl</Import>
+    <Import>http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl</Import>
+    <Declaration>
+        <Class IRI="#abrasion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#alert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#anomaly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bearing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#broken"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmms"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#discharge_pressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#electric_current"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#electric_current_measurement_datum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#electric_current_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#electric_motor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#electric_tension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#electric_tension_measurement_datum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#electric_tension_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#employee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#engineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#equipment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#facility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fixing_equipment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#flow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#flow_measurement_datum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#flow_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#grease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#in_maintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#in_service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#integrity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#inventory_status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#iron_filing_level"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#iron_filing_measurement_datum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#iron_filing_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#maintenance_engineering_software"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#maintenance_engineering_team"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#maintenance_notification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#maintenance_status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#maintenance_work_order"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#noise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#noise_measurement_datum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#noise_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#not-broken"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#oil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#operational_status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#out-of-order"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#part"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#petroleum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#physical_quantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pressure_measurement_datum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pressure_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pump"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#running_anomalous"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#running_normal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rust"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sample"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#spare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#specified_range"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#stopped"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#suction_pressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#supervisory_system"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#team"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#technical_maintenance_team"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#technician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#temperature_measurement_datum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#temperature_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vibration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vibration_measurement_datum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vibration_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#working"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#component_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#driven_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#element_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_element"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_subquantity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#heavier_than"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#higher_than"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_composed_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#subquantity_of"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#P-01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#P-01_maint_eng_team"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#P-01_tech_maint_team"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bearing-01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bearing-02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#electric_motor-02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#eng_Caldas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#eng_Rafael"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#eng_Ulysses"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#motor-01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pump-01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pump-02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tec_Caldas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tec_Jerry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tec_Marcos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tec_Moacir"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#synonyms"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <Class IRI="#measurement"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0001018"/>
+        <Class IRI="#physical_quantity"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#temperature_unit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0000125"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000414"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#abrasion"/>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0001018"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#alert"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000591"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#anomaly"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bearing"/>
+        <Class IRI="#part"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#broken"/>
+        <Class IRI="#integrity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmms"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000594"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#discharge_pressure"/>
+        <Class IRI="#pressure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#electric_current"/>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0001018"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#electric_current"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#electric_current_measurement_datum"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#electric_current_measurement_datum"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000032"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#electric_current_measurement_datum"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#electric_current_unit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#electric_current_unit"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#electric_motor"/>
+        <Class IRI="#equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#electric_motor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#electric_current"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#electric_motor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#electric_tension"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#electric_tension"/>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0001018"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#electric_tension"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#electric_tension_measurement_datum"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#electric_tension_measurement_datum"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000032"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#electric_tension_measurement_datum"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#electric_tension_unit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#electric_tension_unit"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#employee"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#employee"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000081"/>
+            <Class IRI="#person"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#engineer"/>
+        <Class IRI="#employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#equipment"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#equipment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="http://purl.obolibrary.org/obo/PATO_0000125"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#equipment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#abrasion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#equipment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#integrity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#equipment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#noise"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#equipment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#rust"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#equipment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#temperature"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#equipment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#vibration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#facility"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#facility"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
+            <ObjectUnionOf>
+                <Class IRI="#equipment"/>
+                <Class IRI="#part"/>
+                <Class IRI="#sensor"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fixing_equipment"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fixing_equipment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="#out-of-order"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fixing_equipment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="#technician"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fixing_equipment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="#working"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#flow"/>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0001018"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#flow"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#flow_measurement_datum"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#flow_measurement_datum"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000032"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#flow_measurement_datum"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#flow_unit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#flow_unit"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gas"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#grease"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#grease"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#iron_filing_level"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#grease"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0001025"/>
+            <Class IRI="#bearing"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#in_maintenance"/>
+        <Class IRI="#maintenance_status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#in_service"/>
+        <Class IRI="#inventory_status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#integrity"/>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#inventory_status"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#inventory_status"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000080"/>
+            <Class IRI="#equipment"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iron_filing_level"/>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0001018"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iron_filing_level"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#iron_filing_measurement_datum"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iron_filing_measurement_datum"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000032"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iron_filing_measurement_datum"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#iron_filing_unit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iron_filing_unit"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#maintenance_engineering_software"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000594"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#maintenance_engineering_team"/>
+        <Class IRI="#team"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#maintenance_notification"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000310"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#maintenance_status"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#maintenance_status"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000080"/>
+            <Class IRI="#equipment"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#maintenance_work_order"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000310"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#measurement"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#noise"/>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0001018"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#noise"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#noise_measurement_datum"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#noise_measurement_datum"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000032"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#noise_measurement_datum"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#noise_unit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#noise_unit"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#not-broken"/>
+        <Class IRI="#integrity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#oil"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#operational_status"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#out-of-order"/>
+        <Class IRI="#maintenance_status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#part"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#person"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#person"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#element_of"/>
+            <Class IRI="#team"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#petroleum"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#petroleum"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
+            <Class IRI="#gas"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#petroleum"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
+            <Class IRI="#oil"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#petroleum"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_subquantity"/>
+            <Class IRI="#gas"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#petroleum"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_subquantity"/>
+            <Class IRI="#oil"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#physical_quantity"/>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0001241"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pressure"/>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0001018"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pressure"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#pressure_measurement_datum"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pressure_measurement_datum"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000032"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pressure_measurement_datum"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#pressure_unit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pressure_unit"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pump"/>
+        <Class IRI="#equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pump"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#discharge_pressure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pump"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#flow"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pump"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#suction_pressure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#running_anomalous"/>
+        <Class IRI="#operational_status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#running_normal"/>
+        <Class IRI="#operational_status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rust"/>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0001018"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sample"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000024"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sensor"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#spare"/>
+        <Class IRI="#inventory_status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#specified_range"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000401"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stopped"/>
+        <Class IRI="#operational_status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#suction_pressure"/>
+        <Class IRI="#pressure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#supervisory_system"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000594"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#team"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#team"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_element"/>
+            <Class IRI="#person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#technical_maintenance_team"/>
+        <Class IRI="#team"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#technician"/>
+        <Class IRI="#employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#temperature"/>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0001018"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#temperature"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#temperature_measurement_datum"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#temperature_measurement_datum"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000032"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#temperature_unit"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vibration"/>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0001018"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vibration"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#vibration_measurement_datum"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vibration_measurement_datum"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000032"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vibration_measurement_datum"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+            <Class IRI="#vibration_unit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vibration_unit"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#working"/>
+        <Class IRI="#maintenance_status"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0000125"/>
+        <Class IRI="#abrasion"/>
+        <Class IRI="#electric_current"/>
+        <Class IRI="#electric_tension"/>
+        <Class IRI="#flow"/>
+        <Class IRI="#iron_filing_level"/>
+        <Class IRI="#noise"/>
+        <Class IRI="#pressure"/>
+        <Class IRI="#rust"/>
+        <Class IRI="#temperature"/>
+        <Class IRI="#vibration"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0000125"/>
+        <Class IRI="#electric_current"/>
+        <Class IRI="#flow"/>
+        <Class IRI="#noise"/>
+        <Class IRI="#pressure"/>
+        <Class IRI="#temperature"/>
+        <Class IRI="#vibration"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#broken"/>
+        <Class IRI="#not-broken"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#cmms"/>
+        <Class IRI="#maintenance_engineering_software"/>
+        <Class IRI="#supervisory_system"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#electric_motor"/>
+        <Class IRI="#pump"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#engineer"/>
+        <Class IRI="#technician"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#equipment"/>
+        <Class IRI="#gas"/>
+        <Class IRI="#grease"/>
+        <Class IRI="#oil"/>
+        <Class IRI="#part"/>
+        <Class IRI="#person"/>
+        <Class IRI="#sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#equipment"/>
+        <Class IRI="#grease"/>
+        <Class IRI="#part"/>
+        <Class IRI="#person"/>
+        <Class IRI="#petroleum"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#in_maintenance"/>
+        <Class IRI="#out-of-order"/>
+        <Class IRI="#working"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#in_service"/>
+        <Class IRI="#spare"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#out-of-order"/>
+        <Class IRI="#working"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#running_anomalous"/>
+        <Class IRI="#running_normal"/>
+        <Class IRI="#stopped"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#facility"/>
+        <NamedIndividual IRI="#P-01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#team"/>
+        <NamedIndividual IRI="#P-01_maint_eng_team"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#team"/>
+        <NamedIndividual IRI="#P-01_tech_maint_team"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#bearing"/>
+        <NamedIndividual IRI="#bearing-01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#bearing"/>
+        <NamedIndividual IRI="#bearing-02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#electric_motor"/>
+        <NamedIndividual IRI="#electric_motor-02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#person"/>
+        <NamedIndividual IRI="#eng_Caldas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#person"/>
+        <NamedIndividual IRI="#eng_Rafael"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#person"/>
+        <NamedIndividual IRI="#eng_Ulysses"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#electric_motor"/>
+        <NamedIndividual IRI="#motor-01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pump"/>
+        <NamedIndividual IRI="#pump-01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pump"/>
+        <NamedIndividual IRI="#pump-02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#person"/>
+        <NamedIndividual IRI="#tec_Caldas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#person"/>
+        <NamedIndividual IRI="#tec_Jerry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#person"/>
+        <NamedIndividual IRI="#tec_Marcos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#person"/>
+        <NamedIndividual IRI="#tec_Moacir"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
+        <NamedIndividual IRI="#P-01"/>
+        <NamedIndividual IRI="#electric_motor-02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
+        <NamedIndividual IRI="#P-01"/>
+        <NamedIndividual IRI="#motor-01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
+        <NamedIndividual IRI="#P-01"/>
+        <NamedIndividual IRI="#pump-01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
+        <NamedIndividual IRI="#P-01"/>
+        <NamedIndividual IRI="#pump-02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#component_of"/>
+        <NamedIndividual IRI="#bearing-01"/>
+        <NamedIndividual IRI="#pump-01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#component_of"/>
+        <NamedIndividual IRI="#bearing-02"/>
+        <NamedIndividual IRI="#pump-01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#element_of"/>
+        <NamedIndividual IRI="#eng_Caldas"/>
+        <NamedIndividual IRI="#P-01_maint_eng_team"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#element_of"/>
+        <NamedIndividual IRI="#eng_Rafael"/>
+        <NamedIndividual IRI="#P-01_maint_eng_team"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#element_of"/>
+        <NamedIndividual IRI="#eng_Ulysses"/>
+        <NamedIndividual IRI="#P-01_maint_eng_team"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#element_of"/>
+        <NamedIndividual IRI="#tec_Caldas"/>
+        <NamedIndividual IRI="#P-01_tech_maint_team"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#element_of"/>
+        <NamedIndividual IRI="#tec_Jerry"/>
+        <NamedIndividual IRI="#P-01_tech_maint_team"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#element_of"/>
+        <NamedIndividual IRI="#tec_Marcos"/>
+        <NamedIndividual IRI="#P-01_tech_maint_team"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#element_of"/>
+        <NamedIndividual IRI="#tec_Moacir"/>
+        <NamedIndividual IRI="#P-01_tech_maint_team"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#component_of"/>
+        <ObjectProperty IRI="#is_composed_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#element_of"/>
+        <ObjectProperty IRI="#has_element"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_subquantity"/>
+        <ObjectProperty IRI="#subquantity_of"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#component_of"/>
+        <Class IRI="#part"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#driven_by"/>
+        <Class IRI="#pump"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#element_of"/>
+        <Class IRI="#person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_element"/>
+        <Class IRI="#team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#heavier_than"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#higher_than"/>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0001018"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_composed_by"/>
+        <Class IRI="#equipment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#subquantity_of"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#component_of"/>
+        <Class IRI="#equipment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#driven_by"/>
+        <Class IRI="#electric_motor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#element_of"/>
+        <Class IRI="#team"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_element"/>
+        <Class IRI="#person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#heavier_than"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#higher_than"/>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0001018"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_composed_by"/>
+        <Class IRI="#part"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#subquantity_of"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#abrasion</IRI>
+        <Literal xml:lang="en">Sand in the water is responsible for the abrasion of the pump&apos;s parts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#abrasion</IRI>
+        <Literal xml:lang="en">a scraped spot or area; the result of rubbing or abrading.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#abrasion</IRI>
+        <Literal xml:lang="en">https://www.dictionary.com/browse/abrasion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#abrasion</IRI>
+        <Literal xml:lang="en">abrasion_level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#alert</IRI>
+        <Literal xml:lang="en">We&apos;d just boarded the bus when the alert sounded.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#alert</IRI>
+        <Literal xml:lang="en">A warning or alarm.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#alert</IRI>
+        <Literal xml:lang="en">https://www.dictionary.com/browse/alert</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#alert</IRI>
+        <Literal xml:lang="en">alarm; signal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#alert</IRI>
+        <Literal xml:lang="en">alert</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#anomaly</IRI>
+        <Literal xml:lang="en">Vibration of the equipment out of the specified range is an anomaly that should be further investigated.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#anomaly</IRI>
+        <Literal xml:lang="en">a deviation from the common rule, type, arrangement, or form.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#anomaly</IRI>
+        <Literal xml:lang="en">https://www.dictionary.com/browse/anomaly</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#anomaly</IRI>
+        <Literal xml:lang="en">anomaly</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#bearing</IRI>
+        <Literal xml:lang="en">Bearings are critical components of rotating machines.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#bearing</IRI>
+        <Literal xml:lang="en">A bearing is a machine element that constrains relative motion to only the desired motion, and reduces friction between moving parts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#bearing</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Bearing_(mechanical)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#bearing</IRI>
+        <Literal xml:lang="en">bearing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#broken</IRI>
+        <Literal xml:lang="en">The inspection revealed that the motor shaft is broken.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#broken</IRI>
+        <Literal xml:lang="en">The quality that indicates that the object does not hold its integrity anymore.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#broken</IRI>
+        <Literal xml:lang="en">broken</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#cmms</IRI>
+        <Literal xml:lang="en">The technician inserted the equipment information into the cmms. The engineers retrieved the facility data from the cmms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmms</IRI>
+        <Literal xml:lang="en">Computerized maintenance management system (CMMS), also known as computerized maintenance management information system (CMMIS), is a software package that maintains a computer database of information about an organization&apos;s maintenance operations[1].</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#cmms</IRI>
+        <Literal xml:lang="en">[1] - Cato, William; Mobley, Keith (2002). Computer-managed Maintenance Systems: A Step-by-step Guide to Effective Management of Maintenance, Labor, and Inventory. Butterworth-Heinemann. p. 33. ISBN 0-7506-7473-3.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#cmms</IRI>
+        <Literal xml:lang="en">CMMIS: computerized maintenance management information system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmms</IRI>
+        <Literal xml:lang="en">cmms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#component_of</IRI>
+        <Literal xml:lang="en">The shaft is the most expensive component of a motor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#component_of</IRI>
+        <Literal xml:lang="en">a constituent part; element; ingredient.
+a part of a mechanical or electrical system.
+
+https://www.dictionary.com/browse/component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#component_of</IRI>
+        <Literal xml:lang="en">component of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#discharge_pressure</IRI>
+        <Literal xml:lang="en">The pressure measured at the output of a pump.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#discharge_pressure</IRI>
+        <Literal xml:lang="en">discharge_pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#driven_by</IRI>
+        <Literal xml:lang="en">pump-01 is driven by motor-01 at 3600 rpm.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#driven_by</IRI>
+        <Literal xml:lang="en">the relation between a pump and a motor that moves it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#driven_by</IRI>
+        <Literal xml:lang="en">driven_by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#electric_current</IRI>
+        <Literal xml:lang="en">The electric current of a lightning is so high that could kill a person instantly.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#electric_current</IRI>
+        <Literal xml:lang="en">An electric current is a stream of charged particles, such as electrons or ions, moving through an electrical conductor or space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#electric_current</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Electric_current</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#electric_current</IRI>
+        <Literal xml:lang="en">electric_current</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#electric_current_measurement_datum</IRI>
+        <Literal xml:lang="en">A scalar measurement datum that is the result of measurement of electric current quality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#electric_current_measurement_datum</IRI>
+        <Literal xml:lang="en">electric_current_measurement_datum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#electric_current_unit</IRI>
+        <Literal xml:lang="en">A unit which is a standard measure of the electric current.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#electric_current_unit</IRI>
+        <Literal xml:lang="en">electric_current_unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#electric_motor</IRI>
+        <Literal xml:lang="en">Electric motors are the principal kind of equipment to drive pumps.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#electric_motor</IRI>
+        <Literal xml:lang="en">An electric motor is an electrical machine that converts electrical energy into mechanical energy.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#electric_motor</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Electric_motor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#electric_motor</IRI>
+        <Literal xml:lang="en">electric_motor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#electric_tension</IRI>
+        <Literal xml:lang="en">A high voltage is useful for reducing energy losses in electric energy transportation through high distances.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#electric_tension</IRI>
+        <Literal xml:lang="en">Voltage, electric potential difference, electric pressure or electric tension is the difference in electric potential between two points, which (in a static electric field) is defined as the work needed per unit of charge to move a test charge between the two points.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#electric_tension</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Voltage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#electric_tension</IRI>
+        <Literal xml:lang="en">electric potential difference, electric pressure or electric tension.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#electric_tension</IRI>
+        <Literal xml:lang="en">voltage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#electric_tension_measurement_datum</IRI>
+        <Literal xml:lang="en">A scalar measurement datum that is the result of measurement of electric tension quality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#electric_tension_measurement_datum</IRI>
+        <Literal xml:lang="en">voltage_measurement_datum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#electric_tension_unit</IRI>
+        <Literal xml:lang="en">A unit which is a standard measure of the electric tension.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#electric_tension_unit</IRI>
+        <Literal xml:lang="en">voltage_unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#element_of</IRI>
+        <Literal xml:lang="en">Carl is an extremely important element of the sales team.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#element_of</IRI>
+        <Literal xml:lang="en">a person that belongs to a certain group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#element_of</IRI>
+        <Literal xml:lang="en">element_of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#employee</IRI>
+        <Literal xml:lang="en">The company&apos;s employees started a strike last week.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#employee</IRI>
+        <Literal xml:lang="en">a person working for another person or a business firm for pay.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#employee</IRI>
+        <Literal xml:lang="en">https://www.dictionary.com/browse/employee</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#employee</IRI>
+        <Literal xml:lang="en">worker, laborer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#employee</IRI>
+        <Literal xml:lang="en">employee</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#engineer</IRI>
+        <Literal xml:lang="en">a person trained and skilled in the design, construction, and use of engines or machines, or in any of various branches of engineering.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#engineer</IRI>
+        <Literal xml:lang="en">a mechanical engineer; a civil engineer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#engineer</IRI>
+        <Literal xml:lang="en">engineer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#equipment</IRI>
+        <Literal xml:lang="en">The factory equipment is in perfect condition.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#equipment</IRI>
+        <Literal xml:lang="en">Anything kept, furnished, or provided for a specific purpose. Machinery.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#equipment</IRI>
+        <Literal xml:lang="en">https://www.dictionary.com/browse/equipment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#equipment</IRI>
+        <Literal xml:lang="en">machinery; material; furnishing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#equipment</IRI>
+        <Literal xml:lang="en">equipment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#facility</IRI>
+        <Literal xml:lang="en">transportation facilities;
+educational facilities;
+a new research facility.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#facility</IRI>
+        <Literal xml:lang="en">something designed, built, installed, etc., to serve a specific function affording a convenience or service.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#facility</IRI>
+        <Literal xml:lang="en">https://www.dictionary.com/browse/facility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#facility</IRI>
+        <Literal xml:lang="en">facility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#fixing_equipment</IRI>
+        <Literal xml:lang="en">The maintenance was called to fix the out-of-order pump.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#fixing_equipment</IRI>
+        <Literal xml:lang="en">The process of repairing an equipment out-of-order so that it can be able to work normally. The installation status is changed from out-of-order to working after the process is complete.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#fixing_equipment</IRI>
+        <Literal xml:lang="en">fixing_equipment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#flow</IRI>
+        <Literal xml:lang="en">The valve is an equipment used for controlling the flow of a liquid through a pipeline.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#flow</IRI>
+        <Literal xml:lang="en">Fluid flow, the motion of a gas or liquid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#flow</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Fluid_dynamics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#flow</IRI>
+        <Literal xml:lang="en">fluid flow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#flow</IRI>
+        <Literal xml:lang="en">flow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#flow_measurement_datum</IRI>
+        <Literal xml:lang="en">A scalar measurement datum that is the result of measurement of flow quality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#flow_measurement_datum</IRI>
+        <Literal xml:lang="en">flow_measurement_datum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#flow_unit</IRI>
+        <Literal xml:lang="en">A unit which is a standard measure of the flow.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#flow_unit</IRI>
+        <Literal xml:lang="en">flow_unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#gas</IRI>
+        <Literal xml:lang="en">The gas is exported to the consumers via pipeline.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#gas</IRI>
+        <Literal xml:lang="en">Natural gas (also called fossil gas; sometimes just gas) is a naturally occurring hydrocarbon gas mixture consisting of methane and commonly including varying amounts of other higher alkanes, and sometimes a small percentage of carbon dioxide, nitrogen, hydrogen sulfide, or helium.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#gas</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Natural_gas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#gas</IRI>
+        <Literal xml:lang="en">natural gas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#gas</IRI>
+        <Literal xml:lang="en">gas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#grease</IRI>
+        <Literal xml:lang="en">The bearings were lubricated with grease.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#grease</IRI>
+        <Literal xml:lang="en">Grease is a solid or semisolid lubricant formed as a dispersion of thickening agents in a liquid lubricant.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#grease</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Grease_(lubricant)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#grease</IRI>
+        <Literal xml:lang="en">grease</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#has_element</IRI>
+        <Literal xml:lang="en">The sales team have hired extraordinary elements: Carl, John and Peter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#has_element</IRI>
+        <Literal xml:lang="en">a group to wich some person belongs to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_element</IRI>
+        <Literal xml:lang="en">has_element</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#has_subquantity</IRI>
+        <Literal xml:lang="en">alcohol is a subquantity of wine;
+gas is a subquantity of petroleum.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#has_subquantity</IRI>
+        <Literal xml:lang="en">be composed by subquantity(ies).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_subquantity</IRI>
+        <Literal>has_subquantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#heavier_than</IRI>
+        <Literal xml:lang="en">motor-01 is heavier than pump-01</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#heavier_than</IRI>
+        <Literal xml:lang="en">The relation between two objects compared by its masses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#heavier_than</IRI>
+        <Literal xml:lang="en">heavier_than</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#higher_than</IRI>
+        <Literal xml:lang="en">Motor A may be overcharged because the electric current in motor A is higher than in motor B.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#higher_than</IRI>
+        <Literal xml:lang="en">a relation of comparison between two physical quantities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#higher_than</IRI>
+        <Literal xml:lang="en">higher_than</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#in_maintenance</IRI>
+        <Literal xml:lang="en">The maintenance status that indicates that the equipment is currently being fixed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#in_maintenance</IRI>
+        <Literal xml:lang="en">in_maintenance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#in_service</IRI>
+        <Literal xml:lang="en">A kind of inventory status that indicates that an equipment is currently installed, in service.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#in_service</IRI>
+        <Literal xml:lang="en">installed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#integrity</IRI>
+        <Literal xml:lang="en">the integrity of a ship&apos;s hull.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#integrity</IRI>
+        <Literal xml:lang="en">the state of being whole, entire, or undiminished.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#integrity</IRI>
+        <Literal xml:lang="en">https://www.dictionary.com/browse/integrity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#integrity</IRI>
+        <Literal xml:lang="en">wholeness; entireness.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#integrity</IRI>
+        <Literal xml:lang="en">integrity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#inventory_status</IRI>
+        <Literal xml:lang="en">Quality that indicates the status of an equipment for inventory purposes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inventory_status</IRI>
+        <Literal xml:lang="en">installation_status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#iron_filing_level</IRI>
+        <Literal xml:lang="en">The iron filing level is the principal indicator to evaluate the health of a bearing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#iron_filing_level</IRI>
+        <Literal xml:lang="en">The quantity of iron filing in another substance. Iron filings are very small pieces of iron that look like a light powder.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#iron_filing_level</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Iron_filings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#iron_filing_level</IRI>
+        <Literal xml:lang="en">iron_filing_level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#iron_filing_measurement_datum</IRI>
+        <Literal xml:lang="en">A scalar measurement datum that is the result of measurement of iron filing level quality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#iron_filing_measurement_datum</IRI>
+        <Literal xml:lang="en">iron_filing_measurement_datum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#iron_filing_unit</IRI>
+        <Literal xml:lang="en">A unit which is a standard measure of the iron filing level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#iron_filing_unit</IRI>
+        <Literal xml:lang="en">iron_filing_unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#is_composed_by</IRI>
+        <Literal xml:lang="en">All machines are composed by parts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#is_composed_by</IRI>
+        <Literal xml:lang="en">Made up of (something); consisting of (something).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#is_composed_by</IRI>
+        <Literal xml:lang="en">https://idioms.thefreedictionary.com/composed+of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#is_composed_by</IRI>
+        <Literal>composed by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#maintenance_engineering_software</IRI>
+        <Literal xml:lang="en">The engineers used the maintenance engineering software to make a Weibull analysis of the system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#maintenance_engineering_software</IRI>
+        <Literal xml:lang="en">A specific type software application used to execute maintenance engineering analysis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maintenance_engineering_software</IRI>
+        <Literal xml:lang="en">maintenance_engineering_software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#maintenance_engineering_team</IRI>
+        <Literal xml:lang="en">The maintenance engineering team is working in a solution to prevent failures of the most critical equipment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#maintenance_engineering_team</IRI>
+        <Literal xml:lang="en">a group of engineers specialized in maintenance subjects that work together for a common goal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maintenance_engineering_team</IRI>
+        <Literal xml:lang="en">maintenance_engineering_team</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#maintenance_notification</IRI>
+        <Literal xml:lang="en">The operator opened a maintenance notification equipment problem could be checked.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#maintenance_notification</IRI>
+        <Literal xml:lang="en">Means with which company notifications are created and managed in the area of Plant Maintenance. The following notification types are predefined in the standard system:
+
+Problem notification
+
+Notification of a malfunction or problem that has occurred
+
+Maintenance request
+
+Request for tasks to be performed
+
+Activity report
+
+Documentation of activities that have been performed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#maintenance_notification</IRI>
+        <Literal xml:lang="en">https://help.sap.com/doc/b183ce53118d4308e10000000a174cb4/2.6/en-US/d484b8535c39b44ce10000000a174cb4.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maintenance_notification</IRI>
+        <Literal xml:lang="en">maintenance_notification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#maintenance_status</IRI>
+        <Literal xml:lang="en">Quality that indicates the status of an equipment for maintenance purposes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maintenance_status</IRI>
+        <Literal xml:lang="en">maintenance_status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#maintenance_work_order</IRI>
+        <Literal xml:lang="en">The scheduler distributed the maintenance work order for the technicians. The maintenance work order was closed after the service was concluded.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#maintenance_work_order</IRI>
+        <Literal xml:lang="en">Detailed planning assistance for maintenance tasks to be performed. An order contains operations that describe the individual work steps. For greater detail, operations can be divided into sub-operations.
+
+Operations can be performed sequentially, in parallel or overlapping. Their sequence is defined in relationships. Operations and sub-operations can be processed internally or externally.
+
+An operation or sub-operation to be processed internally is assigned to a work center, which is responsible for its execution. The necessary capacity requirements can be planned for performing the operation or sub-operation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#maintenance_work_order</IRI>
+        <Literal xml:lang="en">https://help.sap.com/doc/saphelp_nw70/7.0.12/ja-JP/5b/ae2d6e4b8611d182ba0000e829fbfe/content.htm?no_cache=true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#maintenance_work_order</IRI>
+        <Literal xml:lang="en">maintenance service order</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maintenance_work_order</IRI>
+        <Literal xml:lang="en">maintenance_work_order</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#measurement</IRI>
+        <Literal xml:lang="en">In this context, taken as a definition of measurement datum.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#motor-01</IRI>
+        <Literal xml:lang="en">electric_motor-01</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#noise</IRI>
+        <Literal xml:lang="en">a sound of any kind.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#noise</IRI>
+        <Literal xml:lang="en">https://www.dictionary.com/browse/noise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#noise</IRI>
+        <Literal xml:lang="en">The machine&apos;s noise was so weird that the operator suspected that something was wrong with it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#noise</IRI>
+        <Literal xml:lang="en">sound</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#noise</IRI>
+        <Literal xml:lang="en">noise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#noise_measurement_datum</IRI>
+        <Literal xml:lang="en">A scalar measurement datum that is the result of measurement of noise quality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#noise_measurement_datum</IRI>
+        <Literal xml:lang="en">noise_measurement_datum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#noise_unit</IRI>
+        <Literal xml:lang="en">A unit which is a standard measure of the noise.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#noise_unit</IRI>
+        <Literal xml:lang="en">noise_unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#not-broken</IRI>
+        <Literal xml:lang="en">The quality that indicates the that object holds its integrity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#not-broken</IRI>
+        <Literal xml:lang="en">not-broken</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#oil</IRI>
+        <Literal xml:lang="en">The oil is exported to the refineries by pipelines.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#oil</IRI>
+        <Literal xml:lang="en">Crude oil, liquid petroleum that is found accumulated in various porous rock formations in Earth’s crust and is extracted for burning as fuel or for processing into chemical products.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#oil</IRI>
+        <Literal xml:lang="en">https://www.britannica.com/science/crude-oil</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#oil</IRI>
+        <Literal xml:lang="en">crude oil</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#oil</IRI>
+        <Literal xml:lang="en">oil</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#operational_status</IRI>
+        <Literal xml:lang="en">Quality that indicates the status of an equipment for operation purposes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#operational_status</IRI>
+        <Literal xml:lang="en">operational_status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#out-of-order</IRI>
+        <Literal xml:lang="en">The elavator is out-of-order.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#out-of-order</IRI>
+        <Literal xml:lang="en">The maintenance status that indicates that the equipment is not working, broke, or unavailable for operation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#out-of-order</IRI>
+        <Literal xml:lang="en">unavailable; broke.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#out-of-order</IRI>
+        <Literal xml:lang="en">out-of-order</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#part</IRI>
+        <Literal xml:lang="en">a portion or division of a whole that is separate or distinct; piece, fragment, fraction, or section; constituent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#part</IRI>
+        <Literal xml:lang="en">https://www.dictionary.com/browse/part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#part</IRI>
+        <Literal xml:lang="en">The mechanics ordered all the parts necessary to the repair.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#part</IRI>
+        <Literal xml:lang="en">piece; component; element.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#part</IRI>
+        <Literal xml:lang="en">part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#person</IRI>
+        <Literal xml:lang="en">You ought not to generalize, but to consider the person you are dealing with.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#person</IRI>
+        <Literal xml:lang="en">a human being, whether an adult or child.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#person</IRI>
+        <Literal xml:lang="en">https://www.dictionary.com/browse/person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#person</IRI>
+        <Literal xml:lang="en">human being</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#person</IRI>
+        <Literal xml:lang="en">person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#petroleum</IRI>
+        <Literal xml:lang="en">Small surface occurrences of petroleum in the form of natural gas and oil seeps have been known from early times.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#petroleum</IRI>
+        <Literal xml:lang="en">Petroleum is a complex mixture of hydrocarbons that occur on Earth in liquid, gaseous, or solid form. The term is often restricted to the liquid form, commonly called crude oil. But, as a technical term, petroleum also includes natural gas and the viscous or solid form known as bitumen, which is found in tar sands.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#petroleum</IRI>
+        <Literal xml:lang="en">https://www.britannica.com/science/petroleum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#petroleum</IRI>
+        <Literal xml:lang="en">petroleum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#physical_quantity</IRI>
+        <Literal xml:lang="en">In this context, the same as physical quality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#physical_quantity</IRI>
+        <Literal xml:lang="en">physical_quantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#pressure</IRI>
+        <Literal xml:lang="en">The atmospheric pressure at sea level is 10^5 Pascal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#pressure</IRI>
+        <Literal xml:lang="en">Pressure (symbol: p or P) is the force applied perpendicular to the surface of an object per unit area over which that force is distributed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#pressure</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pressure</IRI>
+        <Literal xml:lang="en">pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#pressure_measurement_datum</IRI>
+        <Literal xml:lang="en">A scalar measurement datum that is the result of measurement of noise quality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pressure_measurement_datum</IRI>
+        <Literal xml:lang="en">pressure_measurement_datum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#pressure_unit</IRI>
+        <Literal xml:lang="en">A unit which is a standard measure of the pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pressure_unit</IRI>
+        <Literal xml:lang="en">pressure_unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#pump</IRI>
+        <Literal xml:lang="en">A pump is a device that moves fluids (liquids or gases), or sometimes slurries, by mechanical action, typically converted from electrical energy into hydraulic energy.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#pump</IRI>
+        <Literal xml:lang="en">The pump propels the oil from the bottom of the well to the surface.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#pump</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Pump</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pump</IRI>
+        <Literal xml:lang="en">pump</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#running_anomalous</IRI>
+        <Literal xml:lang="en">Kind of operational status that indicates that the equipment is running with an anomaly.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#running_anomalous</IRI>
+        <Literal xml:lang="en">running_anomalous</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#running_normal</IRI>
+        <Literal xml:lang="en">Kind of operational status that indicates that the equipment is running normally.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#running_normal</IRI>
+        <Literal xml:lang="en">running_normal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#rust</IRI>
+        <Literal xml:lang="en">The rust almost dissolved the remainings of Titanic.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#rust</IRI>
+        <Literal xml:lang="en">Rust is an iron oxide, a usually reddish-brown oxide formed by the reaction of iron and oxygen in the catalytic presence of water or air moisture.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#rust</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Rust</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#rust</IRI>
+        <Literal xml:lang="en">rust</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#sample</IRI>
+        <Literal xml:lang="en">The maintenance inspector took a sample of the transformer oil for laboratory analysis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#sample</IRI>
+        <Literal xml:lang="en">A small part of anything or one of a number, intended to show the quality, style, or nature of the whole; specimen.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#sample</IRI>
+        <Literal xml:lang="en">https://www.dictionary.com/browse/sample</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#sample</IRI>
+        <Literal xml:lang="en">specimen; piece; fragment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sample</IRI>
+        <Literal xml:lang="en">sample</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#sensor</IRI>
+        <Literal xml:lang="en">The signals from the machine are measured by sensors.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#sensor</IRI>
+        <Literal xml:lang="en">In the broadest definition, a sensor is a device, module, machine, or subsystem whose purpose is to detect events or changes in its environment and send the information to other electronics, frequently a computer processor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#sensor</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sensor</IRI>
+        <Literal xml:lang="en">sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#spare</IRI>
+        <Literal xml:lang="en">A kind of installation status that indicates that an equipment is currently as a spare, not installed, ready to replace an equivalent in service if necessary.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#spare</IRI>
+        <Literal xml:lang="en">spare</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#specified_range</IRI>
+        <Literal xml:lang="en">the range of steel prices; a wide range of styles.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#specified_range</IRI>
+        <Literal xml:lang="en">The extent to which or the limits between which variation is possible.
+
+https://www.dictionary.com/browse/range</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#specified_range</IRI>
+        <Literal xml:lang="en">spectrum; length</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#specified_range</IRI>
+        <Literal xml:lang="en">range</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#stopped</IRI>
+        <Literal xml:lang="en">Kind of operational status that indicates that the equipment is not running, that is, stopped, for any reason.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#stopped</IRI>
+        <Literal xml:lang="en">stopped</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#subquantity_of</IRI>
+        <Literal xml:lang="en">alcohol is part of wine;
+
+plasma is part of blood;
+
+sugar is part of ice cream.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#subquantity_of</IRI>
+        <Literal xml:lang="en">is a parthood relation between two quantities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#subquantity_of</IRI>
+        <Literal xml:lang="en">https://ontouml.readthedocs.io/en/latest/relationships/aggregations/subQuantityOf/index.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#subquantity_of</IRI>
+        <Literal xml:lang="en">subquantity_of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#suction_pressure</IRI>
+        <Literal xml:lang="en">The pressure measured in the input of a pump.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#suction_pressure</IRI>
+        <Literal xml:lang="en">suction_pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#supervisory_system</IRI>
+        <Literal xml:lang="en">The same as SCADA. Supervisory control and data acquisition (SCADA) is a control system architecture comprising computers, networked data communications and graphical user interfaces for high-level supervision of machines and processes. It also covers sensors and other devices, such as programmable logic controllers, which interface with process plant or machinery.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#supervisory_system</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/SCADA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#supervisory_system</IRI>
+        <Literal xml:lang="en">scada</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#supervisory_system</IRI>
+        <Literal xml:lang="en">supervisory system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#team</IRI>
+        <Literal xml:lang="en">The company team has beatten all its goals and deserves a wealthy bonus.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#team</IRI>
+        <Literal xml:lang="en">A team is a group of individuals working together to achieve their goal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#team</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Team</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#team</IRI>
+        <Literal xml:lang="en">team</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#technical_maintenance_team</IRI>
+        <Literal xml:lang="en">The technical maintenance team is working hard to finish the repair until midnight.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#technical_maintenance_team</IRI>
+        <Literal xml:lang="en">a group of techinicians that execute maintenance tasks that work together for a common goal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#technical_maintenance_team</IRI>
+        <Literal xml:lang="en">technical_maintenance_team</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#technician</IRI>
+        <Literal xml:lang="en">The technicians executed the repair in the machine.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#technician</IRI>
+        <Literal xml:lang="en">a person who is trained or skilled in the technicalities of a subject.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#technician</IRI>
+        <Literal xml:lang="en">technician</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#temperature</IRI>
+        <Literal xml:lang="en">The temperature of the fire was so high that even the steel structure of the house melted.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#temperature</IRI>
+        <Literal xml:lang="en">Temperature is a physical quantity that expresses hot and cold. It is the manifestation of thermal energy, present in all matter, which is the source of the occurrence of heat, a flow of energy, when a body is in contact with another that is colder or hotter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#temperature</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#temperature</IRI>
+        <Literal xml:lang="en">temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#temperature_measurement_datum</IRI>
+        <Literal xml:lang="en">A scalar measurement datum that is the result of measurement of temperature quality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#temperature_measurement_datum</IRI>
+        <Literal xml:lang="en">temperature_measurement_datum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#temperature_unit</IRI>
+        <Literal xml:lang="en">A unit which is a standard measure of the temperature.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#temperature_unit</IRI>
+        <Literal xml:lang="en">temperature_unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#vibration</IRI>
+        <Literal xml:lang="en">Rather than a cause, vibration is a symptom.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#vibration</IRI>
+        <Literal xml:lang="en">Vibration is a mechanical phenomenon whereby oscillations occur about an equilibrium point.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#vibration</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Vibration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#vibration</IRI>
+        <Literal xml:lang="en">vibration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#vibration_measurement_datum</IRI>
+        <Literal xml:lang="en">A scalar measurement datum that is the result of measurement of vibration quality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#vibration_measurement_datum</IRI>
+        <Literal xml:lang="en">vibration_measurement_datum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#vibration_unit</IRI>
+        <Literal xml:lang="en">A unit which is a standard measure of the vibration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#vibration_unit</IRI>
+        <Literal xml:lang="en">vibration_unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#working</IRI>
+        <Literal xml:lang="en">The maintenance status that indicates that the equipment is working, available for operation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#working</IRI>
+        <Literal xml:lang="en">None of the pumps are currently available.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#working</IRI>
+        <Literal xml:lang="en">available</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#working</IRI>
+        <Literal xml:lang="en">working</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
