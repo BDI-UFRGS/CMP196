@@ -52,7 +52,7 @@ Definição semi formal: Um sistema de produção</SP>
     <!-- http://www.semanticweb.org/gsnascimento/ontologies/2021/11/SPAOntology#ArranjoSubmarino -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/gsnascimento/ontologies/2021/11/SPAOntology#ArranjoSubmarino">
-        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Quantity"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
     </owl:Class>
     
 
@@ -111,7 +111,7 @@ Definição semi formal: Um sistema de produção</SP>
     <!-- http://www.semanticweb.org/gsnascimento/ontologies/2021/11/SPAOntology#Sensor -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/gsnascimento/ontologies/2021/11/SPAOntology#Sensor">
-        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Category"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
     </owl:Class>
     
 
@@ -119,7 +119,7 @@ Definição semi formal: Um sistema de produção</SP>
     <!-- http://www.semanticweb.org/gsnascimento/ontologies/2021/11/SPAOntology#SistemaProdução -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/gsnascimento/ontologies/2021/11/SPAOntology#SistemaProdução">
-        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Category"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
         <rdfs:comment>Sistema de Produção (SP)</rdfs:comment>
     </owl:Class>
     
@@ -128,7 +128,7 @@ Definição semi formal: Um sistema de produção</SP>
     <!-- http://www.semanticweb.org/gsnascimento/ontologies/2021/11/SPAOntology#UEP -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/gsnascimento/ontologies/2021/11/SPAOntology#UEP">
-        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Quantity"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
         <rdfs:comment>Unidade Estacionária de Produção (UEP).</rdfs:comment>
     </owl:Class>
     
