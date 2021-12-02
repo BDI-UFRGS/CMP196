@@ -42,6 +42,26 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#has_volume_value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#has_volume_value">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -218,12 +238,6 @@
         <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_earth_material"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#source_rock"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#volume"/>
@@ -371,24 +385,6 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#well_set"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#flow_measurement"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#injection_measurement"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#pressure_measurement"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000112>A downhole sensor that measure pressure and temperature</obo:IAO_0000112>
         <obo:IAO_0000115>A device that measures some quality of the downhole or amount of production at a well interval</obo:IAO_0000115>
         <obo:IAO_0000119>https://petrowiki.spe.org/Bottomhole_pressure_and_temperature_gauges
@@ -465,12 +461,6 @@ https://petrowiki.spe.org/Oil_and_gas_separators#Metering</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_earth_material"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#source_rock"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#volume"/>
@@ -501,6 +491,12 @@ https://petrowiki.spe.org/Oil_and_gas_separators#Metering</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#well_set"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#sensor"/>
             </owl:Restriction>
@@ -509,13 +505,6 @@ https://petrowiki.spe.org/Oil_and_gas_separators#Metering</obo:IAO_0000119>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#pressure"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#well_set"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#well_interval"/>
@@ -548,6 +537,12 @@ https://petrowiki.spe.org/Oil_and_gas_separators#Metering</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#well_set"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#sensor"/>
             </owl:Restriction>
@@ -556,13 +551,6 @@ https://petrowiki.spe.org/Oil_and_gas_separators#Metering</obo:IAO_0000119>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#operational_interval"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#well_set"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112>the producing interval of a well</obo:IAO_0000112>
@@ -627,6 +615,7 @@ https://petrowiki.spe.org/Oil_and_gas_separators#Metering</obo:IAO_0000119>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#amount_of_oil">
         <rdf:type rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#oil"/>
         <obo:BFO_0000171 rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#source_rock_1"/>
+        <obo:RO_0000086 rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#volume"/>
     </owl:NamedIndividual>
     
 
@@ -667,6 +656,14 @@ https://petrowiki.spe.org/Oil_and_gas_separators#Metering</obo:IAO_0000119>
     
 
 
+    <!-- http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#observed_production_datum_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#observed_production_datum_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#time_sampled_observation"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#permeability -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#permeability">
@@ -703,11 +700,20 @@ https://petrowiki.spe.org/Oil_and_gas_separators#Metering</obo:IAO_0000119>
     
 
 
+    <!-- http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#production_measurement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#production_measurement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#flow_measurement"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#sensor_1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#sensor_1">
         <rdf:type rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#sensor"/>
         <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#well_1_downhole"/>
+        <obo:RO_0000056 rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#production_measurement"/>
     </owl:NamedIndividual>
     
 
@@ -726,6 +732,7 @@ https://petrowiki.spe.org/Oil_and_gas_separators#Metering</obo:IAO_0000119>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#volume">
         <rdf:type rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#volume"/>
         <obo:BFO_0000052 rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#amount_of_oil"/>
+        <obo:RO_0000059 rdf:resource="http://www.semanticweb.org/marco/ontologies/2021/10/untitled-ontology-29#observed_production_datum_1"/>
     </owl:NamedIndividual>
     
 
