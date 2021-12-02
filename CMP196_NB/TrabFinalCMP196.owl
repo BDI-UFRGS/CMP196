@@ -1,0 +1,491 @@
+@prefix : <http://example.com#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gufo: <http://purl.org/nemo/gufo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://example.com> .
+
+<http://example.com> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://example.com#eventOrganizationHasEventOrganization
+:eventOrganizationHasEventOrganization rdf:type owl:ObjectProperty ;
+                                       rdfs:domain :EventOrganization ;
+                                       rdfs:range :EventOrganization .
+
+
+###  http://example.com#narratorOrganizerHasGameSubmission
+:narratorOrganizerHasGameSubmission rdf:type owl:ObjectProperty ;
+                                    rdfs:domain :NarratorOrganizer ;
+                                    rdfs:range :GameSubmission .
+
+
+###  http://example.com#narratorOrganizerHasNarrator
+:narratorOrganizerHasNarrator rdf:type owl:ObjectProperty ;
+                              rdfs:domain :NarratorOrganizer ;
+                              rdfs:range :Narrator .
+
+
+###  http://example.com#narratorOrganizerHasOrganizer
+:narratorOrganizerHasOrganizer rdf:type owl:ObjectProperty ;
+                               rdfs:domain :NarratorOrganizer ;
+                               rdfs:range :Organizer .
+
+
+###  http://example.com#ownedBy
+:ownedBy rdf:type owl:ObjectProperty ;
+         rdfs:domain :EventVenue ;
+         rdfs:range :GameStore ;
+         rdfs:label "ownedBy"@en .
+
+
+###  http://example.com#playerOrganizerHasOrganizer
+:playerOrganizerHasOrganizer rdf:type owl:ObjectProperty ;
+                             rdfs:domain :PlayerOrganizer ;
+                             rdfs:range :Organizer .
+
+
+###  http://example.com#playerOrganizerHasPlayer
+:playerOrganizerHasPlayer rdf:type owl:ObjectProperty ;
+                          rdfs:domain :PlayerOrganizer ;
+                          rdfs:range :Player .
+
+
+###  http://example.com#venueLeaseHasEventOrganization
+:venueLeaseHasEventOrganization rdf:type owl:ObjectProperty ;
+                                rdfs:domain :VenueLease ;
+                                rdfs:range :EventOrganization .
+
+
+###  http://example.com#venueLeaseHasGameStore
+:venueLeaseHasGameStore rdf:type owl:ObjectProperty ;
+                        rdfs:domain :VenueLease ;
+                        rdfs:range :GameStore .
+
+
+###  http://example.com#was
+:was rdf:type owl:ObjectProperty ;
+     rdfs:domain :Counselor ;
+     rdfs:range :Organizer ;
+     rdfs:label "was"@en .
+
+
+###  http://purl.org/nemo/gufo#externallyDependsOn
+gufo:externallyDependsOn rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/nemo/gufo#participatedIn
+gufo:participatedIn rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/nemo/gufo#wasCreatedIn
+gufo:wasCreatedIn rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://example.com#Counselor
+:Counselor rdf:type owl:Class ;
+           rdfs:subClassOf :Person .
+
+
+###  http://example.com#EventDate
+:EventDate rdf:type owl:Class ;
+           rdfs:subClassOf gufo:Quality .
+
+
+###  http://example.com#EventOrganization
+:EventOrganization rdf:type owl:Class ;
+                   rdfs:subClassOf gufo:VariableCollection ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty [ owl:inverseOf gufo:wasCreatedIn
+                                                    ] ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :GameEventEdition
+                                   ] .
+
+
+###  http://example.com#EventTheme
+:EventTheme rdf:type owl:Class ;
+            rdfs:subClassOf gufo:Quality .
+
+
+###  http://example.com#EventVenue
+:EventVenue rdf:type owl:Class ;
+            rdfs:subClassOf gufo:Mixin .
+
+
+###  http://example.com#Game
+:Game rdf:type owl:Class ;
+      rdfs:subClassOf gufo:Event ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty gufo:externallyDependsOn ;
+                        owl:someValuesFrom :GameSubmission
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty [ owl:inverseOf gufo:participatedIn
+                                       ] ;
+                        owl:someValuesFrom :Narrator
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty [ owl:inverseOf gufo:participatedIn
+                                       ] ;
+                        owl:someValuesFrom :Player
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty [ owl:inverseOf gufo:participatedIn
+                                       ] ;
+                        owl:someValuesFrom :PlayerOrganizer
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty [ owl:inverseOf gufo:participatedIn
+                                       ] ;
+                        owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :NarratorOrganizer
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty [ owl:inverseOf gufo:wasCreatedIn
+                                       ] ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :GameEventEdition
+                      ] .
+
+
+###  http://example.com#GameEventEdition
+:GameEventEdition rdf:type owl:Class ;
+                  rdfs:subClassOf gufo:Event ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty gufo:externallyDependsOn ;
+                                    owl:someValuesFrom :EventVenue
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty gufo:wasCreatedIn ;
+                                    owl:someValuesFrom :Game
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty gufo:wasCreatedIn ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass :EventOrganization
+                                  ] .
+
+
+###  http://example.com#GameStore
+:GameStore rdf:type owl:Class ;
+           rdfs:subClassOf :Store .
+
+
+###  http://example.com#GameSubmission
+:GameSubmission rdf:type owl:Class ;
+                rdfs:subClassOf gufo:Event ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty [ owl:inverseOf gufo:participatedIn
+                                                 ] ;
+                                  owl:someValuesFrom :Narrator
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty [ owl:inverseOf gufo:wasCreatedIn
+                                                 ] ;
+                                  owl:someValuesFrom :GameEventEdition
+                                ] .
+
+
+###  http://example.com#Narrator
+:Narrator rdf:type owl:Class ;
+          rdfs:subClassOf :Person ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty gufo:participatedIn ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Game
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty gufo:wasCreatedIn ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Game
+                          ] .
+
+
+###  http://example.com#NarratorOrganizer
+:NarratorOrganizer rdf:type owl:Class ;
+                   rdfs:subClassOf gufo:RoleMixin ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty gufo:participatedIn ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :Game
+                                   ] .
+
+
+###  http://example.com#Organizer
+:Organizer rdf:type owl:Class ;
+           rdfs:subClassOf :Person .
+
+
+###  http://example.com#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf gufo:Kind .
+
+
+###  http://example.com#Player
+:Player rdf:type owl:Class ;
+        rdfs:subClassOf :Person ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty gufo:participatedIn ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Game
+                        ] .
+
+
+###  http://example.com#PlayerOrganizer
+:PlayerOrganizer rdf:type owl:Class ;
+                 rdfs:subClassOf gufo:RoleMixin ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty gufo:participatedIn ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :Game
+                                 ] .
+
+
+###  http://example.com#Rules
+:Rules rdf:type owl:Class ;
+       rdfs:subClassOf gufo:Quality .
+
+
+###  http://example.com#Store
+:Store rdf:type owl:Class ;
+       rdfs:subClassOf gufo:Kind .
+
+
+###  http://example.com#Synopsis
+:Synopsis rdf:type owl:Class ;
+          rdfs:subClassOf gufo:Quality .
+
+
+###  http://example.com#Title
+:Title rdf:type owl:Class ;
+       rdfs:subClassOf gufo:Quality .
+
+
+###  http://example.com#VenueLease
+:VenueLease rdf:type owl:Class ;
+            rdfs:subClassOf gufo:Relator .
+
+
+###  http://purl.org/nemo/gufo#Event
+gufo:Event rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#EventType
+gufo:EventType rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Kind
+gufo:Kind rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Mixin
+gufo:Mixin rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Phase
+gufo:Phase rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Quality
+gufo:Quality rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Relator
+gufo:Relator rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Role
+gufo:Role rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#RoleMixin
+gufo:RoleMixin rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#SubKind
+gufo:SubKind rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#VariableCollection
+gufo:VariableCollection rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://example.com#Counselor
+:Counselor rdf:type owl:NamedIndividual ,
+                    gufo:Phase .
+
+
+###  http://example.com#EventDate
+:EventDate rdf:type owl:NamedIndividual ,
+                    gufo:Kind .
+
+
+###  http://example.com#EventOrganization
+:EventOrganization rdf:type owl:NamedIndividual ,
+                            gufo:Kind .
+
+
+###  http://example.com#EventTheme
+:EventTheme rdf:type owl:NamedIndividual ,
+                     gufo:Kind .
+
+
+###  http://example.com#EventVenue
+:EventVenue rdf:type owl:NamedIndividual ,
+                     gufo:Mixin .
+
+
+###  http://example.com#Game
+:Game rdf:type owl:NamedIndividual ,
+               gufo:EventType .
+
+
+###  http://example.com#GameEventEdition
+:GameEventEdition rdf:type owl:NamedIndividual ,
+                           gufo:EventType .
+
+
+###  http://example.com#GameStore
+:GameStore rdf:type owl:NamedIndividual ,
+                    gufo:SubKind .
+
+
+###  http://example.com#GameSubmission
+:GameSubmission rdf:type owl:NamedIndividual ,
+                         gufo:EventType .
+
+
+###  http://example.com#Narrator
+:Narrator rdf:type owl:NamedIndividual ,
+                   gufo:Role .
+
+
+###  http://example.com#NarratorOrganizer
+:NarratorOrganizer rdf:type owl:NamedIndividual ,
+                            gufo:RoleMixin .
+
+
+###  http://example.com#Organizer
+:Organizer rdf:type owl:NamedIndividual ,
+                    gufo:Role .
+
+
+###  http://example.com#Person
+:Person rdf:type owl:NamedIndividual ,
+                 gufo:Kind .
+
+
+###  http://example.com#Player
+:Player rdf:type owl:NamedIndividual ,
+                 gufo:Role .
+
+
+###  http://example.com#PlayerOrganizer
+:PlayerOrganizer rdf:type owl:NamedIndividual ,
+                          gufo:RoleMixin .
+
+
+###  http://example.com#Rules
+:Rules rdf:type owl:NamedIndividual ,
+                gufo:Kind .
+
+
+###  http://example.com#Store
+:Store rdf:type owl:NamedIndividual ,
+                gufo:Kind .
+
+
+###  http://example.com#Synopsis
+:Synopsis rdf:type owl:NamedIndividual ,
+                   gufo:Kind .
+
+
+###  http://example.com#Title
+:Title rdf:type owl:NamedIndividual ,
+                gufo:Kind .
+
+
+###  http://example.com#VenueLease
+:VenueLease rdf:type owl:NamedIndividual ,
+                     gufo:Kind .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:Counselor rdfs:label "Counselor"@en .
+
+
+:EventDate rdfs:label "Event Date"@en .
+
+
+:EventOrganization rdfs:label "Event Organization"@en .
+
+
+:EventTheme rdfs:label "Event Theme"@en .
+
+
+:EventVenue rdfs:label "Event Venue"@en .
+
+
+:Game rdfs:label "Game"@en .
+
+
+:GameEventEdition rdfs:label "Game Event Edition"@en .
+
+
+:GameStore rdfs:label "Game Store"@en .
+
+
+:GameSubmission rdfs:label "Game Submission"@en .
+
+
+:Narrator rdfs:label "Narrator"@en .
+
+
+:NarratorOrganizer rdfs:label "Narrator Organizer"@en .
+
+
+:Organizer rdfs:label "Organizer"@en .
+
+
+:Person rdfs:label "Person"@en .
+
+
+:Player rdfs:label "Player"@en .
+
+
+:PlayerOrganizer rdfs:label "Player Organizer"@en .
+
+
+:Rules rdfs:label "Rules"@en .
+
+
+:Store rdfs:label "Store"@en .
+
+
+:Synopsis rdfs:label "Synopsis"@en .
+
+
+:Title rdfs:label "Title"@en .
+
+
+:VenueLease rdfs:label "Venue Lease"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
