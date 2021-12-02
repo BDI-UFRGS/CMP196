@@ -1,0 +1,1514 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://purl.org/saga/geoevent"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://purl.org/saga/geoevent">
+    <Prefix name="" IRI="http://example.com#"/>
+    <Prefix name="gev" IRI="http://example.com/geo-core#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="gufo" IRI="http://purl.org/nemo/gufo#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="geoEvent" IRI="http://example.com/geo-event#"/>
+    <Import>http://purl.org/nemo/gufo#/1.0.0</Import>
+    <Declaration>
+        <Class abbreviatedIRI=":Batholith"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Clast"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":ClastAggregate"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":ClasticRock"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":CrystalAggregate"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":CrystalAndClastAggregate"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":CrystallineRock"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":DepositedSediment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Deposition"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":DepositionalContact"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Dike"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":GCOEarthFluid"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":GCOEarthMaterial"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":GCOGeologicalContact"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":GCOGeologicalObject"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":GCOGeologicalProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":GCORock"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":GCOSediment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":HostObject"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":IgneousRock"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Intrusion"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":IntrusiveContact"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":IntrusiveObject"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":LavaDeposition"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":LavaFlowBed"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Magma"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":MetamorphicRock"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":MovingSediment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":MovingSedimentSituation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Mud"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Mudstone"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":OverlyingStratum"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":ParticleAggregate"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Pluton"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":PyroclasticRock"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":PyroclasticSediment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Sand"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Sandstone"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":SedimentAboveGeologicalObject"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":SedimentConstitutingStratum"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":SedimentDeposition"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":SedimentaryRock"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Sill"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Stratum"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":UnderlyingObject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":constitutedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":externallyConnectedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":intrudes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":overlies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#olderThan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#youngerThan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Batholith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Clast"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":ClastAggregate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":ClasticRock"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":CrystalAggregate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":CrystalAndClastAggregate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":CrystallineRock"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":DepositedSediment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Deposition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":DepositionalContact"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Dike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":GCOEarthFluid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":GCOEarthMaterial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":GCOGeologicalContact"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":GCOGeologicalObject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":GCOGeologicalProcess"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":GCORock"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":GCOSediment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":HostObject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":IgneousRock"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Intrusion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":IntrusiveContact"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":IntrusiveObject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":LavaDeposition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":LavaFlowBed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Magma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":MetamorphicRock"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":MovingSediment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":MovingSedimentSituation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Mud"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":MuddySand"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":OverlyingStratum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":ParticleAggregate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Pluton"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":PyroclasticRock"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":PyroclasticSediment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Sand"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Sandstone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":SedimentAboveGeologicalObject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":SedimentConstitutingStratum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":SedimentDeposition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":SedimentaryRock"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Sill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Stratum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":UnderlyingObject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":externallyConnectedWith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":intrudes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":overlies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#youngerThan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0A_object_A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0A_rock_A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0B_object_B"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0B_rock_B"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0C_object_C"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0C_rock_C"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0D_object_D"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0D_rock_D"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0E_object_E"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0E_rock_E"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0F_object_F"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0F_rock_F"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0G_object_G"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0G_rock_G"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0H_object_H"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0H_rock_H"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0I_object_I"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0I_rock_I"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0J_object_J"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0J_rock_J"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1_contact_A_B"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI=":exampleOfUse"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI=":source"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI=":synonym"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class abbreviatedIRI=":GCORock"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI=":ClasticRock"/>
+            <Class abbreviatedIRI=":CrystallineRock"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI=":GCORock"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI=":IgneousRock"/>
+            <Class abbreviatedIRI=":MetamorphicRock"/>
+            <Class abbreviatedIRI=":SedimentaryRock"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Batholith"/>
+        <Class abbreviatedIRI=":Pluton"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Clast"/>
+        <Class abbreviatedIRI=":GCOGeologicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":ClastAggregate"/>
+        <Class abbreviatedIRI=":ParticleAggregate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":ClasticRock"/>
+        <Class abbreviatedIRI=":GCORock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":CrystalAggregate"/>
+        <Class abbreviatedIRI=":ParticleAggregate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":CrystalAndClastAggregate"/>
+        <Class abbreviatedIRI=":ParticleAggregate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":CrystallineRock"/>
+        <Class abbreviatedIRI=":GCORock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":DepositedSediment"/>
+        <Class abbreviatedIRI=":GCOSediment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Deposition"/>
+        <Class abbreviatedIRI=":GCOGeologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Deposition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:wasCreatedIn"/>
+            </ObjectInverseOf>
+            <Class abbreviatedIRI=":DepositionalContact"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Deposition"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:wasCreatedIn"/>
+            </ObjectInverseOf>
+            <Class abbreviatedIRI=":Stratum"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":DepositionalContact"/>
+        <Class abbreviatedIRI=":GCOGeologicalContact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":DepositionalContact"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:wasCreatedIn"/>
+            <Class abbreviatedIRI=":Deposition"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Dike"/>
+        <Class abbreviatedIRI=":Pluton"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":GCOEarthFluid"/>
+        <Class abbreviatedIRI=":GCOEarthMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":GCOEarthMaterial"/>
+        <Class abbreviatedIRI="gufo:Quantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":GCOGeologicalContact"/>
+        <Class abbreviatedIRI="gufo:Relator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":GCOGeologicalObject"/>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":GCOGeologicalProcess"/>
+        <Class abbreviatedIRI="gufo:Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":GCORock"/>
+        <Class abbreviatedIRI=":GCOEarthMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":GCOSediment"/>
+        <Class abbreviatedIRI=":GCOEarthMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":HostObject"/>
+        <Class abbreviatedIRI=":GCOGeologicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":IgneousRock"/>
+        <Class abbreviatedIRI=":GCORock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Intrusion"/>
+        <Class abbreviatedIRI=":GCOGeologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Intrusion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:wasCreatedIn"/>
+            </ObjectInverseOf>
+            <Class abbreviatedIRI=":IntrusiveContact"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Intrusion"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:wasCreatedIn"/>
+            </ObjectInverseOf>
+            <Class abbreviatedIRI=":Pluton"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":IntrusiveContact"/>
+        <Class abbreviatedIRI=":GCOGeologicalContact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":IntrusiveContact"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:wasCreatedIn"/>
+            <Class abbreviatedIRI=":Intrusion"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":IntrusiveObject"/>
+        <Class abbreviatedIRI=":Pluton"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":LavaDeposition"/>
+        <Class abbreviatedIRI=":Deposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":LavaDeposition"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:wasCreatedIn"/>
+            </ObjectInverseOf>
+            <Class abbreviatedIRI=":LavaFlowBed"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":LavaFlowBed"/>
+        <Class abbreviatedIRI=":Stratum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":LavaFlowBed"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:wasCreatedIn"/>
+            <Class abbreviatedIRI=":LavaDeposition"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Magma"/>
+        <Class abbreviatedIRI=":GCOEarthFluid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":MetamorphicRock"/>
+        <Class abbreviatedIRI=":GCORock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":MovingSediment"/>
+        <Class abbreviatedIRI=":GCOSediment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":MovingSedimentSituation"/>
+        <Class abbreviatedIRI="gufo:Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":MovingSedimentSituation"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:contributedToTrigger"/>
+            <Class abbreviatedIRI=":SedimentDeposition"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Mud"/>
+        <Class abbreviatedIRI=":GCOSediment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Mudstone"/>
+        <Class abbreviatedIRI=":ClasticRock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Mudstone"/>
+        <Class abbreviatedIRI=":SedimentaryRock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":OverlyingStratum"/>
+        <Class abbreviatedIRI=":Stratum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":ParticleAggregate"/>
+        <Class abbreviatedIRI="gufo:VariableCollection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Pluton"/>
+        <Class abbreviatedIRI=":GCOGeologicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Pluton"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:wasCreatedIn"/>
+            <Class abbreviatedIRI=":Intrusion"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":PyroclasticRock"/>
+        <Class abbreviatedIRI=":ClasticRock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":PyroclasticRock"/>
+        <Class abbreviatedIRI=":IgneousRock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":PyroclasticSediment"/>
+        <Class abbreviatedIRI=":GCOSediment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Sand"/>
+        <Class abbreviatedIRI=":GCOSediment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Sandstone"/>
+        <Class abbreviatedIRI=":ClasticRock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Sandstone"/>
+        <Class abbreviatedIRI=":SedimentaryRock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":SedimentAboveGeologicalObject"/>
+        <Class abbreviatedIRI="gufo:Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":SedimentAboveGeologicalObject"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:contributedToTrigger"/>
+            <Class abbreviatedIRI=":SedimentDeposition"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":SedimentConstitutingStratum"/>
+        <Class abbreviatedIRI="gufo:Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":SedimentConstitutingStratum"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:broughtAbout"/>
+            </ObjectInverseOf>
+            <Class abbreviatedIRI=":SedimentDeposition"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":SedimentDeposition"/>
+        <Class abbreviatedIRI=":Deposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":SedimentDeposition"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:contributedToTrigger"/>
+            </ObjectInverseOf>
+            <Class abbreviatedIRI=":MovingSedimentSituation"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":SedimentDeposition"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:contributedToTrigger"/>
+            </ObjectInverseOf>
+            <Class abbreviatedIRI=":SedimentAboveGeologicalObject"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":SedimentDeposition"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:broughtAbout"/>
+            <Class abbreviatedIRI=":SedimentConstitutingStratum"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":SedimentaryRock"/>
+        <Class abbreviatedIRI=":GCORock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Sill"/>
+        <Class abbreviatedIRI=":Pluton"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Stratum"/>
+        <Class abbreviatedIRI=":GCOGeologicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Stratum"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:wasCreatedIn"/>
+            <Class abbreviatedIRI=":Deposition"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":UnderlyingObject"/>
+        <Class abbreviatedIRI=":GCOGeologicalObject"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class abbreviatedIRI=":Batholith"/>
+        <Class abbreviatedIRI=":Dike"/>
+        <Class abbreviatedIRI=":Sill"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI=":ClasticRock"/>
+        <Class abbreviatedIRI=":CrystallineRock"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI=":Deposition"/>
+        <Class abbreviatedIRI=":Intrusion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI=":DepositionalContact"/>
+        <Class abbreviatedIRI=":IntrusiveContact"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI=":GCOEarthFluid"/>
+        <Class abbreviatedIRI=":GCORock"/>
+        <Class abbreviatedIRI=":GCOSediment"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI=":IgneousRock"/>
+        <Class abbreviatedIRI=":MetamorphicRock"/>
+        <Class abbreviatedIRI=":SedimentaryRock"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI=":LavaDeposition"/>
+        <Class abbreviatedIRI=":SedimentDeposition"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI=":Pluton"/>
+        <Class abbreviatedIRI=":Stratum"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":Batholith"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":Clast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":ClastAggregate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":ClasticRock"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":CrystalAggregate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":CrystalAndClastAggregate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":CrystallineRock"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Phase"/>
+        <NamedIndividual abbreviatedIRI=":DepositedSediment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:EventType"/>
+        <NamedIndividual abbreviatedIRI=":Deposition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":DepositionalContact"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":Dike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Category"/>
+        <NamedIndividual abbreviatedIRI=":GCOEarthFluid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Category"/>
+        <NamedIndividual abbreviatedIRI=":GCOEarthMaterial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Category"/>
+        <NamedIndividual abbreviatedIRI=":GCOGeologicalContact"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Category"/>
+        <NamedIndividual abbreviatedIRI=":GCOGeologicalObject"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:EventType"/>
+        <NamedIndividual abbreviatedIRI=":GCOGeologicalProcess"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":GCORock"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":GCOSediment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:RoleMixin"/>
+        <NamedIndividual abbreviatedIRI=":HostObject"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":IgneousRock"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:EventType"/>
+        <NamedIndividual abbreviatedIRI=":Intrusion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":IntrusiveContact"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:RoleMixin"/>
+        <NamedIndividual abbreviatedIRI=":IntrusiveObject"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:EventType"/>
+        <NamedIndividual abbreviatedIRI=":LavaDeposition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":LavaFlowBed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":Magma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":MetamorphicRock"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Phase"/>
+        <NamedIndividual abbreviatedIRI=":MovingSediment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SituationType"/>
+        <NamedIndividual abbreviatedIRI=":MovingSedimentSituation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":Mud"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":MuddySand"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Role"/>
+        <NamedIndividual abbreviatedIRI=":OverlyingStratum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Category"/>
+        <NamedIndividual abbreviatedIRI=":ParticleAggregate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Category"/>
+        <NamedIndividual abbreviatedIRI=":Pluton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":PyroclasticRock"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":PyroclasticSediment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":Sand"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":Sandstone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SituationType"/>
+        <NamedIndividual abbreviatedIRI=":SedimentAboveGeologicalObject"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SituationType"/>
+        <NamedIndividual abbreviatedIRI=":SedimentConstitutingStratum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:EventType"/>
+        <NamedIndividual abbreviatedIRI=":SedimentDeposition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":SedimentaryRock"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":Sill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":Stratum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:RoleMixin"/>
+        <NamedIndividual abbreviatedIRI=":UnderlyingObject"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:MaterialRelationshipType"/>
+        <NamedIndividual abbreviatedIRI=":externallyConnectedWith"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:MaterialRelationshipType"/>
+        <NamedIndividual abbreviatedIRI=":intrudes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:MaterialRelationshipType"/>
+        <NamedIndividual abbreviatedIRI=":overlies"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:ComparativeRelationshipType"/>
+        <NamedIndividual IRI="#youngerThan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":GCOGeologicalObject"/>
+        <NamedIndividual IRI="#0A_object_A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":MetamorphicRock"/>
+        <NamedIndividual IRI="#0A_rock_A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Batholith"/>
+        <NamedIndividual IRI="#0B_object_B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":CrystallineRock"/>
+        <NamedIndividual IRI="#0B_rock_B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":IgneousRock"/>
+        <NamedIndividual IRI="#0B_rock_B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Dike"/>
+        <NamedIndividual IRI="#0C_object_C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":CrystallineRock"/>
+        <NamedIndividual IRI="#0C_rock_C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":IgneousRock"/>
+        <NamedIndividual IRI="#0C_rock_C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Stratum"/>
+        <NamedIndividual IRI="#0D_object_D"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Sandstone"/>
+        <NamedIndividual IRI="#0D_rock_D"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Stratum"/>
+        <NamedIndividual IRI="#0E_object_E"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Mudstone"/>
+        <NamedIndividual IRI="#0E_rock_E"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Stratum"/>
+        <NamedIndividual IRI="#0F_object_F"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Sandstone"/>
+        <NamedIndividual IRI="#0F_rock_F"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":LavaFlowBed"/>
+        <NamedIndividual IRI="#0G_object_G"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":CrystallineRock"/>
+        <NamedIndividual IRI="#0G_rock_G"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":IgneousRock"/>
+        <NamedIndividual IRI="#0G_rock_G"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Dike"/>
+        <NamedIndividual IRI="#0H_object_H"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Dike"/>
+        <NamedIndividual IRI="#0H_rock_H"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Stratum"/>
+        <NamedIndividual IRI="#0I_object_I"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Mudstone"/>
+        <NamedIndividual IRI="#0I_rock_I"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Stratum"/>
+        <NamedIndividual IRI="#0J_object_J"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Sandstone"/>
+        <NamedIndividual IRI="#0J_rock_J"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":IntrusiveContact"/>
+        <NamedIndividual IRI="#1_contact_A_B"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="gufo:constitutes"/>
+        <NamedIndividual IRI="#0A_rock_A"/>
+        <NamedIndividual IRI="#0A_object_A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":intrudes"/>
+        <NamedIndividual IRI="#0B_object_B"/>
+        <NamedIndividual IRI="#0A_object_A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="gufo:constitutes"/>
+        <NamedIndividual IRI="#0B_rock_B"/>
+        <NamedIndividual IRI="#0B_object_B"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":intrudes"/>
+        <NamedIndividual IRI="#0C_object_C"/>
+        <NamedIndividual IRI="#0A_object_A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":intrudes"/>
+        <NamedIndividual IRI="#0C_object_C"/>
+        <NamedIndividual IRI="#0B_object_B"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="gufo:constitutes"/>
+        <NamedIndividual IRI="#0C_rock_C"/>
+        <NamedIndividual IRI="#0C_object_C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":overlies"/>
+        <NamedIndividual IRI="#0D_object_D"/>
+        <NamedIndividual IRI="#0A_object_A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":overlies"/>
+        <NamedIndividual IRI="#0D_object_D"/>
+        <NamedIndividual IRI="#0B_object_B"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":overlies"/>
+        <NamedIndividual IRI="#0D_object_D"/>
+        <NamedIndividual IRI="#0C_object_C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="gufo:constitutes"/>
+        <NamedIndividual IRI="#0D_rock_D"/>
+        <NamedIndividual IRI="#0D_object_D"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":overlies"/>
+        <NamedIndividual IRI="#0E_object_E"/>
+        <NamedIndividual IRI="#0D_object_D"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="gufo:constitutes"/>
+        <NamedIndividual IRI="#0E_rock_E"/>
+        <NamedIndividual IRI="#0E_object_E"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+        <NamedIndividual IRI="#1_contact_A_B"/>
+        <NamedIndividual IRI="#0A_object_A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+        <NamedIndividual IRI="#1_contact_A_B"/>
+        <NamedIndividual IRI="#0B_object_B"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#olderThan"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#youngerThan"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI=":constitutedBy"/>
+        <ObjectProperty abbreviatedIRI="gufo:constitutes"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#olderThan"/>
+        <ObjectProperty IRI="#youngerThan"/>
+    </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#olderThan"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#youngerThan"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":externallyConnectedWith"/>
+        <Class abbreviatedIRI=":GCOGeologicalObject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":intrudes"/>
+        <Class abbreviatedIRI=":IntrusiveObject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":overlies"/>
+        <Class abbreviatedIRI=":OverlyingStratum"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":externallyConnectedWith"/>
+        <Class abbreviatedIRI=":GCOGeologicalObject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":intrudes"/>
+        <Class abbreviatedIRI=":HostObject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":overlies"/>
+        <Class abbreviatedIRI=":UnderlyingObject"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":exampleOfUse"/>
+        <AbbreviatedIRI>:Batholith</AbbreviatedIRI>
+        <Literal xml:lang="en">The batholith is Late Cretaceous in age and is emplaced immediately east of the Triassic Seven Devils volcanic arc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":source"/>
+        <AbbreviatedIRI>:Batholith</AbbreviatedIRI>
+        <Literal xml:lang="en">Winter, J. D. (2014). Principles of igneous and metamorphic petrology (Vol. 2). Harlow, UK: Pearson education.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Batholith</AbbreviatedIRI>
+        <Literal xml:lang="en">Batholith is a large non-tabular pluton constituted by phaneritic igneous rock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Batholith</AbbreviatedIRI>
+        <Literal xml:lang="en">Batholith</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Clast</AbbreviatedIRI>
+        <Literal xml:lang="en">Clast</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:ClastAggregate</AbbreviatedIRI>
+        <Literal xml:lang="en">Clast Aggregate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:ClasticRock</AbbreviatedIRI>
+        <Literal xml:lang="en">Clastic Rock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:CrystalAggregate</AbbreviatedIRI>
+        <Literal xml:lang="en">Crystal Aggregate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:CrystalAndClastAggregate</AbbreviatedIRI>
+        <Literal xml:lang="en">Crystal and Clast Aggregate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:CrystallineRock</AbbreviatedIRI>
+        <Literal xml:lang="en">Crystalline Rock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:DepositedSediment</AbbreviatedIRI>
+        <Literal xml:lang="en">Deposited Sediment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Deposition</AbbreviatedIRI>
+        <Literal xml:lang="en">Deposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:DepositionalContact</AbbreviatedIRI>
+        <Literal xml:lang="en">Depositional Contact</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":exampleOfUse"/>
+        <AbbreviatedIRI>:Dike</AbbreviatedIRI>
+        <Literal xml:lang="en">Dike intrusion in volcanic rift zones typically generates normal faulting and graben subsidence at the Earth&apos;s surface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":source"/>
+        <AbbreviatedIRI>:Dike</AbbreviatedIRI>
+        <Literal xml:lang="en">Winter, J. D. (2014). Principles of igneous and metamorphic petrology (Vol. 2). Harlow, UK: Pearson education.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Dike</AbbreviatedIRI>
+        <Literal xml:lang="en">Dike is a tabular discordant pluton that can be constituted by aphanitic or phaneritic igneous rocks.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Dike</AbbreviatedIRI>
+        <Literal xml:lang="en">Dike</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:GCOEarthFluid</AbbreviatedIRI>
+        <Literal xml:lang="en">GCO:Earth Fluid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:GCOEarthMaterial</AbbreviatedIRI>
+        <Literal xml:lang="en">GCO:Earth Material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:GCOGeologicalContact</AbbreviatedIRI>
+        <Literal xml:lang="en">GCO:Geological Contact</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:GCOGeologicalObject</AbbreviatedIRI>
+        <Literal xml:lang="en">GCO:Geological Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:GCOGeologicalProcess</AbbreviatedIRI>
+        <Literal xml:lang="en">GCO:Geological Process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:GCORock</AbbreviatedIRI>
+        <Literal xml:lang="en">GCO:Rock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:GCOSediment</AbbreviatedIRI>
+        <Literal xml:lang="en">GCO:Sediment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:HostObject</AbbreviatedIRI>
+        <Literal xml:lang="en">Host Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":source"/>
+        <AbbreviatedIRI>:IgneousRock</AbbreviatedIRI>
+        <Literal xml:lang="en">Winter, J. D. (2014). Principles of igneous and metamorphic petrology (Vol. 2). Harlow, UK: Pearson education.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:IgneousRock</AbbreviatedIRI>
+        <Literal xml:lang="en">Igneous Rock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Intrusion</AbbreviatedIRI>
+        <Literal xml:lang="en">Intrusion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:IntrusiveContact</AbbreviatedIRI>
+        <Literal xml:lang="en">Intrusive Contact</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":exampleOfUse"/>
+        <AbbreviatedIRI>:IntrusiveObject</AbbreviatedIRI>
+        <Literal xml:lang="en">Emplacement of an intrusive body may fracture the country rocks as it forces its way toward the surface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":source"/>
+        <AbbreviatedIRI>:IntrusiveObject</AbbreviatedIRI>
+        <Literal xml:lang="en">Winter, J. D. (2014). Principles of igneous and metamorphic petrology (Vol. 2). Harlow, UK: Pearson education.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":synonym"/>
+        <AbbreviatedIRI>:IntrusiveObject</AbbreviatedIRI>
+        <Literal xml:lang="en">intrusive body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:IntrusiveObject</AbbreviatedIRI>
+        <Literal xml:lang="en">Intrusive Object is the role of a pluton in a intrusive contact</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:IntrusiveObject</AbbreviatedIRI>
+        <Literal xml:lang="en">Intrusive Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:LavaDeposition</AbbreviatedIRI>
+        <Literal xml:lang="en">Lava Deposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":source"/>
+        <AbbreviatedIRI>:LavaFlowBed</AbbreviatedIRI>
+        <Literal xml:lang="en">Winter, J. D. (2014). Principles of igneous and metamorphic petrology (Vol. 2). Harlow, UK: Pearson education.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:LavaFlowBed</AbbreviatedIRI>
+        <Literal xml:lang="en">Lava Flow Bed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Magma</AbbreviatedIRI>
+        <Literal xml:lang="en">Magma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:MetamorphicRock</AbbreviatedIRI>
+        <Literal xml:lang="en">MetamorphicRock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:MovingSediment</AbbreviatedIRI>
+        <Literal xml:lang="en">Moving Sediment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:MovingSedimentSituation</AbbreviatedIRI>
+        <Literal xml:lang="en">Moving sediment situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Mud</AbbreviatedIRI>
+        <Literal xml:lang="en">Mud</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:OverlyingStratum</AbbreviatedIRI>
+        <Literal xml:lang="en">Overlying Stratum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:ParticleAggregate</AbbreviatedIRI>
+        <Literal xml:lang="en">Particle Aggregate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":exampleOfUse"/>
+        <AbbreviatedIRI>:Pluton</AbbreviatedIRI>
+        <Literal xml:lang="en">The Kozak pluton is located in central western Anatolia, where it crops out in the core of an antiformal culmination. The pluton was emplaced into regionally deformed and metamorphosed basement rocks, during the Late Oligocene–Early Miocene period.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":source"/>
+        <AbbreviatedIRI>:Pluton</AbbreviatedIRI>
+        <Literal xml:lang="en">Winter, J. D. (2014). Principles of igneous and metamorphic petrology (Vol. 2). Harlow, UK: Pearson education.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":synonym"/>
+        <AbbreviatedIRI>:Pluton</AbbreviatedIRI>
+        <Literal xml:lang="en">intrusive igneous body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Pluton</AbbreviatedIRI>
+        <Literal xml:lang="en">Pluton is a geological object that is created by an intrusion and it is constituted by crystalline igneous rock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Pluton</AbbreviatedIRI>
+        <Literal xml:lang="en">Pluton</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":source"/>
+        <AbbreviatedIRI>:PyroclasticRock</AbbreviatedIRI>
+        <Literal xml:lang="en">Winter, J. D. (2014). Principles of igneous and metamorphic petrology (Vol. 2). Harlow, UK: Pearson education.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:PyroclasticRock</AbbreviatedIRI>
+        <Literal xml:lang="en">Pyroclastic Rock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:PyroclasticSediment</AbbreviatedIRI>
+        <Literal xml:lang="en">Pyroclastic Sediment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Sand</AbbreviatedIRI>
+        <Literal xml:lang="en">Sand</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Sandstone</AbbreviatedIRI>
+        <Literal xml:lang="en">Sandstone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:SedimentAboveGeologicalObject</AbbreviatedIRI>
+        <Literal xml:lang="en">Sediment above Geological Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:SedimentConstitutingStratum</AbbreviatedIRI>
+        <Literal xml:lang="en">Sediment constituting stratum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:SedimentDeposition</AbbreviatedIRI>
+        <Literal xml:lang="en">Sediment Deposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:SedimentaryRock</AbbreviatedIRI>
+        <Literal xml:lang="en">Sedimentary Rock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":exampleOfUse"/>
+        <AbbreviatedIRI>:Sill</AbbreviatedIRI>
+        <Literal xml:lang="en">At shallow levels, the dike-fed magma may then spread laterally as tabular sills when the magma becomes neutrally buoyant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI=":source"/>
+        <AbbreviatedIRI>:Sill</AbbreviatedIRI>
+        <Literal xml:lang="en">Winter, J. D. (2014). Principles of igneous and metamorphic petrology (Vol. 2). Harlow, UK: Pearson education.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Sill</AbbreviatedIRI>
+        <Literal xml:lang="en">Sill is a tabular concordant pluton constituted by aphanitic or phaneritic rock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Sill</AbbreviatedIRI>
+        <Literal xml:lang="en">Sill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Stratum</AbbreviatedIRI>
+        <Literal xml:lang="en">Stratum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:UnderlyingObject</AbbreviatedIRI>
+        <Literal xml:lang="en">Underlying Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:constitutedBy</AbbreviatedIRI>
+        <Literal xml:lang="en">constituted by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:externallyConnectedWith</AbbreviatedIRI>
+        <Literal xml:lang="en">externally connected with</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:intrudes</AbbreviatedIRI>
+        <Literal xml:lang="en">intrudes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:overlies</AbbreviatedIRI>
+        <Literal xml:lang="en">overlies</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
