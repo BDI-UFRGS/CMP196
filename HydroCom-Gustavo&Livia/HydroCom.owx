@@ -1,0 +1,1683 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/gugui/ontologies/2024/0/HydroCom"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/gugui/ontologies/2024/0/HydroCom">
+    <Prefix name="" IRI="http://www.semanticweb.org/gugui/ontologies/2024/0/case-study-cmp196/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.obolibrary.org/obo/bfo/2014-05-03/bfo.owl</Import>
+    <Import>http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl</Import>
+    <Import>https://spec.industrialontologies.org/ontology/202301/core/Core/</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal xml:lang="en">Mara Abel
+Fabrício Rodrigues
+Nicolau Santos</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal xml:lang="en">Gustavo Alexsandro de Lima.
+Lívia Cristina S. Nascimento.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Literal xml:lang="en">The HydroCom ontology was developed as part of an Ontology Engineering course. It is designed to represent and manage information about nutrient solution modules for hydroponic plants. 
+
+The ontology aims to facilitate the interoperability of information in different protocols regarding the hydroponic plant domain.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.ontology-of-units-of-measure.org/resource/om-2#SensorDataStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontology-of-units-of-measure.org/resource/om-2#electrical_conductivity_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontology-of-units-of-measure.org/resource/om-2#scale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontology-of-units-of-measure.org/resource/om-2#unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BinaryScale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ECMeasure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ECSensorData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LevelData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LevelMeasure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeasuredValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MessageExchange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NutrientSolutionModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PHMeasure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PHSensorData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PotentialOfHydrogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SensorData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#AirCompressor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#CommunicationProtocol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#Compressor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#DDS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#DigitalECSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#DigitalLevelSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#DigitalPHSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#EC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#Filter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#Filters"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#Fluid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#GatewayDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#InverseOsmosisFilter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#IoTDevices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#Level"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#LiquidFertilizerSolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#LiquidPhosphoricAcidSolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#MQTT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#Message"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#NutrientSolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#OPCUA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#PH"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#Pump"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#Pumps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#Sensing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#SolenoidValve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#Tank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#Valve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-10#Water"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontology-of-units-of-measure.org/resource/om-2#has_scale"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontology-of-units-of-measure.org/resource/om-2#has_unit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#communicates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consists_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#formatted_according"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="untitled-ontology-10#feedsFluidTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="untitled-ontology-10#hasFluidFedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="untitled-ontology-10#stores"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/fso#connectedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/fso#exchangesFluidWith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#C200"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#GW01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#I240"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#L110"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#L111"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#L120"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#L121"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#L211"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#L221"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#L231"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#L240"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#Nd01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#Nd02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#Nd03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#P110"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#P120"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#P210"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#P220"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#P230"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#Q240"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#T110"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#T120"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#T210"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#T220"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#T230"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#T240"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-10#V110"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.ontology-of-units-of-measure.org/resource/om-2#SensorDataStructure"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000098"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontology-of-units-of-measure.org/resource/om-2#electrical_conductivity_unit"/>
+        <Class IRI="http://www.ontology-of-units-of-measure.org/resource/om-2#unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BinaryScale"/>
+        <Class IRI="http://www.ontology-of-units-of-measure.org/resource/om-2#scale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ECMeasure"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MeasurementProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ECMeasure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="#ECSensorData"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ECMeasure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="untitled-ontology-10#Fluid"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ECMeasure"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="untitled-ontology-10#DigitalECSensor"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ECSensorData"/>
+        <Class IRI="#SensorData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ECSensorData"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="untitled-ontology-10#EC"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LevelData"/>
+        <Class IRI="#SensorData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LevelData"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="untitled-ontology-10#Level"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LevelMeasure"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MeasurementProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LevelMeasure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="#LevelData"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LevelMeasure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="untitled-ontology-10#Fluid"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LevelMeasure"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="untitled-ontology-10#DigitalLevelSensor"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeasuredValue"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/ProcessCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeasuredValue"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/processCharacteristicOf"/>
+            <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MeasurementProcess"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MessageExchange"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MessageExchange"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="untitled-ontology-10#GatewayDevice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MessageExchange"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="untitled-ontology-10#IoTDevices"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MessageExchange"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="untitled-ontology-10#Message"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NutrientSolutionModule"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PHMeasure"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MeasurementProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PHMeasure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="#PHSensorData"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PHMeasure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="untitled-ontology-10#Fluid"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PHMeasure"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="untitled-ontology-10#DigitalPHSensor"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PHSensorData"/>
+        <Class IRI="#SensorData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PHSensorData"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="untitled-ontology-10#PH"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PotentialOfHydrogen"/>
+        <Class IRI="http://www.ontology-of-units-of-measure.org/resource/om-2#scale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SensorData"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000584"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SensorData"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/satisfiesRequirement"/>
+            <Class IRI="http://www.ontology-of-units-of-measure.org/resource/om-2#SensorDataStructure"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#AirCompressor"/>
+        <Class IRI="untitled-ontology-10#Compressor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#CommunicationProtocol"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Compressor"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/PieceOfEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Compressor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#communicates"/>
+            <Class IRI="untitled-ontology-10#IoTDevices"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Compressor"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002350"/>
+            <Class IRI="#NutrientSolutionModule"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#DDS"/>
+        <Class IRI="untitled-ontology-10#CommunicationProtocol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#DigitalECSensor"/>
+        <Class IRI="untitled-ontology-10#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#DigitalECSensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/measuresAtSomeTime"/>
+            <Class IRI="untitled-ontology-10#EC"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#DigitalLevelSensor"/>
+        <Class IRI="untitled-ontology-10#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#DigitalLevelSensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/measuresAtSomeTime"/>
+            <Class IRI="untitled-ontology-10#Level"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#DigitalPHSensor"/>
+        <Class IRI="untitled-ontology-10#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#DigitalPHSensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000056"/>
+            <Class IRI="#PHMeasure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#DigitalPHSensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/measuresAtSomeTime"/>
+            <Class IRI="untitled-ontology-10#PH"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#EC"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#EC"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/qualityOf"/>
+            <Class IRI="untitled-ontology-10#Fluid"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#EC"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.ontology-of-units-of-measure.org/resource/om-2#has_unit"/>
+            <Class IRI="http://www.ontology-of-units-of-measure.org/resource/om-2#electrical_conductivity_unit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Filter"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/PieceOfEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Filter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#communicates"/>
+            <Class IRI="untitled-ontology-10#IoTDevices"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Filter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002350"/>
+            <Class IRI="#NutrientSolutionModule"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Filters"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/EquipmentRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Filters"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/roleOf"/>
+            <Class IRI="untitled-ontology-10#Filter"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Fluid"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Fluid"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasQuality"/>
+            <Class IRI="untitled-ontology-10#EC"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Fluid"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasQuality"/>
+            <Class IRI="untitled-ontology-10#PH"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#GatewayDevice"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#InverseOsmosisFilter"/>
+        <Class IRI="untitled-ontology-10#Filter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#IoTDevices"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#IoTDevices"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000056"/>
+            <Class IRI="#MessageExchange"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#IoTDevices"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#communicates"/>
+            <Class IRI="untitled-ontology-10#GatewayDevice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#IoTDevices"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002350"/>
+            <Class IRI="#NutrientSolutionModule"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Level"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Level"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/qualityOf"/>
+            <Class IRI="untitled-ontology-10#Tank"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Level"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.ontology-of-units-of-measure.org/resource/om-2#has_scale"/>
+            <Class IRI="#BinaryScale"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#LiquidFertilizerSolution"/>
+        <Class IRI="untitled-ontology-10#Fluid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#LiquidFertilizerSolution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="untitled-ontology-10#Water"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#LiquidPhosphoricAcidSolution"/>
+        <Class IRI="untitled-ontology-10#Fluid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#LiquidPhosphoricAcidSolution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="untitled-ontology-10#Water"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#MQTT"/>
+        <Class IRI="untitled-ontology-10#CommunicationProtocol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Message"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Message"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#consists_of"/>
+            <Class IRI="#SensorData"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Message"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#formatted_according"/>
+            <Class IRI="untitled-ontology-10#CommunicationProtocol"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#NutrientSolution"/>
+        <Class IRI="untitled-ontology-10#Fluid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#NutrientSolution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="untitled-ontology-10#LiquidFertilizerSolution"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#NutrientSolution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="untitled-ontology-10#LiquidPhosphoricAcidSolution"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#NutrientSolution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="untitled-ontology-10#Water"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#OPCUA"/>
+        <Class IRI="untitled-ontology-10#CommunicationProtocol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#PH"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#PH"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/qualityOf"/>
+            <Class IRI="untitled-ontology-10#Fluid"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#PH"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.ontology-of-units-of-measure.org/resource/om-2#has_scale"/>
+            <Class IRI="#PotentialOfHydrogen"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Pump"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/PieceOfEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Pump"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#communicates"/>
+            <Class IRI="untitled-ontology-10#IoTDevices"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Pump"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002350"/>
+            <Class IRI="#NutrientSolutionModule"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Pumps"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/EquipmentRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Pumps"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/roleOf"/>
+            <Class IRI="untitled-ontology-10#AirCompressor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Pumps"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/roleOf"/>
+            <Class IRI="untitled-ontology-10#Pump"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Sensing"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/EquipmentRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Sensing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/roleOf"/>
+            <Class IRI="untitled-ontology-10#Sensor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Sensor"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/PieceOfEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Sensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#communicates"/>
+            <Class IRI="untitled-ontology-10#IoTDevices"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Sensor"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002350"/>
+            <Class IRI="#NutrientSolutionModule"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#SolenoidValve"/>
+        <Class IRI="untitled-ontology-10#Valve"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Tank"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/PieceOfEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Tank"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#communicates"/>
+            <Class IRI="untitled-ontology-10#IoTDevices"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Tank"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="untitled-ontology-10#stores"/>
+            <Class IRI="untitled-ontology-10#Fluid"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Tank"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasQuality"/>
+            <Class IRI="untitled-ontology-10#Level"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Tank"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002350"/>
+            <Class IRI="#NutrientSolutionModule"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Valve"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/PieceOfEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Valve"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#communicates"/>
+            <Class IRI="untitled-ontology-10#IoTDevices"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Valve"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002350"/>
+            <Class IRI="#NutrientSolutionModule"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-10#Water"/>
+        <Class IRI="untitled-ontology-10#Fluid"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="untitled-ontology-10#DigitalECSensor"/>
+        <Class IRI="untitled-ontology-10#DigitalLevelSensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="untitled-ontology-10#DigitalECSensor"/>
+        <Class IRI="untitled-ontology-10#DigitalPHSensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="untitled-ontology-10#DigitalLevelSensor"/>
+        <Class IRI="untitled-ontology-10#DigitalPHSensor"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#AirCompressor"/>
+        <NamedIndividual IRI="untitled-ontology-10#C200"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#GatewayDevice"/>
+        <NamedIndividual IRI="untitled-ontology-10#GW01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#DigitalECSensor"/>
+        <NamedIndividual IRI="untitled-ontology-10#I240"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#DigitalLevelSensor"/>
+        <NamedIndividual IRI="untitled-ontology-10#L110"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#DigitalLevelSensor"/>
+        <NamedIndividual IRI="untitled-ontology-10#L111"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#DigitalLevelSensor"/>
+        <NamedIndividual IRI="untitled-ontology-10#L120"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#DigitalLevelSensor"/>
+        <NamedIndividual IRI="untitled-ontology-10#L121"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#DigitalLevelSensor"/>
+        <NamedIndividual IRI="untitled-ontology-10#L211"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#DigitalLevelSensor"/>
+        <NamedIndividual IRI="untitled-ontology-10#L221"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#DigitalLevelSensor"/>
+        <NamedIndividual IRI="untitled-ontology-10#L231"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#DigitalLevelSensor"/>
+        <NamedIndividual IRI="untitled-ontology-10#L240"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#IoTDevices"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#IoTDevices"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#IoTDevices"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#Pump"/>
+        <NamedIndividual IRI="untitled-ontology-10#P110"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#Pump"/>
+        <NamedIndividual IRI="untitled-ontology-10#P120"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#Pump"/>
+        <NamedIndividual IRI="untitled-ontology-10#P210"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#Pump"/>
+        <NamedIndividual IRI="untitled-ontology-10#P220"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#Pump"/>
+        <NamedIndividual IRI="untitled-ontology-10#P230"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#DigitalPHSensor"/>
+        <NamedIndividual IRI="untitled-ontology-10#Q240"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#Tank"/>
+        <NamedIndividual IRI="untitled-ontology-10#T110"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#Tank"/>
+        <NamedIndividual IRI="untitled-ontology-10#T120"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#Tank"/>
+        <NamedIndividual IRI="untitled-ontology-10#T210"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#Tank"/>
+        <NamedIndividual IRI="untitled-ontology-10#T220"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#Tank"/>
+        <NamedIndividual IRI="untitled-ontology-10#T230"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#Tank"/>
+        <NamedIndividual IRI="untitled-ontology-10#T240"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-10#SolenoidValve"/>
+        <NamedIndividual IRI="untitled-ontology-10#V110"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#communicates"/>
+        <NamedIndividual IRI="untitled-ontology-10#C200"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-10#feedsFluidTo"/>
+        <NamedIndividual IRI="untitled-ontology-10#C200"/>
+        <NamedIndividual IRI="untitled-ontology-10#T220"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-10#feedsFluidTo"/>
+        <NamedIndividual IRI="untitled-ontology-10#C200"/>
+        <NamedIndividual IRI="untitled-ontology-10#T230"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#communicates"/>
+        <NamedIndividual IRI="untitled-ontology-10#GW01"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#communicates"/>
+        <NamedIndividual IRI="untitled-ontology-10#GW01"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#communicates"/>
+        <NamedIndividual IRI="untitled-ontology-10#GW01"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#communicates"/>
+        <NamedIndividual IRI="untitled-ontology-10#I240"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/fso#connectedWith"/>
+        <NamedIndividual IRI="untitled-ontology-10#I240"/>
+        <NamedIndividual IRI="untitled-ontology-10#T240"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#communicates"/>
+        <NamedIndividual IRI="untitled-ontology-10#L110"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/fso#connectedWith"/>
+        <NamedIndividual IRI="untitled-ontology-10#L110"/>
+        <NamedIndividual IRI="untitled-ontology-10#T110"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#communicates"/>
+        <NamedIndividual IRI="untitled-ontology-10#L111"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/fso#connectedWith"/>
+        <NamedIndividual IRI="untitled-ontology-10#L111"/>
+        <NamedIndividual IRI="untitled-ontology-10#T110"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#communicates"/>
+        <NamedIndividual IRI="untitled-ontology-10#L120"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/fso#connectedWith"/>
+        <NamedIndividual IRI="untitled-ontology-10#L120"/>
+        <NamedIndividual IRI="untitled-ontology-10#T120"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#communicates"/>
+        <NamedIndividual IRI="untitled-ontology-10#L121"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/fso#connectedWith"/>
+        <NamedIndividual IRI="untitled-ontology-10#L121"/>
+        <NamedIndividual IRI="untitled-ontology-10#T120"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#communicates"/>
+        <NamedIndividual IRI="untitled-ontology-10#L211"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/fso#connectedWith"/>
+        <NamedIndividual IRI="untitled-ontology-10#L211"/>
+        <NamedIndividual IRI="untitled-ontology-10#T210"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#communicates"/>
+        <NamedIndividual IRI="untitled-ontology-10#L221"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/fso#connectedWith"/>
+        <NamedIndividual IRI="untitled-ontology-10#L221"/>
+        <NamedIndividual IRI="untitled-ontology-10#T220"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#communicates"/>
+        <NamedIndividual IRI="untitled-ontology-10#L231"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/fso#connectedWith"/>
+        <NamedIndividual IRI="untitled-ontology-10#L231"/>
+        <NamedIndividual IRI="untitled-ontology-10#T230"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#communicates"/>
+        <NamedIndividual IRI="untitled-ontology-10#L240"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/fso#connectedWith"/>
+        <NamedIndividual IRI="untitled-ontology-10#L240"/>
+        <NamedIndividual IRI="untitled-ontology-10#T240"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#communicates"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd01"/>
+        <NamedIndividual IRI="untitled-ontology-10#GW01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#communicates"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd02"/>
+        <NamedIndividual IRI="untitled-ontology-10#GW01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#communicates"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd03"/>
+        <NamedIndividual IRI="untitled-ontology-10#GW01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#communicates"/>
+        <NamedIndividual IRI="untitled-ontology-10#P110"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-10#feedsFluidTo"/>
+        <NamedIndividual IRI="untitled-ontology-10#P110"/>
+        <NamedIndividual IRI="untitled-ontology-10#T120"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-10#hasFluidFedBy"/>
+        <NamedIndividual IRI="untitled-ontology-10#P110"/>
+        <NamedIndividual IRI="untitled-ontology-10#T110"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#communicates"/>
+        <NamedIndividual IRI="untitled-ontology-10#P120"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-10#feedsFluidTo"/>
+        <NamedIndividual IRI="untitled-ontology-10#P120"/>
+        <NamedIndividual IRI="untitled-ontology-10#T240"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-10#hasFluidFedBy"/>
+        <NamedIndividual IRI="untitled-ontology-10#P120"/>
+        <NamedIndividual IRI="untitled-ontology-10#T120"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#communicates"/>
+        <NamedIndividual IRI="untitled-ontology-10#P210"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-10#feedsFluidTo"/>
+        <NamedIndividual IRI="untitled-ontology-10#P210"/>
+        <NamedIndividual IRI="untitled-ontology-10#T240"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-10#hasFluidFedBy"/>
+        <NamedIndividual IRI="untitled-ontology-10#P210"/>
+        <NamedIndividual IRI="untitled-ontology-10#T210"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#communicates"/>
+        <NamedIndividual IRI="untitled-ontology-10#P220"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-10#feedsFluidTo"/>
+        <NamedIndividual IRI="untitled-ontology-10#P220"/>
+        <NamedIndividual IRI="untitled-ontology-10#T240"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-10#hasFluidFedBy"/>
+        <NamedIndividual IRI="untitled-ontology-10#P220"/>
+        <NamedIndividual IRI="untitled-ontology-10#T220"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#communicates"/>
+        <NamedIndividual IRI="untitled-ontology-10#P230"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-10#feedsFluidTo"/>
+        <NamedIndividual IRI="untitled-ontology-10#P230"/>
+        <NamedIndividual IRI="untitled-ontology-10#T240"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-10#hasFluidFedBy"/>
+        <NamedIndividual IRI="untitled-ontology-10#P230"/>
+        <NamedIndividual IRI="untitled-ontology-10#T230"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#communicates"/>
+        <NamedIndividual IRI="untitled-ontology-10#Q240"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/fso#connectedWith"/>
+        <NamedIndividual IRI="untitled-ontology-10#Q240"/>
+        <NamedIndividual IRI="untitled-ontology-10#T240"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#communicates"/>
+        <NamedIndividual IRI="untitled-ontology-10#V110"/>
+        <NamedIndividual IRI="untitled-ontology-10#Nd02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-10#feedsFluidTo"/>
+        <NamedIndividual IRI="untitled-ontology-10#V110"/>
+        <NamedIndividual IRI="untitled-ontology-10#T110"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/fso#connectedWith"/>
+        <NamedIndividual IRI="untitled-ontology-10#V110"/>
+        <NamedIndividual IRI="untitled-ontology-10#T110"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="untitled-ontology-10#feedsFluidTo"/>
+        <ObjectProperty IRI="https://w3id.org/fso#exchangesFluidWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="untitled-ontology-10#hasFluidFedBy"/>
+        <ObjectProperty IRI="https://w3id.org/fso#exchangesFluidWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/fso#exchangesFluidWith"/>
+        <ObjectProperty IRI="https://w3id.org/fso#connectedWith"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#communicates"/>
+        <ObjectProperty IRI="#communicates"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="untitled-ontology-10#feedsFluidTo"/>
+        <ObjectProperty IRI="untitled-ontology-10#hasFluidFedBy"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#communicates"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </ObjectPropertyDomain>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://www.ontology-of-units-of-measure.org/resource/om-2#SensorDataStructure</IRI>
+        <Literal xml:lang="en">Specialized format for organizing, processing, retrieving and storing Sensor data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://www.ontology-of-units-of-measure.org/resource/om-2#SensorDataStructure</IRI>
+        <Literal xml:lang="en">https://www.techtarget.com/searchdatamanagement/definition/data-structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://www.ontology-of-units-of-measure.org/resource/om-2#electrical_conductivity_unit</IRI>
+        <Literal xml:lang="en">The units of conductivity are Siemens per meter (S/m)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://www.ontology-of-units-of-measure.org/resource/om-2#unit</IRI>
+        <Literal xml:lang="en">A unit of measure is a definite magnitude of a quantity, defined and adopted by convention or by law. It is used as a standard for measurement of the same quantity, where any other value of the quantity can be expressed as a simple multiple of the unit. For example, length is a quantity; the metre is a unit of length that represents a definite predetermined length. When we say 10 metre (or 10 m), we actually mean 10 times the definite predetermined length called &quot;metre&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#BinaryScale</IRI>
+        <Literal xml:lang="en">A scale of 1 and 0.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#ECMeasure</IRI>
+        <Literal xml:lang="en">Process of associating numerical values specifically to the measurement of the EC value in physical quantities and phenomena.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#ECSensorData</IRI>
+        <Literal xml:lang="en">Information collected by an EC Sensor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#LevelData</IRI>
+        <Literal xml:lang="en">Information collected by an Level Sensor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#MeasuredValue</IRI>
+        <Literal xml:lang="en">Value that is measured by a process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MessageExchange</IRI>
+        <Literal>Message exchanged between IoT Devices and Gateway.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#NutrientSolutionModule</IRI>
+        <Literal xml:lang="en">System of equipments used to generate a Nutrient Solution used to nurture hydroponic plants.e</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#PHMeasure</IRI>
+        <Literal xml:lang="en">Process of associating numerical values specifically to the measurement of pH levels in physical quantities and phenomena.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#PHSensorData</IRI>
+        <Literal xml:lang="en">Information collected by an PH Sensor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#PotentialOfHydrogen</IRI>
+        <Literal xml:lang="en">a logarithmic scale used to specify the acidity or basicity of aqueous solutions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#SensorData</IRI>
+        <Literal xml:lang="en">This sensor senses the world and generetes sensor data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SensorData</IRI>
+        <Literal xml:lang="en">Information collected by a Data Sensor component.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#SensorData</IRI>
+        <Literal xml:lang="en">https://www.ibm.com/docs/en/ims-dbsolutionpack/2.2?topic=overview-what-does-data-sensor-do</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#communicates</IRI>
+        <Literal xml:lang="en">My computer communicates with the router to exchange data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#communicates</IRI>
+        <Literal xml:lang="en">Exchange of information and data between two or more devices that are connected to a network.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#communicates</IRI>
+        <Literal xml:lang="en">https://www.dremio.com/wiki/network-communication/#:~:text=Network%20Communication%20refers%20to%20the,share%20data%20with%20one%20another.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#formatted_according</IRI>
+        <Literal xml:lang="en">A message (exchange of information between two network devices) is a sequence of information that is formatted according to a protocol (system of rules that allows two or more entities of a communications system to transmit information)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#formatted_according</IRI>
+        <Literal xml:lang="en">A relation between a message and the information entity that structurizes it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#AirCompressor</IRI>
+        <Literal xml:lang="en">increases the pressure of a gas by reducing its volume.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>untitled-ontology-10#C200</IRI>
+        <Literal xml:lang="en">compressor that feeds air into the T220 and the T230 tanks.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>untitled-ontology-10#CommunicationProtocol</IRI>
+        <Literal xml:lang="en">This exchange of messages are encoded using a certain communication protocol.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#CommunicationProtocol</IRI>
+        <Literal xml:lang="en">a set of established rules that specify how to format, send and receive data so that computer network endpoints, including computers, servers, routers and virtual machines, can communicate despite differences in their underlying infrastructures, designs or standards.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>untitled-ontology-10#CommunicationProtocol</IRI>
+        <Literal xml:lang="en">https://ardc.edu.au/resource/standardised-communications-protocols/#:~:text=A%20communications%20protocol%20is%20a,Hypertext%20Transfer%20Protocol%20(HTTP).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#Compressor</IRI>
+        <Literal xml:lang="en">device for compressing something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#DDS</IRI>
+        <Literal xml:lang="en">is an machine-to-machine standard that aims to enable dependable, high-performance, interoperable, real-time, scalable data exchanges using a publish–subscribe pattern.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#DigitalECSensor</IRI>
+        <Literal xml:lang="en">measures the electrical conductivity in a solution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#DigitalLevelSensor</IRI>
+        <Literal xml:lang="en">measures the level of a fluid in a tank.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#DigitalPHSensor</IRI>
+        <Literal xml:lang="en">measures the PH value of a solution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#EC</IRI>
+        <Literal xml:lang="en">a measure of a material&apos;s ability to conduct an electric current.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#Filter</IRI>
+        <Literal xml:lang="en">A device that is used to remove something unwanted from a liquid or gas that passes through it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>untitled-ontology-10#Filter</IRI>
+        <Literal xml:lang="en">https://www.britannica.com/dictionary/filter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#Fluid</IRI>
+        <Literal xml:lang="en">A liquid, gas, or other material that may continuously move and deform (flow) under an applied shear stress, or external force.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>untitled-ontology-10#Fluid</IRI>
+        <Literal xml:lang="en">https://www.britannica.com/science/fluid-physicse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#GatewayDevice</IRI>
+        <Literal xml:lang="en">the combination of a router and a modem.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>untitled-ontology-10#I240</IRI>
+        <Literal xml:lang="en">the sensor that measures the EC value of the fluid stored in the T240 tank.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#InverseOsmosisFilter</IRI>
+        <Literal xml:lang="en">a water purification process that uses a semi-permeable membrane to separate water molecules from other substances.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>untitled-ontology-10#InverseOsmosisFilter</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Reverse_osmosis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#IoTDevices</IRI>
+        <Literal xml:lang="en">pieces of hardware that are programmed for certain applications and can transmit data over the internet or other networks.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>untitled-ontology-10#L110</IRI>
+        <Literal xml:lang="en">low level sensor for the fluid present in the tank 110.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>untitled-ontology-10#L111</IRI>
+        <Literal xml:lang="en">high level sensor for the fluid present in the tank 110.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>untitled-ontology-10#L120</IRI>
+        <Literal xml:lang="en">low level sensor for the fluid present in the tank 120.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>untitled-ontology-10#L121</IRI>
+        <Literal xml:lang="en">high level sensor for the fluid present in the tank 120.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>untitled-ontology-10#L211</IRI>
+        <Literal xml:lang="en">high level sensor for the fluid present in the tank 210.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>untitled-ontology-10#L221</IRI>
+        <Literal xml:lang="en">high level sensor for the fluid present in the tank 220.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>untitled-ontology-10#L231</IRI>
+        <Literal xml:lang="en">high level sensor for the fluid present in the tank 230.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>untitled-ontology-10#L240</IRI>
+        <Literal xml:lang="en">low level sensor for the fluid present in the tank 240.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#Level</IRI>
+        <Literal xml:lang="en">the level (high or low) of a fluid in a tank.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#LiquidFertilizerSolution</IRI>
+        <Literal xml:lang="en">A kind of liquid solution that&apos;s provided to plants as a form of food.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>untitled-ontology-10#LiquidFertilizerSolution</IRI>
+        <Literal xml:lang="en">https://sensorex.com/liquid-fertilizer-for-agriculture/#:~:text=Liquid%20fertilizer%20refers%20to%20any,couple%20of%20different%20delivery%20methods.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#LiquidPhosphoricAcidSolution</IRI>
+        <Literal xml:lang="en">A a viscous solution in water which contains 75-85% phosphoric acid.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>untitled-ontology-10#LiquidPhosphoricAcidSolution</IRI>
+        <Literal xml:lang="en">https://www.dcceew.gov.au/environment/protection/npi/substances/fact-sheets/phosphoric-acid#:~:text=Pure%20phosphoric%20acid%20is%20a,%3A%2042%C2%B0C%20(pure)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#MQTT</IRI>
+        <Literal xml:lang="en">a lightweight, publish-subscribe, machine to machine network protocol for message queue/message queuing service.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>untitled-ontology-10#Message</IRI>
+        <Literal xml:lang="en">IoT devices exchange messages with the gateway device it&apos;s connected to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>untitled-ontology-10#Message</IRI>
+        <Literal xml:lang="en">The sensor exchanges messages with the IoT Device that it&apos;s connected to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#Message</IRI>
+        <Literal xml:lang="en">a bit of data, which is sent by a sender, to a recipient in a network.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#NutrientSolution</IRI>
+        <Literal xml:lang="en">A nutrient solution usually contains inorganic ions from soluble salts of essential elements required by the plant.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>untitled-ontology-10#NutrientSolution</IRI>
+        <Literal xml:lang="en">https://www.intechopen.com/chapters/80089</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#OPCUA</IRI>
+        <Literal xml:lang="en">cross-platform, open-source, IEC62541 standard for data exchange from sensors to cloud applications developed by the OPC Foundation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>untitled-ontology-10#P110</IRI>
+        <Literal xml:lang="en">pump that moves fluid from T110 to T120.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>untitled-ontology-10#P120</IRI>
+        <Literal xml:lang="en">pump that moves fluid from T120 to T240.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>untitled-ontology-10#P210</IRI>
+        <Literal xml:lang="en">pump that moves fluid from T210 to T240.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>untitled-ontology-10#P220</IRI>
+        <Literal xml:lang="en">pump that moves fluid from T220 to T240.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>untitled-ontology-10#P230</IRI>
+        <Literal xml:lang="en">pump that moves fluid from T230 to T240.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#PH</IRI>
+        <Literal xml:lang="en">a scale used to specify the acidity or basicity of an aqueous solution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#Pump</IRI>
+        <Literal xml:lang="en">A device that expends energy in order to raise, transport, or compress fluids.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>untitled-ontology-10#Pump</IRI>
+        <Literal xml:lang="en">https://www.britannica.com/technology/pump</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>untitled-ontology-10#Q240</IRI>
+        <Literal xml:lang="en">the sensor that measures the PH value of the fluid stored in the T240 tank.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#Sensor</IRI>
+        <Literal xml:lang="en">a device that produces an output signal for the purpose of sensing a physical phenomenon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#SolenoidValve</IRI>
+        <Literal xml:lang="en">control units which, when electrically energized or de-energized, either shut off or allow fluid flow.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>untitled-ontology-10#T110</IRI>
+        <Literal xml:lang="en">tank that stores tap water.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>untitled-ontology-10#T120</IRI>
+        <Literal xml:lang="en">tank that stores filtered water.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#Tank</IRI>
+        <Literal xml:lang="en">a large receptacle or storage chamber, especially for liquid or gas.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>untitled-ontology-10#V110</IRI>
+        <Literal xml:lang="en">valve used to control flow of tap water to T110 tank.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#Valve</IRI>
+        <Literal xml:lang="en">A device for controlling the flow of fluids (liquids, gases, slurries) in a pipe or other enclosure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>untitled-ontology-10#Valve</IRI>
+        <Literal xml:lang="en">https://www.britannica.com/technology/valve-mechanics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#Water</IRI>
+        <Literal xml:lang="en">A substance composed of the chemical elements hydrogen and oxygen and existing in gaseous, liquid, and solid states.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>untitled-ontology-10#Water</IRI>
+        <Literal xml:lang="en">https://www.britannica.com/science/water</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#feedsFluidTo</IRI>
+        <Literal xml:lang="en">Relation from a thing feeding fluid to the thing it is feeding fluid to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>untitled-ontology-10#feedsFluidTo</IRI>
+        <Literal xml:lang="en">https://alikucukavci.github.io/FSO/#feedsFluidTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#hasFluidFedBy</IRI>
+        <Literal xml:lang="en">Relation from a thing that is fed fluid to the thing feeding the fluid.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>untitled-ontology-10#hasFluidFedBy</IRI>
+        <Literal xml:lang="en">https://alikucukavci.github.io/FSO/#hasFluidFedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>untitled-ontology-10#stores</IRI>
+        <Literal xml:lang="en">to keep or accumulate (something) for future use.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>https://w3id.org/fso#connectedWith</IRI>
+        <Literal xml:lang="en">A generic &quot;connection&quot; relation between things.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>https://w3id.org/fso#exchangesFluidWith</IRI>
+        <Literal xml:lang="en">Relation from a thing feeding fluid to the thing it is feeding fluid to.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
