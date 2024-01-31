@@ -1,0 +1,2887 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/diegodesouza/ontologies/2024/0/nsm"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/diegodesouza/ontologies/2024/0/nsm">
+    <Prefix name="" IRI="http://www.semanticweb.org/diegodesouza/ontologies/2024/0/nsm/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.obolibrary.org/obo/bfo/2014-05-03/bfo.owl</Import>
+    <Import>http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl</Import>
+    <Import>https://spec.industrialontologies.org/ontology/202301/AboutIOFProd/</Import>
+    <Declaration>
+        <Class IRI="#DDS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GatewayRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MQTT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Receptacle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Software"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UPCUA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:Acid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:Actuator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:ActuatorRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:Air"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:AllowFlowFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:BeInstalledInSomeDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:BeMixedCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:BlockFlowFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:Communication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:Compressor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:Computer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:DDSProtocol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:DataFormat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:DataStoredInHardDrive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:ECMeasuredValueExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:ECMeasurementInformationContent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:ECMeasurementProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:ECQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:ECSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:ElectricalConductivityMeasurementCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:ElectricalConductivityMeasuringFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:Filter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:FilteringFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:FlowCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:GaseousSubstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:Gateway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:LevelMeasuredValueExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:LevelMeasurementCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:LevelMeasurementInformationContent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:LevelMeasurementProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:LevelMeasuringFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:LevelQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:LevelSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:Liquid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:MQTTProtocol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:Message"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:MixingCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:NonOperational"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:Nutrient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:NutrientSolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:NutrientSolutionRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:NutritionalSolutionModuleSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:OperationalMaterialArtifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:OperationalRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:PHMeasurementCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:PHMeasuringFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:PHSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:Protocol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:ProtocolImplementation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:Pump"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:PumpableCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:PumpingFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:RaspberryPI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:ReceiveMessage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:SendMessage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:SensorRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:SingleBoardComputer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:Solution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:StoreFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:UPCUAProtocol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:Valve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:Water"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:pHMeasuredValueExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:pHMeasurementInformationContent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:pHMeasurementProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cmp196:pHQuality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#installedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mixContent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cmp196:connectedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cmp196:flows"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cmp196:flowsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cmp196:hasDataFormat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cmp196:hasProtocol"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cmp196:pumps"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cmp196:pumpsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cmp196:stores"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Acid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ActuatorRole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Air"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BinaryDataFormat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#C200"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Communication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DDS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DDSMessage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DDSProtocol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#F110"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GatewayRole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IOT_Device"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JsonDataFormat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#L110"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LevelMeasurementProcess"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LevelMeasuringFunction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MQTT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MQTTMessage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MQTTProtocol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NSM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NSMHardDrive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nutrient"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NutrientSolution"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NutrientSolutionRole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OperationalRole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#P110"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#P120"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#P210"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#P220"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#P230"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ReceiveMessage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SendMessageFunction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SensorRole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Solution"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SolutionLevelQuality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T110"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T120"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T210"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T220"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T230"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T240"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UPCUA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UPCUAMessage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UPCUAProtocol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#V110"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Water"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#cmp196:ECMeasurementInformationContent"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MeasurementInformationContentEntity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000110"/>
+                <Class IRI="#cmp196:ECMeasuredValueExpression"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/describes"/>
+                <ObjectUnionOf>
+                    <Class IRI="http://purl.obolibrary.org/obo/BFO_0000008"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/BFO_0000020"/>
+                    <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/ProcessCharacteristic"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/isAbout"/>
+                <ObjectUnionOf>
+                    <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/BFO_0000035"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                        <ObjectComplementOf>
+                            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000006"/>
+                        </ObjectComplementOf>
+                    </ObjectIntersectionOf>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/isOutputOf"/>
+                <Class IRI="#cmp196:ECMeasurementProcess"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#cmp196:Gateway"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#cmp196:SingleBoardComputer"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+                <Class IRI="#GatewayRole"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+                <Class IRI="#cmp196:OperationalRole"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#cmp196:LevelMeasurementInformationContent"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MeasurementInformationContentEntity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000110"/>
+                <Class IRI="#cmp196:LevelMeasuredValueExpression"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/describes"/>
+                <ObjectUnionOf>
+                    <Class IRI="http://purl.obolibrary.org/obo/BFO_0000008"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/BFO_0000020"/>
+                    <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/ProcessCharacteristic"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/isAbout"/>
+                <ObjectUnionOf>
+                    <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/BFO_0000035"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                        <ObjectComplementOf>
+                            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000006"/>
+                        </ObjectComplementOf>
+                    </ObjectIntersectionOf>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/isOutputOf"/>
+                <Class IRI="#cmp196:LevelMeasurementProcess"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#cmp196:NutrientSolution"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#cmp196:Solution"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://www.omg.org/spec/Commons/Collections/hasPart"/>
+                <Class IRI="#cmp196:Acid"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://www.omg.org/spec/Commons/Collections/hasPart"/>
+                <Class IRI="#cmp196:Nutrient"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://www.omg.org/spec/Commons/Collections/hasPart"/>
+                <Class IRI="#cmp196:Water"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#cmp196:OperationalMaterialArtifact"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+                <Class IRI="#cmp196:OperationalRole"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#cmp196:pHMeasurementInformationContent"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MeasurementInformationContentEntity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000110"/>
+                <Class IRI="#cmp196:pHMeasuredValueExpression"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/describes"/>
+                <ObjectUnionOf>
+                    <Class IRI="http://purl.obolibrary.org/obo/BFO_0000008"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/BFO_0000020"/>
+                    <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/ProcessCharacteristic"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/isAbout"/>
+                <ObjectUnionOf>
+                    <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/BFO_0000035"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                        <ObjectComplementOf>
+                            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000006"/>
+                        </ObjectComplementOf>
+                    </ObjectIntersectionOf>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/isOutputOf"/>
+                <Class IRI="#cmp196:pHMeasurementProcess"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#DDS"/>
+        <Class IRI="#cmp196:ProtocolImplementation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DDS"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#cmp196:DDSProtocol"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GatewayRole"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GatewayRole"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <Class IRI="#cmp196:Communication"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/roleOf"/>
+                <Class IRI="#cmp196:Gateway"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MQTT"/>
+        <Class IRI="#cmp196:ProtocolImplementation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MQTT"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#cmp196:MQTTProtocol"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Receptacle"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/PieceOfEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Receptacle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#cmp196:stores"/>
+            <ObjectUnionOf>
+                <Class IRI="#cmp196:GaseousSubstance"/>
+                <Class IRI="#cmp196:Liquid"/>
+                <Class IRI="#cmp196:Nutrient"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Receptacle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+            <Class IRI="#cmp196:StoreFunction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Software"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tank"/>
+        <Class IRI="#Receptacle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tank"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#cmp196:flowsTo"/>
+            <ObjectUnionOf>
+                <Class IRI="#Tank"/>
+                <Class IRI="#cmp196:Pump"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UPCUA"/>
+        <Class IRI="#cmp196:ProtocolImplementation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UPCUA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#cmp196:UPCUAProtocol"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Acid"/>
+        <Class IRI="#cmp196:Liquid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Actuator"/>
+        <Class IRI="#cmp196:Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Actuator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+            <Class IRI="#cmp196:ActuatorRole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:ActuatorRole"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:ActuatorRole"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <Class IRI="#cmp196:Communication"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/roleOf"/>
+                <Class IRI="#cmp196:Actuator"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Air"/>
+        <Class IRI="#cmp196:GaseousSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:AllowFlowFunction"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:BeInstalledInSomeDevice"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/Capability"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#installedIn"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#cmp196:Device"/>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+                        <Class IRI="#cmp196:OperationalRole"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/capabilityOf"/>
+                <Class IRI="#cmp196:Sensor"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:BeMixedCapability"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:BlockFlowFunction"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Communication"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Communication"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="#cmp196:Actuator"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Communication"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="#cmp196:Sensor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Compressor"/>
+        <Class IRI="#cmp196:Pump"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Compressor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+            <Class IRI="#cmp196:MixingCapability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Computer"/>
+        <Class IRI="#cmp196:Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:DDSProtocol"/>
+        <Class IRI="#cmp196:Protocol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:DataFormat"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:DataFormat"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+            <Class IRI="#cmp196:Message"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:DataStoredInHardDrive"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:DataStoredInHardDrive"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000059"/>
+            <ObjectUnionOf>
+                <Class IRI="#cmp196:Message"/>
+                <Class IRI="#cmp196:ProtocolImplementation"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Device"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/PieceOfEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:ECMeasuredValueExpression"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MeasuredValueExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:ECMeasurementInformationContent"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MeasurementInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:ECMeasurementProcess"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MeasurementProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:ECMeasurementProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000057"/>
+            <ObjectUnionOf>
+                <Class IRI="#cmp196:ElectricalConductivityMeasurementCapability"/>
+                <Class IRI="#cmp196:ElectricalConductivityMeasuringFunction"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:ECQuality"/>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0001018"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:ECQuality"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000059"/>
+            <Class IRI="#cmp196:ECMeasurementInformationContent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:ECSensor"/>
+        <Class IRI="#cmp196:Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:ECSensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasCapability"/>
+            <Class IRI="#cmp196:ElectricalConductivityMeasurementCapability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:ECSensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+            <Class IRI="#cmp196:ElectricalConductivityMeasuringFunction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:ElectricalConductivityMeasurementCapability"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MeasurementCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:ElectricalConductivityMeasuringFunction"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Filter"/>
+        <Class IRI="#cmp196:Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Filter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+            <Class IRI="#cmp196:FilteringFunction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:FilteringFunction"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:FilteringFunction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/functionOf"/>
+            <Class IRI="#cmp196:Filter"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:FlowCapability"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:GaseousSubstance"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:GaseousSubstance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasCapability"/>
+            <Class IRI="#cmp196:MixingCapability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:GaseousSubstance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasCapability"/>
+            <Class IRI="#cmp196:PumpableCapability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Gateway"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime"/>
+            <Class IRI="#cmp196:NutritionalSolutionModuleSystem"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Gateway"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+            <Class IRI="#cmp196:ActuatorRole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Gateway"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+            <Class IRI="#cmp196:SensorRole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:LevelMeasuredValueExpression"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MeasuredValueExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:LevelMeasurementCapability"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MeasurementCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:LevelMeasurementInformationContent"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MeasurementInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:LevelMeasurementProcess"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MeasurementProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:LevelMeasurementProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000057"/>
+            <ObjectUnionOf>
+                <Class IRI="#cmp196:LevelMeasurementCapability"/>
+                <Class IRI="#cmp196:LevelMeasuringFunction"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:LevelMeasuringFunction"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:LevelQuality"/>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:LevelQuality"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000059"/>
+            <Class IRI="#cmp196:LevelMeasurementInformationContent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:LevelSensor"/>
+        <Class IRI="#cmp196:Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:LevelSensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasCapability"/>
+            <Class IRI="#cmp196:LevelMeasurementCapability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:LevelSensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+            <Class IRI="#cmp196:LevelMeasuringFunction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Liquid"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Liquid"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasCapability"/>
+            <Class IRI="#cmp196:FlowCapability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Liquid"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasCapability"/>
+            <Class IRI="#cmp196:PumpableCapability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Liquid"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasQuality"/>
+            <Class IRI="#cmp196:ECQuality"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Liquid"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasQuality"/>
+            <Class IRI="#cmp196:LevelQuality"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Liquid"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasQuality"/>
+            <Class IRI="#cmp196:pHQuality"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:MQTTProtocol"/>
+        <Class IRI="#cmp196:Protocol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Message"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Message"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/isAbout"/>
+            <Class IRI="#cmp196:Communication"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:MixingCapability"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:NonOperational"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:NonOperational"/>
+        <ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000176"/>
+                <Class IRI="#cmp196:NutritionalSolutionModuleSystem"/>
+            </ObjectSomeValuesFrom>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Nutrient"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:NutrientSolution"/>
+        <Class IRI="#cmp196:Solution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:NutrientSolution"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://www.omg.org/spec/Commons/Collections/hasPart"/>
+                <Class IRI="#cmp196:Acid"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://www.omg.org/spec/Commons/Collections/hasPart"/>
+                <Class IRI="#cmp196:Nutrient"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://www.omg.org/spec/Commons/Collections/hasPart"/>
+                <Class IRI="#cmp196:Water"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:NutrientSolution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+            <Class IRI="#cmp196:NutrientSolutionRole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:NutrientSolutionRole"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:NutritionalSolutionModuleSystem"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/System"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:NutritionalSolutionModuleSystem"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtSomeTime"/>
+            <Class IRI="#Tank"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:NutritionalSolutionModuleSystem"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtSomeTime"/>
+            <Class IRI="#cmp196:Actuator"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:NutritionalSolutionModuleSystem"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtSomeTime"/>
+            <Class IRI="#cmp196:Filter"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:NutritionalSolutionModuleSystem"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtSomeTime"/>
+            <Class IRI="#cmp196:Gateway"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:NutritionalSolutionModuleSystem"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtSomeTime"/>
+            <Class IRI="#cmp196:OperationalMaterialArtifact"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:OperationalMaterialArtifact"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime"/>
+                <Class IRI="#cmp196:NutritionalSolutionModuleSystem"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:OperationalMaterialArtifact"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+            <Class IRI="#cmp196:OperationalRole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:OperationalRole"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:OperationalRole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/roleOf"/>
+            <ObjectIntersectionOf>
+                <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime"/>
+                    <Class IRI="#cmp196:NutritionalSolutionModuleSystem"/>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:PHMeasurementCapability"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MeasurementCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:PHMeasuringFunction"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:PHSensor"/>
+        <Class IRI="#cmp196:Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:PHSensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasCapability"/>
+            <Class IRI="#cmp196:PHMeasurementCapability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:PHSensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+            <Class IRI="#cmp196:PHMeasuringFunction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Protocol"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Protocol"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+            <Class IRI="#cmp196:ProtocolImplementation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:ProtocolImplementation"/>
+        <Class IRI="#Software"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Pump"/>
+        <Class IRI="#cmp196:Actuator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Pump"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#cmp196:pumpsTo"/>
+            <ObjectUnionOf>
+                <Class IRI="#Tank"/>
+                <Class IRI="#cmp196:Pump"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Pump"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+            <Class IRI="#cmp196:PumpingFunction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:PumpableCapability"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:PumpingFunction"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:PumpingFunction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/functionOf"/>
+            <Class IRI="#cmp196:Pump"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:RaspberryPI"/>
+        <Class IRI="#cmp196:SingleBoardComputer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:ReceiveMessage"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:ReceiveMessage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000054"/>
+            <Class IRI="#cmp196:Communication"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:ReceiveMessage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/functionOf"/>
+            <Class IRI="#cmp196:Actuator"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:SendMessage"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:SendMessage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000054"/>
+            <Class IRI="#cmp196:Communication"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:SendMessage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/functionOf"/>
+            <Class IRI="#cmp196:Sensor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Sensor"/>
+        <Class IRI="#cmp196:Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Sensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+            <Class IRI="#cmp196:SensorRole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:SensorRole"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:SensorRole"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <Class IRI="#cmp196:Communication"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/roleOf"/>
+                <Class IRI="#cmp196:Sensor"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:SingleBoardComputer"/>
+        <Class IRI="#cmp196:Computer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Solution"/>
+        <Class IRI="#cmp196:Liquid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Solution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasCapability"/>
+            <Class IRI="#cmp196:BeMixedCapability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:StoreFunction"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:StoreFunction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/functionOf"/>
+            <Class IRI="#Receptacle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:UPCUAProtocol"/>
+        <Class IRI="#cmp196:Protocol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Valve"/>
+        <Class IRI="#cmp196:Actuator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Valve"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#cmp196:flowsTo"/>
+            <ObjectUnionOf>
+                <Class IRI="#Tank"/>
+                <Class IRI="#cmp196:Pump"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Valve"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+            <Class IRI="#cmp196:AllowFlowFunction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Valve"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+            <Class IRI="#cmp196:BlockFlowFunction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:Water"/>
+        <Class IRI="#cmp196:Liquid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:pHMeasuredValueExpression"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MeasuredValueExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:pHMeasurementInformationContent"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MeasurementInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:pHMeasurementProcess"/>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/MeasurementProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:pHMeasurementProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000057"/>
+            <ObjectUnionOf>
+                <Class IRI="#cmp196:PHMeasurementCapability"/>
+                <Class IRI="#cmp196:PHMeasuringFunction"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:pHQuality"/>
+        <Class IRI="http://purl.obolibrary.org/obo/PATO_0001018"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cmp196:pHQuality"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000059"/>
+            <Class IRI="#cmp196:pHMeasurementInformationContent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/Core/PieceOfEquipment"/>
+        <ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+                <Class IRI="#cmp196:NonOperational"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+                <Class IRI="#cmp196:OperationalRole"/>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectIntersectionOf>
+            <Class IRI="#DDS"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+                <Class IRI="#cmp196:Communication"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+        <Class IRI="#DDS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectIntersectionOf>
+            <Class IRI="#MQTT"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+                <Class IRI="#cmp196:Communication"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+        <Class IRI="#MQTT"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectIntersectionOf>
+            <Class IRI="#UPCUA"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+                <Class IRI="#cmp196:Communication"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+        <Class IRI="#UPCUA"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectIntersectionOf>
+            <Class IRI="#cmp196:ProtocolImplementation"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+                <Class IRI="#cmp196:Message"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+        <Class IRI="#cmp196:ProtocolImplementation"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#cmp196:NonOperational"/>
+        <Class IRI="#cmp196:OperationalRole"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#cmp196:Acid"/>
+        <NamedIndividual IRI="#Acid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:ActuatorRole"/>
+        <NamedIndividual IRI="#ActuatorRole"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:Air"/>
+        <NamedIndividual IRI="#Air"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:DataFormat"/>
+        <NamedIndividual IRI="#BinaryDataFormat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:Compressor"/>
+        <NamedIndividual IRI="#C200"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:Communication"/>
+        <NamedIndividual IRI="#Communication"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DDS"/>
+        <NamedIndividual IRI="#DDS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:Message"/>
+        <NamedIndividual IRI="#DDSMessage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:DDSProtocol"/>
+        <NamedIndividual IRI="#DDSProtocol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:Filter"/>
+        <NamedIndividual IRI="#F110"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GatewayRole"/>
+        <NamedIndividual IRI="#GatewayRole"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:RaspberryPI"/>
+        <NamedIndividual IRI="#IOT_Device"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:DataFormat"/>
+        <NamedIndividual IRI="#JsonDataFormat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:LevelSensor"/>
+        <NamedIndividual IRI="#L110"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:LevelMeasurementProcess"/>
+        <NamedIndividual IRI="#LevelMeasurementProcess"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:LevelMeasuringFunction"/>
+        <NamedIndividual IRI="#LevelMeasuringFunction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MQTT"/>
+        <NamedIndividual IRI="#MQTT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:Message"/>
+        <NamedIndividual IRI="#MQTTMessage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:MQTTProtocol"/>
+        <NamedIndividual IRI="#MQTTProtocol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:NutritionalSolutionModuleSystem"/>
+        <NamedIndividual IRI="#NSM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:DataStoredInHardDrive"/>
+        <NamedIndividual IRI="#NSMHardDrive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:Nutrient"/>
+        <NamedIndividual IRI="#Nutrient"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:Solution"/>
+        <NamedIndividual IRI="#NutrientSolution"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:NutrientSolutionRole"/>
+        <NamedIndividual IRI="#NutrientSolutionRole"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:OperationalRole"/>
+        <NamedIndividual IRI="#OperationalRole"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:Pump"/>
+        <NamedIndividual IRI="#P110"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:Pump"/>
+        <NamedIndividual IRI="#P120"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:Pump"/>
+        <NamedIndividual IRI="#P210"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:Pump"/>
+        <NamedIndividual IRI="#P220"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:Pump"/>
+        <NamedIndividual IRI="#P230"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:ReceiveMessage"/>
+        <NamedIndividual IRI="#ReceiveMessage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:SendMessage"/>
+        <NamedIndividual IRI="#SendMessageFunction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:SensorRole"/>
+        <NamedIndividual IRI="#SensorRole"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:Solution"/>
+        <NamedIndividual IRI="#Solution"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:pHMeasuredValueExpression"/>
+        <NamedIndividual IRI="#SolutionLevelQuality"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tank"/>
+        <NamedIndividual IRI="#T110"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tank"/>
+        <NamedIndividual IRI="#T120"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tank"/>
+        <NamedIndividual IRI="#T210"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tank"/>
+        <NamedIndividual IRI="#T220"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tank"/>
+        <NamedIndividual IRI="#T230"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tank"/>
+        <NamedIndividual IRI="#T240"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UPCUA"/>
+        <NamedIndividual IRI="#UPCUA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:Message"/>
+        <NamedIndividual IRI="#UPCUAMessage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:UPCUAProtocol"/>
+        <NamedIndividual IRI="#UPCUAProtocol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:Valve"/>
+        <NamedIndividual IRI="#V110"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cmp196:Water"/>
+        <NamedIndividual IRI="#Water"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:pumps"/>
+        <NamedIndividual IRI="#C200"/>
+        <NamedIndividual IRI="#Air"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:pumpsTo"/>
+        <NamedIndividual IRI="#C200"/>
+        <NamedIndividual IRI="#T220"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:pumpsTo"/>
+        <NamedIndividual IRI="#C200"/>
+        <NamedIndividual IRI="#T230"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:pumpsTo"/>
+        <NamedIndividual IRI="#C200"/>
+        <NamedIndividual IRI="#T240"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime"/>
+        <NamedIndividual IRI="#C200"/>
+        <NamedIndividual IRI="#NSM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+        <NamedIndividual IRI="#C200"/>
+        <NamedIndividual IRI="#OperationalRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <NamedIndividual IRI="#Communication"/>
+        <NamedIndividual IRI="#L110"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <NamedIndividual IRI="#Communication"/>
+        <NamedIndividual IRI="#P110"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+        <NamedIndividual IRI="#Communication"/>
+        <NamedIndividual IRI="#UPCUAMessage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+        <NamedIndividual IRI="#Communication"/>
+        <NamedIndividual IRI="#UPCUAProtocol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+        <NamedIndividual IRI="#DDS"/>
+        <NamedIndividual IRI="#DDSProtocol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+        <NamedIndividual IRI="#DDSMessage"/>
+        <NamedIndividual IRI="#DDSProtocol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:flows"/>
+        <NamedIndividual IRI="#F110"/>
+        <NamedIndividual IRI="#Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:flowsTo"/>
+        <NamedIndividual IRI="#F110"/>
+        <NamedIndividual IRI="#T120"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime"/>
+        <NamedIndividual IRI="#F110"/>
+        <NamedIndividual IRI="#NSM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+        <NamedIndividual IRI="#F110"/>
+        <NamedIndividual IRI="#OperationalRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000196"/>
+        <NamedIndividual IRI="#IOT_Device"/>
+        <NamedIndividual IRI="#NSMHardDrive"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime"/>
+        <NamedIndividual IRI="#IOT_Device"/>
+        <NamedIndividual IRI="#NSM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+        <NamedIndividual IRI="#IOT_Device"/>
+        <NamedIndividual IRI="#ReceiveMessage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+        <NamedIndividual IRI="#IOT_Device"/>
+        <NamedIndividual IRI="#SendMessageFunction"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+        <NamedIndividual IRI="#IOT_Device"/>
+        <NamedIndividual IRI="#GatewayRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime"/>
+        <NamedIndividual IRI="#L110"/>
+        <NamedIndividual IRI="#NSM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+        <NamedIndividual IRI="#L110"/>
+        <NamedIndividual IRI="#LevelMeasuringFunction"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+        <NamedIndividual IRI="#L110"/>
+        <NamedIndividual IRI="#SendMessageFunction"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+        <NamedIndividual IRI="#L110"/>
+        <NamedIndividual IRI="#OperationalRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+        <NamedIndividual IRI="#L110"/>
+        <NamedIndividual IRI="#SensorRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <NamedIndividual IRI="#LevelMeasurementProcess"/>
+        <NamedIndividual IRI="#L110"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <NamedIndividual IRI="#LevelMeasurementProcess"/>
+        <NamedIndividual IRI="#T110"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:hasDataFormat"/>
+        <NamedIndividual IRI="#MQTTMessage"/>
+        <NamedIndividual IRI="#JsonDataFormat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:hasProtocol"/>
+        <NamedIndividual IRI="#MQTTMessage"/>
+        <NamedIndividual IRI="#MQTT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000059"/>
+        <NamedIndividual IRI="#NSMHardDrive"/>
+        <NamedIndividual IRI="#DDS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000059"/>
+        <NamedIndividual IRI="#NSMHardDrive"/>
+        <NamedIndividual IRI="#DDSMessage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000059"/>
+        <NamedIndividual IRI="#NSMHardDrive"/>
+        <NamedIndividual IRI="#MQTT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000059"/>
+        <NamedIndividual IRI="#NSMHardDrive"/>
+        <NamedIndividual IRI="#MQTTMessage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000059"/>
+        <NamedIndividual IRI="#NSMHardDrive"/>
+        <NamedIndividual IRI="#UPCUA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000059"/>
+        <NamedIndividual IRI="#NSMHardDrive"/>
+        <NamedIndividual IRI="#UPCUAMessage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://www.omg.org/spec/Commons/Collections/hasPart"/>
+        <NamedIndividual IRI="#NutrientSolution"/>
+        <NamedIndividual IRI="#Acid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://www.omg.org/spec/Commons/Collections/hasPart"/>
+        <NamedIndividual IRI="#NutrientSolution"/>
+        <NamedIndividual IRI="#Nutrient"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://www.omg.org/spec/Commons/Collections/hasPart"/>
+        <NamedIndividual IRI="#NutrientSolution"/>
+        <NamedIndividual IRI="#Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:pumps"/>
+        <NamedIndividual IRI="#P110"/>
+        <NamedIndividual IRI="#Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:pumpsTo"/>
+        <NamedIndividual IRI="#P110"/>
+        <NamedIndividual IRI="#F110"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime"/>
+        <NamedIndividual IRI="#P110"/>
+        <NamedIndividual IRI="#NSM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+        <NamedIndividual IRI="#P110"/>
+        <NamedIndividual IRI="#ReceiveMessage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+        <NamedIndividual IRI="#P110"/>
+        <NamedIndividual IRI="#ActuatorRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+        <NamedIndividual IRI="#P110"/>
+        <NamedIndividual IRI="#OperationalRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:pumps"/>
+        <NamedIndividual IRI="#P120"/>
+        <NamedIndividual IRI="#Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:pumpsTo"/>
+        <NamedIndividual IRI="#P120"/>
+        <NamedIndividual IRI="#T240"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime"/>
+        <NamedIndividual IRI="#P120"/>
+        <NamedIndividual IRI="#NSM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+        <NamedIndividual IRI="#P120"/>
+        <NamedIndividual IRI="#ReceiveMessage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+        <NamedIndividual IRI="#P120"/>
+        <NamedIndividual IRI="#OperationalRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:pumps"/>
+        <NamedIndividual IRI="#P210"/>
+        <NamedIndividual IRI="#Acid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:pumpsTo"/>
+        <NamedIndividual IRI="#P210"/>
+        <NamedIndividual IRI="#T240"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime"/>
+        <NamedIndividual IRI="#P210"/>
+        <NamedIndividual IRI="#NSM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+        <NamedIndividual IRI="#P210"/>
+        <NamedIndividual IRI="#ReceiveMessage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+        <NamedIndividual IRI="#P210"/>
+        <NamedIndividual IRI="#OperationalRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:pumps"/>
+        <NamedIndividual IRI="#P220"/>
+        <NamedIndividual IRI="#Nutrient"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:pumpsTo"/>
+        <NamedIndividual IRI="#P220"/>
+        <NamedIndividual IRI="#T240"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime"/>
+        <NamedIndividual IRI="#P220"/>
+        <NamedIndividual IRI="#NSM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+        <NamedIndividual IRI="#P220"/>
+        <NamedIndividual IRI="#ReceiveMessage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+        <NamedIndividual IRI="#P220"/>
+        <NamedIndividual IRI="#OperationalRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:pumps"/>
+        <NamedIndividual IRI="#P230"/>
+        <NamedIndividual IRI="#Nutrient"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:pumpsTo"/>
+        <NamedIndividual IRI="#P230"/>
+        <NamedIndividual IRI="#T240"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime"/>
+        <NamedIndividual IRI="#P230"/>
+        <NamedIndividual IRI="#NSM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+        <NamedIndividual IRI="#P230"/>
+        <NamedIndividual IRI="#ReceiveMessage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+        <NamedIndividual IRI="#P230"/>
+        <NamedIndividual IRI="#OperationalRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/functionOf"/>
+        <NamedIndividual IRI="#ReceiveMessage"/>
+        <NamedIndividual IRI="#P110"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/functionOf"/>
+        <NamedIndividual IRI="#SendMessageFunction"/>
+        <NamedIndividual IRI="#L110"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasValueExpressionAtAllTimes"/>
+        <NamedIndividual IRI="#Solution"/>
+        <NamedIndividual IRI="#SolutionLevelQuality"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:flowsTo"/>
+        <NamedIndividual IRI="#T110"/>
+        <NamedIndividual IRI="#P110"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:stores"/>
+        <NamedIndividual IRI="#T110"/>
+        <NamedIndividual IRI="#Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime"/>
+        <NamedIndividual IRI="#T110"/>
+        <NamedIndividual IRI="#NSM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+        <NamedIndividual IRI="#T110"/>
+        <NamedIndividual IRI="#OperationalRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:flowsTo"/>
+        <NamedIndividual IRI="#T120"/>
+        <NamedIndividual IRI="#P120"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:stores"/>
+        <NamedIndividual IRI="#T120"/>
+        <NamedIndividual IRI="#Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime"/>
+        <NamedIndividual IRI="#T120"/>
+        <NamedIndividual IRI="#NSM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+        <NamedIndividual IRI="#T120"/>
+        <NamedIndividual IRI="#OperationalRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:flowsTo"/>
+        <NamedIndividual IRI="#T210"/>
+        <NamedIndividual IRI="#P210"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:stores"/>
+        <NamedIndividual IRI="#T210"/>
+        <NamedIndividual IRI="#Acid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime"/>
+        <NamedIndividual IRI="#T210"/>
+        <NamedIndividual IRI="#NSM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+        <NamedIndividual IRI="#T210"/>
+        <NamedIndividual IRI="#OperationalRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:flowsTo"/>
+        <NamedIndividual IRI="#T220"/>
+        <NamedIndividual IRI="#P220"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:stores"/>
+        <NamedIndividual IRI="#T220"/>
+        <NamedIndividual IRI="#Nutrient"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime"/>
+        <NamedIndividual IRI="#T220"/>
+        <NamedIndividual IRI="#NSM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+        <NamedIndividual IRI="#T220"/>
+        <NamedIndividual IRI="#OperationalRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:flowsTo"/>
+        <NamedIndividual IRI="#T230"/>
+        <NamedIndividual IRI="#P230"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:stores"/>
+        <NamedIndividual IRI="#T230"/>
+        <NamedIndividual IRI="#Nutrient"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime"/>
+        <NamedIndividual IRI="#T230"/>
+        <NamedIndividual IRI="#NSM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+        <NamedIndividual IRI="#T230"/>
+        <NamedIndividual IRI="#OperationalRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:stores"/>
+        <NamedIndividual IRI="#T240"/>
+        <NamedIndividual IRI="#Solution"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime"/>
+        <NamedIndividual IRI="#T240"/>
+        <NamedIndividual IRI="#NSM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+        <NamedIndividual IRI="#T240"/>
+        <NamedIndividual IRI="#OperationalRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+        <NamedIndividual IRI="#UPCUAMessage"/>
+        <NamedIndividual IRI="#UPCUAProtocol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:flows"/>
+        <NamedIndividual IRI="#V110"/>
+        <NamedIndividual IRI="#Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cmp196:flowsTo"/>
+        <NamedIndividual IRI="#V110"/>
+        <NamedIndividual IRI="#T110"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime"/>
+        <NamedIndividual IRI="#V110"/>
+        <NamedIndividual IRI="#NSM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasFunction"/>
+        <NamedIndividual IRI="#V110"/>
+        <NamedIndividual IRI="#ReceiveMessage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+        <NamedIndividual IRI="#V110"/>
+        <NamedIndividual IRI="#ActuatorRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+        <NamedIndividual IRI="#V110"/>
+        <NamedIndividual IRI="#OperationalRole"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://spec.industrialontologies.org/ontology/core/Core/hasSimpleExpressionValue"/>
+        <NamedIndividual IRI="#SolutionLevelQuality"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#installedIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#mixContent"/>
+        <ObjectProperty IRI="#cmp196:stores"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#cmp196:flows"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#cmp196:flowsTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#cmp196:pumps"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#cmp196:pumpsTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#cmp196:connectedWith"/>
+    </SymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#cmp196:flows"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#cmp196:flowsTo"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#cmp196:pumps"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#cmp196:pumpsTo"/>
+    </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#installedIn"/>
+        <Class IRI="#Tank"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cmp196:connectedWith"/>
+        <ObjectUnionOf>
+            <Class IRI="#Receptacle"/>
+            <Class IRI="#cmp196:Device"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cmp196:flows"/>
+        <ObjectUnionOf>
+            <Class IRI="#Receptacle"/>
+            <Class IRI="#cmp196:Filter"/>
+            <Class IRI="#cmp196:Valve"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cmp196:flowsTo"/>
+        <ObjectUnionOf>
+            <Class IRI="#Receptacle"/>
+            <Class IRI="#cmp196:Filter"/>
+            <Class IRI="#cmp196:Valve"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cmp196:hasDataFormat"/>
+        <Class IRI="#cmp196:Message"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cmp196:hasProtocol"/>
+        <Class IRI="#cmp196:Message"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cmp196:pumps"/>
+        <Class IRI="#cmp196:Pump"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cmp196:pumpsTo"/>
+        <Class IRI="#cmp196:Pump"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cmp196:stores"/>
+        <Class IRI="#Receptacle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#installedIn"/>
+        <Class IRI="#cmp196:Sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cmp196:connectedWith"/>
+        <ObjectUnionOf>
+            <Class IRI="#Receptacle"/>
+            <Class IRI="#cmp196:Device"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cmp196:flows"/>
+        <ObjectUnionOf>
+            <Class IRI="#cmp196:GaseousSubstance"/>
+            <Class IRI="#cmp196:Liquid"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cmp196:flowsTo"/>
+        <ObjectUnionOf>
+            <Class IRI="#Receptacle"/>
+            <Class IRI="#cmp196:Filter"/>
+            <Class IRI="#cmp196:Pump"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cmp196:hasDataFormat"/>
+        <Class IRI="#cmp196:DataFormat"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cmp196:hasProtocol"/>
+        <Class IRI="#cmp196:Protocol"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cmp196:pumps"/>
+        <ObjectUnionOf>
+            <Class IRI="#cmp196:GaseousSubstance"/>
+            <Class IRI="#cmp196:Liquid"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cmp196:pumpsTo"/>
+        <ObjectUnionOf>
+            <Class IRI="#Receptacle"/>
+            <Class IRI="#cmp196:Filter"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cmp196:stores"/>
+        <ObjectUnionOf>
+            <Class IRI="#cmp196:GaseousSubstance"/>
+            <Class IRI="#cmp196:Liquid"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Acid</IRI>
+        <Literal>Acid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Receptacle</IRI>
+        <Literal>an object or space used to contain something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Tank</IRI>
+        <Literal>a large receptacle or storage chamber, especially for liquid or gas.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:Acid</IRI>
+        <Literal>a chemical substance that neutralizes alkalis, dissolves some metals, and turns litmus red; typically, a corrosive or sour-tasting liquid of this kind.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:Acid</IRI>
+        <Literal>Acid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:Actuator</IRI>
+        <Literal>a device that causes a machine or other device to operate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:Actuator</IRI>
+        <Literal>Actuator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:ActuatorRole</IRI>
+        <Literal>ActuatorRole</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:Air</IRI>
+        <Literal>the invisible gaseous substance surrounding the earth, a mixture mainly of oxygen and nitrogen.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:Air</IRI>
+        <Literal>Air</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:AllowFlowFunction</IRI>
+        <Literal>AllowFlowFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:BeInstalledInSomeDevice</IRI>
+        <Literal>BeInstalledInSomeDevice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:BeMixedCapability</IRI>
+        <Literal>BeMixedCapability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:BlockFlowFunction</IRI>
+        <Literal>BlockFlowFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:Communication</IRI>
+        <Literal>Communication is an act of sending or receiving data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:Communication</IRI>
+        <Literal>Communication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:Compressor</IRI>
+        <Literal>a machine used to supply air or other gas at increased pressure, e.g. to power a gas turbine.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:Compressor</IRI>
+        <Literal xml:lang="pt">Compressor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:Computer</IRI>
+        <Literal>an electronic device for storing and processing data, typically in binary form, according to instructions given to it in a variable program.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:Computer</IRI>
+        <Literal xml:lang="pt">Computer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:DDSProtocol</IRI>
+        <Literal>DDSProtocol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:DataFormat</IRI>
+        <Literal>A simple container format for describing a coherent collection of data in a single package</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:DataFormat</IRI>
+        <Literal>DataFormat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:DataStoredInHardDrive</IRI>
+        <Literal>Data stored in a high-capacity, self-contained storage device containing a read-write mechanism plus one or more hard disks, inside a sealed unit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:DataStoredInHardDrive</IRI>
+        <Literal>DataStoredInHardDrive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:Device</IRI>
+        <Literal>a thing made or adapted for a particular purpose, especially a piece of mechanical or electronic equipment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:Device</IRI>
+        <Literal>Device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:ECMeasuredValueExpression</IRI>
+        <Literal>ECMeasuredValueExpression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:ECMeasurementInformationContent</IRI>
+        <Literal>ECMeasurementInformationContent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:ECMeasurementProcess</IRI>
+        <Literal>ECMeasurementProcess</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:ECQuality</IRI>
+        <Literal>ECQuality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:ECSensor</IRI>
+        <Literal>an electrical conductivity meter (EC meter) measures the electrical conductivity in a solution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#cmp196:ECSensor</IRI>
+        <Literal>https://en.wikipedia.org/wiki/Electrical_conductivity_meter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:ECSensor</IRI>
+        <Literal>EC Sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:ElectricalConductivityMeasurementCapability</IRI>
+        <Literal xml:lang="pt">ElectricalConductivityMeasurementCapability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:ElectricalConductivityMeasuringFunction</IRI>
+        <Literal>ElectricalConductivityMeasuringFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:Filter</IRI>
+        <Literal>a porous device for removing impurities or solid particles from a liquid or gas passed through it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:Filter</IRI>
+        <Literal>Filter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:FilteringFunction</IRI>
+        <Literal>pass (a liquid, gas, light, or sound) through a device to remove unwanted material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:FilteringFunction</IRI>
+        <Literal xml:lang="pt">FilteringFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:FlowCapability</IRI>
+        <Literal>(of a fluid, gas, or electricity) move along or out steadily and continuously in a current or stream.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:FlowCapability</IRI>
+        <Literal>FlowCapability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:GaseousSubstance</IRI>
+        <Literal>GaseousSubstance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:Gateway</IRI>
+        <Literal>Gateway</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:LevelMeasuredValueExpression</IRI>
+        <Literal>LevelMeasuredValueExpression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:LevelMeasurementCapability</IRI>
+        <Literal xml:lang="pt">LevelMeasurementCapability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:LevelMeasurementInformationContent</IRI>
+        <Literal>LevelMeasurementInformationContent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:LevelMeasurementProcess</IRI>
+        <Literal>LevelMeasurementProcess</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:LevelMeasuringFunction</IRI>
+        <Literal>LevelMeasuringFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:LevelQuality</IRI>
+        <Literal>LevelQuality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:LevelSensor</IRI>
+        <Literal>an device that detects the level of liquids and other fluids and fluidized solids, including slurries, granular materials, and powders that exhibit an upper free surface.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#cmp196:LevelSensor</IRI>
+        <Literal>https://en.wikipedia.org/wiki/Level_sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:LevelSensor</IRI>
+        <Literal>Level Sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:Liquid</IRI>
+        <Literal>a substance that flows freely but is of constant volume, having a consistency like that of water or oil.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:Liquid</IRI>
+        <Literal>Liquid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:MQTTProtocol</IRI>
+        <Literal>MQTT Protocol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:Message</IRI>
+        <Literal>Message</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:MixingCapability</IRI>
+        <Literal>combine or put together to form one substance or mass.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:MixingCapability</IRI>
+        <Literal>MixingCapability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:NonOperational</IRI>
+        <Literal>an object not in use.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:NonOperational</IRI>
+        <Literal>NonOperationalRole</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:Nutrient</IRI>
+        <Literal>a substance that provides nourishment essential for growth and the maintenance of life.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:Nutrient</IRI>
+        <Literal>Nutrient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:NutrientSolution</IRI>
+        <Literal>A nutrient solution is a carefully proportioned liquid fertilizer used in hydroponic gardening.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#cmp196:NutrientSolution</IRI>
+        <Literal>https://brainly.in/question/11893132#:~:text=A%20nutrient%20solution%20is%20a,gardeners%20may%20mix%20their%20own.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:NutrientSolution</IRI>
+        <Literal>Nutrient Solution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:NutrientSolutionRole</IRI>
+        <Literal>a nutrient solution is a carefully proportioned liquid fertilizer used in hydroponic gardening</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#cmp196:NutrientSolutionRole</IRI>
+        <Literal>https://brainly.in/question/11893132#:~:text=A%20nutrient%20solution%20is%20a,gardeners%20may%20mix%20their%20own.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:NutrientSolutionRole</IRI>
+        <Literal>NutrientSolutionRole</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:NutritionalSolutionModuleSystem</IRI>
+        <Literal xml:lang="pt">Nutritional Solution Module System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:OperationalMaterialArtifact</IRI>
+        <Literal>OperationalMaterialArtifact</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:OperationalRole</IRI>
+        <Literal>an object in or ready for use.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:OperationalRole</IRI>
+        <Literal xml:lang="pt">OperationalRole</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:PHMeasurementCapability</IRI>
+        <Literal xml:lang="pt">PHMeasurementCapability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:PHMeasuringFunction</IRI>
+        <Literal>PHMeasuringFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:PHSensor</IRI>
+        <Literal>a scientific instrument that measures the hydrogen-ion activity in water-based solutions, indicating its acidity or alkalinity expressed as pH</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#cmp196:PHSensor</IRI>
+        <Literal>https://en.wikipedia.org/wiki/PH_meter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:PHSensor</IRI>
+        <Literal>PH Sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:Protocol</IRI>
+        <Literal>a set of rules governing the exchange or transmission of data between devices.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:Protocol</IRI>
+        <Literal>Protocol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:ProtocolImplementation</IRI>
+        <Literal>ProtocolImplementation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:Pump</IRI>
+        <Literal>a mechanical device using suction or pressure to raise or move liquids, compress gases, or force air into inflatable objects such as tires.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:Pump</IRI>
+        <Literal>Pump</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:PumpableCapability</IRI>
+        <Literal>capable of being pumped</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:PumpableCapability</IRI>
+        <Literal>PumpableCapability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:PumpingFunction</IRI>
+        <Literal>PumpingFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:RaspberryPI</IRI>
+        <Literal>Raspberry Pi (/paɪ/) is a series of small single-board computers (SBCs) developed in the United Kingdom by the Raspberry Pi Foundation in association with Broadcom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#cmp196:RaspberryPI</IRI>
+        <Literal>https://en.wikipedia.org/wiki/Raspberry_Pi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:RaspberryPI</IRI>
+        <Literal>Raspberry PI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:ReceiveMessage</IRI>
+        <Literal>ReceiveMessage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:SendMessage</IRI>
+        <Literal>SendMessage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:Sensor</IRI>
+        <Literal>a device which detects or measures a physical property and records, indicates, or otherwise responds to it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:Sensor</IRI>
+        <Literal>Sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:SensorRole</IRI>
+        <Literal>SensorRole</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:SingleBoardComputer</IRI>
+        <Literal>a complete computer built on a single circuit board, with microprocessor(s), memory, input/output (I/O) and other features required of a functional computer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#cmp196:SingleBoardComputer</IRI>
+        <Literal>https://en.wikipedia.org/wiki/Single-board_computer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:SingleBoardComputer</IRI>
+        <Literal>Single-Board Computer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:Solution</IRI>
+        <Literal>a liquid mixture in which the minor component (the solute) is uniformly distributed within the major component (the solvent).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:Solution</IRI>
+        <Literal>Solution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:StoreFunction</IRI>
+        <Literal>StoreFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:UPCUAProtocol</IRI>
+        <Literal>UPC UA Protocol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:Valve</IRI>
+        <Literal>a device for controlling the passage of fluid or air through a pipe, duct, etc., especially an automatic device allowing movement in one direction only.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:Valve</IRI>
+        <Literal>Valve</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:Water</IRI>
+        <Literal>a colorless, transparent, odorless liquid that forms the seas, lakes, rivers, and rain and is the basis of the fluids of living organisms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:Water</IRI>
+        <Literal>Water</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:connectedWith</IRI>
+        <Literal>A generic &quot;connection&quot; relation between things.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#cmp196:connectedWith</IRI>
+        <Literal>https://alikucukavci.github.io/FSO/#connectedWith</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:connectedWith</IRI>
+        <Literal>connectedWith</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:flows</IRI>
+        <Literal>the thing that is flowing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:flows</IRI>
+        <Literal>flows</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:flowsTo</IRI>
+        <Literal>the flows destination</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:flowsTo</IRI>
+        <Literal>flowsTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:hasDataFormat</IRI>
+        <Literal>hasDataFormat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:hasProtocol</IRI>
+        <Literal>hasProtocol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:pHMeasuredValueExpression</IRI>
+        <Literal>pHMeasuredValueExpression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:pHMeasurementInformationContent</IRI>
+        <Literal>pHMeasurementInformationContent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:pHMeasurementProcess</IRI>
+        <Literal>pHMeasurementProcess</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:pHQuality</IRI>
+        <Literal>pHQuality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:pumps</IRI>
+        <Literal>the thing being pumped</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:pumps</IRI>
+        <Literal>pumps</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:pumpsTo</IRI>
+        <Literal>destination of the pumping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:pumpsTo</IRI>
+        <Literal>pumpsTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#cmp196:stores</IRI>
+        <Literal>the material stored</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cmp196:stores</IRI>
+        <Literal>stores</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
