@@ -19,6 +19,10 @@
     <Prefix name="protege" IRI="http://protege.stanford.edu/plugins/owl/protege#"/>
     <Prefix name="oboInOwl" IRI="http://www.geneontology.org/formats/oboInOwl#"/>
     <Import>http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>An ontology to hydroponic plants</Literal>
+    </Annotation>
     <Declaration>
         <Class IRI="#acid"/>
     </Declaration>
@@ -1080,13 +1084,6 @@
         <Class abbreviatedIRI="obo:BFO_0000030"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#person"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:RO_0000056"/>
-            <Class IRI="#setting_target_value"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#prefix"/>
         <Class abbreviatedIRI="obo:IAO_0000009"/>
     </SubClassOf>
@@ -1135,7 +1132,13 @@
         <Class IRI="#setting_target_value"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:RO_0000057"/>
-            <Class IRI="#industrial_asset_operator"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#person"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:RO_0000087"/>
+                    <Class IRI="#industrial_asset_operator"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1593,6 +1596,11 @@
         <ObjectProperty IRI="#is_measured_by"/>
         <NamedIndividual IRI="#Level240"/>
         <NamedIndividual IRI="#L240"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
+        <NamedIndividual IRI="#Message_Comm_Q240_P210"/>
+        <NamedIndividual IRI="#Nutrient_Solution_pH"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#carries_data"/>
