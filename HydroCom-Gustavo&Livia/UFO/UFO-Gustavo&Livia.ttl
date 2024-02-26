@@ -1,0 +1,885 @@
+@prefix : <http://ontology.com#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gufo: <http://purl.org/nemo/gufo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ontology.com#> .
+
+<http://ontology.com> rdf:type owl:Ontology ;
+                       owl:imports gufo: .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2002/07/owl#minQualifiedCardinality
+owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://ontology.com#communicates_with
+:communicates_with rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Sensor ;
+                   rdfs:range :IoTDevices .
+
+
+###  http://ontology.com#communicates_with_1
+:communicates_with_1 rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Actuators ;
+                     rdfs:range :IoTDevices .
+
+
+###  http://ontology.com#exchange_messages
+:exchange_messages rdf:type owl:ObjectProperty ;
+                   rdfs:domain :NetworkCommunicatioPort ;
+                   rdfs:range :GatewayDevice .
+
+
+###  http://ontology.com#has
+:has rdf:type owl:ObjectProperty ;
+     rdfs:domain :Content ;
+     rdfs:range :Protocol .
+
+
+###  http://ontology.com#measures
+:measures rdf:type owl:ObjectProperty ;
+          rdfs:domain :DigitalPHSensor ;
+          rdfs:range :NutrientSolution .
+
+
+###  http://ontology.com#measures_1
+:measures_1 rdf:type owl:ObjectProperty ;
+            rdfs:domain :DigitalECSensor ;
+            rdfs:range :NutrientSolution .
+
+
+###  http://ontology.com#measures_2
+:measures_2 rdf:type owl:ObjectProperty ;
+            rdfs:domain :DigitalLevelSensor ;
+            rdfs:range :Tank .
+
+
+###  http://ontology.com#opens
+:opens rdf:type owl:ObjectProperty ;
+       rdfs:domain :WaterTank ;
+       rdfs:range :SolenoidValve .
+
+
+###  http://ontology.com#pumps_in
+:pumps_in rdf:type owl:ObjectProperty ;
+          rdfs:domain :AirCompressor ;
+          rdfs:range :FertilizerTank .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://ontology.com#AcidTank
+:AcidTank rdf:type owl:Class ;
+          rdfs:subClassOf :Tank .
+
+
+###  http://ontology.com#Actuators
+:Actuators rdf:type owl:Class ;
+           rdfs:subClassOf :IndustrialAssets .
+
+
+###  http://ontology.com#AirCompressor
+:AirCompressor rdf:type owl:Class ;
+               rdfs:subClassOf :Compressor .
+
+
+###  http://ontology.com#AnalogLevelSensor
+:AnalogLevelSensor rdf:type owl:Class ;
+                   rdfs:subClassOf :AnalogSensor .
+
+
+###  http://ontology.com#AnalogSensor
+:AnalogSensor rdf:type owl:Class ;
+              rdfs:subClassOf :Sensor .
+
+
+###  http://ontology.com#Compressor
+:Compressor rdf:type owl:Class ;
+            rdfs:subClassOf :Actuators .
+
+
+###  http://ontology.com#Content
+:Content rdf:type owl:Class ;
+         rdfs:subClassOf gufo:Quality .
+
+
+###  http://ontology.com#DDS
+:DDS rdf:type owl:Class ;
+     rdfs:subClassOf :Protocol .
+
+
+###  http://ontology.com#DigitalECSensor
+:DigitalECSensor rdf:type owl:Class ;
+                 rdfs:subClassOf :DigitalSensor .
+
+
+###  http://ontology.com#DigitalLevelSensor
+:DigitalLevelSensor rdf:type owl:Class ;
+                    rdfs:subClassOf :DigitalSensor .
+
+
+###  http://ontology.com#DigitalPHSensor
+:DigitalPHSensor rdf:type owl:Class ;
+                 rdfs:subClassOf :DigitalSensor .
+
+
+###  http://ontology.com#DigitalSensor
+:DigitalSensor rdf:type owl:Class ;
+               rdfs:subClassOf :Sensor .
+
+
+###  http://ontology.com#EC
+:EC rdf:type owl:Class ;
+    rdfs:subClassOf gufo:Quality .
+
+
+###  http://ontology.com#FertilizerTank
+:FertilizerTank rdf:type owl:Class ;
+                rdfs:subClassOf :Tank .
+
+
+###  http://ontology.com#Filter
+:Filter rdf:type owl:Class ;
+        rdfs:subClassOf :IndustrialAssets .
+
+
+###  http://ontology.com#GatewayDevice
+:GatewayDevice rdf:type owl:Class ;
+               rdfs:subClassOf gufo:FunctionalComplex .
+
+
+###  http://ontology.com#HighLevelSensor
+:HighLevelSensor rdf:type owl:Class ;
+                 rdfs:subClassOf :DigitalLevelSensor .
+
+
+###  http://ontology.com#IndustrialAssets
+:IndustrialAssets rdf:type owl:Class ;
+                  rdfs:subClassOf gufo:FunctionalComplex .
+
+
+###  http://ontology.com#InverseOsmosisFilter
+:InverseOsmosisFilter rdf:type owl:Class ;
+                      rdfs:subClassOf :Filter .
+
+
+###  http://ontology.com#IoTCommunicationModule
+:IoTCommunicationModule rdf:type owl:Class ;
+                        rdfs:subClassOf :IoTDevices .
+
+
+###  http://ontology.com#IoTDevices
+:IoTDevices rdf:type owl:Class ;
+            rdfs:subClassOf gufo:FunctionalComplex .
+
+
+###  http://ontology.com#Level
+:Level rdf:type owl:Class ;
+       rdfs:subClassOf gufo:Quality .
+
+
+###  http://ontology.com#LiquidFertilizerSolution
+:LiquidFertilizerSolution rdf:type owl:Class ;
+                          rdfs:subClassOf gufo:Quantity .
+
+
+###  http://ontology.com#LiquidPhosphoricAcidSolution
+:LiquidPhosphoricAcidSolution rdf:type owl:Class ;
+                              rdfs:subClassOf gufo:Quantity .
+
+
+###  http://ontology.com#LowLevelSensor
+:LowLevelSensor rdf:type owl:Class ;
+                rdfs:subClassOf :DigitalLevelSensor .
+
+
+###  http://ontology.com#MQTT
+:MQTT rdf:type owl:Class ;
+      rdfs:subClassOf :Protocol .
+
+
+###  http://ontology.com#NetworkCommunicatioPort
+:NetworkCommunicatioPort rdf:type owl:Class ;
+                         rdfs:subClassOf gufo:FunctionalComplex .
+
+
+###  http://ontology.com#NutrientSolution
+:NutrientSolution rdf:type owl:Class ;
+                  rdfs:subClassOf gufo:Quantity .
+
+
+###  http://ontology.com#OPCUA
+:OPCUA rdf:type owl:Class ;
+       rdfs:subClassOf :Protocol .
+
+
+###  http://ontology.com#PH
+:PH rdf:type owl:Class ;
+    rdfs:subClassOf gufo:Quality .
+
+
+###  http://ontology.com#Protocol
+:Protocol rdf:type owl:Class ;
+          rdfs:subClassOf gufo:FunctionalComplex .
+
+
+###  http://ontology.com#Pump
+:Pump rdf:type owl:Class ;
+      rdfs:subClassOf :Actuators .
+
+
+###  http://ontology.com#Sensor
+:Sensor rdf:type owl:Class ;
+        rdfs:subClassOf :IndustrialAssets .
+
+
+###  http://ontology.com#SolenoidValve
+:SolenoidValve rdf:type owl:Class ;
+               rdfs:subClassOf :Valve .
+
+
+###  http://ontology.com#SolutionTank
+:SolutionTank rdf:type owl:Class ;
+              rdfs:subClassOf :Tank .
+
+
+###  http://ontology.com#Tank
+:Tank rdf:type owl:Class ;
+      rdfs:subClassOf :IndustrialAssets .
+
+
+###  http://ontology.com#Valve
+:Valve rdf:type owl:Class ;
+       rdfs:subClassOf :Actuators .
+
+
+###  http://ontology.com#Water
+:Water rdf:type owl:Class ;
+       rdfs:subClassOf gufo:Quantity .
+
+
+###  http://ontology.com#WaterTank
+:WaterTank rdf:type owl:Class ;
+           rdfs:subClassOf :Tank .
+
+
+###  http://purl.org/nemo/gufo#Category
+gufo:Category rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#FunctionalComplex
+gufo:FunctionalComplex rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Kind
+gufo:Kind rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#MaterialRelationshipType
+gufo:MaterialRelationshipType rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Mixin
+gufo:Mixin rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Phase
+gufo:Phase rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Quality
+gufo:Quality rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#Quantity
+gufo:Quantity rdf:type owl:Class .
+
+
+###  http://purl.org/nemo/gufo#SubKind
+gufo:SubKind rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://ontology.com#AcidTank
+:AcidTank rdf:type owl:NamedIndividual ,
+                   gufo:Phase .
+
+
+###  http://ontology.com#Actuators
+:Actuators rdf:type owl:NamedIndividual ,
+                    gufo:Category .
+
+
+###  http://ontology.com#AirCompressor
+:AirCompressor rdf:type owl:NamedIndividual ,
+                        gufo:Kind .
+
+
+###  http://ontology.com#AnalogLevelSensor
+:AnalogLevelSensor rdf:type owl:NamedIndividual ,
+                            gufo:Kind .
+
+
+###  http://ontology.com#AnalogSensor
+:AnalogSensor rdf:type owl:NamedIndividual ,
+                       gufo:Category .
+
+
+###  http://ontology.com#C200
+:C200 rdf:type owl:NamedIndividual ,
+               :AirCompressor .
+
+
+###  http://ontology.com#Compressor
+:Compressor rdf:type owl:NamedIndividual ,
+                     gufo:Category .
+
+
+###  http://ontology.com#Content
+:Content rdf:type owl:NamedIndividual ,
+                  gufo:Kind .
+
+
+###  http://ontology.com#DDS
+:DDS rdf:type owl:NamedIndividual ,
+              gufo:SubKind .
+
+
+###  http://ontology.com#DigitalECSensor
+:DigitalECSensor rdf:type owl:NamedIndividual ,
+                          gufo:Kind .
+
+
+###  http://ontology.com#DigitalLevelSensor
+:DigitalLevelSensor rdf:type owl:NamedIndividual ,
+                             gufo:Kind .
+
+
+###  http://ontology.com#DigitalPHSensor
+:DigitalPHSensor rdf:type owl:NamedIndividual ,
+                          gufo:Kind .
+
+
+###  http://ontology.com#DigitalSensor
+:DigitalSensor rdf:type owl:NamedIndividual ,
+                        gufo:Category .
+
+
+###  http://ontology.com#EC
+:EC rdf:type owl:NamedIndividual ,
+             gufo:Kind .
+
+
+###  http://ontology.com#ECMeasure
+:ECMeasure rdf:type owl:NamedIndividual ,
+                    gufo:Kind .
+
+
+###  http://ontology.com#FertilizerTank
+:FertilizerTank rdf:type owl:NamedIndividual ,
+                         gufo:Phase .
+
+
+###  http://ontology.com#Filter
+:Filter rdf:type owl:NamedIndividual ,
+                 gufo:Category .
+
+
+###  http://ontology.com#GW01
+:GW01 rdf:type owl:NamedIndividual ,
+               :GatewayDevice .
+
+
+###  http://ontology.com#GatewayDevice
+:GatewayDevice rdf:type owl:NamedIndividual ,
+                        gufo:Category .
+
+
+###  http://ontology.com#HighLevelSensor
+:HighLevelSensor rdf:type owl:NamedIndividual ,
+                          gufo:Phase .
+
+
+###  http://ontology.com#I240
+:I240 rdf:type owl:NamedIndividual ,
+               :DigitalECSensor .
+
+
+###  http://ontology.com#IndustrialAssets
+:IndustrialAssets rdf:type owl:NamedIndividual ,
+                           gufo:Mixin .
+
+
+###  http://ontology.com#InverseOsmosisFilter
+:InverseOsmosisFilter rdf:type owl:NamedIndividual ,
+                               gufo:Kind .
+
+
+###  http://ontology.com#IoTCommunicationModule
+:IoTCommunicationModule rdf:type owl:NamedIndividual ,
+                                 gufo:Kind .
+
+
+###  http://ontology.com#IoTDevices
+:IoTDevices rdf:type owl:NamedIndividual ,
+                     gufo:Category .
+
+
+###  http://ontology.com#L110
+:L110 rdf:type owl:NamedIndividual ,
+               :LowLevelSensor .
+
+
+###  http://ontology.com#L111
+:L111 rdf:type owl:NamedIndividual ,
+               :HighLevelSensor .
+
+
+###  http://ontology.com#L120
+:L120 rdf:type owl:NamedIndividual ,
+               :LowLevelSensor .
+
+
+###  http://ontology.com#L121
+:L121 rdf:type owl:NamedIndividual ,
+               :HighLevelSensor .
+
+
+###  http://ontology.com#L211
+:L211 rdf:type owl:NamedIndividual ,
+               :HighLevelSensor .
+
+
+###  http://ontology.com#L221
+:L221 rdf:type owl:NamedIndividual ,
+               :HighLevelSensor .
+
+
+###  http://ontology.com#L231
+:L231 rdf:type owl:NamedIndividual ,
+               :HighLevelSensor .
+
+
+###  http://ontology.com#L240
+:L240 rdf:type owl:NamedIndividual ,
+               :LowLevelSensor .
+
+
+###  http://ontology.com#Level
+:Level rdf:type owl:NamedIndividual ,
+                gufo:Kind .
+
+
+###  http://ontology.com#LevelCheck
+:LevelCheck rdf:type owl:NamedIndividual ,
+                     gufo:Kind .
+
+
+###  http://ontology.com#LiquidFertilizerSolution
+:LiquidFertilizerSolution rdf:type owl:NamedIndividual ,
+                                   gufo:Kind .
+
+
+###  http://ontology.com#LiquidPhosphoricAcidSolution
+:LiquidPhosphoricAcidSolution rdf:type owl:NamedIndividual ,
+                                       gufo:Kind .
+
+
+###  http://ontology.com#LowLevelSensor
+:LowLevelSensor rdf:type owl:NamedIndividual ,
+                         gufo:Phase .
+
+
+###  http://ontology.com#MQTT
+:MQTT rdf:type owl:NamedIndividual ,
+               gufo:SubKind .
+
+
+###  http://ontology.com#Message
+:Message rdf:type owl:NamedIndividual ,
+                  gufo:Kind .
+
+
+###  http://ontology.com#ND01
+:ND01 rdf:type owl:NamedIndividual ,
+               :IoTDevices .
+
+
+###  http://ontology.com#ND02
+:ND02 rdf:type owl:NamedIndividual ,
+               :IoTDevices .
+
+
+###  http://ontology.com#ND03
+:ND03 rdf:type owl:NamedIndividual ,
+               :IoTDevices .
+
+
+###  http://ontology.com#NetworkCommunicatioPort
+:NetworkCommunicatioPort rdf:type owl:NamedIndividual ,
+                                  gufo:Kind .
+
+
+###  http://ontology.com#NutrientSolution
+:NutrientSolution rdf:type owl:NamedIndividual ,
+                           gufo:Kind .
+
+
+###  http://ontology.com#OPCUA
+:OPCUA rdf:type owl:NamedIndividual ,
+                gufo:SubKind .
+
+
+###  http://ontology.com#P110
+:P110 rdf:type owl:NamedIndividual ,
+               :Pump .
+
+
+###  http://ontology.com#P120
+:P120 rdf:type owl:NamedIndividual ,
+               :Pump .
+
+
+###  http://ontology.com#P210
+:P210 rdf:type owl:NamedIndividual ,
+               :Pump .
+
+
+###  http://ontology.com#P220
+:P220 rdf:type owl:NamedIndividual ,
+               :Pump .
+
+
+###  http://ontology.com#P230
+:P230 rdf:type owl:NamedIndividual ,
+               :Pump .
+
+
+###  http://ontology.com#PH
+:PH rdf:type owl:NamedIndividual ,
+             gufo:Kind .
+
+
+###  http://ontology.com#PHMeasure
+:PHMeasure rdf:type owl:NamedIndividual ,
+                    gufo:Kind .
+
+
+###  http://ontology.com#Protocol
+:Protocol rdf:type owl:NamedIndividual ,
+                   gufo:Kind .
+
+
+###  http://ontology.com#Pump
+:Pump rdf:type owl:NamedIndividual ,
+               gufo:Category .
+
+
+###  http://ontology.com#Q240
+:Q240 rdf:type owl:NamedIndividual ,
+               :DigitalPHSensor .
+
+
+###  http://ontology.com#Sensor
+:Sensor rdf:type owl:NamedIndividual ,
+                 gufo:Category .
+
+
+###  http://ontology.com#SolenoidValve
+:SolenoidValve rdf:type owl:NamedIndividual ,
+                        gufo:Kind .
+
+
+###  http://ontology.com#SolutionTank
+:SolutionTank rdf:type owl:NamedIndividual ,
+                       gufo:Phase .
+
+
+###  http://ontology.com#T110
+:T110 rdf:type owl:NamedIndividual ,
+               :WaterTank .
+
+
+###  http://ontology.com#T120
+:T120 rdf:type owl:NamedIndividual ,
+               :WaterTank .
+
+
+###  http://ontology.com#T210
+:T210 rdf:type owl:NamedIndividual ,
+               :AcidTank .
+
+
+###  http://ontology.com#T220
+:T220 rdf:type owl:NamedIndividual ,
+               :FertilizerTank .
+
+
+###  http://ontology.com#T230
+:T230 rdf:type owl:NamedIndividual ,
+               :FertilizerTank .
+
+
+###  http://ontology.com#T240
+:T240 rdf:type owl:NamedIndividual ,
+               :SolutionTank .
+
+
+###  http://ontology.com#Tank
+:Tank rdf:type owl:NamedIndividual ,
+               gufo:Kind .
+
+
+###  http://ontology.com#V110
+:V110 rdf:type owl:NamedIndividual ,
+               :SolenoidValve .
+
+
+###  http://ontology.com#Valve
+:Valve rdf:type owl:NamedIndividual ,
+                gufo:Category .
+
+
+###  http://ontology.com#Water
+:Water rdf:type owl:NamedIndividual ,
+                gufo:Kind .
+
+
+###  http://ontology.com#WaterTank
+:WaterTank rdf:type owl:NamedIndividual ,
+                    gufo:Phase .
+
+
+###  http://ontology.com#communicates_with
+:communicates_with rdf:type owl:NamedIndividual ,
+                            gufo:MaterialRelationshipType .
+
+
+###  http://ontology.com#communicates_with_1
+:communicates_with_1 rdf:type owl:NamedIndividual ,
+                              gufo:MaterialRelationshipType .
+
+
+###  http://ontology.com#exchange_messages
+:exchange_messages rdf:type owl:NamedIndividual ,
+                            gufo:MaterialRelationshipType .
+
+
+###  http://ontology.com#has
+:has rdf:type owl:NamedIndividual ,
+              gufo:MaterialRelationshipType .
+
+
+###  http://ontology.com#measures
+:measures rdf:type owl:NamedIndividual ,
+                   gufo:MaterialRelationshipType .
+
+
+###  http://ontology.com#measures_1
+:measures_1 rdf:type owl:NamedIndividual ,
+                     gufo:MaterialRelationshipType .
+
+
+###  http://ontology.com#measures_2
+:measures_2 rdf:type owl:NamedIndividual ,
+                     gufo:MaterialRelationshipType .
+
+
+###  http://ontology.com#opens
+:opens rdf:type owl:NamedIndividual ,
+                gufo:MaterialRelationshipType .
+
+
+###  http://ontology.com#pumps_in
+:pumps_in rdf:type owl:NamedIndividual ,
+                   gufo:MaterialRelationshipType .
+
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+:AcidTank rdfs:label "Acid Tank"@en .
+
+
+:Actuators rdfs:label "Actuators"@en .
+
+
+:AirCompressor rdfs:label "Air Compressor"@en .
+
+
+:AnalogLevelSensor rdfs:label "Analog Level Sensor"@en .
+
+
+:AnalogSensor rdfs:label "Analog Sensor"@en .
+
+
+:Compressor rdfs:label "Compressor"@en .
+
+
+:Content rdfs:label "Content"@en .
+
+
+:DDS rdfs:label "DDS"@en .
+
+
+:DigitalECSensor rdfs:label "Digital EC Sensor"@en .
+
+
+:DigitalLevelSensor rdfs:label "Digital Level Sensor"@en .
+
+
+:DigitalPHSensor rdfs:label "Digital PH Sensor"@en .
+
+
+:DigitalSensor rdfs:label "Digital Sensor"@en .
+
+
+:EC rdfs:label "EC"@en .
+
+
+:FertilizerTank rdfs:label "Fertilizer Tank"@en .
+
+
+:Filter rdfs:label "Filter"@en .
+
+
+:GatewayDevice rdfs:label "Gateway Device"@en .
+
+
+:HighLevelSensor rdfs:label "High Level Sensor"@en .
+
+
+:IndustrialAssets rdfs:label "Industrial Assets"@en .
+
+
+:InverseOsmosisFilter rdfs:label "Inverse Osmosis Filter"@en .
+
+
+:IoTCommunicationModule rdfs:label "IoT Communication Module"@en .
+
+
+:IoTDevices rdfs:label "IoT Devices"@en .
+
+
+:Level rdfs:label "Level"@en .
+
+
+:LiquidFertilizerSolution rdfs:label "Liquid Fertilizer Solution"@en .
+
+
+:LiquidPhosphoricAcidSolution rdfs:label "Liquid Phosphoric Acid Solution"@en .
+
+
+:LowLevelSensor rdfs:label "Low Level Sensor"@en .
+
+
+:MQTT rdfs:label "MQTT"@en .
+
+
+:NetworkCommunicatioPort rdfs:label "Network Communicatio Port"@en .
+
+
+:NutrientSolution rdfs:label "Nutrient Solution"@en .
+
+
+:OPCUA rdfs:label "OPC UA"@en .
+
+
+:PH rdfs:label "PH"@en .
+
+
+:Protocol rdfs:label "Protocol"@en .
+
+
+:Pump rdfs:label "Pump"@en .
+
+
+:Sensor rdfs:label "Sensor"@en .
+
+
+:SolenoidValve rdfs:label "Solenoid Valve"@en .
+
+
+:SolutionTank rdfs:label "Solution Tank"@en .
+
+
+:Tank rdfs:label "Tank"@en .
+
+
+:Valve rdfs:label "Valve"@en .
+
+
+:Water rdfs:label "Water"@en .
+
+
+:WaterTank rdfs:label "Water Tank"@en .
+
+
+:communicates_with rdfs:label "communicates_with"@en .
+
+
+:communicates_with_1 rdfs:label "communicates_with"@en .
+
+
+:exchange_messages rdfs:label "exchange_messages"@en .
+
+
+:has rdfs:label "has"@en .
+
+
+:measures rdfs:label "measures"@en .
+
+
+:measures_1 rdfs:label "measures"@en .
+
+
+:measures_2 rdfs:label "measures"@en .
+
+
+:opens rdfs:label "opens"@en .
+
+
+:pumps_in rdfs:label "pumps_in"@en .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
