@@ -1,0 +1,1633 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/lucas/ontologies/2026/5/MML"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/lucas/ontologies/2026/5/MML">
+    <Prefix name="" IRI="http://www.semanticweb.org/lucas/ontologies/2026/5/MML/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.obolibrary.org/obo/bfo/2020/bfo.owl</Import>
+    <Import>http://purl.obolibrary.org/obo/iao/2026-03-30/iao.owl</Import>
+    <Import>http://purl.obolibrary.org/obo/ro/releases/2025-12-17/core.owl</Import>
+    <Declaration>
+        <Class IRI="/AlgorithmBitPattern"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ComputationalHardware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Crankshaft"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/FaultClassificationObjective"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/FaultSusceptibility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/FuelInjectionSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/HighAccuracyModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/IgnitionSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/InferenceRulesSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/InterpretableModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MachineLearningModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Motor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MotorInputDataset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MotorOperationProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MotorStartProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MotorStopProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/OutputBitPattern"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/OutputPrediction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Piston"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PredictiveCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PredictiveComputationProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/RotationSpeed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SpeedDatum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SpeedSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SpeedSignal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TemperatureDatum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TemperatureSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TemperatureSignal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Vibration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/VibrationDatum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/VibrationSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/VibrationSignal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/HasFuelInjectionSystem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/HasIgnitionSystem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/algorithm_bit_pattern_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/computational_hardware_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/crankshaft_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/crankshaft_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/decision_tree_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/fault_classification_objective_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/fault_susceptibility_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/fuel_injection_system_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/ignition_system_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/inference_rules_specification_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/motor_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/motor_input_dataset_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/motor_operation_process_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/motor_start_process_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/motor_stop_process_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/output_bit_pattern_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/output_prediction_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/piston_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/piston_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/predictive_capability_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/predictive_computation_process_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/rotation_speed_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/speed_datum_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/speed_sensor_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/speed_signal_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/temperature_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/temperature_datum_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/temperature_sensor_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/temperature_signal_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/vibration_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/vibration_datum_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/vibration_sensor_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/vibration_signal_1"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="/AlgorithmBitPattern"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AlgorithmBitPattern"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000197"/>
+            <Class IRI="/ComputationalHardware"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AlgorithmBitPattern"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000059"/>
+            <Class IRI="/MachineLearningModel"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ComputationalHardware"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ComputationalHardware"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000196"/>
+            <Class IRI="/PredictiveCapability"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Crankshaft"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FaultClassificationObjective"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FaultSusceptibility"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FuelInjectionSystem"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/HighAccuracyModel"/>
+        <Class IRI="/MachineLearningModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/IgnitionSystem"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/InferenceRulesSpecification"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/InterpretableModel"/>
+        <Class IRI="/MachineLearningModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MachineLearningModel"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000064"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MachineLearningModel"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="/PredictiveCapability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MachineLearningModel"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="/FaultClassificationObjective"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MachineLearningModel"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="/InferenceRulesSpecification"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Motor"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Motor"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="/Crankshaft"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Motor"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="/Piston"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Motor"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000196"/>
+            <Class IRI="/FaultSusceptibility"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Motor"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000196"/>
+            <Class IRI="/RotationSpeed"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Motor"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000196"/>
+            <Class IRI="/Temperature"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Motor"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000196"/>
+            <Class IRI="/Vibration"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Motor"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/HasFuelInjectionSystem"/>
+            <Class IRI="/FuelInjectionSystem"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Motor"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/HasIgnitionSystem"/>
+            <Class IRI="/IgnitionSystem"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MotorInputDataset"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0001000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MotorInputDataset"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="/SpeedDatum"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MotorInputDataset"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="/TemperatureDatum"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MotorInputDataset"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="/VibrationDatum"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MotorInputDataset"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="/Motor"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MotorOperationProcess"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MotorOperationProcess"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000062"/>
+            <Class IRI="/MotorStartProcess"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MotorOperationProcess"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="/Crankshaft"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MotorOperationProcess"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="/Piston"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MotorOperationProcess"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="/Motor"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MotorStartProcess"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MotorStartProcess"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="/FuelInjectionSystem"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MotorStartProcess"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="/IgnitionSystem"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MotorStartProcess"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="/Motor"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MotorStopProcess"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MotorStopProcess"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000062"/>
+            <Class IRI="/MotorOperationProcess"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MotorStopProcess"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="/Motor"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/OutputBitPattern"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/OutputBitPattern"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000197"/>
+            <Class IRI="/ComputationalHardware"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/OutputBitPattern"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000059"/>
+            <Class IRI="/OutputPrediction"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/OutputPrediction"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/OutputPrediction"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="/FaultSusceptibility"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Piston"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PredictiveCapability"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PredictiveComputationProcess"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PredictiveComputationProcess"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="/ComputationalHardware"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PredictiveComputationProcess"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="/MachineLearningModel"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PredictiveComputationProcess"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="/MotorInputDataset"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PredictiveComputationProcess"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="/OutputPrediction"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/RotationSpeed"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Sensor"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SpeedDatum"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SpeedDatum"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000058"/>
+            <Class IRI="/SpeedSignal"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SpeedDatum"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="/RotationSpeed"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SpeedSensor"/>
+        <Class IRI="/Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SpeedSignal"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SpeedSignal"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000197"/>
+            <Class IRI="/SpeedSensor"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Temperature"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TemperatureDatum"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TemperatureDatum"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000058"/>
+            <Class IRI="/TemperatureSignal"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TemperatureDatum"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="/Temperature"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TemperatureSensor"/>
+        <Class IRI="/Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TemperatureSignal"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TemperatureSignal"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000197"/>
+            <Class IRI="/TemperatureSensor"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Vibration"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/VibrationDatum"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/VibrationDatum"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000058"/>
+            <Class IRI="/VibrationSignal"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/VibrationDatum"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="/Vibration"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/VibrationSensor"/>
+        <Class IRI="/Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/VibrationSignal"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/VibrationSignal"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000197"/>
+            <Class IRI="/VibrationSensor"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="/AlgorithmBitPattern"/>
+        <Class IRI="/OutputBitPattern"/>
+        <Class IRI="/RotationSpeed"/>
+        <Class IRI="/SpeedSignal"/>
+        <Class IRI="/Temperature"/>
+        <Class IRI="/TemperatureSignal"/>
+        <Class IRI="/Vibration"/>
+        <Class IRI="/VibrationSignal"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/ComputationalHardware"/>
+        <Class IRI="/Crankshaft"/>
+        <Class IRI="/FuelInjectionSystem"/>
+        <Class IRI="/IgnitionSystem"/>
+        <Class IRI="/Motor"/>
+        <Class IRI="/Piston"/>
+        <Class IRI="/Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/FaultSusceptibility"/>
+        <Class IRI="/PredictiveCapability"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/MotorOperationProcess"/>
+        <Class IRI="/MotorStartProcess"/>
+        <Class IRI="/MotorStopProcess"/>
+        <Class IRI="/PredictiveComputationProcess"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/SpeedDatum"/>
+        <Class IRI="/TemperatureDatum"/>
+        <Class IRI="/VibrationDatum"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/SpeedSensor"/>
+        <Class IRI="/TemperatureSensor"/>
+        <Class IRI="/VibrationSensor"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="/AlgorithmBitPattern"/>
+        <NamedIndividual IRI="/algorithm_bit_pattern_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/ComputationalHardware"/>
+        <NamedIndividual IRI="/computational_hardware_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Crankshaft"/>
+        <NamedIndividual IRI="/crankshaft_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Crankshaft"/>
+        <NamedIndividual IRI="/crankshaft_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/HighAccuracyModel"/>
+        <NamedIndividual IRI="/decision_tree_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/InterpretableModel"/>
+        <NamedIndividual IRI="/decision_tree_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/FaultClassificationObjective"/>
+        <NamedIndividual IRI="/fault_classification_objective_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/FaultSusceptibility"/>
+        <NamedIndividual IRI="/fault_susceptibility_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/FuelInjectionSystem"/>
+        <NamedIndividual IRI="/fuel_injection_system_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/IgnitionSystem"/>
+        <NamedIndividual IRI="/ignition_system_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/InferenceRulesSpecification"/>
+        <NamedIndividual IRI="/inference_rules_specification_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Motor"/>
+        <NamedIndividual IRI="/motor_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/MotorInputDataset"/>
+        <NamedIndividual IRI="/motor_input_dataset_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/MotorOperationProcess"/>
+        <NamedIndividual IRI="/motor_operation_process_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/MotorStartProcess"/>
+        <NamedIndividual IRI="/motor_start_process_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/MotorStopProcess"/>
+        <NamedIndividual IRI="/motor_stop_process_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/OutputBitPattern"/>
+        <NamedIndividual IRI="/output_bit_pattern_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/OutputPrediction"/>
+        <NamedIndividual IRI="/output_prediction_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Piston"/>
+        <NamedIndividual IRI="/piston_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Piston"/>
+        <NamedIndividual IRI="/piston_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PredictiveCapability"/>
+        <NamedIndividual IRI="/predictive_capability_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PredictiveComputationProcess"/>
+        <NamedIndividual IRI="/predictive_computation_process_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/RotationSpeed"/>
+        <NamedIndividual IRI="/rotation_speed_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SpeedDatum"/>
+        <NamedIndividual IRI="/speed_datum_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SpeedSensor"/>
+        <NamedIndividual IRI="/speed_sensor_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SpeedSignal"/>
+        <NamedIndividual IRI="/speed_signal_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Temperature"/>
+        <NamedIndividual IRI="/temperature_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/TemperatureDatum"/>
+        <NamedIndividual IRI="/temperature_datum_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/TemperatureSensor"/>
+        <NamedIndividual IRI="/temperature_sensor_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/TemperatureSignal"/>
+        <NamedIndividual IRI="/temperature_signal_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Vibration"/>
+        <NamedIndividual IRI="/vibration_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/VibrationDatum"/>
+        <NamedIndividual IRI="/vibration_datum_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/VibrationSensor"/>
+        <NamedIndividual IRI="/vibration_sensor_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/VibrationSignal"/>
+        <NamedIndividual IRI="/vibration_signal_1"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000197"/>
+        <NamedIndividual IRI="/algorithm_bit_pattern_1"/>
+        <NamedIndividual IRI="/computational_hardware_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000059"/>
+        <NamedIndividual IRI="/algorithm_bit_pattern_1"/>
+        <NamedIndividual IRI="/decision_tree_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000196"/>
+        <NamedIndividual IRI="/computational_hardware_1"/>
+        <NamedIndividual IRI="/predictive_capability_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <NamedIndividual IRI="/decision_tree_1"/>
+        <NamedIndividual IRI="/fault_classification_objective_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <NamedIndividual IRI="/decision_tree_1"/>
+        <NamedIndividual IRI="/inference_rules_specification_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <NamedIndividual IRI="/decision_tree_1"/>
+        <NamedIndividual IRI="/predictive_capability_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000197"/>
+        <NamedIndividual IRI="/fault_susceptibility_1"/>
+        <NamedIndividual IRI="/motor_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <NamedIndividual IRI="/motor_1"/>
+        <NamedIndividual IRI="/crankshaft_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <NamedIndividual IRI="/motor_1"/>
+        <NamedIndividual IRI="/crankshaft_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <NamedIndividual IRI="/motor_1"/>
+        <NamedIndividual IRI="/piston_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <NamedIndividual IRI="/motor_1"/>
+        <NamedIndividual IRI="/piston_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000196"/>
+        <NamedIndividual IRI="/motor_1"/>
+        <NamedIndividual IRI="/rotation_speed_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000196"/>
+        <NamedIndividual IRI="/motor_1"/>
+        <NamedIndividual IRI="/temperature_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000196"/>
+        <NamedIndividual IRI="/motor_1"/>
+        <NamedIndividual IRI="/vibration_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/HasFuelInjectionSystem"/>
+        <NamedIndividual IRI="/motor_1"/>
+        <NamedIndividual IRI="/fuel_injection_system_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/HasIgnitionSystem"/>
+        <NamedIndividual IRI="/motor_1"/>
+        <NamedIndividual IRI="/ignition_system_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <NamedIndividual IRI="/motor_input_dataset_1"/>
+        <NamedIndividual IRI="/speed_datum_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <NamedIndividual IRI="/motor_input_dataset_1"/>
+        <NamedIndividual IRI="/temperature_datum_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <NamedIndividual IRI="/motor_input_dataset_1"/>
+        <NamedIndividual IRI="/vibration_datum_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <NamedIndividual IRI="/motor_input_dataset_1"/>
+        <NamedIndividual IRI="/motor_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <NamedIndividual IRI="/motor_operation_process_1"/>
+        <NamedIndividual IRI="/crankshaft_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <NamedIndividual IRI="/motor_operation_process_1"/>
+        <NamedIndividual IRI="/crankshaft_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <NamedIndividual IRI="/motor_operation_process_1"/>
+        <NamedIndividual IRI="/motor_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <NamedIndividual IRI="/motor_operation_process_1"/>
+        <NamedIndividual IRI="/piston_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <NamedIndividual IRI="/motor_operation_process_1"/>
+        <NamedIndividual IRI="/piston_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <NamedIndividual IRI="/motor_start_process_1"/>
+        <NamedIndividual IRI="/fuel_injection_system_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <NamedIndividual IRI="/motor_start_process_1"/>
+        <NamedIndividual IRI="/ignition_system_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <NamedIndividual IRI="/motor_start_process_1"/>
+        <NamedIndividual IRI="/motor_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <NamedIndividual IRI="/motor_stop_process_1"/>
+        <NamedIndividual IRI="/motor_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000197"/>
+        <NamedIndividual IRI="/output_bit_pattern_1"/>
+        <NamedIndividual IRI="/computational_hardware_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000059"/>
+        <NamedIndividual IRI="/output_bit_pattern_1"/>
+        <NamedIndividual IRI="/output_prediction_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <NamedIndividual IRI="/output_prediction_1"/>
+        <NamedIndividual IRI="/fault_susceptibility_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+        <NamedIndividual IRI="/predictive_computation_process_1"/>
+        <NamedIndividual IRI="/decision_tree_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+        <NamedIndividual IRI="/predictive_computation_process_1"/>
+        <NamedIndividual IRI="/motor_input_dataset_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+        <NamedIndividual IRI="/predictive_computation_process_1"/>
+        <NamedIndividual IRI="/output_prediction_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <NamedIndividual IRI="/predictive_computation_process_1"/>
+        <NamedIndividual IRI="/computational_hardware_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000058"/>
+        <NamedIndividual IRI="/speed_datum_1"/>
+        <NamedIndividual IRI="/speed_signal_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <NamedIndividual IRI="/speed_datum_1"/>
+        <NamedIndividual IRI="/rotation_speed_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000197"/>
+        <NamedIndividual IRI="/speed_signal_1"/>
+        <NamedIndividual IRI="/speed_sensor_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000058"/>
+        <NamedIndividual IRI="/temperature_datum_1"/>
+        <NamedIndividual IRI="/temperature_signal_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <NamedIndividual IRI="/temperature_datum_1"/>
+        <NamedIndividual IRI="/temperature_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000197"/>
+        <NamedIndividual IRI="/temperature_signal_1"/>
+        <NamedIndividual IRI="/temperature_sensor_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000058"/>
+        <NamedIndividual IRI="/vibration_datum_1"/>
+        <NamedIndividual IRI="/vibration_signal_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <NamedIndividual IRI="/vibration_datum_1"/>
+        <NamedIndividual IRI="/vibration_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000197"/>
+        <NamedIndividual IRI="/vibration_signal_1"/>
+        <NamedIndividual IRI="/vibration_sensor_1"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/HasFuelInjectionSystem"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/HasIgnitionSystem"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    </SubObjectPropertyOf>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="/HasFuelInjectionSystem"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="/HasIgnitionSystem"/>
+    </AsymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="/HasFuelInjectionSystem"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="/HasIgnitionSystem"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/HasFuelInjectionSystem"/>
+        <Class IRI="/Motor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/HasIgnitionSystem"/>
+        <Class IRI="/Motor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/HasFuelInjectionSystem"/>
+        <Class IRI="/FuelInjectionSystem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/HasIgnitionSystem"/>
+        <Class IRI="/IgnitionSystem"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/AlgorithmBitPattern</IRI>
+        <Literal xml:lang="en">algorithm bit pattern</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/AlgorithmBitPattern</IRI>
+        <Literal xml:lang="en">A quality of computational hardware that is the physical bit-level encoding of a machine learning model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/AlgorithmBitPattern</IRI>
+        <Literal xml:lang="en">The configuration of memory cells storing the weights of a trained neural network is an instance of algorithm bit pattern.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/ComputationalHardware</IRI>
+        <Literal xml:lang="en">computational hardware</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/ComputationalHardware</IRI>
+        <Literal xml:lang="en">An object that has as qualities an algorithm bit pattern and an output bit pattern and has a disposition a predictive capability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/ComputationalHardware</IRI>
+        <Literal xml:lang="en">The server that stores a trained classifier and executes it on incoming sensor data is an instance of computational hardware.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Crankshaft</IRI>
+        <Literal xml:lang="en">crankshaft</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/Crankshaft</IRI>
+        <Literal xml:lang="en">An object that is part of a motor and that moves a piston.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/Crankshaft</IRI>
+        <Literal xml:lang="en">The object that connects the pistons of a car engine to the flyweel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/FaultClassificationObjective</IRI>
+        <Literal xml:lang="en">fault classification objective</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/FaultClassificationObjective</IRI>
+        <Literal xml:lang="en">An objective specification that is part of a machine learning model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/FaultClassificationObjective</IRI>
+        <Literal xml:lang="en">The goal of correctly labeling an engine as faulty or healthy, which guides a classifier&apos;s training, is an instance of fault classification objective.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/FaultSusceptibility</IRI>
+        <Literal xml:lang="en">fault susceptibility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/FaultSusceptibility</IRI>
+        <Literal xml:lang="en">A disposition of a motor to develop a fault.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/FaultSusceptibility</IRI>
+        <Literal xml:lang="en">The tendency of a motor to break down is an instance of fault susceptibility.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/FuelInjectionSystem</IRI>
+        <Literal xml:lang="en">fuel injection system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/FuelInjectionSystem</IRI>
+        <Literal xml:lang="en">An object that is part of a motor and that delivers fuel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/FuelInjectionSystem</IRI>
+        <Literal xml:lang="en">The injectior nozzles that injects fuel into the cylinders</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/HasFuelInjectionSystem</IRI>
+        <Literal xml:lang="en">A motor has a fuel injection system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/HasFuelInjectionSystem</IRI>
+        <Literal xml:lang="en">has fuel injection system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/HasIgnitionSystem</IRI>
+        <Literal xml:lang="en">a motor has an ignition system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/HasIgnitionSystem</IRI>
+        <Literal xml:lang="en">has ignition system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/HighAccuracyModel</IRI>
+        <Literal xml:lang="en">high accuracy model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/HighAccuracyModel</IRI>
+        <Literal xml:lang="en">A machine learning model that has high accuracy.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/HighAccuracyModel</IRI>
+        <Literal xml:lang="en">A deep learning classifier deployed because of its low error rate, is an instance of high accuracy model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/IgnitionSystem</IRI>
+        <Literal xml:lang="en">ignition system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/IgnitionSystem</IRI>
+        <Literal xml:lang="en">An object that is part of a motor and that initiates combustion.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/IgnitionSystem</IRI>
+        <Literal xml:lang="en">The spark plug and coil assembly of a gasoline engine is an instance of ignition system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/InferenceRulesSpecification</IRI>
+        <Literal xml:lang="en">inference rules specification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/InferenceRulesSpecification</IRI>
+        <Literal xml:lang="en">An action specification that is part of a machine learning model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/InferenceRulesSpecification</IRI>
+        <Literal xml:lang="en">The set of if-then rules a decision tree will execute at run time is an instance of inference rules specification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/InterpretableModel</IRI>
+        <Literal xml:lang="en">interpretable model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/InterpretableModel</IRI>
+        <Literal xml:lang="en">A machine learning model whose internal decision logic can be directly inspected and understood by a human.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/InterpretableModel</IRI>
+        <Literal xml:lang="en">A rule-based classifier whose decision path an engineer can read step by step is an instance of interpretable model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/MachineLearningModel</IRI>
+        <Literal xml:lang="en">machine learning model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/MachineLearningModel</IRI>
+        <Literal xml:lang="en">An algorithm that has as parts an inference rules specification and a fault classification objective, that is concretized by an algorithm bit pattern, and that is the specified input of a predictive computation process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/MachineLearningModel</IRI>
+        <Literal xml:lang="en">A trained classifier deployed to estimate engine fault risk from sensor data is an instance of machine learning model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Motor</IRI>
+        <Literal xml:lang="en">motor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/Motor</IRI>
+        <Literal xml:lang="en">An object that has as parts an ignition system, a fuel injection system, crankshafts, and pistons, that has as qualities a temperature, a vibration, and a rotation speed, and that has as disposition a fault susceptibility.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/Motor</IRI>
+        <Literal>The four cylinder combustion unit installed in a car is an instance of motor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/MotorInputDataset</IRI>
+        <Literal xml:lang="en">motor input dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/MotorInputDataset</IRI>
+        <Literal xml:lang="en">A data collection that has as parts a temperature datum, a vibration datum, and a speed datum, and that is the specified input of a predictive computation process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/MotorInputDataset</IRI>
+        <Literal xml:lang="en">The set of the latest temperature, vibration, and speed readings of an engine fed into a classifier is an instance of input dataset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/MotorOperationProcess</IRI>
+        <Literal xml:lang="en">motor operation process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/MotorOperationProcess</IRI>
+        <Literal xml:lang="en">A process that has as participant a motor and that is preceded by a motor start process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/MotorOperationProcess</IRI>
+        <Literal xml:lang="en">The interval during which a car engine runs continuously after starting, before being switched off, is an instance of motor operation process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/MotorStartProcess</IRI>
+        <Literal xml:lang="en">motor start process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/MotorStartProcess</IRI>
+        <Literal xml:lang="en">A process that has as participants a motor, an ignition system and a fuel injection system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/MotorStartProcess</IRI>
+        <Literal xml:lang="en">The process the ignition system sparks and the engine begins running is an instance of motor start process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/MotorStopProcess</IRI>
+        <Literal xml:lang="en">motor stop process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/MotorStopProcess</IRI>
+        <Literal xml:lang="en">A process that has as participant a motor and that is preceded by a motor operation process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/MotorStopProcess</IRI>
+        <Literal xml:lang="en">Turning off a running motor at the end of a trip is an instance of motor stop process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/OutputBitPattern</IRI>
+        <Literal xml:lang="en">output bit pattern</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/OutputBitPattern</IRI>
+        <Literal xml:lang="en">A quality of computational hardware that is the physical bit-level encoding of a machine learning model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/OutputBitPattern</IRI>
+        <Literal>The configuration of memory cells storing the weights of a trained neural network is an instance of algorithm bit pattern.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/OutputPrediction</IRI>
+        <Literal xml:lang="en">output prediction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/OutputPrediction</IRI>
+        <Literal xml:lang="en">A data item that is about a fault susceptibility, that is concretized by an output bit pattern, and that is the specified output of a predictive computation process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/OutputPrediction</IRI>
+        <Literal xml:lang="en">The probability value 0.82 returned by a classifier for a specific engine is an instance of output prediction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Piston</IRI>
+        <Literal>piston</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/Piston</IRI>
+        <Literal xml:lang="en">An object that is part of a motor and that moves within a cylinder under combustion pressure. en</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/Piston</IRI>
+        <Literal>The object that slides up and down inside a cylinder of a motor is an instance of piston.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PredictiveCapability</IRI>
+        <Literal xml:lang="en">predictive capability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/PredictiveCapability</IRI>
+        <Literal xml:lang="en">A disposition of computational hardware to be realized in a predictive computation process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/PredictiveCapability</IRI>
+        <Literal xml:lang="en">The capacity of a deployed server to generate fault forecasts whenever new sensor data arrives is an instance of predictive capability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PredictiveComputationProcess</IRI>
+        <Literal xml:lang="en">predictive computation process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/PredictiveComputationProcess</IRI>
+        <Literal xml:lang="en">A process that has as participant computational hardware, that has as specified inputs an input dataset and a machine learning model, and that has as specified output an output prediction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/PredictiveComputationProcess</IRI>
+        <Literal xml:lang="en">A server applying a trained classifier to the latest sensor readings of a motor to estimate its fault risk is an instance of predictive computation process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/RotationSpeed</IRI>
+        <Literal xml:lang="en">rotation speed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/RotationSpeed</IRI>
+        <Literal xml:lang="en">A quality of a motor that reflects the velocity of its rotating components.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/RotationSpeed</IRI>
+        <Literal xml:lang="en">The 3000 revolutions per minute of a motor is an instance of rotation speed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Sensor</IRI>
+        <Literal xml:lang="en">sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/Sensor</IRI>
+        <Literal xml:lang="en">An object that measures something</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/Sensor</IRI>
+        <Literal xml:lang="en">A temperature sensor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/SpeedDatum</IRI>
+        <Literal xml:lang="en">speed datum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/SpeedDatum</IRI>
+        <Literal xml:lang="en">A data item that is about a vibration and that is concretized by a vibration signal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/SpeedDatum</IRI>
+        <Literal xml:lang="en">The numeric value recorded by a monitoring system from a motor is an instance of vibration datum.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/SpeedSensor</IRI>
+        <Literal xml:lang="en">speed sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/SpeedSensor</IRI>
+        <Literal xml:lang="en">An object that has as quality a speed signal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/SpeedSensor</IRI>
+        <Literal xml:lang="en">A device mounted in the motor to track the rotation is an instance of speed sensor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/SpeedSignal</IRI>
+        <Literal xml:lang="en">speed signal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/SpeedSignal</IRI>
+        <Literal xml:lang="en">A quality of a speed sensor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/SpeedSignal</IRI>
+        <Literal xml:lang="en">The rotation measurment captured by a speed sensor of the motor is an instance of a speed signal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Temperature</IRI>
+        <Literal xml:lang="en">temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/Temperature</IRI>
+        <Literal xml:lang="en">A quality of a motor that reflects its thermal state.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/Temperature</IRI>
+        <Literal xml:lang="en">The 95 degrees Celsius reading taken at the motor is an instance of temperature.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/TemperatureDatum</IRI>
+        <Literal xml:lang="en">temperature datum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/TemperatureDatum</IRI>
+        <Literal xml:lang="en">A data item that is about a temperature and that is concretized by a temperature signal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/TemperatureDatum</IRI>
+        <Literal xml:lang="en">The numeric value 95 recorded by a temperature sensor in a motor is an instance of temperature datum.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/TemperatureSensor</IRI>
+        <Literal xml:lang="en">temperature sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/TemperatureSensor</IRI>
+        <Literal xml:lang="en">An object that has as quality a temperature signal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/TemperatureSensor</IRI>
+        <Literal xml:lang="en">A thermocouple mounted on the motoren to monitor heat is an instance of temperature sensor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/TemperatureSignal</IRI>
+        <Literal xml:lang="en">temperature signal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/TemperatureSignal</IRI>
+        <Literal xml:lang="en">A quality of a temperature sensor that is the physical carrier of a temperature measurement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/TemperatureSignal</IRI>
+        <Literal xml:lang="en">The voltage level output by a temperature sensor is an instance of temperature signal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Vibration</IRI>
+        <Literal xml:lang="en">vibration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/Vibration</IRI>
+        <Literal xml:lang="en">A quality of a motor that reflects its mechanical oscillation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/Vibration</IRI>
+        <Literal xml:lang="en">The oscillation amplitude measured on a motor is an instance of vibration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/VibrationDatum</IRI>
+        <Literal xml:lang="en">vibration datum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/VibrationDatum</IRI>
+        <Literal xml:lang="en">A data item that is about a vibration and that is concretized by a vibration signal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/VibrationDatum</IRI>
+        <Literal xml:lang="en">The numeric value recorded by a vibration sensor from a motor is an instance of vibration datum.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/VibrationSensor</IRI>
+        <Literal xml:lang="en">vibration sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/VibrationSensor</IRI>
+        <Literal xml:lang="en">An object that has as quality a vibration signal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/VibrationSensor</IRI>
+        <Literal xml:lang="en">An accelerometer attached to the motor to detect oscillation is an instance of vibration sensor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/VibrationSignal</IRI>
+        <Literal xml:lang="en">vibration signal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/VibrationSignal</IRI>
+        <Literal xml:lang="en">A quality of a vibration sensor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/VibrationSignal</IRI>
+        <Literal xml:lang="en">The electrical charge produced by a vibration sensor is an instance of vibration signal.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
