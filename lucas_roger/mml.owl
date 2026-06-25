@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/lucas/ontologies/2026/5/MML"
+     xml:base="http://www.semanticweb.org/cmp196/ontologies/2026/5/MML"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/lucas/ontologies/2026/5/MML">
-    <Prefix name="" IRI="http://www.semanticweb.org/lucas/ontologies/2026/5/MML/"/>
+     ontologyIRI="http://www.semanticweb.org/cmp196/ontologies/2026/5/MML">
+    <Prefix name="" IRI="http://www.semanticweb.org/cmp196/ontologies/2026/5/MML/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -44,6 +44,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="/InterpretableModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/LowComputationalCostModel"/>
     </Declaration>
     <Declaration>
         <Class IRI="/MachineLearningModel"/>
@@ -281,6 +284,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/InterpretableModel"/>
+        <Class IRI="/MachineLearningModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/LowComputationalCostModel"/>
         <Class IRI="/MachineLearningModel"/>
     </SubClassOf>
     <SubClassOf>
@@ -1264,6 +1271,21 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
         <IRI>/InterpretableModel</IRI>
         <Literal xml:lang="en">A rule-based classifier whose decision path an engineer can read step by step is an instance of interpretable model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/LowComputationalCostModel</IRI>
+        <Literal xml:lang="en">low computational cost model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>/LowComputationalCostModel</IRI>
+        <Literal xml:lang="en">A machine learning model that requires low computational requirements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>/LowComputationalCostModel</IRI>
+        <Literal xml:lang="en">A machine learning model that requires almost no CPU.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
