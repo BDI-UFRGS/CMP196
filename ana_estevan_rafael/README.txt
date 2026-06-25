@@ -1,0 +1,1 @@
+abrir documento foog-edit.owl no protege
