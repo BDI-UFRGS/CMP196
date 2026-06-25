@@ -1113,7 +1113,7 @@
         <Literal xml:lang="en">A quality of computational hardware that is the physical bit-level encoding of a machine learning model.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
         <IRI>/AlgorithmBitPattern</IRI>
         <Literal xml:lang="en">The configuration of memory cells storing the weights of a trained neural network is an instance of algorithm bit pattern.</Literal>
     </AnnotationAssertion>
@@ -1385,12 +1385,12 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
         <IRI>/OutputBitPattern</IRI>
-        <Literal xml:lang="en">A quality of computational hardware that is the physical bit-level encoding of a machine learning model.</Literal>
+        <Literal xml:lang="en">A quality of computational hardware that is the physical bit-level encoding of an output prediction.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
         <IRI>/OutputBitPattern</IRI>
-        <Literal>The configuration of memory cells storing the weights of a trained neural network is an instance of algorithm bit pattern.</Literal>
+        <Literal xml:lang="en">The memory state storing the predicted fault susceptibility value returned by the classifier is an instance of output bit pattern.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1490,12 +1490,12 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
         <IRI>/SpeedDatum</IRI>
-        <Literal xml:lang="en">A data item that is about a vibration and that is concretized by a vibration signal.</Literal>
+        <Literal xml:lang="en">A data item that is about a rotation speed and that is concretized by a speed signal.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
         <IRI>/SpeedDatum</IRI>
-        <Literal xml:lang="en">The numeric value recorded by a monitoring system from a motor is an instance of vibration datum.</Literal>
+        <Literal xml:lang="en">The numeric value recorded by a monitoring system from a motor is an instance of speed datum.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
