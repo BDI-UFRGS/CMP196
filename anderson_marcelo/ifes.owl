@@ -1,0 +1,2984 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:ifes="http://www.semanticweb.org/2026/5/ifes/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <Ontology rdf:about="http://www.semanticweb.org/2026/5/ifes/">
+        <imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl"/>
+        <imports rdf:resource="http://purl.obolibrary.org/obo/iao/2026-03-30/iao.owl"/>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#subClassOf -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00060 -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00060">
+        <inverseOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00180"/>
+        <obo:IAO_0000115 xml:lang="pt-br">A relação de objeto constitui uma propriedade específica do domínio proposta nesta pesquisa para relacionar eventos de falha aos impactos deles decorrentes. Seu desenvolvimento baseou-se na adaptação da relação has output, da Common Core Ontologies (CCO), originalmente empregada para associar processos aos seus resultados. No contexto desta ontologia, a relação foi especializada para representar os impactos operacionais, ambientais e de segurança provocados por anomalias em ativos prediais, explicitando seus efeitos sobre a edificação e seus ocupantes</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The object relation constitutes a specific property of the domain proposed in this research to link failure events to their resulting impacts. Its development was based on adapting the has output relation from the Common Core Ontologies (CCO), originally used to associate processes with their outcomes. Within the context of this ontology, the relation was specialized to represent operational, environmental, and safety impacts caused by anomalies in building assets, explicitly detailing their effects on the building and its occupants</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.commoncoreontologies.org/ont00001986</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">has impact</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00180 -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00180">
+        <obo:IAO_0000115 xml:lang="pt-br">A relação de objeto isImpactOf constitui a propriedade inversa da relação hasImpact, proposta nesta pesquisa para associar bidirecionalmente as consequências identificadas aos seus respectivos eventos de falha originários. Seu desenvolvimento fundamentou-se na adaptação reversa das relações de resultado da Common Core Ontologies (CCO), sendo aqui classificada como uma propriedade funcional. No contexto desta ontologia, ela assegura o rigor causal e a rastreabilidade do modelo, determinando que cada instância de impacto operacional, ambiental ou de segurança seja vinculada de forma estrita e unívoca à anomalia específica no ativo predial que a desencadeou</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">The object property `isImpactOf` is the inverse of the `hasImpact` relationship—proposed in this research to bidirectionally link identified consequences to their respective originating failure events. Its development was based on a reverse adaptation of the outcome relationships found in the Common Core Ontologies (CCO), and it is classified here as a functional property. Within the context of this ontology, it ensures the model&apos;s causal rigor and traceability by mandating that every instance of operational, environmental, or safety impact be strictly and uniquely linked to the specific anomaly in the building asset that triggered it</obo:IAO_0000119>
+        <rdfs:label>is impact of</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000310 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000310">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    </rdf:Description>
+                </onProperty>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00020"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000429 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000429">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00018"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Lista de endereços de e-mail nos quais as mensagens de e-mail podem ser recebidas</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00001 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00033"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="pt-br">Define todos os atores ou agentes humanos envolvidos em um projeto durante todo o seu ciclo de vida, facilitando o uso de definições de pessoas e organizações na parte de recursos do modelo de objeto</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Defines all human actors or agents involved in a project throughout its lifecycle, facilitating the use of person and organization definitions within the resources section of the object model</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcActor</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">actor</rdfs:label>
+        <rdfs:label xml:lang="pt-br">ator</rdfs:label>
+        <skos:example>Inclui nome, endereço, endereços de telecomunicações e funções</skos:example>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00002 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00022"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="pt-br">O estado geral de um produto baseado na avaliação da contribuição de cada critério para esse estado geral, onde os valores atribuídos ao estado avaliado devem ser acordados e documentados por meio de normas locais</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The overall state of a product based on the assessment of each criterion&apos;s contribution to that overall state, where the values ​​assigned to the assessed state must be agreed upon and documented in accordance with local standards</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/AssessmentCondition</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">assessment condition</rdfs:label>
+        <rdfs:label xml:lang="pt-br">condição de avaliação</rdfs:label>
+        <skos:example>Valor medido numa escala de 1 a 10 ou por meio de denominações como Bom, Regular e Ruim</skos:example>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00003 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00003">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00024"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00010"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    </rdf:Description>
+                </onProperty>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00006"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>O edifício corporativo é uma estrutura que oferece abrigo aos funcionários</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">It represents a structure that provides shelter for its occupants or contents and is located at a single site. The building also serves as a basic element in the spatial structure hierarchy of a construction project&apos;s components (along with the site, the floor, and the space)</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Representa uma estrutura que oferece abrigo aos seus ocupantes ou ao seu conteúdo e que se encontra em um único local. O edifício também serve como elemento básico na hierarquia da estrutura espacial dos componentes de um projeto de construção (juntamente com o terreno, o pavimento e o espaço)</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcBuilding</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">building</rdfs:label>
+        <rdfs:label xml:lang="pt-br">edificação</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00004 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000178"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00003"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="pt-br">Tipo de obra realizada no imóvel, seja uma construção nova, renovação, remodelação, manutenção, etc</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Type of work performed on the property, whether a new construction, renovation, remodeling, maintenance, etc.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/ConstructionMethod</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">building construction method</rdfs:label>
+        <rdfs:label xml:lang="pt-br">método construtivo</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00005 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00003"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Description of the building where the element is located</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Descrição da edificação onde se encontra o elemento</obo:IAO_0000115>
+        <obo:IAO_0000119>https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Description</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">building description</rdfs:label>
+        <rdfs:label xml:lang="pt-br">descrição da edificação</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00006 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00003"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Name of a structure that provides shelter to its occupants or contents and is located in a single place</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Nome de uma estrutura que oferece abrigo aos seus ocupantes ou ao seu conteúdo e que se encontra em um único local</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Name</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">building name</rdfs:label>
+        <rdfs:label xml:lang="pt-br">nome da edificação</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00007 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    </rdf:Description>
+                </onProperty>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00009"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000171"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00010"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>A sala é um volume delimitado fisicamente para atividades de escritório.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A space represents an area or volume—delimited either physically or theoretically—that serves specific functions within a building.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Um espaço representa uma área ou volume delimitado, real ou teoricamente, que proporcionam determinadas funções dentro de um edifício</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcSpace</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">building space</rdfs:label>
+        <rdfs:label xml:lang="pt-br">espaço da edificação</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00008 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00007"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Description of the space where the element is located</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Descrição do espaço onde se encontra o elemento</obo:IAO_0000115>
+        <obo:IAO_0000119>https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Description</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">building space description</rdfs:label>
+        <rdfs:label xml:lang="pt-br">descrição do espaço da edificação</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00009 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00007"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Name of the space that represents a real or theoretically bounded area or volume</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Nome do espaço que representa uma área ou volume delimitado, real ou teoricamente</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Name</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">building space name</rdfs:label>
+        <rdfs:label xml:lang="pt-br">nome do espaço da edificação</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00010 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00003"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000124"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00007"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    </rdf:Description>
+                </onProperty>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00012"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>O pavimento residencial possui uma elevação de 3 metros e agrupa os apartamentos do primeiro andar</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A building story has an elevation and typically represents a (nearly) horizontal aggregation of vertically delimited spaces.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">O pavimento de um edifício possui uma elevação e normalmente representa uma agregação (quase) horizontal de espaços delimitados verticalmente</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcBuildingStorey</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">andar da edificação</rdfs:label>
+        <rdfs:label xml:lang="en">building storey</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00011 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00010"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Description of the building floor where the element is located</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Descrição do andar do prédio onde se encontra o elemento</obo:IAO_0000115>
+        <obo:IAO_0000119>https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Description</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">building storey description</rdfs:label>
+        <rdfs:label xml:lang="pt-br">descrição do andar da edificação</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00012 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00010"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Name of the building floor that has an elevation</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Nome do pavimento de um edifício que possui uma elevação</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Name</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">building storey name</rdfs:label>
+        <rdfs:label xml:lang="pt-br">nome do andar da edificação</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00013 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Conteúdo de informação utilizada para rotular, categorizar ou indexar entidades de acordo com um sistema de classificação ou vocabulário controlado (classificação geral)</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information content used to label, categorize, or index entities according to a classification system or controlled vocabulary (general classification)</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">categorical value specification</rdfs:label>
+        <rdfs:label xml:lang="pt-br">especificação de valor categórico</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00015 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00168"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Name of the company in charge of the maintenance task</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Nome da empresa encarregada pela tarefa de manutenção</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Name</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">maintenance company name</rdfs:label>
+        <rdfs:label xml:lang="pt-br">nome da empresa de manutenção</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00016 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
+                <minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</minQualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00022"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    </rdf:Description>
+                </onProperty>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00017"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="pt-br">Generaliza a conectividade entre elementos. É uma relação de um para um. O conceito de dois elementos estarem física ou logicamente conectados é descrito independentemente dos elementos de conexão. A conectividade pode ser relacionada à representação da forma das entidades conectadas, fornecendo uma geometria de conexão</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">It generalizes connectivity between elements. It is a one-to-one relationship. The concept of two elements being physically or logically connected is described independently of the connecting elements. Connectivity can be related to the representation of the shape of the connected entities, providing a connection geometry</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcRelConnectsElements.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">conexão entre elementos</rdfs:label>
+        <rdfs:label xml:lang="en">relConnects elements</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00017 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00016"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Name that represents the connection between elements</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Nome que representa a conexão entre elementos</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Name</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">nome da conexão entre elementos</rdfs:label>
+        <rdfs:label xml:lang="en">relConnects elements name</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00018 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
+                <maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</maxQualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00033"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Essential information about the professionals and companies responsible for maintenance</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Informações essenciais sobre os profissionais e empresas encarregadas pela manutenção</obo:IAO_0000115>
+        <obo:IAO_0000119>Número de telefone do técnico de manutenção do sistema HVAC</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Contact_list</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">contact</rdfs:label>
+        <rdfs:label xml:lang="pt-br">contato</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00019 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000101"/>
+                    </rdf:Description>
+                </onProperty>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00035"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00003"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00022"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00042"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00045"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="pt-br">Documentos externos relacionados aos elementos que compõem um edifício necessários para as atividades manutenção</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">External documents related to the elements that make up a building necessary for maintenance activities</obo:IAO_0000115>
+        <obo:IAO_0000119>https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcDocumentInformation.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">documento de manutenção</rdfs:label>
+        <rdfs:label xml:lang="en">maintenance document</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00020 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00019"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Name of the document linked to the maintenance process</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Nome do documento atrelado processo de manutenção</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Name</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">maintenance document name</rdfs:label>
+        <rdfs:label xml:lang="pt-br">nome do documento de manutenção</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00022 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000129"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00042"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000171"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00007"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00045"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00025"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    </rdf:Description>
+                </onProperty>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00023"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>A bomba hidráulica é um elemento do tipo mecânico que pertence ao sistema de recalque que recebe manutenção corretiva.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An element is a generalization of all components that make up an installation and can undergo maintenance.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Um elemento é uma generalização de todos os componentes que constituem uma instalação e podem receber manutenção</obo:IAO_0000115>
+        <obo:IAO_0000119>https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcElement</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">element</rdfs:label>
+        <rdfs:label xml:lang="pt-br">elemento</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00023 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00022"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Name of the element that constitutes the installation</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Nome do elemento que constitui a instalação</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Name</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">element name</rdfs:label>
+        <rdfs:label xml:lang="pt-br">nome do elemento</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00024 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000210"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00038"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>Prédio construído para um determinado fim</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A facility can be a building, a bridge, a railway, a road, a maritime facility, a tunnel, or any other type of constructed facility</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Uma instalação pode ser um edifício, uma ponte, uma ferrovia, uma estrada, uma instalação marítima, um túnel ou qualquer outro tipo de instalação construída</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcFacility</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">facility</rdfs:label>
+        <rdfs:label xml:lang="pt-br">instalação</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00025 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00180"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00029"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00022"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    </rdf:Description>
+                </onProperty>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00027"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>A sala de aula não poderá ser utilizada por conta de uma vazamento hidráulico.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="pt-br">Impactos que a edificação gera ao meio ambiente e aos seus ocupantes e representação do estado de estar com defeito</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Impacts the building has on the environment and its occupants, and the representation of its defective state</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">impact</rdfs:label>
+        <rdfs:label xml:lang="pt-br">impacto</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00026 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00025"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Description of the impact caused by the problem</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Descrição do impacto causado pelo problema</obo:IAO_0000115>
+        <obo:IAO_0000119>https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Description</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">descrição do iimpacto</rdfs:label>
+        <rdfs:label xml:lang="en">impact description</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00027 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00025"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Name of the generated impact</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Nome do impacto gerado</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Name</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">impact name</rdfs:label>
+        <rdfs:label xml:lang="pt-br">nome do impacto</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00028 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00029"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="pt-br">Descrição do problema</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Issue description</obo:IAO_0000115>
+        <obo:IAO_0000119>https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Description</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">descrição do evento do problema</rdfs:label>
+        <rdfs:label xml:lang="en">issue event description</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00029 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00045"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00022"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    </rdf:Description>
+                </onProperty>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00030"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>Problema no filtro de ar do ar condicionado split na sala 102.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Description of problems, defects, or issues identified in elements that make up the building</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Descrição dos problemas, defeitos ou questões identificadas em elementos que compõem o edifício</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcEvent</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">evento de problema</rdfs:label>
+        <rdfs:label xml:lang="en">issue event</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00030 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00029"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Issue event name</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Nome do problema</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Name</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">issue event name</rdfs:label>
+        <rdfs:label xml:lang="pt-br">nome do problema</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00032 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00032">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00013"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00029"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="pt-br">Denota o tipo específico do problema que indica o evento com mais detalhes</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Denotes the specific type of the problem that indicates the event in greater detail</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">issue event type</rdfs:label>
+        <rdfs:label xml:lang="pt-br">tipo de evento de problema</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00033 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00001"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00150"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00168"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    </rdf:Description>
+                </onProperty>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00034"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="pt-br">Essa entidade representa um ser humano individual</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">This entity represents an individual human being</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD1/HTML/schema/ifcactorresource/lexical/ifcperson.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">person</rdfs:label>
+        <rdfs:label xml:lang="pt-br">pessoa</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00034 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00033"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Name of an individual human being involved in the maintenance task</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt">Nome de um ser humano individual envolvido na tarefa de manutenção</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Name</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">nome da pessoa</rdfs:label>
+        <rdfs:label xml:lang="en">person name</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00035 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000129"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00171"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000101"/>
+                <maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</maxQualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00019"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="pt-br">Documentos físicos externos relacionados aos elementos que compõem um edifício necessários para a manutenção</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">External physical documents related to the elements that make up a building, required for maintenance</obo:IAO_0000115>
+        <obo:IAO_0000119>https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcDocumentInformation.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">documento físico</rdfs:label>
+        <rdfs:label xml:lang="en">physical document</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00036 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00045"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An abstract generalization of the various resources employed, it represents the &quot;use of something&quot; and does not necessarily correspond to a single item—such as a person or a vehicle—but rather to a set of items with limited availability, such as general labor or a fleet of equipment</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Generalização abstrata dos diferentes recursos utilizados, representa o &quot;uso de algo&quot; e não corresponde necessariamente a um único item, como uma pessoa ou um veículo, mas sim a um conjunto de itens com disponibilidade limitada, como mão de obra geral ou uma frota de equipamentos</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcResource.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">recurso</rdfs:label>
+        <rdfs:label xml:lang="en">resource</rdfs:label>
+        <skos:example>Um recurso é representado principalmente pela mão de obra, materiais, equipamentos e produtos, além de recursos subcontratados e agregações como uma equipe de trabalhadores. Um recurso pode representar tanto um conjunto genérico de recursos (sem atribuição de tarefas) quanto uma alocação de recursos específica para uma tarefa (com uma atribuição de tarefa)</skos:example>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00037 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00170"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Name of the tools required to perform the maintenance</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Nome das ferramentas necessárias para realizar a manutenção</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Name</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">nome da ferramenta</rdfs:label>
+        <rdfs:label xml:lang="en">tool name</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00038 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000009"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000210"/>
+                    </rdf:Description>
+                </onProperty>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00024"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>O terreno é uma área delimitada para a construção de um novo hospital.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A site is a defined area of ​​intervention—potentially with available water—where the construction project will be carried out. A site may be used for the construction, renovation, or demolition of a building or buildings, or for other construction-related undertakings.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Um terreno é uma área de intervenção definida, com possível disponibilidade de água, na qual a construção do projeto será concluída. Um terreno pode ser usado para construir, reformar ou demolir edifício(s), ou para outros empreendimentos relacionados à construção</obo:IAO_0000115>
+        <obo:IAO_0000119>https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcSite</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">ifes site</rdfs:label>
+        <rdfs:label xml:lang="pt-br">terreno da ifes</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00039 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00039">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00169"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    </rdf:Description>
+                </onProperty>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00041"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="pt-br">São peças de reposição e consumíveis necessários para cada um dos ativos gerenciados</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">These are the spare parts and consumables required for each of the managed assets</obo:IAO_0000115>
+        <rdfs:label xml:lang="pt-br">peça de reposição</rdfs:label>
+        <rdfs:label xml:lang="en">spare part</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00040 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00039"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="pt-br">Descrição da peça de reposição</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Spare part description</obo:IAO_0000115>
+        <obo:IAO_0000119>https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Description</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">descrição da peça de reposição</rdfs:label>
+        <rdfs:label xml:lang="en">spare part description</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00041 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00039"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Name of the spare part</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Nome da peça de reposição</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Name</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">nome da peça de reposição</rdfs:label>
+        <rdfs:label xml:lang="en">spare part name</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00042 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00003"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000115"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00022"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    </rdf:Description>
+                </onProperty>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00044"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>Sistemas relacionados a serviços prediais, como o sistema de tubulação, o sistema de água fria, etc</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A system is an organized combination of related parts within an AEC product, assembled for a common purpose or function or to provide a service. A system is essentially an aggregation of functionally related products</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Um sistema é uma combinação organizada de partes relacionadas dentro de um produto AEC, composta para um propósito ou função comum ou para fornecer um serviço. Um sistema é essencialmente uma agregação de produtos funcionalmente relacionados</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcBuiltSystem</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">sistema</rdfs:label>
+        <rdfs:label xml:lang="en">system</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00043 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00042"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Description of the system of which the element is a part</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Descrição do sistema em que o elemento faz parte</obo:IAO_0000115>
+        <obo:IAO_0000119>https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Description</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">descrição do sistema</rdfs:label>
+        <rdfs:label xml:lang="en">system description</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00044 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00042"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Name of the system of which the element is part</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Nome do sistema em que o elemento faz parte</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Name</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">nome do sistema</rdfs:label>
+        <rdfs:label xml:lang="en">system name</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00045 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00029"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00036"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00168"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    </rdf:Description>
+                </onProperty>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00047"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    </rdf:Description>
+                </onProperty>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00048"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>Troca do filtro de ar do ar condicionado split na sala 102</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Identifiable unit of work to be performed in a construction project.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Unidade de trabalho identificável a ser executada em um projeto de construção</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcTask</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">tarefa</rdfs:label>
+        <rdfs:label xml:lang="en">task</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00046 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00045"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="pt-br">Descrição da tarefa de manutenção</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Maintenance task description</obo:IAO_0000115>
+        <obo:IAO_0000119>https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Description</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">descrição da tarefa</rdfs:label>
+        <rdfs:label xml:lang="en">task description</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00047 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00045"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Name of the maintenance activity to be performed</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Nome da atividade de manutenção a ser realizada</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Name</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">nome da tarefa</rdfs:label>
+        <rdfs:label xml:lang="en">task name</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00048 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00048">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00013"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00045"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Maintenance task status according to local classification standards</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Status da tarefa de manutenção de acordo com normas locais de classificação</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Status</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">status da tarefa</rdfs:label>
+        <rdfs:label xml:lang="en">task status</rdfs:label>
+        <skos:example>O status da tareda pode ser classificado com concluído/em obra, atrasado/não atrasado, dentre outras classificações por meio de normas locais</skos:example>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00049 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00018"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">List of telephone numbers at which it is possible to receive telephone messages</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Lista de números de telefone nos quais é possível receber mensagens telefônicas</obo:IAO_0000115>
+        <obo:IAO_0000119>https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/TelephoneNumbers</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">número de telefone</rdfs:label>
+        <rdfs:label xml:lang="en">telephone number</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00050 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00050">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00022"/>
+        <obo:IAO_0000112>Elementos construídos são: fachada cortina, portas e outros, no caso de edifícios; paredes, colunas, estacas e vigas</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="pt-br">Compreende todos os elementos que fazem parte essencial da construção de um edifício, ou seja, seu sistema estrutural e de separação de espaços</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Comprises all elements that are primarily part of the construction of a built facility, i.e., its structural and space separating system</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcBuiltElement.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">built element</rdfs:label>
+        <rdfs:label xml:lang="pt-br">elemento construído</rdfs:label>
+        <rdfs:subClassOf></rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00051 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00051">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00022"/>
+        <obo:IAO_0000112>Ttubos e conexões que participam do sistema de abastecimento de água predial</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Generalization of all elements that participate in a distribution system</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Generalização de todos os elementos que participam de um sistema de distribuição</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcDistributionElement.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">distribution element</rdfs:label>
+        <rdfs:label xml:lang="pt-br">elemento de distribuição</rdfs:label>
+        <rdfs:subClassOf></rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00052 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00052">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00050"/>
+        <obo:IAO_0000112>A parede que subdivide os dormitórios</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="pt-br">Representa uma construção vertical que pode delimitar ou subdividir espaços. As paredes são geralmente elementos planos verticais, ou quase verticais, frequentemente projetados para suportar cargas estruturais</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Represents a vertical construction that may bound or subdivide spaces. Wall are usually vertical, or nearly vertical, planar elements, often designed to bear structural loads</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcWall.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">parede</rdfs:label>
+        <rdfs:label xml:lang="en">wall</rdfs:label>
+        <rdfs:subClassOf></rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00053 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00053">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00050"/>
+        <obo:IAO_0000112>A janela basculante é um elemento de construção que fornece luz natural e ventilação através de uma abertura vertical</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Building element that is predominately used to provide natural light and fresh air. It includes vertical opening but also horizontal opening such as skylights or light domes</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Elemento de construção usado principalmente para fornecer luz natural e ar fresco. Inclui aberturas verticais, mas também horizontais, como claraboias ou domos de luz</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcWindow.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">janela</rdfs:label>
+        <rdfs:label xml:lang="en">window</rdfs:label>
+        <rdfs:subClassOf></rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00054 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00054">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00050"/>
+        <obo:IAO_0000112>A porta de correr é um elemento construído que fornece acesso controlado para pessoas e mercadorias</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Built element that is predominately used to provide controlled access for people, goods, animals and vehicles</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Elemento construído usado principalmente para controlar o acesso de pessoas, mercadorias, animais e veículos</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcDoor.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">door</rdfs:label>
+        <rdfs:label xml:lang="pt-br">porta</rdfs:label>
+        <rdfs:subClassOf></rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00055 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00055">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00050"/>
+        <obo:IAO_0000112>A telha cerâmica é uma cobertura da parte superior do edifício que protege a edificação contra as ações da chuva</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="pt-br">Cobertura da parte superior de um edifício, protegendo-o dos efeitos das intempéries</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Covering of the top part of a building, it protects the building against the effects of weather</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcRoof.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">roof</rdfs:label>
+        <rdfs:label xml:lang="pt-br">telhado</rdfs:label>
+        <rdfs:subClassOf></rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00056 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00056">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00050"/>
+        <obo:IAO_0000112>Coverings include wall claddings, floorings, suspended ceilings, moldings and skirting boards</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Element which covers some part of another element and is fully dependent on that other element</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Elemento que cobre parte de outro elemento e é totalmente dependente desse outro elemento</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcCovering.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">covering</rdfs:label>
+        <rdfs:label xml:lang="pt-br">revestimento</rdfs:label>
+        <rdfs:subClassOf></rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00057 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00057">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00050"/>
+        <obo:IAO_0000112>Elemento estrutural horizontal que resiste aos esforços de flexão da laje</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="pt-br">Elemento estrutural horizontal, ou quase horizontal, capaz de suportar carga principalmente resistindo à flexão</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Typically a horizontal, or nearly horizontal, structural member that is capable of withstanding load primarily by resisting bending</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcBeam.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">beam</rdfs:label>
+        <rdfs:label xml:lang="pt-br">viga</rdfs:label>
+        <rdfs:subClassOf></rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00058 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00058">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00050"/>
+        <obo:IAO_0000112>A laje do terceiro andar é um componente da construção que delimita verticalmente o segundo e o terceito andar</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Component of the construction that may enclose a space vertically</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Componente da construção que pode delimitar um espaço verticalmente</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcSlab.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">laje</rdfs:label>
+        <rdfs:label xml:lang="en">slab</rdfs:label>
+        <rdfs:subClassOf></rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00059 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00059">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00050"/>
+        <obo:IAO_0000112>Elemento estrutural vertical alinhado à interseção dos eixos A e 2 do projeto</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="pt-br">Elemento estrutural ou arquitetônico vertical que geralmente se alinha com a interseção de uma malha estrutural</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Vertical structural or architectural member which often is aligned with a structural grid intersection</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcColumn.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">column</rdfs:label>
+        <rdfs:label xml:lang="pt-br">pilar</rdfs:label>
+        <rdfs:subClassOf></rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00061 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00061">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00050"/>
+        <obo:IAO_0000112>A escada interna é uma passagem vertical que permite aos ocupantes subir degraus do primeiro para o segundo pavimento e inclui um patamar intermediário</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="pt-br">Passagem vertical que permite aos ocupantes caminhar (subir degraus) de um nível de piso para outro em uma elevação diferente. Pode incluir um patamar como laje intermediária</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Passageway allowing occupants to walk (step) from one floor level to another floor level at a different elevation. It may include a landing as an intermediate floor slab</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcStair.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">escada</rdfs:label>
+        <rdfs:label xml:lang="en">stair</rdfs:label>
+        <rdfs:subClassOf></rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00062 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00062">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00051"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Sistema utilizado para distribuição de fluxo</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">System used for flow distribution</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcFlowSegment.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">flow segment</rdfs:label>
+        <rdfs:label xml:lang="pt-br">segmento de sistema de distribuição</rdfs:label>
+        <rdfs:subClassOf></rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00063 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00063">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00051"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Define a ocorrência de uma junção ou transição em um sistema de distribuição de fluxo, como um cotovelo ou uma conexão em T</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Defines the occurrence of a junction or transition in a flow distribution system, such as an elbow or tee</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcFlowFitting.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">conexão de sistema de distribuição</rdfs:label>
+        <rdfs:label xml:lang="en">flow fitting</rdfs:label>
+        <rdfs:subClassOf></rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00064 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00064">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00062"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000129"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00130"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>Fiação elétrica de cobre</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Flow segment used to carry electrical power, data, or telecommunications signals</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Segmento de fluxo usado para transportar energia elétrica, dados ou sinais de telecomunicações</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcCableSegment.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">cable segment</rdfs:label>
+        <rdfs:label xml:lang="pt-br">cabo</rdfs:label>
+        <rdfs:subClassOf></rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00065 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00065">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00062"/>
+        <obo:IAO_0000112>Eletrocalha</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Flow segment that is specifically used to carry and support cabling</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Segmento de fluxo especificamente utilizado para transportar e suportar cabos</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcCableCarrierSegment.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">cable carrier segment</rdfs:label>
+        <rdfs:label xml:lang="pt-br">eletrocalha</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00066 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00066">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00062"/>
+        <obo:IAO_0000112>Duto para sistema HVAC</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Usado para unir duas seções de uma rede elétrica ou uma rede de componentes que transportam o serviço elétrico.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Used to typically join two sections of an electrical network or a network of components carrying the electrical service</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcCableSegment.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">duct segment</rdfs:label>
+        <rdfs:label xml:lang="pt-br">duto</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00067 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00067">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00062"/>
+        <obo:IAO_0000112>Tubo de pvc ou cobre</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="pt-br">Usado para unir duas seções de uma rede de tubulação</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Used to typically join two sections of a piping network</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcPipeSegment.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">pipe segment</rdfs:label>
+        <rdfs:label xml:lang="pt-br">tubulação</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00068 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00068">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00063"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Acessório instalado em uma junção, transição ou terminação em um sistema de cabos</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Fitting that is placed at a junction, transition or termination in a cable system</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcCableFitting.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">cable fitting</rdfs:label>
+        <rdfs:label xml:lang="pt-br">conexão de cabos</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00069 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00069">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00063"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Acessório instalado em junções ou transições de um sistema de porta-cabos</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Fitting that is placed at junction or transition in a cable carrier system</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcCableCarrierFitting.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">cable carrier fitting</rdfs:label>
+        <rdfs:label xml:lang="pt-br">conexão de eletrocalha</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00070 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00070">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00063"/>
+        <obo:IAO_0000115 xml:lang="en">Junction or transition in a ducted flow distribution system or used to connect duct segments, resulting in changes in flow characteristics to the fluid such as direction and flow rate</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Junção ou transição em um sistema de distribuição de fluxo por dutos, ou é usada para conectar segmentos de dutos, resultando em mudanças nas características do fluxo do fluido, como direção e vazão</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcDuctFitting.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">conexão de dutos</rdfs:label>
+        <rdfs:label xml:lang="en">duct fitting</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00071 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00071">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00063"/>
+        <obo:IAO_0000115 xml:lang="en">Junction or transition in a piping flow distribution system used to connect pipe segments, resulting in changes in flow characteristics to the fluid such as direction or flow rate</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Junção ou transição em um sistema de distribuição de fluxo de tubulação usada para conectar segmentos de tubos, resultando em mudanças nas características do fluxo do fluido, como direção ou vazão</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcPipeFitting.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">conexão de tubulação</rdfs:label>
+        <rdfs:label xml:lang="en">pipe fitting</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00072 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00072">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00051"/>
+        <obo:IAO_0000115 xml:lang="en"></obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br"></obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcFlowController.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">controlador de sistema de distribuição</rdfs:label>
+        <rdfs:label xml:lang="en">flow controller</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00073 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00073">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00072"/>
+        <obo:IAO_0000115 xml:lang="en">Used in a building services piping distribution system to control or modulate the flow of the fluid</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Utilizada em um sistema de distribuição de tubulações prediais para controlar ou modular o fluxo do fluido</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcValve.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">valve</rdfs:label>
+        <rdfs:label xml:lang="pt-br">válvula</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00074 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00074">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00072"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Dispositivo de proteção interrompe um circuito elétrico quando uma corrente elétrica predefinida que o atravessa é excedida</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Protective device breaks an electrical circuit when a stated electric current that passes through it is exceeded</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcProtectiveDevice.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">dispositivo de proteção</rdfs:label>
+        <rdfs:label xml:lang="en">protective device</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00075 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00075">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00072"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Controlador de fluxo no qual diversos dispositivos elétricos ou de comunicação são reunidos em um único local para uma finalidade específica</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Flow controller in which instances of electrical or communication devices are brought together at a single place for a particular purpose</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcDistributionBoard.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">distribution board</rdfs:label>
+        <rdfs:label xml:lang="pt-br">quadro de distribuição</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00076 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00076">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00072"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Usado em um sistema de distribuição de cabos (circuito elétrico) para controlar ou modular o fluxo de eletricidade</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Used in a cable distribution system (electrical circuit) to control or modulate the flow of electricity</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcSwitchingDevice.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">dispositivo de manobra</rdfs:label>
+        <rdfs:label xml:lang="en">switching device</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00077 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00077">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00072"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Faz parte de um sistema de distribuição de dutos de HVAC e é usada para controlar ou modular a quantidade de ar fornecida aos dutos subsequentes</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Typically participates in an HVAC duct distribution system and is used to control or modulate the amount of air delivered to its downstream ductwork</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcAirTerminalBox.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">air terminal box</rdfs:label>
+        <rdfs:label xml:lang="pt-br">regulador de fluxo de ar</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00078 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00078">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00051"/>
+        <obo:IAO_0000112>Um tanque de armazenamento de fluído</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Device that participates in a distribution system and is used for temporary storage</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Dispositivo que participa de um sistema de distribuição e é usado para armazenamento temporário</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcFlowStorageDevice.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">armazenamento de sistema de distribuição</rdfs:label>
+        <rdfs:label xml:lang="en">flow storage</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00079 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00079">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00078"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Recipiente ou contêiner no qual um fluido ou gás é armazenado para uso posterior</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Vessel or container in which a fluid or gas is stored for later use</obo:IAO_0000115>
+        <obo:IAO_0000119>A caixa d&apos;água utilizada com reservatório de abastecimento</obo:IAO_0000119>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcTank.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">reservatório</rdfs:label>
+        <rdfs:label xml:lang="en">tank</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00080 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00080">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00078"/>
+        <obo:IAO_0000112>O banco de baterias é um dispositivo de armazenamento de fluxo elétrico no qual a energia elétrica é acumulada e de onde pode ser liberada progressivamente</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="pt-br">Dispositivo de armazenamento de fluxo elétrico é um dispositivo no qual a energia elétrica é armazenada e do qual a energia pode ser liberada progressivamente</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Electric flow storage device is a device in which electrical energy is stored and from which energy may be progressively released</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcElectricFlowStorageDevice.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">dispositivo de armazenamento elétrico</rdfs:label>
+        <rdfs:label xml:lang="en">electric storage device</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00081 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00081">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00051"/>
+        <obo:IAO_0000115 xml:lang="en">Acts as the terminal point or the starting point of a distribution system</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Atua como terminal ou início de um sistema de distribuição</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcFlowTerminal.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">flow terminal</rdfs:label>
+        <rdfs:label xml:lang="pt-br">terminal de sistema de distribuição</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00082 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00082">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00081"/>
+        <obo:IAO_0000112>Difusor de teto é um terminal de ar que realiza a transferência de fluxo de climatização entre os dutos e as salas de escritório</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="pt-br">Ponto de origem ou de término para a transferência de ar entre um ou mais sistemas de distribuição e um ou mais ambientes</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">terminating or origination point for the transfer of air between distribution system(s) and one or more spaces. It can also be used for the transfer of air between adjacent spaces</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcAirTerminal.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">air terminal</rdfs:label>
+        <rdfs:label xml:lang="pt-br">terminal de ar</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00083 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00083">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00081"/>
+        <obo:IAO_0000112>Torneira de jardim</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Terminating or origination point for the transfer of liquid between distribution system(s). this is the point where the liquid distribution system interacts with the external environment</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">onto de origem ou de término para a transferência de líquidos entre sistemas de distribuição. É o ponto onde o sistema de distribuição de líquidos interage com o ambiente externo</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcLiquidTerminal.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">liquid terminal</rdfs:label>
+        <rdfs:label xml:lang="pt-br">terminal hidráulico</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00084 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00084">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00081"/>
+        <obo:IAO_0000112>O vaso sanitário é um terminal sanitário</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="pt-br">Aparelho ou terminal fixo, geralmente abastecido com água e usado para beber, limpar ou descartar águas residuais, ou um equipamento usado diretamente com tal aparelho ou terminal</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Fixed appliance or terminal usually supplied with water and used for drinking, cleaning or foul water disposal or that is an item of equipment directly used with such an appliance or terminal</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcSanitaryTerminal.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">sanitary terminal</rdfs:label>
+        <rdfs:label xml:lang="pt-br">terminal sanitário</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00085 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00085">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00081"/>
+        <obo:IAO_0000112>Caixa de inspeção de esgoto que coleta os efluentes da rede sanitária domiciliar</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="pt-br">Terminal de resíduos tem como objetivo coletar ou interceptar resíduos de um ou mais terminais sanitários ou outros equipamentos geradores de resíduos líquidos e descarregá-los em um único sistema de esgoto/drenagem</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Waste terminal has the purpose of collecting or intercepting waste from one or more sanitary terminals or other fluid waste generating equipment and discharging it into a single waste/drainage system.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcWasteTerminal.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">terminal de descarte</rdfs:label>
+        <rdfs:label xml:lang="en">waste terminal</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00086 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00086">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00051"/>
+        <obo:IAO_0000115 xml:lang="en">Device used to perform energy conversion or heat transfer and typically participates in a flow distribution system</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Dispositivo utilizado para realizar conversão de energia ou transferência de calor e que tipicamente participa de um sistema de distribuição de fluxo</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcEnergyConversionDevice.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">dispositivo de conversão de energia</rdfs:label>
+        <rdfs:label xml:lang="en">energy conversion device</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00087 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00087">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00081"/>
+        <obo:IAO_0000112>Luminária da sala 101</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Container that is designed for the purpose of housing one or more lamps and optionally devices that control, restrict or vary their emission</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Recipiente projetado para abrigar uma ou mais lâmpadas e, opcionalmente, dispositivos que controlam, restringem ou variam sua emissão</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcLightFixture.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">light fixture</rdfs:label>
+        <rdfs:label xml:lang="pt-br">luminária</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00088 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00088">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00081"/>
+        <obo:IAO_0000112>Lâmpada fluorescente da sala 101</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Artificial light source such as a light bulb or tube</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Fonte de luz artificial, como uma lâmpada incandescente ou fluorescente</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcLamp.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">lamp</rdfs:label>
+        <rdfs:label xml:lang="pt-br">lâmpada</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00089 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00089">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00081"/>
+        <obo:IAO_0000112>Projetor instalado na sala de aula</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Device that displays, captures, transmits, or receives audio or video</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Dispositivo que exibe, captura, transmite ou recebe áudio ou vídeo</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcAudioVisualAppliance.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">aparelho audiovisual</rdfs:label>
+        <rdfs:label xml:lang="en">audio visual appliance</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00090 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00090">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00081"/>
+        <obo:IAO_0000112>Tomada de alimentação elétrica de 220V</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Fixed in place or may be able to be moved from one space to another. Electric appliances require an electrical supply that may be supplied either by an electrical circuit or provided from a local battery source</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Fixos ou podem ser movidos de um cômodo para outro. Eles requerem uma fonte de alimentação elétrica, que pode ser fornecida por um circuito elétrico ou por uma bateria</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcElectricAppliance.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">electrical outlet</rdfs:label>
+        <rdfs:label xml:lang="pt-br">tomada</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00091 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00091">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00086"/>
+        <obo:IAO_0000115 xml:lang="en">Air-to-air heat recovery device employs a counter-flow heat exchanger between inbound and outbound air flow</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Dispositivo de recuperação de calor ar-ar que utiliza um trocador de calor de contracorrente entre o fluxo de ar de entrada e o de saída</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcAirToAirHeatRecovery.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">air heat recovery</rdfs:label>
+        <rdfs:label xml:lang="pt-br">dispositivo de conversão de energia</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00092 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00092">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00081"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00102"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Device composed of fibrous or porous materials which removes particulates such as smoke, dust, pollen, mold, viruses, and bacteria from the air</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Dispositivo composto de materiais fibrosos ou porosos que remove partículas como fumaça , poeira , pólen , mofo , vírus e bactérias do ar</obo:IAO_0000115>
+        <obo:IAO_0000119>Filtro de ar condicionado split</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Air_filter</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">air filter</rdfs:label>
+        <rdfs:label xml:lang="pt-br">filtro de ar</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00093 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00093">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00086"/>
+        <obo:IAO_0000115 xml:lang="en">Closed, pressure-rated vessel in which water or other fluid is heated using an energy source such as natural gas, heating oil, or electricity</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Recipiente fechado, com pressão nominal, no qual a água ou outro fluido é aquecido utilizando uma fonte de energia como gás natural, óleo combustível ou eletricidade</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcBoiler.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">boiler</rdfs:label>
+        <rdfs:label xml:lang="pt-br">boiler</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00094 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00094">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00086"/>
+        <obo:IAO_0000115 xml:lang="en">Device that converts fuel into heat through combustion. It includes gas, oil, and wood burners</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Dispositivo que converte combustível em calor por meio da combustão. Inclui queimadores a gás, a óleo e a lenha</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcBurner.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">burner</rdfs:label>
+        <rdfs:label xml:lang="pt-br">queimador</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00095 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00095">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00086"/>
+        <obo:IAO_0000115 xml:lang="en">Device used to remove heat from a liquid via a vapor-compression or absorption refrigeration cycle to cool a fluid, typically water or a mixture of water and glycol</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Dispositivo usado para remover o calor de um líquido por meio de um ciclo de refrigeração por compressão de vapor ou absorção, resfriando um fluido, geralmente água ou uma mistura de água e glicol</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcChiller.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">chiller</rdfs:label>
+        <rdfs:label xml:lang="pt-br">chiller</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00096 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00096">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00086"/>
+        <obo:IAO_0000115 xml:lang="en">Device used to provide heat transfer between non-mixing media</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Dispositivo usado para promover a transferência de calor entre meios que não se misturam</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcCoil.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">coil</rdfs:label>
+        <rdfs:label xml:lang="pt-br">serpentina</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00097 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00097">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00086"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00182"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00100"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00103"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Device that is used to dissipate heat, typically by condensing a substance such as a refrigerant from its gaseous to its liquid state</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Dispositivo usado para dissipar calor, geralmente condensando uma substância, como um refrigerante, do estado gasoso para o estado líquido</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcCondenser.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">condensador</rdfs:label>
+        <rdfs:label xml:lang="en">condenser</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00098 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00098">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00086"/>
+        <obo:IAO_0000115 xml:lang="en">Device typically used to cool air by circulating a fluid such as chilled water through exposed finned tubes above a space</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Dispositivo normalmente usado para resfriar o ar através da circulação de um fluido, como água gelada, por tubos aletados expostos acima de um ambiente</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcCooledBeam.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">cooled beam</rdfs:label>
+        <rdfs:label xml:lang="pt-br">viga fria</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00099 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00099">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00086"/>
+        <obo:IAO_0000115 xml:lang="en">Device which rejects heat to ambient air by circulating a fluid such as water through it to reduce its temperature by partial evaporation</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Dispositivo que rejeita calor para o ar ambiente através da circulação de um fluido, como água, que reduz sua temperatura por evaporação parcial</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcCoolingTower.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">cooling tower</rdfs:label>
+        <rdfs:label xml:lang="pt-br">torre de resfriamento</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00100 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00100">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00185"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00097"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>O compressor hermético é um dispositivo que comprime um fluido refrigerante para circulação forçada no circuito de refrigeração</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Device that compresses a fluid typically used in a refrigeration circuit</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Dispositivo que comprime um fluido, normalmente usado em um circuito de refrigeração</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcCompressor.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">compressor</rdfs:label>
+        <rdfs:label xml:lang="pt-br">compressor</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00101 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00101">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00086"/>
+        <obo:IAO_0000115 xml:lang="en">Device that cools air by saturating it with water vapor</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Dispositivo que resfria o ar saturando-o com vapor de água</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcEvaporativeCooler.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">evaporative cooler</rdfs:label>
+        <rdfs:label xml:lang="pt-br">resfriador</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00102 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00102">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00086"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00182"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00092"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00103"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Device in which a liquid refrigerent is vaporized and absorbs heat from the surrounding fluid</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Dispositivo no qual um fluido refrigerante líquido é vaporizado e absorve calor do fluido circundante</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcEvaporator.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">evaporador</rdfs:label>
+        <rdfs:label xml:lang="en">evaporator</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00103 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00103">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00185"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00097"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00102"/>
+                        </unionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>O ventilador centrífugo do sistema HVAC é um dispositivo que realiza trabalho mecânico no ar e induz o fluxo de ar no sistema de distribuição de climatização</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Device which imparts mechanical work on a gas. A typical usage of a fan is to induce airflow in a building services air distribution system</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Dispositivo que realiza trabalho mecânico em um gás. Um uso típico de um ventilador é induzir o fluxo de ar em um sistema de distribuição de ar predial</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcFan.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">fan</rdfs:label>
+        <rdfs:label xml:lang="pt-br">ventilador</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00104 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00104">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00086"/>
+        <obo:IAO_0000115 xml:lang="en">Device used to provide heat transfer between non-mixing media such as plate and shell and tube heat exchangers</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Dispositivo usado para promover a transferência de calor entre meios que não se misturam, como trocadores de calor de placas e de casco e tubos</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcHeatExchanger.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">heat exchanger</rdfs:label>
+        <rdfs:label xml:lang="pt-br">trocador de calor</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00105 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00105">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00086"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Aparelho que adiciona umidade ao ar.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Device that adds moisture into the air</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcHumidifier.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">humidifier</rdfs:label>
+        <rdfs:label xml:lang="pt-br">umidificador</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00106 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00106">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00086"/>
+        <obo:IAO_0000115 xml:lang="en">Device consisting of tubes and bundles of tubes used for heat transfer and contained typically within other energy conversion devices, such as a chiller or coil</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Dispositivo constituído por tubos e feixes de tubos utilizados para transferência de calor e normalmente contidos dentro de outros dispositivos de conversão de energia, como um resfriador ou uma serpentina</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcTubeBundle.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">feixe de tubos</rdfs:label>
+        <rdfs:label xml:lang="en">tube bundle</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00107 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00107">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00086"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Dispositivo mecânico que converte energia elétrica em energia mecânica</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Engine that is a machine for converting electrical energy into mechanical energy</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcElectricMotor.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">electric motor</rdfs:label>
+        <rdfs:label xml:lang="pt-br">motor elétrico</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00108 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00108">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00086"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Fornece os meios para conectar um motor, que atua como dispositivo de acionamento, ao dispositivo acionado</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Provides the means for connecting a motor as the driving device to the driven device</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcMotorConnection.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">conexão de motor</rdfs:label>
+        <rdfs:label xml:lang="en">motor connection</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00109 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00109">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00086"/>
+        <obo:IAO_0000115 xml:lang="en">Engine that is a machine for converting mechanical energy into electrical energy</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Uma máquina, que converte energia mecânica em energia elétrica</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcElectricGenerator.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">electric generator</rdfs:label>
+        <rdfs:label xml:lang="pt-br">gerador elétrico</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00110 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00110">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00086"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Dispositivo estacionário indutivo que transfere energia elétrica de um circuito para outro</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Inductive stationary device that transfers electrical energy from one circuit to another</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcTransformer.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">transformador</rdfs:label>
+        <rdfs:label xml:lang="en">transformer</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00111 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00111">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00086"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Converte a radiação solar em outras formas de energia, como corrente elétrica ou energia térmica</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcSolarDevice.htm</obo:IAO_0000119>
+        <obo:IAO_0000424 xml:lang="en">Converts solar radiation into other energy such as electric current or thermal energy</obo:IAO_0000424>
+        <rdfs:label xml:lang="pt-br">dispositivo solar</rdfs:label>
+        <rdfs:label xml:lang="en">solar device</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00118 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00118">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00035"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Documento padronizado emitido por fabricantes que detalha as características específicas, as métricas de desempenho e as instruções de aplicação de um produto</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Standardized document issued by manufacturers that details a product’s specific characteristics, performance metrics, and application instructions</obo:IAO_0000115>
+        <rdfs:label xml:lang="pt-br">ficha técnica</rdfs:label>
+        <rdfs:label xml:lang="en">technical datasheet</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00119 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00119">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00035"/>
+        <obo:IAO_0000115 xml:lang="en">Commercial document that includes an itemized list of goods or services furnished by a seller to a buyer relating to a sale transaction, that usually specifies the price and terms of sale, quantities, and agreed-upon prices and terms of sale for products or services the seller had provided the buyer</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Documento comercial que inclui uma relação detalhada de bens ou serviços fornecidos por um vendedor a um comprador no âmbito de uma transação de venda, especificando geralmente o preço e as condições de venda, as quantidades, bem como os preços e as condições acordados para os produtos ou serviços fornecidos pelo vendedor ao comprador</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Invoice</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">invoice</rdfs:label>
+        <rdfs:label xml:lang="pt-br">nota fiscal</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00120 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00120">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00035"/>
+        <obo:IAO_0000115 xml:lang="en">Registro técnico da obra como foi efetivamente executada, com todas as alterações em relação ao projeto original</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Technical record of the work as actually executed, including all deviations from the original design</obo:IAO_0000115>
+        <obo:IAO_0000119>https://sienge.com.br/blog/as-built/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">as-built</rdfs:label>
+        <rdfs:label xml:lang="pt-br">como construído</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00121 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00121">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00035"/>
+        <obo:IAO_0000115 xml:lang="en">Document that verifies newly installed systems (like HVAC, plumbing, or electrical) operate according to design specifications</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Documento abrangente que verifica se sistemas recém-instalados (como HVAC, hidráulica ou elétrica) operam em conformidade com as especificações de projeto</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">commissioning report</rdfs:label>
+        <rdfs:label xml:lang="pt-br">relatório de comissionamento</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00122 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00122">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00035"/>
+        <obo:IAO_0000115 xml:lang="en">Used to assist users in utilizing a specific product, service, or application</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Utilizado para auxiliar os usuários na utilização de um determinado produto, serviço ou aplicativo</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/User_guide</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">installation manual</rdfs:label>
+        <rdfs:label xml:lang="pt-br">manual de instalação</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00124 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00124">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00035"/>
+        <obo:IAO_0000115 xml:lang="en">Documentation by which an organisation provides guidance for members and employees to perform their functions correctly and reasonably efficiently</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Documentação pela qual uma organização fornece orientações aos membros e funcionários para que desempenhem suas funções de forma correta e razoavelmente eficiente</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Operations_manual</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">manual de operação</rdfs:label>
+        <rdfs:label xml:lang="en">operation manual</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00125 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00125">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00035"/>
+        <obo:IAO_0000115 xml:lang="en">An essential technical document that compiles procedures, standardized instructions, and safety guidelines for the maintenance of equipment, facilities, or systems</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Documento técnico essencial que reúne procedimentos, instruções padronizadas e diretrizes de segurança para conservar equipamentos, instalações ou sistemas</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">maintenance manual</rdfs:label>
+        <rdfs:label xml:lang="pt-br">manual de manutenção</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00126 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00126">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00035"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Geralmente é uma tarefa ou um trabalho para um cliente , que pode ser agendado ou atribuído a alguém. Essa ordem pode ser solicitada pelo cliente ou criada internamente pela organização. Ordens de serviço também podem ser criadas como acompanhamento de inspeções ou auditorias. Uma ordem de serviço pode ser para produtos ou serviços</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Usually a task or a job for a customer, that can be scheduled or assigned to someone. Such an order may be from a customer request or created internally within the organization. Work orders may also be created as follow ups to inspections or audits. A work order may be for products or services</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Work_order</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">ordem de serviço</rdfs:label>
+        <rdfs:label xml:lang="en">work order</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00127 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00127">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00035"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Documento formal que registra sistematicamente constatações, observações e recomendações sobre um ativo físico, propriedade ou processo específico</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Formal document that systematically records findings, observations, and recommendations about a specific physical asset, property, or process</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">inspection report</rdfs:label>
+        <rdfs:label xml:lang="pt-br">relatório de inspeção</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00128 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00128">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00035"/>
+        <obo:IAO_0000115 xml:lang="en">An official document used to track and record maintenance activities</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Um documento oficial utilizado para acompanhar e registrar atividades de manutenção</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">maintenance report</rdfs:label>
+        <rdfs:label xml:lang="pt-br">relatório de manutenção</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00129 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00129">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00042"/>
+        <obo:IAO_0000112>O sistema de climatização central é uma instalação de ar condicionado projetada para fornecer conforto térmico e controlar contaminantes por meio de refrigeração e filtragem</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Heating, ventilation, and air conditioning systems capable of regulating temperature, humidity, and indoor air quality, designed to provide thermal comfort and control airborne contaminants through heating, cooling, ventilation, filtration, and humidity control</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Sistemas de aquecimento , ventilação e ar condicionado com a capacidade de regular a temperatura , a umidade e a qualidade do ar interno sendo projetados para proporcionar conforto térmico e controlar contaminantes presentes no ar por meio de aquecimento, resfriamento, ventilação, filtragem e controle de umidade</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Heating,_ventilation,_and_air_conditioning</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">HVAC system</rdfs:label>
+        <rdfs:label xml:lang="pt-br">sistema AVAC</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00130 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00130">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00129"/>
+        <obo:IAO_0000115 xml:lang="en">A system for removing heat from an enclosed space to achieve a more comfortable indoor temperature and, in some cases, control indoor humidity.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Sistema de remoção de calor de um espaço fechado para atingir uma temperatura interna mais confortável e, em alguns casos, controlar a umidade do ar interno</obo:IAO_0000115>
+        <obo:IAO_0000119>Conjunto de condicionadores de ar tipo split que compõem um sistema HVAC</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Air_conditioning#Mini-split_and_multi-split_systems</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">sistema split</rdfs:label>
+        <rdfs:label xml:lang="en">split system</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00150 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00150">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00036"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00033"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>O técnico de sistema HVAC é um recurso humano</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="pt-br">Conjunto de pessoas que compõem a força de trabalho de uma organização , setor empresarial , indústria ou economia</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The group of people who make up the workforce of an organization, business sector, industry, or economy</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Human_resources</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">human resource</rdfs:label>
+        <rdfs:label xml:lang="pt-br">rercurso humano</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00152 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00152">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00036"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00170"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>Uma bomba de vácuo e um multímetro são utilizado para instalação de um ar condicionado split</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Instrument used to perform a specific action or task</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Instrumento utilizado para realizar uma ação ou tarefa específica</obo:IAO_0000115>
+        <rdfs:label xml:lang="pt-br">recurso de ferramenta</rdfs:label>
+        <rdfs:label xml:lang="en">tool resource</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00153 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00153">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00170"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Tipo de dispositivo de bombeamento que extrai partículas de gás de um volume selado para deixar para trás um vácuo parcial</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Type of pump device that draws gas particles from a sealed volume in order to leave behind a partial vacuum</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Vacuum_pump</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">bomba de vácuo</rdfs:label>
+        <rdfs:label xml:lang="en">vacuum pump</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00155 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00155">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00170"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Ferramenta utilizada por técnicos de HVAC e refrigeração para localizar vazamentos em sistemas de ar-condicionado e refrigeração.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Tool used by HVAC and refrigeration technicians to pinpoint leaks in air conditioning and refrigeration systems</obo:IAO_0000115>
+        <rdfs:label xml:lang="pt-br">detector de vazamento de fluido refrigerante*</rdfs:label>
+        <rdfs:label xml:lang="en">refrigerant leak detector</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00156 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00156">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00170"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Ferramenta utilizada por  técnicos de HVAC e refrigeração medirem a pressão, realizarem vácuo e recarregarem sistemas de ar condicionado</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Tool used by HVAC and refrigeration technicians to measure pressure, pull a vacuum, and recharge air conditioning systems</obo:IAO_0000115>
+        <rdfs:label xml:lang="pt-br">conjunto de manômetros manifold</rdfs:label>
+        <rdfs:label xml:lang="en">manifold gauge set</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00157 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00157">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00170"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Instrumento de medição que pode medir múltiplas propriedades elétricas</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Measuring instrument that can measure multiple electrical properties</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Multimeter</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">multimeter</rdfs:label>
+        <rdfs:label xml:lang="pt-br">multimetro</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00158 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00158">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00036"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
+                <someValuesFrom>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00039"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00169"/>
+                        </unionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>Um filtro de ar é utilizado na substituição de outro avariado</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="pt-br">Ativo tangível ou substância física utilizada para produzir bens, prestar serviços ou concluir projetos</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Tangible asset or physical substance used to produce goods, provide services, or complete projects</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">material resource</rdfs:label>
+        <rdfs:label xml:lang="pt-br">rercurso material</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00163 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00163">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00036"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00171"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>O manual de instruções é utilizado na isntalação de um ar condicionado</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Any system, infrastructure, or material that provides data, knowledge, or content to users</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Qualquer sistema, infraestrutura ou material que forneça dados, conhecimento ou conteúdo aos usuários</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">information resource</rdfs:label>
+        <rdfs:label xml:lang="pt-br">recurso informacional</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00168 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00168">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00045"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00033"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    </rdf:Description>
+                </onProperty>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00015"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="pt-br">Entidade jurídica que representa uma associação de pessoas jurídicas com um objetivo comum, como gerar lucro ou beneficiar a sociedade</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Representing an association of legal persons with a shared objective, such as generating profit or benefiting society</obo:IAO_0000115>
+        <obo:IAO_0000119>Empresa que presta serviço de troca de filtros de ar em ar condiconado split na universidade</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Company</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">empresa de manutenção</rdfs:label>
+        <rdfs:label>maintenance company</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00169 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00169">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00158"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    </rdf:Description>
+                </onProperty>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00174"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Material de reposição utilizado durante uma atividade de manutenção</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Replacement material used during a maintenance activity</obo:IAO_0000115>
+        <rdfs:label xml:lang="pt-br">item material</rdfs:label>
+        <rdfs:label>material item</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00170 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00170">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00152"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    </rdf:Description>
+                </onProperty>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00037"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en"></obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br"></obo:IAO_0000115>
+        <rdfs:label xml:lang="pt-br">ferramenta</rdfs:label>
+        <rdfs:label>tool</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00171 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00171">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000115"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00035"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00163"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>Pasta contendo os registros de manutenção, ordem de serviço, garantias, etc</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A file containing an accumulation of records or historical materials regarding maintenance, in any medium, or the physical facility where they are housed</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Um arquivo contendo acumulação de registos ou materiais históricos sobre manutenção, em qualquer meio, ou a instalação física onde se encontram</obo:IAO_0000115>
+        <rdfs:label xml:lang="pt-br">coleção de documentos de manutenção</rdfs:label>
+        <rdfs:label xml:lang="en">maintenance document collection</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00172 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00172">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00171"/>
+        <obo:IAO_0000112>Pasta contendo os registros de manutenção de um ar condicionado do tipo split, ordem de serviço, garantias, etc</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A file containing an accumulation of records or historical materials regarding the maintenance of a split-system air conditioner—in any medium—or the physical facility where they are located</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Um arquivo contendo acumulação de registos ou materiais históricos sobre manutenção de um ar condicionado split, em qualquer meio, ou a instalação física onde se encontram</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Archive</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">coleção de documentos de manutenção do split</rdfs:label>
+        <rdfs:label xml:lang="en">split maintenance document collection</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00173 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00173">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00039"/>
+        <obo:IAO_0000115 xml:lang="pt-br">São peças de reposição e consumíveis necessários para cada um dos splits gerenciados</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">These are the spare parts and consumables required for each of the managed split systems</obo:IAO_0000115>
+        <rdfs:label xml:lang="pt-br">peça de reposição do split</rdfs:label>
+        <rdfs:label>split spare part</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00174 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00174">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00169"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Name of the material to be used in the maintenance task</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Nome do material a ser utilizado na tarefa de manutenção</obo:IAO_0000115>
+        <obo:IAO_0000119>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Name</obo:IAO_0000119>
+        <rdfs:label>material item name</rdfs:label>
+        <rdfs:label xml:lang="pt-br">nome do item material</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00181 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00181">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00086"/>
+        <obo:IAO_0000112>Podem ser  unidades de tratamento de ar, unidades de ar condicionado de telhado pré-fabricadas, bombas de calor e sistemas split</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="pt-br">Normalmente combinam vários componentes em um único produto</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Typically combine a number of components into a single product</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcUnitaryEquipment.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">equipamento unitário</rdfs:label>
+        <rdfs:label>unitary equipment</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00182 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00182">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00181"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00097"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00102"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000129"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00130"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000171"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00007"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A split is an air conditioning system or heating system that has both indoor and outdoor units that are connected with copper tubing</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br">Um sistema split é um sistema de ar-condicionado ou de aquecimento que possui unidades interna e externa conectadas por tubulações de cobre</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Air_conditioning#Mini-split_and_multi-split_systems</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">ar condicionado split</rdfs:label>
+        <rdfs:label>split air conditioner</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00183 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00183">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00067"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000129"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00130"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000171"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00007"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en"></obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br"></obo:IAO_0000115>
+        <rdfs:label xml:lang="en">liquid pipe</rdfs:label>
+        <rdfs:label xml:lang="pt-br">tubulação hidráulica</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00184 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00184">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00067"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000129"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00130"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000171"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00007"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en"></obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt-br"></obo:IAO_0000115>
+        <rdfs:label xml:lang="en">refrigerant pipe</rdfs:label>
+        <rdfs:label xml:lang="pt-br">tubulação de refrigeração</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/IFES_00185 -->
+
+    <Class rdf:about="http://www.semanticweb.org/2026/5/ifes/IFES_00185">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00051"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Aparelho usado para distribuir, circular ou transportar fluidos, incluindo líquidos e gases (como uma bomba ou ventilador), e normalmente participa de um sistema de distribuição de fluxo</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Apparatus used to distribute, circulate or perform conveyance of fluids, including liquids and gases (such as a pump or fan), and typically participates in a flow distribution system</obo:IAO_0000115>
+        <obo:IAO_0000119>https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcFlowMovingDevice.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="pt-br">dispositivo de movimentação de fluxo</rdfs:label>
+        <rdfs:label xml:lang="en">flow moving device</rdfs:label>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/INSTANCE_0001 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00003"/>
+        <rdfs:label xml:lang="pt-br">Edifício Central</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/INSTANCE_0002 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00010"/>
+        <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0001"/>
+        <rdfs:label xml:lang="pt-br">1º andar</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/INSTANCE_0003 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00007"/>
+        <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0002"/>
+        <rdfs:label xml:lang="pt-br">Sala 102</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/INSTANCE_0004 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0004">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00182"/>
+        <obo:BFO_0000129 rdf:resource="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0017"/>
+        <obo:BFO_0000171 rdf:resource="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0003"/>
+        <rdfs:label xml:lang="pt-br">Ar Condicionado Split Sala 102</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/INSTANCE_0005 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0005">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00092"/>
+        <obo:BFO_0000050 rdf:resource="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0004"/>
+        <rdfs:label xml:lang="pt-br">Filtro de ar do split</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/INSTANCE_0006 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0006">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00029"/>
+        <obo:RO_0000057 rdf:resource="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0004"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Filtro de ar obstruído por poeira, reduzindo o fluxo de ar e a eficiência de refrigeração.</obo:IAO_0000115>
+        <rdfs:label xml:lang="pt-br">Filtro de ar sujo</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/INSTANCE_0007 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0007">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00025"/>
+        <ifes:IFES_00180 rdf:resource="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0006"/>
+        <obo:IAO_0000115 xml:lang="pt-br">A sala não atinge a temperatura de conforto, aumentando o consumo de energia e o desconforto dos ocupantes.</obo:IAO_0000115>
+        <rdfs:label xml:lang="pt-br">Baixa eficiência de refrigeração</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/INSTANCE_0008 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0008">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00045"/>
+        <obo:BFO_0000062 rdf:resource="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0006"/>
+        <obo:RO_0000057 rdf:resource="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0010"/>
+        <obo:RO_0000057 rdf:resource="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0011"/>
+        <obo:RO_0000057 rdf:resource="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0013"/>
+        <obo:RO_0000057 rdf:resource="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0014"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Substituir o filtro de ar obstruído por um novo, restaurando o fluxo de ar e a eficiência do sistema.</obo:IAO_0000115>
+        <rdfs:label xml:lang="pt-br">Trocar filtro de ar</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/INSTANCE_0009 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0009">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00033"/>
+        <rdfs:label xml:lang="pt-br">Nome Técnico A</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/INSTANCE_0010 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0010">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00150"/>
+        <obo:BFO_0000197 rdf:resource="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0009"/>
+        <rdfs:label xml:lang="pt-br">Técnico A</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/INSTANCE_0011 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0011">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00168"/>
+        <rdfs:label xml:lang="pt-br">Empresa de Climatização A</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/INSTANCE_0012 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0012">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00170"/>
+        <rdfs:label xml:lang="pt-br">Ferramenta A</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/INSTANCE_0013 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0013">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00152"/>
+        <obo:BFO_0000197 rdf:resource="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0012"/>
+        <rdfs:label xml:lang="pt-br">Recurso - Ferramenta A</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/INSTANCE_0014 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0014">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00169"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Filtro de ar novo, modelo compatível com o split da sala 102.</obo:IAO_0000115>
+        <rdfs:label xml:lang="pt-br">Filtro de ar novo</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/INSTANCE_0015 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0015">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00019"/>
+        <obo:IAO_0000136 rdf:resource="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0008"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Ordem de serviço para a troca do filtro de ar do split da sala 102.</obo:IAO_0000115>
+        <rdfs:label xml:lang="pt-br">Ordem de Serviço 2026-001</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/INSTANCE_0016 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0016">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00048"/>
+        <obo:IAO_0000136 rdf:resource="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0008"/>
+        <rdfs:label xml:lang="pt-br">Concluída</rdfs:label>
+        <skos:example>Manutenção executada com sucesso no dia 01/06/2026.</skos:example>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/INSTANCE_0017 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0017">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00130"/>
+        <obo:IAO_0000115 xml:lang="pt-br">Sistema de refrigeração composto pela unidade evaporadora interna e condensadora externa, interligadas por tubulação de cobre.</obo:IAO_0000115>
+        <rdfs:label xml:lang="pt-br">Sistema Split da Sala 102</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/INSTANCE_0018 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0018">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00002"/>
+        <obo:BFO_0000197 rdf:resource="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0004"/>
+        <rdfs:label xml:lang="pt-br">Condição de avaliação do split</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/INSTANCE_0019 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0019">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00158"/>
+        <obo:BFO_0000197 rdf:resource="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0004"/>
+        <rdfs:label xml:lang="pt-br">Recurso material - filtro de ar</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/INSTANCE_0020 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0020">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00163"/>
+        <obo:BFO_0000197 rdf:resource="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0004"/>
+        <rdfs:label xml:lang="pt-br">Recurso informacional - ordem de serviço</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/INSTANCE_0021 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0021">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00018"/>
+        <obo:BFO_0000197 rdf:resource="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0004"/>
+        <rdfs:label xml:lang="pt-br">Contato da ordem de serviço</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/INSTANCE_0022 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0022">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00168"/>
+        <obo:RO_0002351 rdf:resource="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0009"/>
+        <rdfs:label xml:lang="pt-br">Empresa de manutenção com membro Técnico A</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2026/5/ifes/INSTANCE_0023 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0023">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2026/5/ifes/IFES_00049"/>
+        <obo:IAO_0000136 rdf:resource="http://www.semanticweb.org/2026/5/ifes/INSTANCE_0021"/>
+        <rdfs:label xml:lang="pt-br">Número de telefone do contato</rdfs:label>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
