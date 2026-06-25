@@ -1,0 +1,724 @@
+Prefix(:=<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3>
+Import(<http://purl.obolibrary.org/obo/bfo/2020/bfo.owl>)
+Import(<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl>)
+Import(<https://www.inf.ufrgs.br/bdi/ontologies/geocore/releases/2024-04-06/geocore-full.owl>)
+
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Natural_Gas>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Oil>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Seal>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#accumulation>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rock_bodies>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalto>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#body_of_rock>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dikes>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#igneas_rock>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#petroleum>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#reservoir>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#rock>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sedimentary_rock>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#source>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature>))
+Declaration(Class(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#bounds>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#contained_in>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#high_concetration_of>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#acumulation_ind>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rocks>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalt_ind>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin_ind>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dike_ind>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#gas_ind>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation_ind>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer_ind>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration_ind>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter_ind>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability_ind>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity_ind>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure_ind>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#resevior_ind>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#seal_ind>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_ind>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#source_ind>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature_ind>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap_ind>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#bounds> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#bounds>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#bounds> "Example:
+Aggregate of Rock Bodies bounds a Trap"@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#bounds> "Exemplo:
+Agregado de Corpos de Rocha delimitando uma Armadilha."@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#bounds> "bounds"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#bounds> "delimita"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#bounds> "Indica que uma entidade delimita outra entidade."@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#bounds> "Indicates that one entity delimits another entity."@en)
+ObjectPropertyDomain(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#bounds> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rock_bodies>)
+ObjectPropertyRange(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#bounds> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap>)
+
+# Object Property: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#contained_in> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#contained_in>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#contained_in> "Example:
+Oil and Natural Gas are contained within a rock layer."@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#contained_in> "Exemplo:
+Oleo e Gás Natural estão contidos em uma camamada de rocha."@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#contained_in> "contained in"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#contained_in> "contido en"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#contained_in> "Indica que uma entidade está contida em outra entidade."@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#contained_in> "Indicates that one entity is contained within another entity."@en)
+ObjectPropertyDomain(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#contained_in> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006>)
+ObjectPropertyRange(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#contained_in> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001>)
+
+# Object Property: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#high_concetration_of> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#high_concetration_of>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#high_concetration_of> "Exemplo:
+Folhelho tem alta concentração de matéria orgânica."@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#high_concetration_of> "alta concentração de"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#high_concetration_of> "hight concentration of"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#high_concetration_of> "Example:
+Shale has a high concentration of organic matter."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#high_concetration_of> "Indica que um material terrestre possui alta concentração de outro material."@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#high_concetration_of> "Indicates that an Earth material contains a high concentration of another material."@en)
+SubObjectPropertyOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#high_concetration_of> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#high_concetration_of> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter>)
+ObjectPropertyRange(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#high_concetration_of> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Natural_Gas> (natural gas)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Natural_Gas> "Example: Natural gas is generated from organic matter."@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Natural_Gas> "Exemplo: 
+O gás natural que é gerado a partir da matéria orgânica."@pt-br)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Natural_Gas> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Natural_Gas> "gás natural"@pt-br)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Natural_Gas> "natural gas"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Natural_Gas> "Gás Natural é uma especialização de petróleo cuja matéria se apresenta no estado gasoso em condições de superfície, podendo ser de origem termogênica ou biogênica."@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Natural_Gas> "Natural Gas is a specialization of petroleum whose material is present in a gaseous state under surface conditions and may originate from thermogenic or biogenic processes."@en)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Natural_Gas> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#petroleum>)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Natural_Gas> ObjectSomeValuesFrom(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#contained_in> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer>))
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Natural_Gas> ObjectSomeValuesFrom(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#contained_in> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer>))
+DisjointClasses(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Natural_Gas> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Oil>)
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Oil> (óleo)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Oil> "Example: 
+Oil migrates upward through permeable layers."@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Oil> "Exemplo: 
+O óleo que migra para cima através de camadas permeável."@pt-br)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Oil> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Oil> "oil"@en)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Oil> "óleo"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Oil> "Oil is a hydrocarbon whose matter is in a liquid state at surface conditions, being a thermally generated hydrocarbon from organic matter within a specific thermal window."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Oil> "Óleo é um hidrocarboneto cuja matéria se apresenta no estado líquido em condições de superfície, sendo um hidrocarboneto gerado termicamente a partir da matéria orgânica em uma janela térmica específica."@pt-br)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Oil> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#petroleum>)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Oil> ObjectSomeValuesFrom(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#contained_in> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer>))
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Oil> ObjectSomeValuesFrom(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#contained_in> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer>))
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Seal> (seal)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Seal> "Example:
+Sealing capacity is a disposition related to geological objects such as evaporite layers and compact shales."@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Seal> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Seal> "seal"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Seal> "selo"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Seal> "Seal is a disposition inhering in a rock layer that confers the capacity to prevent or significantly restrict the migration of hydrocarbons owing to its low permeability and high capillary entry pressure."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Seal> "Selo é uma disposição de uma camada de rocha  que confere a capacidade de impedir ou restringir o fluxo vertical de hidrocarbonetos devido à sua permeabilidade  baixa  e alta pressão de entrada."@pt-br)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Seal> <http://purl.obolibrary.org/obo/BFO_0000016>)
+DisjointClasses(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Seal> ObjectIntersectionOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#reservoir> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#source>))
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#accumulation> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#accumulation>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#accumulation> "Example: 
+Accumulation is a Geological Process such as stratigraphic accumulation and structural accumulation."@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#accumulation> "Exemplo:
+Acumulação é um Processo Geológico como acumulação estratigráfica e acumulação estrutural."@pt-br)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#accumulation> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#accumulation> "accumulation"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#accumulation> "acumulação"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#accumulation> "Accumulation is the final event in which migrated hydrocarbons become concentrated within a geological trap, overlain by a rock layer bearing a seal disposition, thereby forming a hydrocarbon accumulation or field."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#accumulation> "Acumulação é um evento final no qual os hidrocarbonetos migrados são concentrados em uma armadilha geológica, sobrepostos por uma rocha com disposição selo, formando um campo ou acumulação."@pt-br)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#accumulation> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process>)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#accumulation> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000057> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap>))
+DisjointClasses(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#accumulation> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation>)
+DisjointClasses(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#accumulation> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration>)
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rock_bodies> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rock_bodies>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rock_bodies> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rock_bodies> "Aggregate of Rock Bodies"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rock_bodies> "agregado de rochas"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rock_bodies> "Agregado de Corpos de Rocha é um Object Aggregate  que reúne múltiplos corpos de rocha com limites definidos, como uma unidade litoestratigráfica composta ou um conjunto de camadas em uma bacia."@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rock_bodies> "An Aggregate of Rocks Bodies is an Object Aggregate that comprises multiple rock bodies with defined boundaries, such as a composite lithostratigraphic unit or a set of layers within a basin."@en)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rock_bodies> <http://purl.obolibrary.org/obo/BFO_0000027>)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rock_bodies> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#body_of_rock>))
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rock_bodies> ObjectSomeValuesFrom(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#bounds> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap>))
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalto> (basalt)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalto> "Example: 
+Basalt is an Earth Material such as vesicular basalt and massive basalt."@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalto> "Exemplo: 
+Basalto é um Material Terrestre como basalto vesicular e basalto maciço."@pt-br)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalto> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalto> "basalt"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalto> "basalto"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalto> "Basalt is an igneous rock formed by the rapid cooling of lava at the Earth's surface or on the ocean floor."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalto> "Basalto é uma rocha ígnea, resultante do resfriamento rápido de lava na superfície terrestre ou no assoalho oceânico."@pt-br)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalto> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#igneas_rock>)
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin> "Example: 
+Basin is a Geological Object such as intracratonic basins and rift basins."@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin> "Exemplo:
+Bacia é um Objeto Geológico como bacias intracratônicas e bacias rifte."@pt-br)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin> "bacia"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin> "basin"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin> "A Basin is a rock body corresponding to a long-lived topographic depression filled with sedimentary rocks and formed by tectonic processes."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin> "Bacia é um corpo de rocha que corresponde a uma depressão topográfica de longa duração preenchida por rochas sedimentares, formada por processos tectônicos."@pt-br)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#body_of_rock>)
+DisjointClasses(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dikes>)
+DisjointClasses(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer>)
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#body_of_rock> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#body_of_rock>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#body_of_rock> "Example:
+A rock body such as layers and dikes."@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#body_of_rock> "Exemplo: 
+Um corpo de rocha como camadas e diques."@pt-br)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#body_of_rock> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#body_of_rock> "body of rock"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#body_of_rock> "corpo de rocha"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#body_of_rock> "Body of Rock is a geological object consisting of a continuous and spatially bounded volume of rock, generated by one or more geological processes and capable of being mapped as a lithostratigraphic or tectonic unit."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#body_of_rock> "Corpo de Rocha é um objeto geológico que consiste em um volume contínuo e espacialmente delimitado de rocha, gerado por um ou mais processos geológicos, podendo ser mapeado como uma unidade litoestratigráfica ou tectônica."@pt-br)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#body_of_rock> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000001>)
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dikes> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dikes>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dikes> "Example:
+Dikes are geological objects, such as basaltic dikes."@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dikes> "Exemplo:
+Diques são Objetos Geológicos como diques basálticos."@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dikes> "dikes"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dikes> "diques"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dikes> "Dikes are tabular, discordant rock bodies formed by the intrusion of igneous rock."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dikes> "Diques são corpos de rocha tabulares, discordantes, resultantes da intrusão de rocha ígnea."@pt-br)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dikes> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#body_of_rock>)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dikes> ObjectSomeValuesFrom(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000017> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalto>))
+DisjointClasses(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dikes> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer>)
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation> "generation"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation> "geração"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation> "Generation is an event in which the organic matter contained within a rock layer bearing a source disposition is thermally or biologically transformed into hydrocarbons under specific pressure and temperature conditions."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation> "Geração é um evento no qual a matéria orgânica contida em uma rocha com disposição de geradora é termicamente ou biologicamente convertida em hidrocarbonetos, sob condições específicas de pressão e temperatura."@pt-br)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process>)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000057> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#petroleum>))
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000057> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer>))
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000063> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration>))
+DisjointClasses(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration>)
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#igneas_rock> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#igneas_rock>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#igneas_rock> "Example: 
+Igneous Rock is an Earth Material such as basalt."@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#igneas_rock> "Exemplo: 
+Rocha Ígnea é um Material Terrestre como basalto."@pt-br)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#igneas_rock> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#igneas_rock> "igneas rock"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#igneas_rock> "rocha ígnea"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#igneas_rock> "Igneous rock is a rock formed by the cooling and solidification of magma or lava, whose texture and mineral composition reflect the thermal history of its crystallization."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#igneas_rock> "Rocha Ígnea é uma rocha formada pelo resfriamento e solidificação do magma ou lava, cuja textura e composição mineral refletem a história térmica de sua cristalização."@pt-br)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#igneas_rock> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#rock>)
+DisjointClasses(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#igneas_rock> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sedimentary_rock>)
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer> "Example:
+A layer is a rock body, such as shale layers and sandstone layers."@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer> "Exemplo: 
+Camada é um Corpo de Rocha como camadas de folhelho e camadas de arenito."@pt-br)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer> "camada"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer> "layer"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer> "A Layer is a rock body characterized by a tabular or lens-shaped geometry, distinguished by physical discontinuities that define its upper and lower boundaries. It represents the basic unit of stratigraphic sequences and may be composed of different rock types."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer> "Camada é um corpo de rocha que possui formato de camada ou de lente, sendo individualizado por descontinuidades físicas que constituem seus limites superior e inferior. Ele representa a unidade básica das sequências estratigráficas e pode ser composto por diferentes tipos de rocha."@pt-br)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#body_of_rock>)
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> "Example: Limestone is an Earth Material such as fossiliferous limestone and micritic limestone."@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> "Exemplo: 
+Calcário é um Material Terrestre como calcário fossilífero e calcário micrítico."@pt-br)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> "calcário"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> "limestone"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> "Calcário é uma rocha sedimentar constituída predominantemente por carbonato de cálcio, geralmente de origem biogênica ou química, podendo atuar como reservatório ou rocha selante."@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> "Limestone is a sedimentary rock composed predominantly of calcium carbonate, typically of biogenic or chemical origin."@en)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sedimentary_rock>)
+DisjointClasses(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone>)
+DisjointClasses(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale>)
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> "camada de calcário"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> "limestone layer"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> "A Limestone Layer is a layer constituted by limestone."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> "Camada de Calcário é uma camada constituída por calcário."@pt-br)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer>)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000196> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#reservoir>))
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> ObjectSomeValuesFrom(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000017> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone>))
+DisjointClasses(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> ObjectIntersectionOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer>))
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration> "Example: 
+Migration is a Geological Process such as primary migration and secondary migration."@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration> "Exemplo:
+ Migração é um Processo Geológico como migração primária e migração secundária."@pt-br)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration> "migration"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration> "migração"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration> "Migration is an event in which generated hydrocarbons are naturally transported from a rock layer bearing a source disposition through a reservoir rock or fracture system toward a trap."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration> "Migração é um evento no qual os hidrocarbonetos gerados são transportados naturalmente desde a rocha com disposição geradora através de uma rocha reservatório ou sistema de fraturas  até uma armadilha."@pt-br)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process>)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000063> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#accumulation>))
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter> (organic matter)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter> "Example:
+Organic matter contained in shale layers."@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter> "Exemplo: 
+A matéria orgânica contida em camadas de folhelhos."@pt-br)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter> "Matéria Orgânica"@pt-br)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter> "organic matter"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter> "Matéria Orgânica é um material da terra constituído por compostos derivados de organismos vivos, depositado em ambientes sedimentares, que sob condições adequadas de pressão e temperatura transforma-se em hidrocarbonetos."@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter> "Organic Matter is an Earth Material composed of compounds derived from living organisms, deposited in sedimentary environments, which under suitable pressure and temperature conditions transforms into hydrocarbons."@en)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006>)
+DisjointClasses(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#petroleum>)
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability> "permeabilidade"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability> "permeability"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability> "Permeabilidade é uma qualidade que representa a capacidade do material rochoso de transmitir fluidos através de sua rede de poros interconectados."@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability> "Permeability is a quality that represents the ability of a rock material to transmit fluids through its network of interconnected pore spaces."@en)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability> <http://purl.obolibrary.org/obo/BFO_0000019>)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000197> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone>))
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000197> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone>))
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000197> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale>))
+DisjointClasses(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability> ObjectIntersectionOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature>))
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#petroleum> (petroleum)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#petroleum> "Example: 
+Petroleum accumulates in the pores of a reservoir rock."@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#petroleum> "Exemplo: 
+O petróleo acumulado nos poros de uma rocha reservatório."@pt-br)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#petroleum> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#petroleum> "petroleum"@en)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#petroleum> "petróleo"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#petroleum> "Petroleum is an Earth Fluid that constitutes a natural mixture of hydrocarbon compounds, occurring in gaseous, liquid, or solid states, genetically related to an active source rock."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#petroleum> "Petróleo é um tipo de  fluido da terra, que constitui uma mistura natural de compostos de hidrocarbonetos, de ocorrência gasosa, líquida ou sólida, geneticamente relacionada a uma rocha geradora ativa."@pt-br)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#petroleum> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009>)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#petroleum> ObjectSomeValuesFrom(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000013> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation>))
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity> "Example:
+Porosity is a quality of Earth materials, such as intergranular porosity."@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity> "Exemplo: 
+Porosidade é uma Qualidade de Materiais Terrestres como porosidade intergranular."@pt-br)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity> "porosidade"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity> "porosity"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity> "Porosity is a quality inhering in a rock body that is defined as the fraction of its total volume occupied by void spaces."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity> "Porosity é uma qulalidade, definida como a fração do volume total da rocha ocupada por espaços vazios ."@pt-br)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity> <http://purl.obolibrary.org/obo/BFO_0000019>)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000197> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone>))
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000197> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone>))
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000197> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale>))
+DisjointClasses(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity> ObjectIntersectionOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature>))
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure> "pressure"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure> "pressão"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure> "Pressure is a quality inhering in a rock body or fluid that quantifies the force exerted per unit area and plays an essential role in the generation, migration, and retention of hydrocarbons."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure> "Pressão é uma qualidade que quantifica a força aplicada por unidade de área sobre um corpo de rocha ou fluido, sendo um fator essencial para os processos de geração, migração e retenção de hidrocarbonetos."@pt-br)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure> <http://purl.obolibrary.org/obo/BFO_0000019>)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000197> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dikes>))
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000197> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer>))
+DisjointClasses(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure> ObjectIntersectionOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature>))
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#reservoir> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#reservoir>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#reservoir> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#reservoir> "reservatório"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#reservoir> "reservoir"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#reservoir> "Reservatório é uma disposição de uma camada de rocha que confere a capacidade de armazenar e transmitir fluidos por meio de sua porosidade e permeabilidade efetivas."@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#reservoir> "Reservoir is a disposition inhering in a rock layer that confers the capacity to store and transmit fluids through its effective porosity and permeability."@en)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#reservoir> <http://purl.obolibrary.org/obo/BFO_0000016>)
+DisjointClasses(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#reservoir> ObjectIntersectionOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Seal> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#source>))
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#rock> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#rock>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#rock> "Example:
+A quantity of rock present in a sedimentary basin."@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#rock> "Exemplo:
+ Uma quantidade de rocha presente em um  bacia sedimentar."@pt-br)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#rock> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#rock> "rocha"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#rock> "rock"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#rock> "Rocha é um material da terra, que não possui critério de unidade próprio, sendo sua identidade definida por composição e origem."@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#rock> "Rock is an Earth material that lacks its own unity criterion, with its identity being determined by its composition and origin."@en)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#rock> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006>)
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone> "Example: 
+Sandstone is an Earth Material such as quartzose sandstone and feldspathic sandstone."@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone> "Exemplo:
+ Arenito é um Material Terrestre como arenito quartzoso e arenito feldspático."@pt-br)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone> "arenito"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone> "sandstone"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone> "Arenito é uma rocha sedimentar composta por grãos de areia cimentados, caracterizada por porosidade e permeabilidade intergranulares."@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone> "Sandstone is a sedimentary rock composed of cemented sand-sized grains, characterized by intergranular porosity and permeability."@en)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sedimentary_rock>)
+DisjointClasses(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale>)
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> "camada de arenito"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> "sandstone layer"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> "A Sandstone Layer is a layer constituted by sandstone."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> "Camada de Arenito é uma camada constituída por arenito."@pt-br)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer>)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000196> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#reservoir>))
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> ObjectSomeValuesFrom(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000017> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone>))
+DisjointClasses(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> ObjectIntersectionOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer>))
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sedimentary_rock> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sedimentary_rock>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sedimentary_rock> "Example:
+The amount of sedimentary rock in depositional environments."@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sedimentary_rock> "Exemplo: 
+Quantidade de rocha sedimentar em ambientes deposicionais."@pt-br)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sedimentary_rock> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24.
+
+Abel, M., Perrin, M., & Carbonera, J. L. (2015). Ontological analysis for information integration in geomodeling. Earth Science Informatics, 8(1), 21-36."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sedimentary_rock> "rocha sedimentar"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sedimentary_rock> "sedimentary rock"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sedimentary_rock> "Rocha que é gerada por um Processo Geológico de sedimentação, envolvendo a deposição e a cimentação de partículas minerais ou orgânicas na superfície ou próximo à superfície da Terra."@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sedimentary_rock> "Rock that is generated by a Geological Process of sedimentation, involving the deposition and cementation of mineral or organic particles on or near the Earth's surface."@en)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sedimentary_rock> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#rock>)
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale> "Example:
+Shale is an Earth Material such as black shale and siliceous shale."@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale> "Exemplo: 
+Folhelho é um Material Terrestre como folhelho negro e folhelho silicoso"@pt-br)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale> "folhelho"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale> "shalee"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale> "Folhelho é uma rocha sedimentar fina, laminada, composta por partículas de tamanho argila e silte, rica em matéria orgânica."@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale> "Shale is a fine-grained, laminated sedimentary rock composed of clay- and silt-sized particles and enriched in organic matter."@en)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sedimentary_rock>)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale> ObjectSomeValuesFrom(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#high_concetration_of> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter>))
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> "camada de folhelho"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> "shale layer"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> "A Shale Layer is a layer constituted by shale."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> "Camada de Folhelho  é uma camada constituída por folhelho."@pt-br)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer>)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000196> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Seal>))
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000196> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#source>))
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> ObjectSomeValuesFrom(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000017> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale>))
+DisjointClasses(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> ObjectIntersectionOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer>))
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#source> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#source>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#source> "Example:
+Source potential is a disposition related to organic matter-rich shales and mudstones."@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#source> "Exemplo
+Geradora é uma disposiçãol relacionada a como folhelhos e lamitos ricos em matéria orgânica."@pt-br)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#source> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#source> "geradoura"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#source> "source"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#source> "Geradora é uma disposição de uma camada de rocha que, sob condições específicas de pressão e temperatura, confere a capacidade de gerar e expelir hidrocarbonetos a partir da matéria orgânica nela contida."@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#source> "Source is a disposition inhering in a rock layer that, under specific pressure and temperature conditions, confers the capacity to generate and expel hydrocarbons from the organic matter contained within it."@en)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#source> <http://purl.obolibrary.org/obo/BFO_0000016>)
+DisjointClasses(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#source> ObjectIntersectionOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Seal> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#reservoir>))
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature> "Example: 
+Temperature is a quality inherent in geological objects, such as geothermal temperature."@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature> "Exemplo:
+Temperatura é uma Qualidade que inere em Objetos Geológicos como temperatura geotérmica ."@pt-br)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature> "temperatura"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature> "temperature"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature> "Temperature is a quality inhering in a material entity that represents the measure of the average kinetic energy of its constituent particles."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature> "Temperature é uma qualidade, representando a medida da energia cinética média das partículas constituintes."@pt-br)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature> <http://purl.obolibrary.org/obo/BFO_0000019>)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000197> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dikes>))
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000197> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer>))
+DisjointClasses(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature> ObjectIntersectionOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure>))
+
+# Class: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap> "Example:
+Trap is a Geological Structure such as anticlinal traps and fault traps."@en)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap> "Exemplo: 
+Armadilha é uma Estrutura Geológica como armadilhas anticlinais e armadilhas de falha."@pt-br)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap> "Reference:
+L. B. Magoon, W. G. Dow, The petroleum system, in: L. B. Magoon, W. G. Dow (Eds.), The Petroleum System: From Source to Trap, volume 60 of AAPG Memoir, American Association of Petroleum Geologists, Tulsa, Oklahoma, 1994, pp. 3–24."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap> "armadilha"@pt-br)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap> "trap"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap> "A Trap is a geological structure that defines a tectonic or stratigraphic geometry and is materialized in one or more rock bodies."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap> "Armadilha é uma estrutura geológica  que configura uma geometria tectônica ou estratigráfica, materializada em um ou mais corpos rochosos."@pt-br)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000004>)
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dikes>))
+SubClassOf(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer>))
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#acumulation_ind> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#acumulation_ind>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#accumulation> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#acumulation_ind>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000057> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#acumulation_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#gas_ind>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000057> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#acumulation_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rocks> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rocks>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rock_bodies> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rocks>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#bounds> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rocks> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap_ind>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalt_ind> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalt_ind>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalto> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalt_ind>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin_ind> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin_ind>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin_ind>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dike_ind> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dike_ind>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dikes> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dike_ind>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#gas_ind> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#gas_ind>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Natural_Gas> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#gas_ind>)
+ObjectPropertyAssertion(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000013> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#gas_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation_ind>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation_ind> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation_ind>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation_ind>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000057> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000057> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000063> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration_ind>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer_ind> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer_ind>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer_ind>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000196> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#resevior_ind>)
+ObjectPropertyAssertion(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000017> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration_ind> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration_ind>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration_ind>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000057> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#gas_ind>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000057> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000063> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#acumulation_ind>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Oil> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind>)
+ObjectPropertyAssertion(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000013> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation_ind>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter_ind> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter_ind>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter_ind>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability_ind> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability_ind>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability_ind>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000197> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_ind>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity_ind> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity_ind>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity_ind>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000197> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_ind>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure_ind> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure_ind>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure_ind>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000197> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#resevior_ind> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#resevior_ind>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#reservoir> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#resevior_ind>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer>)
+ObjectPropertyAssertion(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000017> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#seal_ind> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#seal_ind>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#Seal> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#seal_ind>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_ind> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_ind>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_ind>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000196> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#source_ind>)
+ObjectPropertyAssertion(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000017> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_ind>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#source_ind> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#source_ind>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#source> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#source_ind>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature_ind> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature_ind>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature_ind>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000197> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer>)
+
+# Individual: <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap_ind> (<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap_ind>)
+
+ClassAssertion(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap_ind>)
+ObjectPropertyAssertion(<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dike_ind>)
+ObjectPropertyAssertion(<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer_ind>)
+
+
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#acumulation_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rocks> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalt_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dike_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#gas_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#generation_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#migration_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#resevior_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#seal_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rocks> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalt_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rocks> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalt_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rocks> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalt_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dike_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rocks> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalt_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dike_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#gas_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rocks> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalt_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dike_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#gas_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rocks> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalt_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dike_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#gas_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rocks> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalt_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dike_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#gas_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rocks> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalt_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dike_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#gas_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rocks> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalt_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#gas_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rocks> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#gas_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rocks> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#gas_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rocks> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#gas_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rocks> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#gas_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rocks> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rocks> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#aggregate_of_rocks> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basalt_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#gas_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#basin_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#gas_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#dike_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#gas_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#gas_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#layer_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#limestone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#oil_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#organic_matter_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#permeability_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#porosity_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#pressure_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#sandstone_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#seal_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#shale_layer> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap_ind>)
+DifferentIndividuals(<http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#temperature_ind> <http://www.semanticweb.org/gustavo/ontologies/2026/5/untitled-ontology-3#trap_ind>)
+)
