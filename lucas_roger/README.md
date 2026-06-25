@@ -144,8 +144,8 @@ Após essas correções, o raciocinador rodou sem erros.
 ## 6. Arquivos da Entrega
 
 - [Ontologia OWL](mml.owl)
-- [Documento final](Trabalho%20Final%20-%20CMP196.docx)
-- [Apresentação final](TrabalhoFinal%20-%20CMP196.pptx)
+- [Documento final](Trabalho%20Final%20-%20CMP196.pdf)
+- [Apresentação final](Apresentação%20-%20TrabalhoFinal%20-%20CMP196.pdf)
 - [Árvore BFO](CMP196_BFO_arvore.png)
 - [Modelagem proposta](CMP196_modelagem.png)
 
