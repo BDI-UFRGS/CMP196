@@ -525,6 +525,13 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/PredictiveComputationProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000055"/>
+            <Class IRI="/PredictiveCapability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PredictiveComputationProcess"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
             <Class IRI="/ComputationalHardware"/>
