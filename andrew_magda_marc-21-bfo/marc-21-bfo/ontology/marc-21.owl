@@ -1,0 +1,2456 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://purl.org/marc-21/ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://purl.org/marc-21/ontology"
+     versionIRI="http://purl.org/marc-21/releases/1.0">
+    <Prefix name="" IRI="http://purl.org/marc-21/ontology#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="mbfo" IRI="http://purl.org/marc-21/ontology#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.obolibrary.org/obo/bfo/2020/bfo.owl</Import>
+    <Import>http://purl.obolibrary.org/obo/iao/2026-03-30/iao.owl</Import>
+    <Import>http://purl.obolibrary.org/obo/ro/releases/2025-12-17/ro.owl</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <Literal xml:lang="en-us">MARC21-BFO is an ontology that aligns MARC 21 bibliographic concepts with BFO, IAO, RO and FRBR to provide a semantically grounded representation of bibliographic catalogs and library processes.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <Literal xml:lang="pt-br">MARC21-BFO é uma ontologia que alinha os conceitos bibliográficos do MARC 21 com BFO, IAO, RO e FRBR para fornecer uma representação semanticamente fundamentada de catálogos bibliográficos e processos de biblioteca.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal xml:lang="en-us">Andrew Paes da Silva; Mara Magda;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Literal xml:lang="pt-br">Ontologia que alinha conceitos bibliográficos do MARC 21 com BFO, IAO, RO e FRBR para interoperabilidade semântica e engenharia de ontologias baseada no realismo.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Literal xml:lang="en-us">Ontology aligning MARC 21 bibliographic concepts with BFO, IAO, RO and FRBR for semantic interoperability and realism-based ontology engineering.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/license"/>
+        <Literal xml:lang="en-us">GNU General Public License v2.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
+        <Literal xml:lang="en-us">UFRGS - Universidade Federal do Rio Grande do Sul</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal xml:lang="en-us">MARC21-BFO Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal xml:lang="pt-br">Ontologia MARC21-BFO</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#bibliographic_expression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bibliographic_item"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bibliographic_manifestation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bibliographic_record"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bibliographic_work"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#catalog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#catalog_carrier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cataloger_role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cataloging_process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cataloging_status_specification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#item_availability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#library"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#loan_process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#loan_record"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#publisher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#reader_role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#record_completeness_specification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#record_update_process"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cataloged_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#describes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#embodies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#exemplifies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#exemplifies_manifestation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_creator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_expression"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_input"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_output"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_participant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_role"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_specification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_about"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_concretized_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_exemplified_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_expression_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#modifies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#owned_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#performed_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#published_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#represents_work"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#updates"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_isbn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_isil"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_isni"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_title"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_City_Library"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_Dom_Casmurro_1899_Paper_Book"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_Garnier_Publisher"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_John_Reader"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_Local_HD_Server"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_Machado_de_Assis_Author"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_Maria_Cataloger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_Metailie_Publisher"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_available"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_cataloging_process_001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_dom_casmurro_work"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_english_translation_expression"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_garnier_1899_manifestation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_library_main_catalog"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_loan_process_001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_loan_record_001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_loaned"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_marc21_rec_123"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_metailie_2002_manifestation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_portuguese_original_expression"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_record_update_process_001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_role_joao_reader"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_role_machado_author"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_role_maria_cataloger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_spec_record_complete"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_spec_record_partial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_spec_status_cataloged"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_spec_status_in_preparation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inst_spec_status_reviewed"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000442"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000197"/>
+            <Class IRI="#person"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bibliographic_expression"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bibliographic_item"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bibliographic_item"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#has_isbn"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bibliographic_manifestation"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bibliographic_record"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bibliographic_record"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <Class IRI="#catalog"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bibliographic_work"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#catalog"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0001000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#catalog_carrier"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cataloger_role"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cataloger_role"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000197"/>
+            <Class IRI="#person"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cataloging_process"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000572"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cataloging_process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_input"/>
+            <Class IRI="#bibliographic_manifestation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cataloging_process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_output"/>
+            <Class IRI="#bibliographic_record"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cataloging_process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_participant"/>
+            <Class IRI="#person"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cataloging_process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#modifies"/>
+            <Class IRI="#cataloging_status_specification"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cataloging_status_specification"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#item_availability"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000145"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#library"/>
+        <Class IRI="#organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#library"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#has_isil"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#loan_process"/>
+        <Class IRI="http://purl.obolibrary.org/obo/COB_0000035"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#loan_process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_input"/>
+            <Class IRI="#bibliographic_item"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#loan_process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_input"/>
+            <Class IRI="#person"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#loan_process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_input"/>
+            <Class IRI="#reader_role"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#loan_process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_output"/>
+            <Class IRI="#loan_record"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#loan_process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#modifies"/>
+            <Class IRI="#item_availability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#loan_record"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#loan_record"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <Class IRI="#catalog"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#organization"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#person"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#publisher"/>
+        <Class IRI="#organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#publisher"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#has_isni"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#reader_role"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#reader_role"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000197"/>
+            <Class IRI="#person"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#record_completeness_specification"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#record_update_process"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000572"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#record_update_process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_input"/>
+            <Class IRI="#bibliographic_record"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#record_update_process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_output"/>
+            <Class IRI="#bibliographic_record"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#record_update_process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#modifies"/>
+            <Class IRI="#bibliographic_record"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#library"/>
+        <NamedIndividual IRI="#inst_City_Library"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#bibliographic_item"/>
+        <NamedIndividual IRI="#inst_Dom_Casmurro_1899_Paper_Book"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#publisher"/>
+        <NamedIndividual IRI="#inst_Garnier_Publisher"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#person"/>
+        <NamedIndividual IRI="#inst_John_Reader"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#catalog_carrier"/>
+        <NamedIndividual IRI="#inst_Local_HD_Server"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#person"/>
+        <NamedIndividual IRI="#inst_Machado_de_Assis_Author"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#person"/>
+        <NamedIndividual IRI="#inst_Maria_Cataloger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#publisher"/>
+        <NamedIndividual IRI="#inst_Metailie_Publisher"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#item_availability"/>
+        <NamedIndividual IRI="#inst_available"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cataloging_process"/>
+        <NamedIndividual IRI="#inst_cataloging_process_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#bibliographic_work"/>
+        <NamedIndividual IRI="#inst_dom_casmurro_work"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#bibliographic_expression"/>
+        <NamedIndividual IRI="#inst_english_translation_expression"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#bibliographic_manifestation"/>
+        <NamedIndividual IRI="#inst_garnier_1899_manifestation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#catalog"/>
+        <NamedIndividual IRI="#inst_library_main_catalog"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#loan_process"/>
+        <NamedIndividual IRI="#inst_loan_process_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#loan_record"/>
+        <NamedIndividual IRI="#inst_loan_record_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#item_availability"/>
+        <NamedIndividual IRI="#inst_loaned"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#bibliographic_record"/>
+        <NamedIndividual IRI="#inst_marc21_rec_123"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#bibliographic_manifestation"/>
+        <NamedIndividual IRI="#inst_metailie_2002_manifestation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#bibliographic_expression"/>
+        <NamedIndividual IRI="#inst_portuguese_original_expression"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#record_update_process"/>
+        <NamedIndividual IRI="#inst_record_update_process_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#reader_role"/>
+        <NamedIndividual IRI="#inst_role_joao_reader"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000442"/>
+        <NamedIndividual IRI="#inst_role_machado_author"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cataloger_role"/>
+        <NamedIndividual IRI="#inst_role_maria_cataloger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#record_completeness_specification"/>
+        <NamedIndividual IRI="#inst_spec_record_complete"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#record_completeness_specification"/>
+        <NamedIndividual IRI="#inst_spec_record_partial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cataloging_status_specification"/>
+        <NamedIndividual IRI="#inst_spec_status_cataloged"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cataloging_status_specification"/>
+        <NamedIndividual IRI="#inst_spec_status_in_preparation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cataloging_status_specification"/>
+        <NamedIndividual IRI="#inst_spec_status_reviewed"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#exemplifies_manifestation"/>
+        <NamedIndividual IRI="#inst_Dom_Casmurro_1899_Paper_Book"/>
+        <NamedIndividual IRI="#inst_garnier_1899_manifestation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#owned_by"/>
+        <NamedIndividual IRI="#inst_Dom_Casmurro_1899_Paper_Book"/>
+        <NamedIndividual IRI="#inst_City_Library"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_role"/>
+        <NamedIndividual IRI="#inst_John_Reader"/>
+        <NamedIndividual IRI="#inst_role_joao_reader"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_role"/>
+        <NamedIndividual IRI="#inst_Machado_de_Assis_Author"/>
+        <NamedIndividual IRI="#inst_role_machado_author"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_role"/>
+        <NamedIndividual IRI="#inst_Maria_Cataloger"/>
+        <NamedIndividual IRI="#inst_role_maria_cataloger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_input"/>
+        <NamedIndividual IRI="#inst_cataloging_process_001"/>
+        <NamedIndividual IRI="#inst_garnier_1899_manifestation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_output"/>
+        <NamedIndividual IRI="#inst_cataloging_process_001"/>
+        <NamedIndividual IRI="#inst_marc21_rec_123"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_participant"/>
+        <NamedIndividual IRI="#inst_cataloging_process_001"/>
+        <NamedIndividual IRI="#inst_Maria_Cataloger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_creator"/>
+        <NamedIndividual IRI="#inst_dom_casmurro_work"/>
+        <NamedIndividual IRI="#inst_Machado_de_Assis_Author"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_expression_of"/>
+        <NamedIndividual IRI="#inst_english_translation_expression"/>
+        <NamedIndividual IRI="#inst_dom_casmurro_work"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#embodies"/>
+        <NamedIndividual IRI="#inst_garnier_1899_manifestation"/>
+        <NamedIndividual IRI="#inst_portuguese_original_expression"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#published_by"/>
+        <NamedIndividual IRI="#inst_garnier_1899_manifestation"/>
+        <NamedIndividual IRI="#inst_Garnier_Publisher"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_concretized_in"/>
+        <NamedIndividual IRI="#inst_library_main_catalog"/>
+        <NamedIndividual IRI="#inst_Local_HD_Server"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_input"/>
+        <NamedIndividual IRI="#inst_loan_process_001"/>
+        <NamedIndividual IRI="#inst_Dom_Casmurro_1899_Paper_Book"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_output"/>
+        <NamedIndividual IRI="#inst_loan_process_001"/>
+        <NamedIndividual IRI="#inst_loan_record_001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_participant"/>
+        <NamedIndividual IRI="#inst_loan_process_001"/>
+        <NamedIndividual IRI="#inst_John_Reader"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <NamedIndividual IRI="#inst_loan_record_001"/>
+        <NamedIndividual IRI="#inst_library_main_catalog"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#inst_loan_record_001"/>
+        <NamedIndividual IRI="#inst_Dom_Casmurro_1899_Paper_Book"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#inst_loan_record_001"/>
+        <NamedIndividual IRI="#inst_John_Reader"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cataloged_by"/>
+        <NamedIndividual IRI="#inst_marc21_rec_123"/>
+        <NamedIndividual IRI="#inst_Maria_Cataloger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#describes"/>
+        <NamedIndividual IRI="#inst_marc21_rec_123"/>
+        <NamedIndividual IRI="#inst_garnier_1899_manifestation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#represents_work"/>
+        <NamedIndividual IRI="#inst_marc21_rec_123"/>
+        <NamedIndividual IRI="#inst_dom_casmurro_work"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#embodies"/>
+        <NamedIndividual IRI="#inst_metailie_2002_manifestation"/>
+        <NamedIndividual IRI="#inst_english_translation_expression"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#published_by"/>
+        <NamedIndividual IRI="#inst_metailie_2002_manifestation"/>
+        <NamedIndividual IRI="#inst_Metailie_Publisher"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_expression_of"/>
+        <NamedIndividual IRI="#inst_portuguese_original_expression"/>
+        <NamedIndividual IRI="#inst_dom_casmurro_work"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_input"/>
+        <NamedIndividual IRI="#inst_record_update_process_001"/>
+        <NamedIndividual IRI="#inst_marc21_rec_123"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_output"/>
+        <NamedIndividual IRI="#inst_record_update_process_001"/>
+        <NamedIndividual IRI="#inst_marc21_rec_123"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#performed_by"/>
+        <NamedIndividual IRI="#inst_record_update_process_001"/>
+        <NamedIndividual IRI="#inst_Maria_Cataloger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#updates"/>
+        <NamedIndividual IRI="#inst_record_update_process_001"/>
+        <NamedIndividual IRI="#inst_marc21_rec_123"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#cataloged_by"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#describes"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#embodies"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#exemplifies"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_creator"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_input"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_output"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_participant"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_role"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_about"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_concretized_in"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#modifies"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#owned_by"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#performed_by"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#published_by"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#represents_work"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#updates"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#exemplifies_manifestation"/>
+        <ObjectProperty IRI="#is_exemplified_by"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#exemplifies_manifestation"/>
+        <Class IRI="#bibliographic_item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_expression"/>
+        <Class IRI="#bibliographic_work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_input"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_output"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_participant"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_role"/>
+        <Class IRI="#person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_specification"/>
+        <Class IRI="#bibliographic_record"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_exemplified_by"/>
+        <Class IRI="#bibliographic_manifestation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_expression_of"/>
+        <Class IRI="#bibliographic_expression"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#modifies"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#performed_by"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#updates"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#exemplifies_manifestation"/>
+        <Class IRI="#bibliographic_manifestation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_expression"/>
+        <Class IRI="#bibliographic_expression"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_input"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000002"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_output"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000002"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_participant"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000002"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_role"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_specification"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_exemplified_by"/>
+        <Class IRI="#bibliographic_item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_expression_of"/>
+        <Class IRI="#bibliographic_work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#modifies"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000002"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#performed_by"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000002"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#updates"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000002"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_isil"/>
+        <Class IRI="#library"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_isni"/>
+        <Class IRI="#publisher"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_title"/>
+        <Class IRI="#bibliographic_manifestation"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_isil"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_isni"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000059</IRI>
+        <Literal xml:lang="pt-br">a estrutura de dados do catálogo principal da biblioteca é concretizada_em o hardware do servidor HD local.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000059</IRI>
+        <Literal xml:lang="en-us">the library main catalog data structure is concretized_in the local HD server hardware.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000059</IRI>
+        <Literal xml:lang="pt-br">De acordo com a BFO, entidades de informação não possuem massa ou extensão espacial; elas requerem um portador material para serem hospedadas. Esta relação mapeia essa dependência de hospedagem ontológica.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#bibliographic_expression</IRI>
+        <Literal xml:lang="en-us">Bibliographic Expression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#bibliographic_expression</IRI>
+        <Literal xml:lang="pt-br">Expressão Bibliográfica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#bibliographic_expression</IRI>
+        <Literal xml:lang="pt-br">A realização intelectual ou artística específica de uma obra sob a forma de notação alfa-numérica, linguística ou textual (ex: o texto original de Dom Casmurro em português).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#bibliographic_expression</IRI>
+        <Literal xml:lang="en-us">The specific intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation (e.g., the original Dom Casmurro in Portuguese text).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#bibliographic_item</IRI>
+        <Literal xml:lang="en-us">Bibliographic Item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#bibliographic_item</IRI>
+        <Literal xml:lang="pt-br">Item Bibliográfico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#bibliographic_item</IRI>
+        <Literal xml:lang="en-us">It is a physical, tangible, and individualized object that you can hold in your hands. It has mass, three-dimensional extension, and defined macroscopic physical boundaries in the real world.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#bibliographic_item</IRI>
+        <Literal xml:lang="pt-br">É o objeto físico, tangível e individualizado que você consegue segurar com as mãos. Possui massa, extensão tridimensional e limites físicos macroscópicos definidos no mundo real.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#bibliographic_manifestation</IRI>
+        <Literal xml:lang="en-us">Bibliographic Manifestation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#bibliographic_manifestation</IRI>
+        <Literal xml:lang="pt-br">Manifestação Bibliográfica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#bibliographic_manifestation</IRI>
+        <Literal xml:lang="en-us">In the international normative standard (IFLA LRM), a Manifestation represents the ideal set of attributes of a mass-production publishing line (a model that defines the ISBN, the theoretical dimensions, and the publisher). It is not an individualized &quot;document&quot; that you read, but the conceptual recipe that the physical items follow. Therefore, preserving the conceptual purity of the MARC 21/LRM standard, it is the physical or digital embodiment of an expression, representing the product of a publishing line (it carries ideal attributes such as ISBN and publication data).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#bibliographic_manifestation</IRI>
+        <Literal xml:lang="pt-br">No padrão normativo internacional (IFLA LRM), uma Manifestação representa o conjunto ideal de atributos de uma linha de produção editorial em massa (um modelo que define o ISBN, as dimensões teóricas e a editora). Ela não é um &quot;documento&quot; individualizado que você lê, mas a receita conceitual que os itens físicos seguem. Portanto preservando a pureza conceitual do padrão MARC 21/LRM, é a corporificação física ou digital de uma expressão, representando o produto de uma linha de produção editorial (carrega atributos ideais como ISBN e dados de publicação).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#bibliographic_record</IRI>
+        <Literal xml:lang="en-us">Bibliographic Record</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#bibliographic_record</IRI>
+        <Literal xml:lang="pt-br">Registro Bibliográfico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#bibliographic_record</IRI>
+        <Literal xml:lang="en-us">A strictly encoded MARC 21 record. These are not free narrative documents, but structured strings that carry information, designed to logically encode, describe, and represent a manifestation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#bibliographic_record</IRI>
+        <Literal xml:lang="pt-br">Um registro MARC 21 textualmente codificado de forma estrita. Não são documentos narrativos livres, mas strings estruturadas que carregam informação, projetada para codificar logicamente, descrever e representar uma manifestação.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#bibliographic_work</IRI>
+        <Literal xml:lang="en-us">Bibliographic Work</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#bibliographic_work</IRI>
+        <Literal xml:lang="pt-br">Obra Bibliográfica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#bibliographic_work</IRI>
+        <Literal xml:lang="en-us">A distinct intellectual or artistic creation (abstract core, e.g., the story of Dom Casmurro) that generically depends on expressions to exist in the universe.
+A Work is the most abstract level of intellectual creation (the idea of ​​the story). If you translate Dom Casmurro into English, into French, or turn it into a play, the Work remains rigorously the same, although the texts (the expressions) have changed completely. The Work itself does not have fixed text characters in a language; it transcends language.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#bibliographic_work</IRI>
+        <Literal xml:lang="pt-br">Uma criação intelectual ou artística distinta (núcleo abstrato, ex: a história de Dom Casmurro) que depende genericamente de expressões para existir no universo.
+Uma Obra é o nível mais abstrato da criação intelectual (a ideia da história). Se você traduzir Dom Casmurro para o Inglês, para o Francês ou transformá-lo em uma peça de teatro, a Obra continua sendo rigorosamente a mesma, embora os textos (as expressões) tenham mudado completamente. A Obra em si não possui caracteres de texto fixados em um idioma; ela transcende a linguagem.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#catalog</IRI>
+        <Literal xml:lang="en-us">Bibliographic Catalog</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#catalog</IRI>
+        <Literal xml:lang="pt-br">Catálogo Bibliográfico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#catalog</IRI>
+        <Literal xml:lang="en-us">An informational collection composed of structured bibliographic records organized according to cataloging rules, concretized within a catalog carrier. It is not a textbook, it is a logical and aggregated collection of individual records for inventory and search purposes, of a computational and asset-related nature.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#catalog</IRI>
+        <Literal xml:lang="pt-br">Entidade informacional composta por registros bibliográficos estruturados e organizados segundo regras catalográficas, concretizada em um ou mais suportes materiais (catalog_carrier). Não é um livro texto, é uma coleção lógica e agregada de registros individuais com o propósito de inventário e busca, de natureza computacional e patrimonial.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#catalog_carrier</IRI>
+        <Literal xml:lang="en-us">Catalog Carrier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#catalog_carrier</IRI>
+        <Literal xml:lang="pt-br">Suporte do Catálogo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#catalog_carrier</IRI>
+        <Literal xml:lang="pt-br">Dispositivo físico onde reside o arquivo informacional digital (servidor/disco rígido).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#catalog_carrier</IRI>
+        <Literal xml:lang="en-us">Physical device where the digital information file resides (server/hard drive).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#cataloged_by</IRI>
+        <Literal xml:lang="en-us">MARC 21 record 123 was cataloged_by Maria (the librarian).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#cataloged_by</IRI>
+        <Literal xml:lang="pt-br">o registro MARC 21 123 foi catalogado_por Maria (a bibliotecária).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>#cataloged_by</IRI>
+        <Literal xml:lang="pt-br">Estabelece uma trilha de auditoria administrativa dentro do grafo, conectando uma entidade de informação a um agente humano atuando sob o papel de catalogador.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>#cataloged_by</IRI>
+        <Literal xml:lang="en-us">Establishes an administrative audit trail within the graph, connecting an information entity to a human agent acting under a cataloger role.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#cataloged_by</IRI>
+        <Literal xml:lang="en-us">A relation linking a data entity (Bibliographic Record) to the physical person who authored or generated the metadata structure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#cataloged_by</IRI>
+        <Literal xml:lang="pt-br">Uma relação vinculando uma entidade de dados (Registro Bibliográfico) à pessoa física que gerou ou foi autora da estrutura de metadados.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#cataloged_by</IRI>
+        <Literal xml:lang="pt-br">Catalogado por</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#cataloged_by</IRI>
+        <Literal xml:lang="en-us">Cataloged by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#cataloger_role</IRI>
+        <Literal xml:lang="pt-br">O papel técnico que a profissional Maria desempenha no sistema enquanto realiza o tratamento de dados lógicos no formato MARC 21.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#cataloger_role</IRI>
+        <Literal xml:lang="en-us">The technical role that Maria plays in the system while processing logical data in MARC 21 format.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cataloger_role</IRI>
+        <Literal xml:lang="pt-br">As funções operacionais de catalogação dependem de um vínculo externo (contrato, designação institucional ou turno de trabalho), cessando as suas prerrogativas quando esse contexto deixa de existir.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cataloger_role</IRI>
+        <Literal xml:lang="en-us">The operational functions of cataloging depend on an external link (contract, institutional designation, or work shift), ceasing its prerogatives when that context no longer exists.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#cataloger_role</IRI>
+        <Literal xml:lang="en-us">A functional and temporary role inhering in a person within an institutional context, authorizing them to perform technical processing and metadata creation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#cataloger_role</IRI>
+        <Literal xml:lang="pt-br">É o papel funcional e temporário que inere em uma pessoa dentro de um contexto institucional, autorizando-a a realizar o processamento técnico e a criação de metadados.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#cataloger_role</IRI>
+        <Literal xml:lang="en-us">Cataloger Role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#cataloger_role</IRI>
+        <Literal xml:lang="pt-br">Papel de Catalogador</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#cataloging_process</IRI>
+        <Literal xml:lang="pt-br">Maria cataloga a manifestação Garnier de 1899 de Dom Casmurro e cria um registro bibliográfico MARC 21.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#cataloging_process</IRI>
+        <Literal xml:lang="en-us">Maria catalogs the Garnier 1899 manifestation of Dom Casmurro and creates a MARC 21 bibliographic record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cataloging_process</IRI>
+        <Literal xml:lang="en-us">Cataloging processes transform knowledge about a manifestation into structured metadata represented in bibliographic records.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cataloging_process</IRI>
+        <Literal xml:lang="pt-br">Processos de catalogação transformam conhecimento sobre uma manifestação em metadados estruturados representados em registros bibliográficos.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#cataloging_process</IRI>
+        <Literal xml:lang="en-us">A documenting process in which a bibliographic manifestation is analyzed and described through the creation or modification of a bibliographic record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#cataloging_process</IRI>
+        <Literal xml:lang="pt-br">Processo de documentação no qual uma manifestação bibliográfica é analisada e descrita por meio da criação ou modificação de um registro bibliográfico.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#cataloging_process</IRI>
+        <Literal xml:lang="en-us">Cataloging Process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#cataloging_process</IRI>
+        <Literal xml:lang="pt-br">Processo de Catalogação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#cataloging_status_specification</IRI>
+        <Literal xml:lang="en-us">An informational specification metadata entity that declares and tracks the technical processing phase or workflow stage of a BibliographicRecord over time (In preparation, Cataloged, or Reviewed) within the library system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#cataloging_status_specification</IRI>
+        <Literal xml:lang="pt-br">É a entidade de especificação informacional (metadado) que declara e rastreia a fase de tratamento técnico ou workflow em que um BibliographicRecord se encontra no tempo (Em elaboração, Catalogado ou Revisado) dentro do sistema da biblioteca.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#cataloging_status_specification</IRI>
+        <Literal xml:lang="en-us">Cataloging Status Specification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#cataloging_status_specification</IRI>
+        <Literal xml:lang="pt-br">Especificação de Status de Catalogação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#describes</IRI>
+        <Literal xml:lang="pt-br">este fluxo lógico de registro MARC 21 descreve a manifestação Garnier de 1899.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#describes</IRI>
+        <Literal xml:lang="en-us">this MARC 21 logical record stream describes the Garnier 1899 manifestation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>#describes</IRI>
+        <Literal xml:lang="en-us">A bibliographic record describes a manifestation by using normative schema fields (like MARC 21 tags) to capture its titles, publishing houses, and technical metadata for retrieval.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>#describes</IRI>
+        <Literal xml:lang="pt-br">Um registro bibliográfico descreve uma manifestação ao usar campos de esquemas normativos (como as tags do MARC 21) para capturar seus títulos, editoras e metadados técnicos para fins de recuperação.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#describes</IRI>
+        <Literal xml:lang="en-us">A relation between a structured metadata record (Bibliographic Record) and the entity it catalogs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#describes</IRI>
+        <Literal xml:lang="pt-br">Uma relação entre um registro de metadados estruturado (Registro Bibliográfico) e a entidade que ele cataloga.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#describes</IRI>
+        <Literal xml:lang="pt-br">Descreve</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#describes</IRI>
+        <Literal xml:lang="en-us">Describes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#embodies</IRI>
+        <Literal xml:lang="pt-br">a manifestação editorial da Garnier de 1899 corporifica a expressão em texto original em português.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#embodies</IRI>
+        <Literal xml:lang="en-us">the Garnier 1899 publishing manifestation embodies the original Portuguese text expression.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>#embodies</IRI>
+        <Literal xml:lang="en-us">A manifestation embodies an expression by defining the commercial, physical, or technical medium parameters (such as typography, layout, or file formatting) used to deliver that expression to an audience.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>#embodies</IRI>
+        <Literal xml:lang="pt-br">Uma manifestação corporifica uma expressão ao definir os parâmetros comerciais, físicos ou técnicos do meio (como tipografia, layout ou formatação de arquivo) utilizados para entregar aquela expressão a um público.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#embodies</IRI>
+        <Literal xml:lang="en-us">A relation between a production-level informational specification (Manifestation) and the linguistic/textual entity (Expression) it packages for distribution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#embodies</IRI>
+        <Literal xml:lang="pt-br">Uma relação entre uma especificação informacional de nível de produção (Manifestação) e a entidade linguística/textual (Expressão) que ela empacota para distribuição.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#embodies</IRI>
+        <Literal xml:lang="pt-br">Corporifica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#embodies</IRI>
+        <Literal xml:lang="en-us">Embodies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#exemplifies</IRI>
+        <Literal xml:lang="pt-br">o livro físico em brochura na prateleira 3 com código de barras 4567 exemplifica a manifestação Garnier de 1899.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#exemplifies</IRI>
+        <Literal xml:lang="en-us">the physical paperback book on shelf 3 with barcode 4567 exemplifies the Garnier 1899 manifestation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>#exemplifies</IRI>
+        <Literal xml:lang="en-us">An item exemplifies a manifestation when it is a physical token produced according to the characteristics defined by that manifestation blueprint, possessing unique material qualities like a barcode or inventory stamp.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>#exemplifies</IRI>
+        <Literal xml:lang="pt-br">Um item exemplifica uma manifestação quando é um token físico produzido de acordo com as características definidas pelo plano daquela manifestação, possuindo qualidades materiais únicas como um código de barras ou carimbo de inventário.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#exemplifies</IRI>
+        <Literal xml:lang="en-us">A relation between a concrete physical artifact (Item) and the informational production blueprint (Manifestation) it materializes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#exemplifies</IRI>
+        <Literal xml:lang="pt-br">Uma relação entre um artefato físico concreto (Item) e o plano de produção informacional (Manifestação) que ele materializa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#exemplifies</IRI>
+        <Literal xml:lang="pt-br">Exemplifica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#exemplifies</IRI>
+        <Literal xml:lang="en-us">Exemplifies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#exemplifies_manifestation</IRI>
+        <Literal xml:lang="pt-br">Relaciona um item bibliográfico à manifestação bibliográfica que ele exemplifica.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#exemplifies_manifestation</IRI>
+        <Literal xml:lang="en-us">Relates a bibliographic item to the bibliographic manifestation that it exemplifies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#exemplifies_manifestation</IRI>
+        <Literal xml:lang="pt-br">Exemplifica a Manifestação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#exemplifies_manifestation</IRI>
+        <Literal xml:lang="en-us">Exemplifies Manifestation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#has_creator</IRI>
+        <Literal xml:lang="pt-br">a obra bibliográfica &quot;Dom Casmurro&quot; possui_criador a pessoa &quot;Machado de Assis&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#has_creator</IRI>
+        <Literal xml:lang="en-us">the bibliographic work &quot;Dom Casmurro&quot; has_creator the person &quot;Machado de Assis&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>#has_creator</IRI>
+        <Literal xml:lang="pt-br">Dizer que uma entidade informacional abstrata possui_criador uma pessoa física é afirmar que a pessoa executou um processo cognitivo ou físico que causou a expressão ou manifestação inicial daquela informação.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>#has_creator</IRI>
+        <Literal xml:lang="en-us">To say that an abstract informational entity has_creator a physical person is to assert that the person executed a cognitive or physical process that caused the initial expression or manifestation of that information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#has_creator</IRI>
+        <Literal xml:lang="en-us">A relation between an informational content entity (such as a Work) and the physical agent (Person or Organization) responsible for its conception or creation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#has_creator</IRI>
+        <Literal xml:lang="pt-br">Uma relação entre uma entidade de conteúdo informacional (como uma Obra) e o agente físico (Pessoa ou Organização) responsável por sua concepção ou criação.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#has_creator</IRI>
+        <Literal xml:lang="en-us">Has Creator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#has_creator</IRI>
+        <Literal xml:lang="pt-br">Possui Criador</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#has_input</IRI>
+        <Literal xml:lang="en-us">A cataloging process has input a bibliographic manifestation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#has_input</IRI>
+        <Literal xml:lang="pt-br">Um processo de catalogação tem como entrada uma manifestação bibliográfica.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_input</IRI>
+        <Literal xml:lang="pt-br">Esta propriedade é usada para representar entidades disponíveis antes ou no início de um processo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_input</IRI>
+        <Literal xml:lang="en-us">This property is used to represent the entities available before or at the beginning of a process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#has_input</IRI>
+        <Literal xml:lang="pt-br">Relaciona um processo a um continuante que participa do processo como entidade de entrada.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#has_input</IRI>
+        <Literal xml:lang="en-us">Relates a process to a continuant that participates in the process as an input entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#has_input</IRI>
+        <Literal xml:lang="en-us">Has input</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#has_input</IRI>
+        <Literal xml:lang="pt-br">Tem entrada</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_isbn</IRI>
+        <Literal xml:lang="en-us">Has ISBN</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_isbn</IRI>
+        <Literal xml:lang="pt-br">Tem ISBN</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_isil</IRI>
+        <Literal xml:lang="en-us">Has ISIL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_isil</IRI>
+        <Literal xml:lang="pt-br">Possui ISIL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#has_isil</IRI>
+        <Literal xml:lang="en-us">Links a library organization to its normative International Standard Identifier for Libraries (ISO 15511).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#has_isil</IRI>
+        <Literal xml:lang="pt-br">Vincula uma organização do tipo biblioteca ao seu identificador normativo internacional ISIL (ISO 15511).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_isni</IRI>
+        <Literal xml:lang="en-us">Has ISNI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_isni</IRI>
+        <Literal xml:lang="pt-br">Possui ISNI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#has_isni</IRI>
+        <Literal xml:lang="en-us">Links a publishing organization to its normative International Standard Name Identifier (ISO 27729).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#has_isni</IRI>
+        <Literal xml:lang="pt-br">Vincula uma organização editorial ao seu identificador normativo internacional ISNI (ISO 27729).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#has_output</IRI>
+        <Literal xml:lang="en-us">A cataloging process has output a bibliographic record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#has_output</IRI>
+        <Literal xml:lang="pt-br">Um processo de catalogação tem como saída um registro bibliográfico.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_output</IRI>
+        <Literal xml:lang="pt-br">Esta propriedade é usada para continuantes informacionais ou materiais resultantes de um processo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_output</IRI>
+        <Literal xml:lang="en-us">This property is used for informational or material continuants that result from a process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#has_output</IRI>
+        <Literal xml:lang="pt-br">Relaciona um processo a um continuante que é produzido, gerado ou resultante do processo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#has_output</IRI>
+        <Literal xml:lang="en-us">Relates a process to a continuant that is produced, generated, or resulting from the process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#has_output</IRI>
+        <Literal xml:lang="en-us">Has output</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#has_output</IRI>
+        <Literal xml:lang="pt-br">Tem saída</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#has_participant</IRI>
+        <Literal xml:lang="en-us">A loan process has participant a person who bears a reader role.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#has_participant</IRI>
+        <Literal xml:lang="pt-br">Um processo de empréstimo tem como participante uma pessoa que porta o papel de leitor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_participant</IRI>
+        <Literal xml:lang="pt-br">Esta propriedade é usada para pessoas, organizações, artefatos, registros, papéis ou outros continuantes envolvidos em um processo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_participant</IRI>
+        <Literal xml:lang="en-us">This property is used for persons, organizations, artifacts, records, roles, or other continuants involved in a process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#has_participant</IRI>
+        <Literal xml:lang="pt-br">Relaciona um processo a um continuante que participa do processo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#has_participant</IRI>
+        <Literal xml:lang="en-us">Relates a process to a continuant that participates in the process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#has_participant</IRI>
+        <Literal xml:lang="en-us">Has participant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#has_participant</IRI>
+        <Literal xml:lang="pt-br">Tem participante</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#has_role</IRI>
+        <Literal xml:lang="pt-br">esta pessoa possui_papel este papel de autor; esta pessoa possui_papel este papel de catalogador.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#has_role</IRI>
+        <Literal xml:lang="en-us">this person has_role this author role; this person has_role this cataloger role.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>#has_role</IRI>
+        <Literal xml:lang="en-us">b has_role c at t means that b is an independent continuant, c is a role, and c inheres in b at time t. The role c is not essential to the physical existence of b, but defines a context or behavior that b can exhibit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>#has_role</IRI>
+        <Literal xml:lang="pt-br">b possui_papel c em t significa que b é um continuante independente, c é um papel, e c inere em b no tempo t. O papel c não é essencial para a existência física de b, mas define um contexto ou comportamento que b pode manifestar.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#has_role</IRI>
+        <Literal xml:lang="en-us">A relation between an independent continuant (the bearer) and a role specifically dependent on it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#has_role</IRI>
+        <Literal xml:lang="pt-br">Uma relação entre um continuante independente (o portador) e um papel (role) especificamente dependente dele.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#has_role</IRI>
+        <Literal xml:lang="en-us">Has Role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#has_role</IRI>
+        <Literal xml:lang="pt-br">Possui Papel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#has_specification</IRI>
+        <Literal xml:lang="en-us">Has specification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#has_specification</IRI>
+        <Literal xml:lang="pt-br">Tem especificação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inst_City_Library</IRI>
+        <Literal xml:lang="pt-br">A instituição física responsável pela guarda do acervo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inst_City_Library</IRI>
+        <Literal xml:lang="en-us">The physical institution responsible for holding the collection.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_City_Library</IRI>
+        <Literal xml:lang="pt-br">Biblioteca Municipal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_City_Library</IRI>
+        <Literal xml:lang="en-us">City Library</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inst_Dom_Casmurro_1899_Paper_Book</IRI>
+        <Literal xml:lang="pt-br">O objeto livro tangível e macroscópico localizado na estante da biblioteca.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inst_Dom_Casmurro_1899_Paper_Book</IRI>
+        <Literal xml:lang="en-us">The tangible macroscopical book item located on the library shelf.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_Dom_Casmurro_1899_Paper_Book</IRI>
+        <Literal xml:lang="en-us">Dom Casmurro (1899 Physical Copy)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_Dom_Casmurro_1899_Paper_Book</IRI>
+        <Literal xml:lang="pt-br">Dom Casmurro (Exemplar Físico de 1899)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inst_Garnier_Publisher</IRI>
+        <Literal xml:lang="pt-br">A tradicional casa editorial estabelecida no Rio de Janeiro.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inst_Garnier_Publisher</IRI>
+        <Literal xml:lang="en-us">The traditional publishing house established in Rio de Janeiro.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_Garnier_Publisher</IRI>
+        <Literal xml:lang="en-us">Livraria Garnier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_Garnier_Publisher</IRI>
+        <Literal xml:lang="pt-br">Livraria Garnier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inst_Local_HD_Server</IRI>
+        <Literal xml:lang="pt-br">O hardware físico portador onde reside o arquivo do banco de dados.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inst_Local_HD_Server</IRI>
+        <Literal xml:lang="en-us">The physical hardware carrier where the database file resides.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_Local_HD_Server</IRI>
+        <Literal xml:lang="en-us">Local Storage Server</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_Local_HD_Server</IRI>
+        <Literal xml:lang="pt-br">Servidor de Armazenamento Local</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inst_Machado_de_Assis_Author</IRI>
+        <Literal xml:lang="pt-br">Renomado escritor e poeta brasileiro, autor de Dom Casmurro.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inst_Machado_de_Assis_Author</IRI>
+        <Literal xml:lang="en-us">Renowned Brazilian novelist and poet, author of Dom Casmurro.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_Machado_de_Assis_Author</IRI>
+        <Literal xml:lang="en-us">Machado de Assis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_Machado_de_Assis_Author</IRI>
+        <Literal xml:lang="pt-br">Machado de Assis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inst_Maria_Cataloger</IRI>
+        <Literal xml:lang="pt-br">A profissional bibliotecária responsável pelo processamento técnico.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inst_Maria_Cataloger</IRI>
+        <Literal xml:lang="en-us">The professional librarian responsible for technical processing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_Maria_Cataloger</IRI>
+        <Literal xml:lang="pt-br">Maria (Catalogadora)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_Maria_Cataloger</IRI>
+        <Literal xml:lang="en-us">Maria (Cataloger)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#inst_available</IRI>
+        <Literal xml:lang="pt-br">O exemplar tombamento 12345 está disponível para empréstimo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#inst_available</IRI>
+        <Literal xml:lang="en-us">The copy Tomb Number 12345 is available for loan.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#inst_available</IRI>
+        <Literal xml:lang="en-us">An item availability state indicating that a bibliographic item is accessible for circulation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#inst_available</IRI>
+        <Literal xml:lang="pt-br">Estado de disponibilidade indicando que um exemplar bibliográfico está acessível para circulação.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#inst_available</IRI>
+        <Literal xml:lang="en-us">Available</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#inst_available</IRI>
+        <Literal xml:lang="pt-br">Disponível</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_dom_casmurro_work</IRI>
+        <Literal xml:lang="pt-br">Dom Casmurro (Obra)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_dom_casmurro_work</IRI>
+        <Literal xml:lang="en-us">Dom Casmurro (Work)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#inst_dom_casmurro_work</IRI>
+        <Literal xml:lang="pt-br">A criação intelectual abstrata da história de Dom Casmurro, concebida por Machado de Assis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#inst_dom_casmurro_work</IRI>
+        <Literal xml:lang="en-us">The abstract intellectual creation of the story of Dom Casmurro by Machado de Assis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_english_translation_expression</IRI>
+        <Literal xml:lang="en-us">English Translation Expression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_english_translation_expression</IRI>
+        <Literal xml:lang="pt-br">Expressão de Tradução em Inglês</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_garnier_1899_manifestation</IRI>
+        <Literal xml:lang="pt-br">Edição Garnier de 1899</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_garnier_1899_manifestation</IRI>
+        <Literal xml:lang="en-us">Garnier 1899 Edition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_library_main_catalog</IRI>
+        <Literal xml:lang="pt-br">Catálogo Principal da Biblioteca</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_library_main_catalog</IRI>
+        <Literal xml:lang="en-us">Library Main Catalog</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inst_loan_record_001</IRI>
+        <Literal xml:lang="pt-br">Empréstimo feito por Maria de item da edição Garnier para João.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inst_loan_record_001</IRI>
+        <Literal xml:lang="en-us">Maria loaned an item from the Garnier edition to John.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_loan_record_001</IRI>
+        <Literal xml:lang="en-us">Loan Transaction Record 001</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_loan_record_001</IRI>
+        <Literal xml:lang="pt-br">Registro de Transação de Empréstimo 001</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#inst_loaned</IRI>
+        <Literal xml:lang="pt-br">O exemplar tombamento 12345 está emprestado para João.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#inst_loaned</IRI>
+        <Literal xml:lang="en-us">The copy Tomb Number 12345 is loaned to John.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#inst_loaned</IRI>
+        <Literal xml:lang="en-us">An item availability state indicating that a bibliographic item is temporarily assigned to a reader through a loan process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#inst_loaned</IRI>
+        <Literal xml:lang="pt-br">Estado de disponibilidade indicando que um exemplar bibliográfico está temporariamente associado a um leitor por meio de um processo de empréstimo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#inst_loaned</IRI>
+        <Literal xml:lang="pt-br">Emprestado</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#inst_loaned</IRI>
+        <Literal xml:lang="en-us">Loaned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inst_marc21_rec_123</IRI>
+        <Literal xml:lang="en-us">Contains the structured encoded strings: 100$a Machado de Assis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inst_marc21_rec_123</IRI>
+        <Literal xml:lang="pt-br">Contém as strings codificadas estruturadas: 100$a Machado de Assis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_marc21_rec_123</IRI>
+        <Literal xml:lang="en-us">MARC 21 Record ID 123</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_marc21_rec_123</IRI>
+        <Literal xml:lang="pt-br">Registro MARC 21 ID 123</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_metailie_2002_manifestation</IRI>
+        <Literal xml:lang="pt-br">Edição Éditions Métailié de 2002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inst_metailie_2002_manifestation</IRI>
+        <Literal xml:lang="en-us">Éditions Métailié 2002 Edition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#inst_portuguese_original_expression</IRI>
+        <Literal xml:lang="pt-br">Expressão Original em Português</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#inst_portuguese_original_expression</IRI>
+        <Literal xml:lang="en-us">Original Portuguese Expression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#inst_spec_record_complete</IRI>
+        <Literal xml:lang="pt-br">Completo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#inst_spec_record_partial</IRI>
+        <Literal xml:lang="pt-br">Parcial</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#inst_spec_status_cataloged</IRI>
+        <Literal xml:lang="pt-br">Catalogado</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#inst_spec_status_in_preparation</IRI>
+        <Literal xml:lang="pt-br">Em Elaboração</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#inst_spec_status_reviewed</IRI>
+        <Literal xml:lang="pt-br">Revisado</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#is_about</IRI>
+        <Literal xml:lang="pt-br">este log de registro de empréstimo é_sobre o exemplar do livro físico e é_sobre João o leitor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#is_about</IRI>
+        <Literal xml:lang="en-us">this loan record log is_about the physical book copy and is_about Joao the reader.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>#is_about</IRI>
+        <Literal xml:lang="en-us">A mapping derived from the Information Artifact Ontology (IAO) stating that an informational text or artifact points to, or registers information regarding, a concrete entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>#is_about</IRI>
+        <Literal xml:lang="pt-br">Um mapeamento derivado da Information Artifact Ontology (IAO) estabelecendo que um texto ou artefato informacional aponta para, ou registra informações a respeito de, uma entidade concreta.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#is_about</IRI>
+        <Literal xml:lang="en-us">A relation between an information content entity (like a log record) and the real-world independent continuant it references or reports.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#is_about</IRI>
+        <Literal xml:lang="pt-br">Uma relação entre uma entidade de conteúdo informacional (como um registro de log) e o continuante independente do mundo real que ela referencia ou relata.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#is_about</IRI>
+        <Literal xml:lang="en-us">Is about</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#is_about</IRI>
+        <Literal xml:lang="pt-br">É sobre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>#is_concretized_in</IRI>
+        <Literal xml:lang="en-us">According to BFO, information entities have no mass or space extension; they require a material carrier to be hosted. This relation maps that ontological hosting dependency.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#is_concretized_in</IRI>
+        <Literal xml:lang="en-us">A relation between a generically dependent continuant (Information Entity) and the material entity that serves as its hardware or physical carrier.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#is_concretized_in</IRI>
+        <Literal xml:lang="pt-br">Uma relação entre um continuante genericamente dependente (Entidade de Informação) e a entidade material que serve como seu hardware ou suporte físico.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#is_concretized_in</IRI>
+        <Literal xml:lang="en-us">Is concretized in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#is_concretized_in</IRI>
+        <Literal xml:lang="pt-br">É concretizado em</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#item_availability</IRI>
+        <Literal xml:lang="pt-br">O exemplar tombamento 12345 encontra-se disponível para empréstimo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#item_availability</IRI>
+        <Literal xml:lang="en-us">The book copy Tomb Number 12345 is currently available for loan.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#item_availability</IRI>
+        <Literal xml:lang="pt-br">A disponibilidade de um exemplar pode variar ao longo do tempo em decorrência de processos de circulação como empréstimos, devoluções, reservas ou extravios.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#item_availability</IRI>
+        <Literal xml:lang="en-us">The availability of a bibliographic item may change over time as a consequence of circulation processes such as loans, returns, reservations, or losses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#item_availability</IRI>
+        <Literal xml:lang="en-us">A relational quality that inheres in a bibliographic item and reflects its current accessibility status within a library circulation context.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#item_availability</IRI>
+        <Literal xml:lang="pt-br">Qualidade relacional que inere em um exemplar bibliográfico e reflete sua condição atual de acessibilidade no contexto de circulação de uma biblioteca.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#item_availability</IRI>
+        <Literal xml:lang="pt-br">Disponibilidade do Exemplar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#item_availability</IRI>
+        <Literal xml:lang="en-us">Item Availability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#library</IRI>
+        <Literal xml:lang="pt-br">Biblioteca</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#library</IRI>
+        <Literal xml:lang="en-us">Library</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#library</IRI>
+        <Literal xml:lang="en-us">A physical institution responsible for the custody, processing, and dissemination of bibliographic collections.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#library</IRI>
+        <Literal xml:lang="pt-br">Instituição material responsável pela custódia, processamento e disseminação do acervo bibliográfico.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#loan_process</IRI>
+        <Literal xml:lang="en-us">John  borrows a physical copy of Dom Casmurro from the Municipal Library.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#loan_process</IRI>
+        <Literal xml:lang="pt-br">João empresta um exemplar físico de Dom Casmurro da Biblioteca Municipal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#loan_process</IRI>
+        <Literal xml:lang="en-us">Loan processes modify the circulation status of bibliographic items and generate documentary evidence of the transaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#loan_process</IRI>
+        <Literal xml:lang="pt-br">Processos de empréstimo modificam o estado de circulação dos exemplares bibliográficos e geram evidências documentais da transação.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#loan_process</IRI>
+        <Literal xml:lang="en-us">A planned process in which a bibliographic item is temporarily assigned by a library to a reader and documented through a loan record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#loan_process</IRI>
+        <Literal xml:lang="pt-br">Processo planejado no qual um exemplar bibliográfico é temporariamente atribuído por uma biblioteca a um leitor e documentado por meio de um registro de empréstimo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#loan_process</IRI>
+        <Literal xml:lang="en-us">Loan Process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#loan_process</IRI>
+        <Literal xml:lang="pt-br">Processo de Empréstimo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#loan_record</IRI>
+        <Literal xml:lang="en-us">Loan Record</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#loan_record</IRI>
+        <Literal xml:lang="pt-br">Registro de Empréstimo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#loan_record</IRI>
+        <Literal xml:lang="en-us">A MARC 21 record that has been textually modified in written form. It is not a free narrative document, but rather structured strings that carry information. An informational piece of log data or transaction record that permanently attests the historical loan transaction between a reader and an item.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#loan_record</IRI>
+        <Literal xml:lang="pt-br">Um registro MARC 21 textualmente modificado de forma escrita. Não é documento narrativo livre, mas strings estruturadas que carregam informação. Um artefato informacional ou linha de log que atesta permanentemente a transação histórica de empréstimo ocorrida entre um leitor e um item.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#modifies</IRI>
+        <Literal xml:lang="en-us">A loan process modifies the availability of a bibliographic item.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#modifies</IRI>
+        <Literal xml:lang="pt-br">Um processo de empréstimo modifica a disponibilidade de um exemplar bibliográfico.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#modifies</IRI>
+        <Literal xml:lang="pt-br">Esta propriedade é usada em sentido amplo de engenharia para representar que um processo altera algum aspecto de um continuante.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#modifies</IRI>
+        <Literal xml:lang="en-us">This property is used in a broad engineering sense to represent that a process changes some aspect of a continuant.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#modifies</IRI>
+        <Literal xml:lang="pt-br">Relaciona um processo a um continuante cujo estado, conteúdo informacional, papel, qualidade ou especificação é alterado durante o processo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#modifies</IRI>
+        <Literal xml:lang="en-us">Relates a process to a continuant whose state, informational content, role, quality, or specification is changed during the process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#modifies</IRI>
+        <Literal xml:lang="pt-br">Modifica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#modifies</IRI>
+        <Literal xml:lang="en-us">Modifies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#owned_by</IRI>
+        <Literal xml:lang="pt-br">este exemplar de livro físico 4567 é propriedade_de a Biblioteca Municipal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#owned_by</IRI>
+        <Literal xml:lang="en-us">this physical copy book 4567 is owned_by the City Library.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>#owned_by</IRI>
+        <Literal xml:lang="pt-br">Mapeia a guarda física e jurídica do mundo real. Uma entidade material independente é propriedade de uma organização social independente.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>#owned_by</IRI>
+        <Literal xml:lang="en-us">Maps real-world physical and legal guardianship. An independent material entity is property of an independent social organization.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#owned_by</IRI>
+        <Literal xml:lang="en-us">A relation connecting a physical material object (Item) to the library organization that possesses asset guardianship over it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#owned_by</IRI>
+        <Literal xml:lang="pt-br">Uma relação conectando um objeto material físico (Item) à organização do tipo biblioteca que possui a guarda patrimonial sobre ele.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#owned_by</IRI>
+        <Literal xml:lang="pt-br">Adquirido por</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#owned_by</IRI>
+        <Literal xml:lang="en-us">Owned by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#person</IRI>
+        <Literal xml:lang="en-us">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#person</IRI>
+        <Literal xml:lang="pt-br">Pessoa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#person</IRI>
+        <Literal xml:lang="en-us">A biological and real human individual. A concrete being that exists in time and retains its own identity over time while undergoing changes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#person</IRI>
+        <Literal xml:lang="pt-br">É o indivíduo humano biológico e real. O ser concreto que existe no tempo que retém sua identidade própria ao longo do tempo enquanto passa por mudanças.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#published_by</IRI>
+        <Literal xml:lang="pt-br">esta manifestação de 1899 foi publicada_por Editora Garnier.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#published_by</IRI>
+        <Literal xml:lang="en-us">this 1899 manifestation was published_by Garnier Publisher.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>#published_by</IRI>
+        <Literal xml:lang="en-us">Binds a publication line to an institutional corporate body that has the legal and operational infrastructure to issue materials.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>#published_by</IRI>
+        <Literal xml:lang="pt-br">Vincula uma linha de publicação a um corpo corporativo institucional que possui a infraestrutura jurídica e operacional para emitir materiais.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#published_by</IRI>
+        <Literal xml:lang="en-us">A relation connecting an informational publication plan (Manifestation) to the organization responsible for its commercial manufacturing and distribution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#published_by</IRI>
+        <Literal xml:lang="pt-br">Uma relação conectando um plano informacional de publicação (Manifestação) à organização responsável por sua manufatura comercial e distribuição.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#published_by</IRI>
+        <Literal xml:lang="pt-br">Publicado por</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#published_by</IRI>
+        <Literal xml:lang="en-us">Published by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#publisher</IRI>
+        <Literal xml:lang="pt-br">Editora</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#publisher</IRI>
+        <Literal xml:lang="en-us">Publisher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#publisher</IRI>
+        <Literal xml:lang="en-us">A company or publishing entity responsible for the financing, production, and commercial distribution of publications.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#publisher</IRI>
+        <Literal xml:lang="pt-br">Empresa ou entidade editorial responsável pelo financiamento, produção e distribuição comercial de publicações.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#reader_role</IRI>
+        <Literal xml:lang="pt-br">O papel de usuário que passa a inerar em João assim que o seu cadastro administrativo na instituição é validado.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#reader_role</IRI>
+        <Literal xml:lang="en-us">The user role that begins to inherit for João is activated as soon as his administrative registration with the institution is validated.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#reader_role</IRI>
+        <Literal xml:lang="pt-br">A condição de usuário/leitor é ativada por um evento externo (o cadastro/emissão da carteirinha), conferindo direitos e deveres específicos de acesso ao acervo material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#reader_role</IRI>
+        <Literal xml:lang="en-us">The user/reader status is activated by an external event (registration/issuance of the membership card), granting specific rights and responsibilities for accessing the material collection.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#reader_role</IRI>
+        <Literal xml:lang="en-us">A social and legal role assumed by a person when they establish a formal administrative relationship with a library to consume and borrow items.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#reader_role</IRI>
+        <Literal xml:lang="pt-br">É o papel social e jurídico assumido por uma pessoa quando ela estabelece uma relação administrativa formal com uma biblioteca para consumir e tomar itens por empréstimo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#reader_role</IRI>
+        <Literal xml:lang="pt-br">Papel de Leitor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#reader_role</IRI>
+        <Literal xml:lang="en-us">Reader Role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#record_completeness_specification</IRI>
+        <Literal xml:lang="en-us">An informational specification entity (metadata) associated with a BibliographicRecord that indicates its structural enrichment and data density level (e.g., Complete if it contains all mandatory tags, or Partial if it is a preliminary draft), objectively evaluated based on MARC 21 standard rules.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#record_completeness_specification</IRI>
+        <Literal xml:lang="pt-br">É a entidade de especificação informacional (metadado) associada a um BibliographicRecord que indica o seu nível de detalhamento e preenchimento estrutural (ex: Completo se contiver todas as tags obrigatórias, ou Parcial se for um rascunho preliminar), avaliada objetivamente com base nas regras normativas do formato MARC 21.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#record_completeness_specification</IRI>
+        <Literal xml:lang="pt-br">Especificação de Completude do Registro</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#record_completeness_specification</IRI>
+        <Literal xml:lang="en-us">Record Completeness Specification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#record_update_process</IRI>
+        <Literal xml:lang="en-us">A cataloger updates a MARC 21 record by adding missing subject headings.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#record_update_process</IRI>
+        <Literal xml:lang="pt-br">Um catalogador atualiza um registro MARC 21 adicionando assuntos que estavam ausentes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#record_update_process</IRI>
+        <Literal xml:lang="pt-br">Processos de atualização preservam a identidade do registro bibliográfico enquanto alteram seu conteúdo informacional.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#record_update_process</IRI>
+        <Literal xml:lang="en-us">Record update processes preserve the identity of the bibliographic record while changing its informational content.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#record_update_process</IRI>
+        <Literal xml:lang="en-us">A documenting process in which an existing bibliographic record is revised, corrected, enriched, or otherwise modified.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#record_update_process</IRI>
+        <Literal xml:lang="pt-br">Processo de documentação no qual um registro bibliográfico existente é revisado, corrigido, enriquecido ou modificado.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#record_update_process</IRI>
+        <Literal xml:lang="pt-br">Processo de Atualização de Registro</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#record_update_process</IRI>
+        <Literal xml:lang="en-us">Record Update Process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>#represents_work</IRI>
+        <Literal xml:lang="en-us">Allows query search systems to know which core abstract creation a specific record points to, bypassing the expression/manifestation layer for analytical retrieval.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>#represents_work</IRI>
+        <Literal xml:lang="en-us">MARC 21 record 123 represents_work the abstract work of Dom Casmurro.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>#represents_work</IRI>
+        <Literal xml:lang="pt-br">Permite que os sistemas de busca saibam para qual criação abstrata central um registro específico aponta, ignorando as camadas de expressão/manifestação para fins de recuperação analítica.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>#represents_work</IRI>
+        <Literal xml:lang="pt-br">o registro MARC 21 123 representa_obra a obra abstrata de Dom Casmurro.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#represents_work</IRI>
+        <Literal xml:lang="en-us">A shortcut or direct relation linking a metadata string (Bibliographic Record) to the abstract creation (Work) it is intellectually associated with.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#represents_work</IRI>
+        <Literal xml:lang="pt-br">Um atalho ou relação direta vinculando uma cadeia de metadados (Registro Bibliográfico) à criação abstrata (Obra) com a qual está intelectualmente associada.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#represents_work</IRI>
+        <Literal xml:lang="pt-br">Representa Obra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <IRI>#represents_work</IRI>
+        <Literal xml:lang="en-us">Represents Work</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
