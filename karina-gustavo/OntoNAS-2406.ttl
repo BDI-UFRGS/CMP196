@@ -1,0 +1,750 @@
+@prefix : <http://www.semanticweb.org/ontonas#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ontonas#> .
+
+<http://www.semanticweb.org/ontonas> rdf:type owl:Ontology ;
+                                      owl:imports <http://purl.org/nemo/gufo#/1.0.0> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ontonas#definesStructureOf
+:definesStructureOf rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Hyperparameters_Structure ;
+                    rdfs:range :Hyperparameters .
+
+
+###  http://www.semanticweb.org/ontonas#evaluates
+:evaluates rdf:type owl:ObjectProperty ;
+           rdfs:domain :Performance_Estimation_Strategy ;
+           rdfs:range :Candidate_Architecture .
+
+
+###  http://www.semanticweb.org/ontonas#materializes
+:materializes rdf:type owl:ObjectProperty ;
+              rdfs:domain :Search_Space ;
+              rdfs:range :Hyperparameters_Structure .
+
+
+###  http://www.semanticweb.org/ontonas#produces
+:produces rdf:type owl:ObjectProperty ;
+          rdfs:domain :Performance_Estimation_Strategy ;
+          rdfs:range :Neural_Network_Metrics .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ontonas#hasNumberOfCores
+:hasNumberOfCores rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ontonas#Algorithm
+:Algorithm rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.org/nemo/gufo#FunctionalComplex> .
+
+
+###  http://www.semanticweb.org/ontonas#Bayesian_Optimization
+:Bayesian_Optimization rdf:type owl:Class ;
+                       rdfs:subClassOf :Search_Strategy .
+
+
+###  http://www.semanticweb.org/ontonas#Candidate_Architecture
+:Candidate_Architecture rdf:type owl:Class ;
+                        rdfs:subClassOf :Neural_Network ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://purl.org/nemo/gufo#standsIn> ;
+                                          owl:someValuesFrom :The_Experiment_Finished
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://purl.org/nemo/gufo#wasCreatedIn> ;
+                                          owl:someValuesFrom :Nas_Experiment
+                                        ] .
+
+
+###  http://www.semanticweb.org/ontonas#Core
+:Core rdf:type owl:Class ;
+      rdfs:subClassOf <http://purl.org/nemo/gufo#FunctionalComplex> ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty <http://purl.org/nemo/gufo#isComponentOf> ;
+                        owl:someValuesFrom :Hardware_Device
+                      ] .
+
+
+###  http://www.semanticweb.org/ontonas#Cpu
+:Cpu rdf:type owl:Class ;
+     rdfs:subClassOf :Hardware_Device ;
+     owl:disjointWith :Gpu .
+
+
+###  http://www.semanticweb.org/ontonas#Data
+:Data rdf:type owl:Class ;
+      rdfs:subClassOf <http://purl.org/nemo/gufo#VariableCollection> .
+
+
+###  http://www.semanticweb.org/ontonas#Dataset
+:Dataset rdf:type owl:Class ;
+         rdfs:subClassOf <http://purl.org/nemo/gufo#FunctionalComplex> ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <http://purl.org/nemo/gufo#isCollectionMemberOf> ;
+                           owl:someValuesFrom :Data
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <http://purl.org/nemo/gufo#participatedIn> ;
+                           owl:someValuesFrom :Nas_Experiment
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <http://purl.org/nemo/gufo#standsIn> ;
+                           owl:someValuesFrom :Initial_System_Configuration
+                         ] .
+
+
+###  http://www.semanticweb.org/ontonas#Evolutionary_Algorithms
+:Evolutionary_Algorithms rdf:type owl:Class ;
+                         rdfs:subClassOf :Search_Strategy .
+
+
+###  http://www.semanticweb.org/ontonas#Final_Architecture
+:Final_Architecture rdf:type owl:Class ;
+                    rdfs:subClassOf :Neural_Network ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://purl.org/nemo/gufo#standsIn> ;
+                                      owl:someValuesFrom :The_Experiment_Finished
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://purl.org/nemo/gufo#wasCreatedIn> ;
+                                      owl:someValuesFrom :Nas_Experiment
+                                    ] .
+
+
+###  http://www.semanticweb.org/ontonas#Gpu
+:Gpu rdf:type owl:Class ;
+     rdfs:subClassOf :Hardware_Device .
+
+
+###  http://www.semanticweb.org/ontonas#Gradient_Based
+:Gradient_Based rdf:type owl:Class ;
+                rdfs:subClassOf :Search_Strategy .
+
+
+###  http://www.semanticweb.org/ontonas#Hardware_Device
+:Hardware_Device rdf:type owl:Class ;
+                 rdfs:subClassOf <http://purl.org/nemo/gufo#FunctionalComplex> ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://purl.org/nemo/gufo#participatedIn> ;
+                                   owl:someValuesFrom :Nas_Experiment
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://purl.org/nemo/gufo#standsIn> ;
+                                   owl:someValuesFrom :Initial_System_Configuration
+                                 ] .
+
+
+###  http://www.semanticweb.org/ontonas#Hyperparameters
+:Hyperparameters rdf:type owl:Class ;
+                 rdfs:subClassOf <http://purl.org/nemo/gufo#Quality> .
+
+
+###  http://www.semanticweb.org/ontonas#Hyperparameters_Structure
+:Hyperparameters_Structure rdf:type owl:Class ;
+                           rdfs:subClassOf <http://purl.org/nemo/gufo#AbstractIndividual> ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :definesStructureOf ;
+                                             owl:someValuesFrom :Hyperparameters
+                                           ] .
+
+
+###  http://www.semanticweb.org/ontonas#Hyperparameters_Value
+:Hyperparameters_Value rdf:type owl:Class ;
+                       rdfs:subClassOf <http://purl.org/nemo/gufo#QualityValue> .
+
+
+###  http://www.semanticweb.org/ontonas#Initial_System_Configuration
+:Initial_System_Configuration rdf:type owl:Class ;
+                              rdfs:subClassOf <http://purl.org/nemo/gufo#TemporaryInstantiationSituation> ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://purl.org/nemo/gufo#contributedToTrigger> ;
+                                                owl:someValuesFrom :Nas_Experiment
+                                              ] ;
+                              owl:disjointWith :The_Experiment_Finished .
+
+
+###  http://www.semanticweb.org/ontonas#Layer
+:Layer rdf:type owl:Class ;
+       rdfs:subClassOf <http://purl.org/nemo/gufo#FunctionalComplex> ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty <http://purl.org/nemo/gufo#isComponentOf> ;
+                         owl:someValuesFrom :Neural_Network
+                       ] .
+
+
+###  http://www.semanticweb.org/ontonas#Layer_Hyperparameters
+:Layer_Hyperparameters rdf:type owl:Class ;
+                       rdfs:subClassOf :Hyperparameters ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/nemo/gufo#hasReifiedQualityValue> ;
+                                         owl:someValuesFrom :Hyperparameters_Value
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/nemo/gufo#inheresIn> ;
+                                         owl:someValuesFrom :Layer
+                                       ] .
+
+
+###  http://www.semanticweb.org/ontonas#Memory
+:Memory rdf:type owl:Class ;
+        rdfs:subClassOf <http://purl.org/nemo/gufo#FunctionalComplex> ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://purl.org/nemo/gufo#isComponentOf> ;
+                          owl:someValuesFrom :Hardware_Device
+                        ] .
+
+
+###  http://www.semanticweb.org/ontonas#Memory_Capacity
+:Memory_Capacity rdf:type owl:Class ;
+                 rdfs:subClassOf <http://purl.org/nemo/gufo#Quality> ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://purl.org/nemo/gufo#inheresIn> ;
+                                   owl:someValuesFrom :Memory
+                                 ] .
+
+
+###  http://www.semanticweb.org/ontonas#Nas_Experiment
+:Nas_Experiment rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.org/nemo/gufo#Event> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.org/nemo/gufo#broughtAbout> ;
+                                  owl:someValuesFrom :The_Experiment_Finished
+                                ] .
+
+
+###  http://www.semanticweb.org/ontonas#Neural_Network
+:Neural_Network rdf:type owl:Class ;
+                rdfs:subClassOf :Algorithm ;
+                owl:disjointWith :Performance_Estimation_Strategy ,
+                                 :Search_Strategy .
+
+
+###  http://www.semanticweb.org/ontonas#Neural_Network_Hyperparameters
+:Neural_Network_Hyperparameters rdf:type owl:Class ;
+                                rdfs:subClassOf :Hyperparameters ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.org/nemo/gufo#inheresIn> ;
+                                                  owl:someValuesFrom :Neural_Network
+                                                ] .
+
+
+###  http://www.semanticweb.org/ontonas#Neural_Network_Metrics
+:Neural_Network_Metrics rdf:type owl:Class ;
+                        rdfs:subClassOf <http://purl.org/nemo/gufo#Quality> ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://purl.org/nemo/gufo#inheresIn> ;
+                                          owl:someValuesFrom :Candidate_Architecture
+                                        ] .
+
+
+###  http://www.semanticweb.org/ontonas#Operating_Frequency
+:Operating_Frequency rdf:type owl:Class ;
+                     rdfs:subClassOf <http://purl.org/nemo/gufo#Quality> ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://purl.org/nemo/gufo#inheresIn> ;
+                                       owl:someValuesFrom :Hardware_Device
+                                     ] .
+
+
+###  http://www.semanticweb.org/ontonas#Performance_Estimation_Strategy
+:Performance_Estimation_Strategy rdf:type owl:Class ;
+                                 rdfs:subClassOf :Algorithm ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <http://purl.org/nemo/gufo#participatedIn> ;
+                                                   owl:someValuesFrom :Nas_Experiment
+                                                 ] ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <http://purl.org/nemo/gufo#standsIn> ;
+                                                   owl:someValuesFrom :Initial_System_Configuration
+                                                 ] ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :evaluates ;
+                                                   owl:someValuesFrom :Candidate_Architecture
+                                                 ] ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :produces ;
+                                                   owl:someValuesFrom :Neural_Network_Metrics
+                                                 ] ;
+                                 owl:disjointWith :Search_Strategy .
+
+
+###  http://www.semanticweb.org/ontonas#Random_Search
+:Random_Search rdf:type owl:Class ;
+               rdfs:subClassOf :Search_Strategy .
+
+
+###  http://www.semanticweb.org/ontonas#Reinforcement_Learning
+:Reinforcement_Learning rdf:type owl:Class ;
+                        rdfs:subClassOf :Search_Strategy .
+
+
+###  http://www.semanticweb.org/ontonas#Search_Space
+:Search_Space rdf:type owl:Class ;
+              rdfs:subClassOf <http://purl.org/nemo/gufo#FunctionalComplex> ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://purl.org/nemo/gufo#participatedIn> ;
+                                owl:someValuesFrom :Nas_Experiment
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://purl.org/nemo/gufo#standsIn> ;
+                                owl:someValuesFrom :Initial_System_Configuration
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :materializes ;
+                                owl:someValuesFrom :Hyperparameters_Structure
+                              ] .
+
+
+###  http://www.semanticweb.org/ontonas#Search_Strategy
+:Search_Strategy rdf:type owl:Class ;
+                 rdfs:subClassOf :Algorithm ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://purl.org/nemo/gufo#participatedIn> ;
+                                   owl:someValuesFrom :Nas_Experiment
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://purl.org/nemo/gufo#standsIn> ;
+                                   owl:someValuesFrom :Initial_System_Configuration
+                                 ] .
+
+
+###  http://www.semanticweb.org/ontonas#Structure
+:Structure rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.org/nemo/gufo#Quality> ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://purl.org/nemo/gufo#inheresIn> ;
+                             owl:someValuesFrom :Dataset
+                           ] .
+
+
+###  http://www.semanticweb.org/ontonas#The_Experiment_Finished
+:The_Experiment_Finished rdf:type owl:Class ;
+                         rdfs:subClassOf <http://purl.org/nemo/gufo#TemporaryInstantiationSituation> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ontonas#AMD_Radeon_RX_7800_XT
+:AMD_Radeon_RX_7800_XT rdf:type owl:NamedIndividual ,
+                                :Gpu ;
+                       owl:differentFrom :Intel_Arc_A770 ,
+                                         :NVIDIA_GeForce_RTX_4090 .
+
+
+###  http://www.semanticweb.org/ontonas#AMD_Ryzen_7_7800X3D
+:AMD_Ryzen_7_7800X3D rdf:type owl:NamedIndividual ,
+                              :Cpu ;
+                     owl:differentFrom :Intel_Core_i5-14600K ,
+                                       <http://www.semanticweb.org/ontonas#Intel_Xeon_Platinum_8592+> ;
+                     <http://purl.org/nemo/gufo#participatedIn> :nas_experiment_1 .
+
+
+###  http://www.semanticweb.org/ontonas#Algorithm
+:Algorithm rdf:type owl:NamedIndividual ,
+                    <http://purl.org/nemo/gufo#Kind> .
+
+
+###  http://www.semanticweb.org/ontonas#AmoebaNet
+:AmoebaNet rdf:type owl:NamedIndividual ,
+                    :Evolutionary_Algorithms .
+
+
+###  http://www.semanticweb.org/ontonas#BOHB
+:BOHB rdf:type owl:NamedIndividual ,
+               :Bayesian_Optimization ;
+      <http://purl.org/nemo/gufo#participatedIn> :nas_experiment_1 .
+
+
+###  http://www.semanticweb.org/ontonas#Bayesian_Optimization
+:Bayesian_Optimization rdf:type owl:NamedIndividual ,
+                                <http://purl.org/nemo/gufo#SubKind> .
+
+
+###  http://www.semanticweb.org/ontonas#CIFAR-10
+:CIFAR-10 rdf:type owl:NamedIndividual ,
+                   :Dataset ;
+          owl:differentFrom :CIFAR-100 ,
+                            :ImageNet ;
+          <http://purl.org/nemo/gufo#participatedIn> :nas_experiment_1 .
+
+
+###  http://www.semanticweb.org/ontonas#CIFAR-100
+:CIFAR-100 rdf:type owl:NamedIndividual ,
+                    :Dataset ;
+           owl:differentFrom :ImageNet .
+
+
+###  http://www.semanticweb.org/ontonas#Candidate_Architecture
+:Candidate_Architecture rdf:type owl:NamedIndividual ,
+                                 <http://purl.org/nemo/gufo#Role> .
+
+
+###  http://www.semanticweb.org/ontonas#Core
+:Core rdf:type owl:NamedIndividual ,
+               <http://purl.org/nemo/gufo#Kind> .
+
+
+###  http://www.semanticweb.org/ontonas#Cpu
+:Cpu rdf:type owl:NamedIndividual ,
+              <http://purl.org/nemo/gufo#SubKind> .
+
+
+###  http://www.semanticweb.org/ontonas#DARTS
+:DARTS rdf:type owl:NamedIndividual ,
+                :Gradient_Based .
+
+
+###  http://www.semanticweb.org/ontonas#DDR4
+:DDR4 rdf:type owl:NamedIndividual ,
+               :Memory ;
+      owl:differentFrom :DDR5 ;
+      <http://purl.org/nemo/gufo#isComponentOf> :hardware_nas_experiment_1 .
+
+
+###  http://www.semanticweb.org/ontonas#DDR5
+:DDR5 rdf:type owl:NamedIndividual ,
+               :Memory .
+
+
+###  http://www.semanticweb.org/ontonas#Data
+:Data rdf:type owl:NamedIndividual ,
+               <http://purl.org/nemo/gufo#Kind> .
+
+
+###  http://www.semanticweb.org/ontonas#Dataset
+:Dataset rdf:type owl:NamedIndividual ,
+                  <http://purl.org/nemo/gufo#Kind> .
+
+
+###  http://www.semanticweb.org/ontonas#ENAS
+:ENAS rdf:type owl:NamedIndividual ,
+               :Reinforcement_Learning .
+
+
+###  http://www.semanticweb.org/ontonas#Evolutionary_Algorithms
+:Evolutionary_Algorithms rdf:type owl:NamedIndividual ,
+                                  <http://purl.org/nemo/gufo#SubKind> .
+
+
+###  http://www.semanticweb.org/ontonas#Final_Architecture
+:Final_Architecture rdf:type owl:NamedIndividual ,
+                             <http://purl.org/nemo/gufo#Role> .
+
+
+###  http://www.semanticweb.org/ontonas#Gpu
+:Gpu rdf:type owl:NamedIndividual ,
+              <http://purl.org/nemo/gufo#SubKind> .
+
+
+###  http://www.semanticweb.org/ontonas#Gradient_Based
+:Gradient_Based rdf:type owl:NamedIndividual ,
+                         <http://purl.org/nemo/gufo#SubKind> .
+
+
+###  http://www.semanticweb.org/ontonas#Hardware_Device
+:Hardware_Device rdf:type owl:NamedIndividual ,
+                          <http://purl.org/nemo/gufo#Kind> .
+
+
+###  http://www.semanticweb.org/ontonas#Hyperparameters
+:Hyperparameters rdf:type owl:NamedIndividual ,
+                          <http://purl.org/nemo/gufo#Category> .
+
+
+###  http://www.semanticweb.org/ontonas#Hyperparameters_Structure
+:Hyperparameters_Structure rdf:type owl:NamedIndividual ,
+                                    <http://purl.org/nemo/gufo#AbstractIndividualType> .
+
+
+###  http://www.semanticweb.org/ontonas#Hyperparameters_Value
+:Hyperparameters_Value rdf:type owl:NamedIndividual ,
+                                <http://purl.org/nemo/gufo#AbstractIndividualType> .
+
+
+###  http://www.semanticweb.org/ontonas#ImageNet
+:ImageNet rdf:type owl:NamedIndividual ,
+                   :Dataset .
+
+
+###  http://www.semanticweb.org/ontonas#Initial_System_Configuration
+:Initial_System_Configuration rdf:type owl:NamedIndividual ,
+                                       <http://purl.org/nemo/gufo#SituationType> .
+
+
+###  http://www.semanticweb.org/ontonas#Intel_Arc_A770
+:Intel_Arc_A770 rdf:type owl:NamedIndividual ,
+                         :Gpu ;
+                owl:differentFrom :NVIDIA_GeForce_RTX_4090 .
+
+
+###  http://www.semanticweb.org/ontonas#Intel_Core_i5-14600K
+:Intel_Core_i5-14600K rdf:type owl:NamedIndividual ,
+                               :Cpu ;
+                      owl:differentFrom <http://www.semanticweb.org/ontonas#Intel_Xeon_Platinum_8592+> .
+
+
+###  http://www.semanticweb.org/ontonas#Layer
+:Layer rdf:type owl:NamedIndividual ,
+                <http://purl.org/nemo/gufo#Kind> .
+
+
+###  http://www.semanticweb.org/ontonas#Layer_Hyperparameters
+:Layer_Hyperparameters rdf:type owl:NamedIndividual ,
+                                <http://purl.org/nemo/gufo#Kind> ;
+                       <http://purl.org/nemo/gufo#hasAssociatedQualityValueType> :Hyperparameters_Value .
+
+
+###  http://www.semanticweb.org/ontonas#Memory
+:Memory rdf:type owl:NamedIndividual ,
+                 <http://purl.org/nemo/gufo#Kind> .
+
+
+###  http://www.semanticweb.org/ontonas#Memory_Capacity
+:Memory_Capacity rdf:type owl:NamedIndividual ,
+                          <http://purl.org/nemo/gufo#Kind> .
+
+
+###  http://www.semanticweb.org/ontonas#NASBOT
+:NASBOT rdf:type owl:NamedIndividual ,
+                 :Bayesian_Optimization .
+
+
+###  http://www.semanticweb.org/ontonas#NASNet
+:NASNet rdf:type owl:NamedIndividual ,
+                 :Reinforcement_Learning .
+
+
+###  http://www.semanticweb.org/ontonas#NEAT
+:NEAT rdf:type owl:NamedIndividual ,
+               :Evolutionary_Algorithms .
+
+
+###  http://www.semanticweb.org/ontonas#NVIDIA_GeForce_RTX_4090
+:NVIDIA_GeForce_RTX_4090 rdf:type owl:NamedIndividual ,
+                                  :Gpu .
+
+
+###  http://www.semanticweb.org/ontonas#Nas_Experiment
+:Nas_Experiment rdf:type owl:NamedIndividual ,
+                         <http://purl.org/nemo/gufo#EventType> .
+
+
+###  http://www.semanticweb.org/ontonas#Neural_Network
+:Neural_Network rdf:type owl:NamedIndividual ,
+                         <http://purl.org/nemo/gufo#SubKind> .
+
+
+###  http://www.semanticweb.org/ontonas#Neural_Network_Hyperparameters
+:Neural_Network_Hyperparameters rdf:type owl:NamedIndividual ,
+                                         <http://purl.org/nemo/gufo#Kind> .
+
+
+###  http://www.semanticweb.org/ontonas#Neural_Network_Metrics
+:Neural_Network_Metrics rdf:type owl:NamedIndividual ,
+                                 <http://purl.org/nemo/gufo#Kind> .
+
+
+###  http://www.semanticweb.org/ontonas#Operating_Frequency
+:Operating_Frequency rdf:type owl:NamedIndividual ,
+                              <http://purl.org/nemo/gufo#Kind> .
+
+
+###  http://www.semanticweb.org/ontonas#Performance_Estimation_Strategy
+:Performance_Estimation_Strategy rdf:type owl:NamedIndividual ,
+                                          <http://purl.org/nemo/gufo#SubKind> .
+
+
+###  http://www.semanticweb.org/ontonas#ProxylessNAS
+:ProxylessNAS rdf:type owl:NamedIndividual ,
+                       :Gradient_Based .
+
+
+###  http://www.semanticweb.org/ontonas#Random_Search
+:Random_Search rdf:type owl:NamedIndividual ,
+                        <http://purl.org/nemo/gufo#SubKind> .
+
+
+###  http://www.semanticweb.org/ontonas#Reinforcement_Learning
+:Reinforcement_Learning rdf:type owl:NamedIndividual ,
+                                 <http://purl.org/nemo/gufo#SubKind> .
+
+
+###  http://www.semanticweb.org/ontonas#Search_Space
+:Search_Space rdf:type owl:NamedIndividual ,
+                       <http://purl.org/nemo/gufo#Kind> .
+
+
+###  http://www.semanticweb.org/ontonas#Search_Strategy
+:Search_Strategy rdf:type owl:NamedIndividual ,
+                          <http://purl.org/nemo/gufo#SubKind> .
+
+
+###  http://www.semanticweb.org/ontonas#Structure
+:Structure rdf:type owl:NamedIndividual ,
+                    <http://purl.org/nemo/gufo#Kind> .
+
+
+###  http://www.semanticweb.org/ontonas#The_Experiment_Finished
+:The_Experiment_Finished rdf:type owl:NamedIndividual ,
+                                  <http://purl.org/nemo/gufo#SituationType> .
+
+
+###  http://www.semanticweb.org/ontonas#accuracy
+:accuracy rdf:type owl:NamedIndividual ,
+                   :Neural_Network_Metrics ;
+          owl:differentFrom :flops ,
+                            :mean_absolute_error .
+
+
+###  http://www.semanticweb.org/ontonas#candidate_architecture_1
+:candidate_architecture_1 rdf:type owl:NamedIndividual ,
+                                   :Candidate_Architecture ;
+                          owl:differentFrom :candidate_architecture_2 ;
+                          <http://purl.org/nemo/gufo#wasCreatedIn> :nas_experiment_1 .
+
+
+###  http://www.semanticweb.org/ontonas#candidate_architecture_2
+:candidate_architecture_2 rdf:type owl:NamedIndividual ,
+                                   :Candidate_Architecture ;
+                          <http://purl.org/nemo/gufo#wasCreatedIn> :nas_experiment_2 .
+
+
+###  http://www.semanticweb.org/ontonas#final_architecture_1
+:final_architecture_1 rdf:type owl:NamedIndividual ,
+                               :Final_Architecture ;
+                      <http://purl.org/nemo/gufo#wasCreatedIn> :nas_experiment_1 .
+
+
+###  http://www.semanticweb.org/ontonas#flops
+:flops rdf:type owl:NamedIndividual ,
+                :Neural_Network_Metrics ;
+       owl:differentFrom :mean_absolute_error .
+
+
+###  http://www.semanticweb.org/ontonas#hardware_nas_experiment_1
+:hardware_nas_experiment_1 rdf:type owl:NamedIndividual ,
+                                    :Hardware_Device ;
+                           <http://purl.org/nemo/gufo#participatedIn> :nas_experiment_1 .
+
+
+###  http://www.semanticweb.org/ontonas#mean_absolute_error
+:mean_absolute_error rdf:type owl:NamedIndividual ,
+                              :Neural_Network_Metrics .
+
+
+###  http://www.semanticweb.org/ontonas#nas_experiment_1
+:nas_experiment_1 rdf:type owl:NamedIndividual ,
+                           :Nas_Experiment ;
+                  owl:differentFrom :nas_experiment_2 .
+
+
+###  http://www.semanticweb.org/ontonas#nas_experiment_2
+:nas_experiment_2 rdf:type owl:NamedIndividual ,
+                           :Nas_Experiment .
+
+
+###  http://www.semanticweb.org/ontonas#necessity_of_image_preprocessing_pipeline
+:necessity_of_image_preprocessing_pipeline rdf:type owl:NamedIndividual ,
+                                                    :Initial_System_Configuration ;
+                                           <http://purl.org/nemo/gufo#contributedToTrigger> :nas_experiment_1 .
+
+
+###  http://www.semanticweb.org/ontonas#performance_estimation_1
+:performance_estimation_1 rdf:type owl:NamedIndividual ,
+                                   :Performance_Estimation_Strategy ;
+                          owl:differentFrom :performance_estimation_2 ;
+                          :evaluates :candidate_architecture_1 .
+
+
+###  http://www.semanticweb.org/ontonas#performance_estimation_2
+:performance_estimation_2 rdf:type owl:NamedIndividual ,
+                                   :Performance_Estimation_Strategy ;
+                          :evaluates :candidate_architecture_2 .
+
+
+###  http://www.semanticweb.org/ontonas#random_search_with_weight_sharing
+:random_search_with_weight_sharing rdf:type owl:NamedIndividual ,
+                                            :Random_Search .
+
+
+###  http://www.semanticweb.org/ontonas#16GB
+<http://www.semanticweb.org/ontonas#16GB> rdf:type owl:NamedIndividual ,
+                                                   :Memory_Capacity ;
+                                          owl:differentFrom <http://www.semanticweb.org/ontonas#32GB> ,
+                                                            <http://www.semanticweb.org/ontonas#64GB> ;
+                                          <http://purl.org/nemo/gufo#inheresIn> :DDR4 .
+
+
+###  http://www.semanticweb.org/ontonas#16-Core
+<http://www.semanticweb.org/ontonas#16-Core> rdf:type owl:NamedIndividual ,
+                                                      :Core ;
+                                             owl:differentFrom <http://www.semanticweb.org/ontonas#32-Core> ,
+                                                               <http://www.semanticweb.org/ontonas#8-Core> ;
+                                             <http://purl.org/nemo/gufo#isComponentOf> :hardware_nas_experiment_1 .
+
+
+###  http://www.semanticweb.org/ontonas#2.0GHz
+<http://www.semanticweb.org/ontonas#2.0GHz> rdf:type owl:NamedIndividual ,
+                                                     :Operating_Frequency ;
+                                            owl:differentFrom <http://www.semanticweb.org/ontonas#3.2GHz> ,
+                                                              <http://www.semanticweb.org/ontonas#5.7GHz> ;
+                                            <http://purl.org/nemo/gufo#inheresIn> :hardware_nas_experiment_1 .
+
+
+###  http://www.semanticweb.org/ontonas#3.2GHz
+<http://www.semanticweb.org/ontonas#3.2GHz> rdf:type owl:NamedIndividual ,
+                                                     :Operating_Frequency ;
+                                            owl:differentFrom <http://www.semanticweb.org/ontonas#5.7GHz> .
+
+
+###  http://www.semanticweb.org/ontonas#32GB
+<http://www.semanticweb.org/ontonas#32GB> rdf:type owl:NamedIndividual ,
+                                                   :Memory_Capacity ;
+                                          owl:differentFrom <http://www.semanticweb.org/ontonas#64GB> .
+
+
+###  http://www.semanticweb.org/ontonas#32-Core
+<http://www.semanticweb.org/ontonas#32-Core> rdf:type owl:NamedIndividual ,
+                                                      :Core ;
+                                             owl:differentFrom <http://www.semanticweb.org/ontonas#8-Core> .
+
+
+###  http://www.semanticweb.org/ontonas#5.7GHz
+<http://www.semanticweb.org/ontonas#5.7GHz> rdf:type owl:NamedIndividual ,
+                                                     :Operating_Frequency .
+
+
+###  http://www.semanticweb.org/ontonas#64GB
+<http://www.semanticweb.org/ontonas#64GB> rdf:type owl:NamedIndividual ,
+                                                   :Memory_Capacity .
+
+
+###  http://www.semanticweb.org/ontonas#8-Core
+<http://www.semanticweb.org/ontonas#8-Core> rdf:type owl:NamedIndividual ,
+                                                     :Core .
+
+
+###  http://www.semanticweb.org/ontonas#Intel_Xeon_Platinum_8592+
+<http://www.semanticweb.org/ontonas#Intel_Xeon_Platinum_8592+> rdf:type owl:NamedIndividual ,
+                                                                        :Cpu .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
